@@ -320,12 +320,26 @@ def node_alive(agent_id: str, server: str = DEFAULT_SERVER) -> bool:
     return False
 
 
-def print_nodes(server: str = DEFAULT_SERVER) -> None:
+OWN_NODE = "blast-radius"
+
+
+def print_nodes(server: str = DEFAULT_SERVER, only: str | None = OWN_NODE) -> None:
+    """List registered agents. Defaults to this repo's own node.
+
+    A shared control plane holds whatever else its owner is running, and those
+    names would otherwise be baked into this repo's committed notebook outputs.
+    Pass `only=None` to see everything on the control plane.
+    """
     try:
         caps = nodes(server)
     except Exception as e:  # noqa: BLE001
         print(f"   (capabilities probe failed: {e})")
         return
+    if only:
+        others = [c for c in caps if c.get("agent_id") != only]
+        caps = [c for c in caps if c.get("agent_id") == only]
+        if others:
+            print(f"   ({len(others)} unrelated agent(s) on this control plane, not shown)")
     if not caps:
         print("   none registered")
         return

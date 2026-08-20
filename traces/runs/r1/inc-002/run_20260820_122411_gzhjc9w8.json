@@ -1,0 +1,73 @@
+{
+ "rung": "r1",
+ "input_id": "inc-002",
+ "run_id": "run_20260820_122411_gzhjc9w8",
+ "findings": [
+  {
+   "id": "f1",
+   "location": "metrics.json",
+   "claim": "JPY error rate surged from 0.1% to 99.7% at the time of the deploy while EUR error rate remained 0.1%, isolating the fault to JPY processing.",
+   "severity": "critical",
+   "evidence": "error_rate_jpy_pct: start=0.1 end=99.7 min=0.1 max=100.2"
+  },
+  {
+   "id": "f2",
+   "location": "deploys.json",
+   "claim": "The deploy at 02:07 UTC introduced a multi-currency rounding refactor that changed MoneyRounding.java, the component where the ArithmeticException originates.",
+   "severity": "high",
+   "evidence": "change: multi-currency rounding refactor; add JPY/KRW support ... MoneyRounding.java +96/-40"
+  },
+  {
+   "id": "f3",
+   "location": "logs.txt",
+   "claim": "Logs show repeated ArithmeticException: Rounding necessary at MoneyRounding.toMinorUnits line 77 for all JPY authorization attempts after the deploy.",
+   "severity": "critical",
+   "evidence": "authorization failed currency=JPY amount_minor=32800 status=500 cause=java.lang.ArithmeticException: Rounding necessary ... at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)"
+  },
+  {
+   "id": "f4",
+   "location": "logs.txt",
+   "claim": "A warning log explicitly states that MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY while the registry reports scale=0, confirming the root cause.",
+   "severity": "high",
+   "evidence": "MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0)"
+  },
+  {
+   "id": "f5",
+   "location": "metrics.json",
+   "claim": "Overall error rate rose to 6.6%, matching the ~5.4% JPY traffic share failing at close to 100%.",
+   "severity": "high",
+   "evidence": "error_rate_pct: start=0.1 end=6.6 min=0.1 max=6.6"
+  },
+  {
+   "id": "f6",
+   "location": "metrics.json",
+   "claim": "Latency and acquirer metrics remained stable, ruling out downstream or infrastructure causes.",
+   "severity": "medium",
+   "evidence": "latency_p99_ms: start=417.2 end=449.8 ... acquirer_p99_ms: start=907.1 end=904.7"
+  },
+  {
+   "id": "f7",
+   "location": "topology",
+   "claim": "The redis-ratelimit failover at 02:09 UTC cannot cause 5xx because the circuit is configured as fail_open=True, allowing requests to proceed when Redis is unavailable.",
+   "severity": "low",
+   "evidence": "fail_open: True"
+  }
+ ],
+ "cost_usd": 0.0,
+ "tokens": 0,
+ "wall_time_s": 16.070577144622803,
+ "human_touchpoints": 0,
+ "escalations": [],
+ "dag": {
+  "nodes": [
+   {
+    "id": "exec_20260820_122411_ct6tvxbb",
+    "label": "r01_diagnose"
+   }
+  ],
+  "edges": []
+ },
+ "root_cause": "The payments-gateway v2.14.0 deployment at 02:07 UTC introduced a bug in MoneyRounding.toMinorUnits that assumes all currencies have scale=2, but JPY has scale=0, causing ArithmeticException: Rounding necessary for every JPY authorization and producing a ~6% overall 5xx rate.",
+ "remediation": "Roll back payments-gateway to the previous version (2.13.x) immediately, or deploy a hotfix to MoneyRounding.toMinorUnits that correctly handles currencies with scale=0 (zero decimal places) such as JPY and KRW.",
+ "confident": true
+}

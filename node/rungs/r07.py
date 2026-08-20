@@ -133,16 +133,30 @@ async def triage(incident_id: str, auto_approve_timeout: float = 45.0) -> Triage
     #   POST /api/v1/executions/<execution_id>/approval-response
     #   {"decision":"approved","response":{"feedback":"..."}}   <- nested, not top-level
     # A timeout is data, not an exception: decision becomes "expired".
-    await router.app.note(
+    router.app.note(
         f"destructive remediation proposed for {incident_id}: {plan.action}",
         tags=["approval", "gate"],
     )
-    res = await router.app.pause(
-        approval_request_id=f"remediate-{incident_id}",
-        approval_request_url=f"http://127.0.0.1:8080/review/{incident_id}",
-        expires_in_hours=1,
-        timeout=auto_approve_timeout,
-    )
+    try:
+        res = await router.app.pause(
+            approval_request_id=f"remediate-{incident_id}",
+            approval_request_url=f"http://127.0.0.1:8080/review/{incident_id}",
+            expires_in_hours=1,
+            timeout=auto_approve_timeout,
+        )
+    except Exception as exc:  # noqa: BLE001
+        # The control plane refuses a callback to a private address unless it was
+        # started with AGENTFIELD_WEBHOOK_ALLOWED_HOSTS=localhost,127.0.0.1. Fail
+        # CLOSED: no approval means the destructive action does not run. An agent
+        # that treats a broken gate as consent is worse than one with no gate.
+        return TriageResult(
+            incident_id=incident_id,
+            root_cause=diagnosis.root_cause,
+            action=f"HELD — gate unavailable, not executed: {plan.action}",
+            destructive=True,
+            approval="gate_unavailable",
+            feedback=str(exc)[:400],
+        )
     feedback = res.feedback or ((res.raw_response or {}).get("feedback", ""))
 
     return TriageResult(

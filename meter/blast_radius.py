@@ -262,13 +262,21 @@ def process_variance(runs: list[dict]) -> float:
 
 # ---------------------------------------------------------- vs ground truth
 
-def recall_precision(runs: list[dict], ground_truth: dict[str, list[dict]]) -> dict:
-    """Mean per-run recall and precision against the planted defects."""
+def recall_precision(runs: list[dict], ground_truth: dict[str, list[dict]],
+                     hits_fn=None) -> dict:
+    """Mean per-run recall and precision against the planted defects.
+
+    `hits_fn(run, truth) -> int` overrides how a hit is counted. The default
+    compares claims by token overlap, which is all you can do when ground truth is
+    prose. When ground truth pins evidence to literal substrings -- as this repo's
+    incident corpus does -- pass `meter.adapter.evidence_hits` instead and a hit
+    becomes a fact about string containment rather than a similarity heuristic.
+    """
     recalls, precisions = [], []
     for r in runs:
         truth = ground_truth.get(r["input_id"], [])
         found = r["findings"]
-        hits = _pair_up(found, truth)
+        hits = hits_fn(r, truth) if hits_fn else _pair_up(found, truth)
         recalls.append(hits / len(truth) if truth else 0.0)
         precisions.append(hits / len(found) if found else 0.0)
     return {"recall": float(np.mean(recalls or [0.0])),
@@ -277,12 +285,16 @@ def recall_precision(runs: list[dict], ground_truth: dict[str, list[dict]]) -> d
 
 # ------------------------------------------------------------ the ladder
 
-def ladder_table(runs: list[dict], ground_truth: dict[str, list[dict]]) -> pd.DataFrame:
-    """One row per rung: what you got, how much it wobbled, what it cost."""
+def ladder_table(runs: list[dict], ground_truth: dict[str, list[dict]],
+                 hits_fn=None) -> pd.DataFrame:
+    """One row per rung: what you got, how much it wobbled, what it cost.
+
+    `hits_fn` is passed through to `recall_precision` -- see its docstring.
+    """
     rows = []
     for rung in sorted({r["rung"] for r in runs}, key=altitude):
         group = [r for r in runs if r["rung"] == rung]
-        rp = recall_precision(group, ground_truth)
+        rp = recall_precision(group, ground_truth, hits_fn=hits_fn)
         ov = outcome_variance(group)
         rows.append({
             "rung": rung,

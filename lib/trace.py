@@ -23,9 +23,10 @@ Two halves, from two different places:
 
 Cost and tokens are deliberately not invented. AgentField's CostTracker is
 per-process and in-memory, so a completed run's spend is not readable from the
-control plane after the fact. `cost_usd` is therefore None and `tokens` is 0
-unless the caller passes real numbers it measured itself. A None cost makes the
-meter's cost column blank rather than confidently wrong.
+control plane after a run finishes. Both fields therefore carry NOT_MEASURED
+(0.0 / 0) unless the caller passes numbers it measured itself. Read a 0.0 cost
+as "nobody measured this", never as "this was free" -- the meter averages the
+column, and `None` would crash that average rather than blank it.
 """
 
 from __future__ import annotations
@@ -42,6 +43,11 @@ except ImportError:       # `import trace` with lib/ on sys.path (the notebooks)
 
 DEFAULT_SERVER = dag_api.DEFAULT_SERVER
 TRACE_ROOT = "traces/runs"
+
+#: Sentinel for a number nothing measured. See the module docstring: the
+#: control plane does not retain per-run spend, and a made-up dollar figure
+#: would be the one number in this repo that nobody could check.
+NOT_MEASURED = 0.0
 
 _RUNG_RE = re.compile(r"r0*(\d+)")
 
@@ -123,7 +129,7 @@ def build_trace(
     wall_time_s: float,
     server: str = DEFAULT_SERVER,
     *,
-    cost_usd: float | None = None,
+    cost_usd: float = NOT_MEASURED,
     tokens: int = 0,
     human_touchpoints: int = 0,
 ) -> dict:
@@ -144,8 +150,8 @@ def build_trace(
         "input_id": incident_id,
         "run_id": run_id,
         "findings": _findings(result),
-        "cost_usd": cost_usd,       # see module docstring: not in the control plane
-        "tokens": tokens,           # ditto
+        "cost_usd": float(cost_usd),   # NOT_MEASURED unless the caller metered it
+        "tokens": int(tokens),         # ditto -- see the module docstring
         "wall_time_s": float(wall_time_s),
         "human_touchpoints": human_touchpoints,
         "escalations": _escalations(result),

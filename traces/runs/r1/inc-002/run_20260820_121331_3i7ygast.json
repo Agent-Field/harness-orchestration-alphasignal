@@ -1,0 +1,52 @@
+{
+ "rung": "r1",
+ "input_id": "inc-002",
+ "run_id": "run_20260820_121331_3i7ygast",
+ "findings": [
+  {
+   "id": "f1",
+   "location": "metrics.json",
+   "claim": "JPY request error rate spiked to 99.7% immediately after the deploy while EUR error rate remained at 0.1%, confirming the error is currency-specific.",
+   "severity": "high",
+   "evidence": "error_rate_jpy_pct: start=0.1 end=99.7 min=0.1 max=100.2 points=30"
+  },
+  {
+   "id": "f2",
+   "location": "deploys.json",
+   "claim": "The deploy dep-7719 at 02:07:00Z introduced a multi-currency rounding refactor adding JPY/KRW support, which is the most likely cause of the new JPY errors.",
+   "severity": "critical",
+   "evidence": "version: 2.14.0, change: multi-currency rounding refactor; add JPY/KRW support"
+  },
+  {
+   "id": "f3",
+   "location": "logs.txt",
+   "claim": "Logs show repeated java.lang.ArithmeticException: Rounding necessary at MoneyRounding.toMinorUnits for JPY authorization requests, directly indicating the bug.",
+   "severity": "high",
+   "evidence": "java.lang.ArithmeticException: Rounding necessary"
+  },
+  {
+   "id": "f4",
+   "location": "logs.txt",
+   "claim": "A warning log explicitly states MoneyRounding.toMinorUnits assumes scale=2 for JPY but the registry scale=0, confirming the root cause of the rounding failure.",
+   "severity": "high",
+   "evidence": "MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0)"
+  }
+ ],
+ "cost_usd": null,
+ "tokens": 0,
+ "wall_time_s": 12.067,
+ "human_touchpoints": 0,
+ "escalations": [],
+ "dag": {
+  "nodes": [
+   {
+    "id": "exec_20260820_121331_550j35c5",
+    "label": "r01_diagnose"
+   }
+  ],
+  "edges": []
+ },
+ "root_cause": "The multi-currency rounding refactor in payments-gateway version 2.14.0 (deployed at 02:07) introduced a bug in MoneyRounding.toMinorUnits that assumes scale=2 for all currencies, but JPY has scale=0, causing ArithmeticException on every JPY authorization request and resulting in a 99.7% error rate for JPY traffic.",
+ "remediation": "Immediately roll back payments-gateway to the previous version 2.13.x, or deploy a hotfix to MoneyRounding.toMinorUnits that uses the correct scale (0 for JPY, 2 for EUR/GBP, etc.) from CurrencyRegistry.",
+ "confident": true
+}

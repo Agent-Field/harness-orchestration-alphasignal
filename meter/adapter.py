@@ -35,8 +35,13 @@ import loader  # noqa: E402  (path set above)
 
 DEFAULT_GROUND_TRUTH = ROOT / "incidents" / "ground_truth.json"
 
-#: artifact filename -> the loader section that renders it
+#: artifact name -> the loader section that renders it. Both spellings are
+#: accepted: the corpus names files ("topology.json"), and a rung sometimes
+#: writes the bare section ("topology") because that is what the prompt headed
+#: the block with. Rejecting the bare form would score a correct citation as a
+#: hallucination, which is the one mistake this module must not make.
 _ARTIFACT_SECTION = {v: k for k, v in loader.ARTIFACTS.items()}
+_ARTIFACT_SECTION.update({k: k for k in loader.ARTIFACTS})
 
 #: how confidently a piece of required evidence pins the diagnosis down. The
 #: meter weights recall by severity, so evidence that IS the root cause has to
@@ -139,12 +144,33 @@ def _artifact_of(location: str) -> str:
     return head if head and tail.isdigit() else str(location).strip()
 
 
+#: Shortest string we will accept as a citation. The corpus sets this bar, not
+#: taste: its own `match` values include bare series names like "rss_mb", so a
+#: longer minimum would score three verified corpus entries as hallucinations.
+MIN_QUOTE_CHARS = 4
+
+#: Models habitually elide the middle of a long quote with an ellipsis. Each
+#: side is still a real substring, so the fragments are checked separately.
+_ELLIPSIS = re.compile(r"\s*(?:\.\.\.+|\u2026)\s*")
+
+
 def evidence_is_real(incident_id: str, location: str, evidence: str) -> bool:
-    """Does this quote literally occur in the artifact the finding named?"""
-    quote = _norm(evidence)
-    if len(quote) < 8:          # too short to be a citation of anything
+    """Does this quote literally occur in the artifact the finding named?
+
+    An ellipsis splices two quotes into one string: 'first bit ... last bit'.
+    Both halves are real citations, so every fragment is required to be present
+    rather than the joined string, which as written exists nowhere. Anything
+    else is a straight substring test: reflowed whitespace and changed case are
+    forgiven, changed words are not.
+    """
+    haystack = _norm(_artifact_text(incident_id, _artifact_of(location)))
+    if not haystack:
         return False
-    return quote in _norm(_artifact_text(incident_id, _artifact_of(location)))
+    fragments = [_norm(x) for x in _ELLIPSIS.split(str(evidence))]
+    fragments = [f for f in fragments if len(f) >= MIN_QUOTE_CHARS]
+    if not fragments:           # too short to be a citation of anything
+        return False
+    return all(f in haystack for f in fragments)
 
 
 def score_evidence(trace: dict, gt: Any = None) -> dict:
@@ -226,3 +252,42 @@ def score_lenses(chosen_lenses: Iterable[str], gt: Any = None,
         "missed_warranted": sorted(warranted - proposed),
         "false_positives": sorted(misses),
     }
+
+
+def planted_evidence_hits(run: dict, truth: list[dict]) -> int:
+    """How many PLANTED evidence items this run actually found.
+
+    This is recall, and it is a different question from whether a run's quotes
+    were real. `score_evidence` asks "is what it cited genuine?" -- a run can
+    quote seven real log lines and still miss every line that mattered. This
+    asks the other half: for each thing the corpus planted, did any finding
+    surface it?
+
+    A planted item counts as found when its `match` substring -- verified at
+    corpus build time to exist in the artifact it names -- turns up in a
+    finding's evidence or claim. String containment again, so a hit is a fact
+    rather than a similarity estimate.
+
+    Why not the meter's default claim-similarity matcher: this corpus states
+    *why* each piece of evidence matters, in editorial prose that deliberately
+    does not restate the evidence. Token overlap against that prose reads low
+    for reasons unrelated to whether the finding was correct.
+    """
+    haystack = _norm(" ".join(
+        f"{f.get('evidence', '')} {f.get('claim', '')}" for f in run.get("findings", [])
+    ))
+    if not haystack:
+        return 0
+    hits = 0
+    for item in truth:
+        needle = _norm(str(item.get("match") or item.get("claim") or ""))
+        if len(needle) >= MIN_QUOTE_CHARS and needle in haystack:
+            hits += 1
+    return hits
+
+
+def groundedness(run: dict) -> float:
+    """Fraction of this run's citations that are verifiably real. 1.0 = nothing invented."""
+    s = score_evidence(run)
+    total = s["cited_real"] + s["hallucinated"]
+    return s["cited_real"] / total if total else 0.0
