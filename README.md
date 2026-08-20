@@ -25,9 +25,17 @@ Nothing to install to read it — every notebook is committed with its outputs.
 > **Python 3.13 only**, and `AI_MODEL` needs the `openrouter/` prefix. Both fail in
 > confusing ways otherwise — see [docs/gotchas.md](docs/gotchas.md).
 
+## By the end
+
+You'll be able to build an agent system that decides its own shape at runtime — and
+measure whether that was a good idea. Concretely: write a typed reasoner, compose
+reasoners into a graph, have a reasoner *generate* the next graph, and run the whole
+thing headless with a human approval gate.
+
 ## The chapters
 
-Each adds one rung of autonomy and one AgentField primitive.
+Each adds one rung of autonomy and one AgentField primitive. Every notebook opens with
+what you'll learn and closes with what you learned.
 
 | | Notebook | What you learn |
 |---|---|---|

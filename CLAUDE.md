@@ -28,6 +28,23 @@ Corollary: a notebook is not finished when the code works — it is finished whe
 committed outputs show what a reader needs to see. A committed cell that errors is a bug
 in the artifact even if the code is "correct".
 
+## How notebook prose reads
+
+The reader is learning, not auditing. Every chapter follows the same shape:
+
+1. Title, then one sentence on what this chapter is.
+2. A `> **You'll learn**` block — three bullets, verb-first, concrete.
+3. Sections: **one idea per markdown cell, one to three sentences.** If a cell needs a
+   paragraph to set up the code below it, the idea is too big for one cell.
+4. A closing `## What you learned` — three bullets mirroring the top — and a
+   **Next:** line naming the following chapter and its hook.
+
+Gotchas belong in `docs/gotchas.md`, not in the flow. Inline, a trap gets one clause
+and a link. A reader who is here to learn should never have to wade through an
+operational footnote to reach the next idea.
+
+Teach in the order the reader needs it, not the order we discovered it.
+
 ## Environment, and the traps in it
 
 - **Python 3.13 only.** `agentfield` declares `>=3.10,<3.14`; this machine's default
