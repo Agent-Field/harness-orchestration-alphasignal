@@ -1,0 +1,113 @@
+{
+ "svc-auth": [
+  {
+   "location": "auth/session.py:42",
+   "claim": "session token is never expired on logout",
+   "severity": "critical"
+  },
+  {
+   "location": "auth/login.py:88",
+   "claim": "password compared with == allowing timing attack",
+   "severity": "high"
+  },
+  {
+   "location": "auth/reset.py:23",
+   "claim": "reset link reuses a predictable counter",
+   "severity": "high"
+  },
+  {
+   "location": "auth/jwt.py:17",
+   "claim": "jwt signature verification is skipped when alg is none",
+   "severity": "critical"
+  },
+  {
+   "location": "auth/middleware.py:60",
+   "claim": "admin route lacks a role check",
+   "severity": "high"
+  },
+  {
+   "location": "auth/models.py:12",
+   "claim": "password hash uses md5",
+   "severity": "medium"
+  },
+  {
+   "location": "auth/config.py:5",
+   "claim": "secret key is hardcoded in the repo",
+   "severity": "critical"
+  },
+  {
+   "location": "auth/audit.py:31",
+   "claim": "failed logins are not logged",
+   "severity": "low"
+  }
+ ],
+ "svc-billing": [
+  {
+   "location": "billing/charge.py:55",
+   "claim": "amount is parsed as float losing cents",
+   "severity": "high"
+  },
+  {
+   "location": "billing/refund.py:19",
+   "claim": "refund can exceed the original charge",
+   "severity": "critical"
+  },
+  {
+   "location": "billing/webhook.py:44",
+   "claim": "stripe webhook signature is not verified",
+   "severity": "critical"
+  },
+  {
+   "location": "billing/invoice.py:71",
+   "claim": "tax rate is read from user supplied input",
+   "severity": "high"
+  },
+  {
+   "location": "billing/retry.py:30",
+   "claim": "retry loop has no maximum and can bill twice",
+   "severity": "high"
+  },
+  {
+   "location": "billing/export.py:9",
+   "claim": "csv export interpolates user text enabling injection",
+   "severity": "medium"
+  },
+  {
+   "location": "billing/cache.py:26",
+   "claim": "price cache is never invalidated",
+   "severity": "low"
+  }
+ ],
+ "svc-ingest": [
+  {
+   "location": "ingest/upload.py:33",
+   "claim": "uploaded file path is joined without sanitising",
+   "severity": "critical"
+  },
+  {
+   "location": "ingest/parse.py:64",
+   "claim": "yaml is loaded with the unsafe loader",
+   "severity": "critical"
+  },
+  {
+   "location": "ingest/queue.py:21",
+   "claim": "queue consumer swallows every exception",
+   "severity": "medium"
+  },
+  {
+   "location": "ingest/schema.py:48",
+   "claim": "schema validation is skipped for large payloads",
+   "severity": "high"
+  },
+  {
+   "location": "ingest/worker.py:15",
+   "claim": "worker runs as root inside the container",
+   "severity": "high"
+  },
+  {
+   "location": "ingest/dedupe.py:7",
+   "claim": "dedupe key ignores the tenant id",
+   "severity": "high"
+  }
+ ]
+}

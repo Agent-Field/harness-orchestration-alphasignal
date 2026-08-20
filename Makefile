@@ -18,7 +18,7 @@ TRACE_DIR   := traces
 NODE_PORT   ?= 8001
 
 .DEFAULT_GOAL := help
-.PHONY: help setup up down demo check traces clean
+.PHONY: help setup up down demo check traces notebooks check-outputs test clean
 
 help: ## Show this help
 	@grep -hE '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) \
@@ -93,7 +93,23 @@ check: setup ## Verify python, SDK, control plane, and lib/dag.py import
 	@$(PY) -c 'import sys; sys.path.insert(0,"lib"); import dag; print("   ok, endpoint", dag.RUN_ENDPOINT)'
 	@echo "-- registered nodes"
 	@$(PY) lib/dag.py
+	@echo "-- notebook outputs"
+	@$(PY) lib/notebooks.py check | sed 's/^/   /'
 	@echo "OK"
+
+# ------------------------------------------------------------ notebooks ----
+# Notebooks are committed WITH their outputs on purpose: most people meet this
+# repo by scrolling it on GitHub, and GitHub renders saved outputs. An
+# unexecuted notebook is a blank page to them. Run this before every commit
+# that touches a notebook or anything a notebook renders.
+notebooks: setup ## Execute every notebook in place and save its outputs
+	$(PY) lib/notebooks.py run
+
+check-outputs: setup ## Fail if any notebook is committed without its outputs
+	$(PY) lib/notebooks.py check
+
+test: setup ## Run the meter's self-checks
+	PYTHONPATH=$(CURDIR) $(PY) meter/test_meter.py
 
 traces: ## Export a self-contained HTML trace per run id in RUNS="id1 id2"
 	@mkdir -p $(TRACE_DIR)
