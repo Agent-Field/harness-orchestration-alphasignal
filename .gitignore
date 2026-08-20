@@ -1,0 +1,13 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.jupyter/
+.DS_Store
+node_modules/
+*.log
+.agentfield/
+dist/
+build/
+*.egg-info/

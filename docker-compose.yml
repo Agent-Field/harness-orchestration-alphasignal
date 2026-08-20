@@ -1,0 +1,60 @@
+# blast-radius -- control plane + one agent node.
+#
+# THE ONE THING PEOPLE GET WRONG: AGENT_CALLBACK_URL.
+# Registration is bidirectional. The node dials the control plane, but the
+# control plane then dials the node *back* to dispatch every reasoner call.
+# Inside compose, "localhost" is each container's own loopback, so a node that
+# registers http://localhost:8001 tells the control plane to call itself --
+# executions sit in "running" forever and never dispatch. It must be the
+# compose service DNS name: http://node:8001.
+#
+# The SDK does try to auto-detect (agentfield/agent.py::_build_callback_candidates:
+# explicit arg > AGENT_CALLBACK_URL > container IP > hostname > localhost). The
+# container-IP guess usually works on a shared network, but it is a guess. Pin it.
+
+services:
+  control-plane:
+    image: agentfield/control-plane:v0.1.132   # pinned to match agentfield==0.1.132
+    container_name: br-control-plane
+    ports:
+      - "8080:8080"
+    environment:
+      AGENTFIELD_HOME: /data
+      AGENTFIELD_STORAGE_MODE: local           # SQLite; fine for a single-replica demo
+    volumes:
+      - control-plane-data:/data
+    healthcheck:
+      # /health is the endpoint the CLI and notebooks use; /api/v1/health is the
+      # documented liveness probe. Both are served.
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/health || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    networks: [blast-radius]
+
+  node:
+    build:
+      context: .
+      dockerfile: node/Dockerfile
+    container_name: br-node
+    depends_on:
+      control-plane:
+        condition: service_healthy
+    environment:
+      # In-network DNS name, NOT localhost. See the note at the top of this file.
+      AGENTFIELD_SERVER: http://control-plane:8080
+      AGENT_CALLBACK_URL: http://node:8001
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:?set OPENROUTER_API_KEY in .env}
+      AI_MODEL: ${AI_MODEL:-openrouter/deepseek/deepseek-v4-flash}
+    ports:
+      - "8001:8001"       # node listens on 8001 (app.serve() default), not 8000
+    networks: [blast-radius]
+    restart: unless-stopped
+
+networks:
+  blast-radius:
+    driver: bridge
+
+volumes:
+  control-plane-data:

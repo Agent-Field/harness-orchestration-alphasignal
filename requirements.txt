@@ -1,0 +1,7 @@
+agentfield==0.1.132
+jupyterlab>=4.2
+pydantic>=2.7
+httpx>=0.27
+python-dotenv>=1.0
+nbclient>=0.10
+nbformat>=5.10
