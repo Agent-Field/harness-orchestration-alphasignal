@@ -55,7 +55,7 @@ node/         main.py — the agent the notebooks drive
 meter/        blast-radius measurement + self-checks
 lib/dag.py    fetch a run, render it as mermaid
 traces/       self-contained HTML run traces (make traces)
-docs/         gotchas
+docs/         gotchas, and a demonstrated approvals + triggers reference
 ```
 
 `make check` verifies the environment, the control plane, and that every notebook still

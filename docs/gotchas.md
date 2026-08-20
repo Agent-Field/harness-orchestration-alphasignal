@@ -62,3 +62,34 @@ litellm 1.96.2, control plane `v0.1.132`.
   `localhost` is each container's own loopback, so a node that registers
   `http://localhost:8001` is telling the control plane to call itself.
   Executions then sit in `running` forever.
+
+## Approvals and triggers
+
+Full verified round-trips, with request/response bodies, are in
+[approvals-triggers-memory.md](approvals-triggers-memory.md). The traps that will
+cost you a live demo:
+
+- **`localhost` callbacks are rejected** by an SSRF guard (`invalid_callback_url`).
+  The control plane needs `AGENTFIELD_WEBHOOK_ALLOWED_HOSTS`.
+- **Then it hangs anyway.** The Go control plane resolves `localhost` to `::1`;
+  uvicorn is IPv4-only. Use `callback_url="http://127.0.0.1:<port>"`. The failure
+  mode is the worst kind: the control plane reports the approval succeeded and the
+  agent waits forever.
+- **Top-level `feedback` never reaches the reasoner** — the control plane drops it.
+  Send it nested under `response` and read `result.raw_response`.
+- **A paused execution reports `status: "running"`** with
+  `status_reason: "waiting_for_approval"`, not `status: "waiting"` as documented.
+- **On timeout the execution SUCCEEDS** with `decision: "expired"`. The docs say it
+  is cancelled; it is not.
+- **The webhook ingress is `POST /sources/<trigger_id>`** — root level, no
+  `/api/v1` prefix, undocumented and absent from `af agent discover`. `af server`
+  prints its full route table at startup; that is the real endpoint inventory.
+- **`secret_env` names an env var on the control plane**, not on your agent.
+- **Trigger-fired runs use a `wf_` run_id prefix** instead of `run_`.
+- **`POST /api/v1/triggers/<id>/test` fires without signing** — the cleanest path
+  for a notebook demo.
+- **A cron trigger keeps firing after its agent dies**, and code-managed triggers
+  cannot be deleted through the API. `POST /triggers/<id>/pause` is the only clean
+  off switch. Leave the machine quiet.
+- **`MemoryConfig` is unrelated to the four memory scopes**, and
+  `app.ai(memory_scope=...)` takes a **list**.
