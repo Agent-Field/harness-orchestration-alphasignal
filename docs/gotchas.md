@@ -69,8 +69,11 @@ Full verified round-trips, with request/response bodies, are in
 [approvals-triggers-memory.md](approvals-triggers-memory.md). The traps that will
 cost you a live demo:
 
-- **`localhost` callbacks are rejected** by an SSRF guard (`invalid_callback_url`).
-  The control plane needs `AGENTFIELD_WEBHOOK_ALLOWED_HOSTS`.
+- **Private-address callbacks are rejected** by an SSRF guard
+  (`invalid_callback_url`). This bites one step earlier than expected: it rejects
+  `127.0.0.1` too, not only `localhost`. The control plane must be started with
+  `AGENTFIELD_WEBHOOK_ALLOWED_HOSTS=localhost,127.0.0.1` before any approval gate
+  can reach a human at all.
 - **Then it hangs anyway.** The Go control plane resolves `localhost` to `::1`;
   uvicorn is IPv4-only. Use `callback_url="http://127.0.0.1:<port>"`. The failure
   mode is the worst kind: the control plane reports the approval succeeded and the
@@ -84,12 +87,19 @@ cost you a live demo:
 - **The webhook ingress is `POST /sources/<trigger_id>`** — root level, no
   `/api/v1` prefix, undocumented and absent from `af agent discover`. `af server`
   prints its full route table at startup; that is the real endpoint inventory.
-- **`secret_env` names an env var on the control plane**, not on your agent.
+- **`secret_env` names an env var on the control plane**, not on your agent — so
+  `generic_bearer` auth needs the control plane restarted, not your node.
 - **Trigger-fired runs use a `wf_` run_id prefix** instead of `run_`.
-- **`POST /api/v1/triggers/<id>/test` fires without signing** — the cleanest path
-  for a notebook demo.
+- **`POST /api/v1/triggers/<id>/test` does not work for cron triggers.** It
+  returns `synthetic test events not yet supported for source "cron" — use a
+  captured fixture instead`. To demonstrate an unattended run, register a
+  temporary one-minute cron and wait for a real fire. (It may still work for other
+  source kinds; only `cron` was tested.)
 - **A cron trigger keeps firing after its agent dies**, and code-managed triggers
   cannot be deleted through the API. `POST /triggers/<id>/pause` is the only clean
   off switch. Leave the machine quiet.
 - **`MemoryConfig` is unrelated to the four memory scopes**, and
   `app.ai(memory_scope=...)` takes a **list**.
+- **Set the node's callback with `AGENT_CALLBACK_URL`**, e.g.
+  `AGENT_CALLBACK_URL=http://127.0.0.1:8002`. `_build_callback_candidates` reads it,
+  and discovery then reports the matching `base_url`. No need to edit `main.py`.
