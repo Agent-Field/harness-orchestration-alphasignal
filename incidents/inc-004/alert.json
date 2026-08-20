@@ -1,0 +1,28 @@
+{
+  "alert_id": "alt-2026-08-05-2135-search",
+  "monitor_name": "search-api :: p95 latency > 1200ms (10m)",
+  "monitor_id": "mon-2044",
+  "severity": "SEV3",
+  "state": "firing",
+  "fired_at": "2026-08-05T21:35:00Z",
+  "detected_change_at": "2026-08-05T21:22:00Z",
+  "threshold": {
+    "metric": "http.server.duration.p95",
+    "comparator": ">",
+    "value": 1200,
+    "unit": "ms",
+    "window": "10m"
+  },
+  "observed_value": 3180,
+  "service": "search-api",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-discovery"
+  ],
+  "runbook": "https://runbooks.internal/search-api/latency",
+  "tags": [
+    "tier:2",
+    "team:discovery"
+  ]
+}

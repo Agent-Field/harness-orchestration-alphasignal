@@ -1,0 +1,404 @@
+ts=2026-07-21T10:56:00.293Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-85364 ttl_left_s=2350
+ts=2026-07-21T10:56:00.614Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=43 req_id=req_9c1fdec04a5f
+ts=2026-07-21T10:56:06.665Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=45 trace_id=bab3e39ef5f4d1ffc661e3e051711e75 req_id=req_34fb14f8a5bf
+ts=2026-07-21T10:56:12.850Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T10:56:18.728Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=176 trace_id=29542d471f911fdbddd155954d792d94 req_id=req_699135ecbdd6
+ts=2026-07-21T10:56:26.124Z level=info svc=shipping-rates-api msg="auth token validated" user_id=usr_354415 issuer=identity-service
+ts=2026-07-21T10:56:27.473Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T10:56:39.187Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-51317 ttl_left_s=2330
+ts=2026-07-21T10:56:43.258Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=170 req_id=req_41ccba1ee7f5
+ts=2026-07-21T10:56:50.428Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-41446 ttl_left_s=2110
+ts=2026-07-21T10:56:51.701Z level=info svc=shipping-rates-api msg="auth token validated" user_id=usr_591755 issuer=identity-service
+ts=2026-07-21T10:56:59.693Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-19431 ttl_left_s=2350
+ts=2026-07-21T10:57:06.923Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=61 req_id=req_83561d66b220
+ts=2026-07-21T10:57:08.006Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T10:57:08.627Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T10:57:10.667Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=380 status=200
+ts=2026-07-21T10:57:13.944Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=204 trace_id=aadf87051afc8b6ef1f62a47e4b03f18 req_id=req_aa405e3dbb42
+ts=2026-07-21T10:57:30.116Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=98 trace_id=29ed2deb6f8dab91f5d02edfa90d887c req_id=req_8cac69f7851b
+ts=2026-07-21T10:57:30.574Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=370 status=200
+ts=2026-07-21T10:57:36.610Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=187 trace_id=b18b63b06689ec144fc886d73ba7a14e req_id=req_333e78969da1
+ts=2026-07-21T10:57:49.689Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T10:57:51.356Z level=debug svc=shipping-rates-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_450187
+ts=2026-07-21T10:57:53.631Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5140 status=200
+ts=2026-07-21T10:57:58.174Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=159 trace_id=6c795915b30dd564ab4b27de3893972f req_id=req_b94af8122496
+ts=2026-07-21T10:57:58.357Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=221 trace_id=809b2b1c9be7b15989272598d23a26c2 req_id=req_76bf45e85d13
+ts=2026-07-21T10:58:03.833Z level=debug svc=shipping-rates-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_710732
+ts=2026-07-21T10:58:12.267Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=87 trace_id=e11197ca48c7f27fadef95edffc3d048 req_id=req_b50eedba8d42
+ts=2026-07-21T10:58:24.237Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-89583 ttl_left_s=2380
+ts=2026-07-21T10:58:31.321Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=193 req_id=req_d393e6dc19dc
+ts=2026-07-21T10:58:33.141Z level=debug svc=shipping-rates-api msg="metrics scrape served" path=/metrics status=200 bytes=20214
+ts=2026-07-21T10:58:42.854Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=210 trace_id=e3d0f5b2a6b469f73bb067f81233467e req_id=req_15158099e3f6
+ts=2026-07-21T10:58:45.566Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=165 trace_id=3cd4f9dded2d5b2e79f058dcc06e9e32 req_id=req_c6b05a34775a
+ts=2026-07-21T10:58:47.807Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3400 status=200
+ts=2026-07-21T10:58:48.142Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T10:59:01.539Z level=debug svc=shipping-rates-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_527144
+ts=2026-07-21T10:59:02.110Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=106 trace_id=347adab4b85576141047b2f02bff3992 req_id=req_b24c2725e9ed
+ts=2026-07-21T10:59:09.652Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=215 trace_id=15fd490598b4e94c0dd6d9fc0713afb8 req_id=req_d6c76a15aede
+ts=2026-07-21T10:59:15.563Z level=debug svc=shipping-rates-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_375648
+ts=2026-07-21T10:59:17.300Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T10:59:18.591Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=71 trace_id=b8bf788e9fb370a1475b42abd76c112a req_id=req_af3af7df75e1
+ts=2026-07-21T10:59:25.126Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=14 trace_id=b1769860b84987d7da182952ce8c2e90 req_id=req_e62199e300f6
+ts=2026-07-21T10:59:31.742Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=226 trace_id=22f7964f02258fdff7886f942be781ed req_id=req_8316b310a6ea
+ts=2026-07-21T10:59:35.933Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=181 req_id=req_a86a55be7f5a
+ts=2026-07-21T10:59:37.352Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=128 req_id=req_4e3f668d2313
+ts=2026-07-21T10:59:40.242Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T11:00:01.030Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4330 status=200
+ts=2026-07-21T11:00:07.712Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=20 trace_id=40e97b47705fd6034d9621a970c79e3c req_id=req_0122cd499526
+ts=2026-07-21T11:00:12.654Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=30 trace_id=f5c7074b3b1034f218f03c14e325c4e6 req_id=req_d5fbb8a3b48a
+ts=2026-07-21T11:00:12.978Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=202 trace_id=9b5a6475b182189dbec33f441791320e req_id=req_eef3ad8ff516
+ts=2026-07-21T11:00:24.327Z level=debug svc=shipping-rates-api msg="metrics scrape served" path=/metrics status=200 bytes=9214
+ts=2026-07-21T11:00:26.247Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=131 trace_id=b235513becff9f70e30851f372bcc8f1 req_id=req_a364b1e3e6b5
+ts=2026-07-21T11:00:47.586Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-18395 ttl_left_s=2380
+ts=2026-07-21T11:00:57.342Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=122 trace_id=ab1a450186c9d315cc72e04bb25ceadd req_id=req_ca4a16b478e3
+ts=2026-07-21T11:00:57.610Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T11:01:01.739Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=57 trace_id=fc1fa337795eb7eeab60a4b70d89f5e4 req_id=req_ecb586d3a4df
+ts=2026-07-21T11:01:23.551Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-74824 ttl_left_s=2270
+ts=2026-07-21T11:01:27.725Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4330 status=200
+ts=2026-07-21T11:01:34.050Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=148 req_id=req_94ed99ce147a
+ts=2026-07-21T11:01:41.577Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=22 trace_id=b05fe550c60fcf2dcea90c7eac4d0f49 req_id=req_d29f1a93dc37
+ts=2026-07-21T11:01:43.250Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=62 trace_id=dee0ae55e032b3c7c9fb1b94b1b9ac72 req_id=req_85ac1d11c134
+ts=2026-07-21T11:01:43.970Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=97 trace_id=ad4d0c46e4f5269c5b21f9293547c52a req_id=req_e8b14e2081fd
+ts=2026-07-21T11:01:47.593Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=188 trace_id=16486344b745661e5ce530497acc5704 req_id=req_a265a8dc4281
+ts=2026-07-21T11:02:08.921Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=88 trace_id=3d9ddaa9701cecafde98116dd465ae96 req_id=req_2125b6024ea2
+ts=2026-07-21T11:02:35.180Z level=debug svc=shipping-rates-api msg="metrics scrape served" path=/metrics status=200 bytes=30214
+ts=2026-07-21T11:02:37.804Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=183 trace_id=9e0ee6bf1ea1f5581f9319614a60cccb req_id=req_960e6ee14fdf
+ts=2026-07-21T11:02:47.735Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=40 req_id=req_35615dc23aa2
+ts=2026-07-21T11:02:57.063Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=110 req_id=req_8ed94580dcb2
+ts=2026-07-21T11:03:04.946Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=185 trace_id=34c628a5d0a1fc6b50ffed14da91a6e1 req_id=req_ea0b58bc14c1
+ts=2026-07-21T11:03:05.889Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4380 status=200
+ts=2026-07-21T11:03:08.384Z level=debug svc=shipping-rates-api msg="metrics scrape served" path=/metrics status=200 bytes=8214
+ts=2026-07-21T11:03:15.664Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=226 trace_id=2ae3fce7b9dd90e816e09118e4e8b793 req_id=req_172ca57a270c
+ts=2026-07-21T11:03:34.901Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=82 trace_id=41aa9905865ba9c5c1440f59fd327b77 req_id=req_ca1952cf1047
+ts=2026-07-21T11:03:37.682Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-19429 ttl_left_s=2350
+ts=2026-07-21T11:03:40.982Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=77 trace_id=7819ba6f76adc6a970fdc55f34d80d1b req_id=req_3701b950d5e5
+ts=2026-07-21T11:03:57.517Z level=debug svc=shipping-rates-api msg="metrics scrape served" path=/metrics status=200 bytes=12214
+ts=2026-07-21T11:04:01.710Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T11:04:03.397Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=217 trace_id=75b76cd68642708910019e6520a07d6e req_id=req_0c6451f0cb5d
+ts=2026-07-21T11:04:06.442Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T11:04:08.708Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=118 trace_id=650a5b56356b50f2c338b350f3ef9b98 req_id=req_1e43e2eb8ced
+ts=2026-07-21T11:04:13.744Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-34077 ttl_left_s=2330
+ts=2026-07-21T11:04:21.447Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=24 trace_id=f85e26c786a6ea1c0d87f27259e4ef43 req_id=req_74fdb99c8ea5
+ts=2026-07-21T11:04:23.629Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=10 trace_id=475f63cfdc99f58721439f87b1acaba5 req_id=req_d719d804f5cb
+ts=2026-07-21T11:04:36.959Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=35 trace_id=e808e55462d0d20e7ff54c277a430180 req_id=req_5cb44300f77d
+ts=2026-07-21T11:04:48.446Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=36 trace_id=90dd85b7906e808317e6cf1955a0c8b2 req_id=req_b189ead61d1f
+ts=2026-07-21T11:04:49.149Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=182 trace_id=45f45c64b124c4ff413a54fe095f7fef req_id=req_0f8f7b1efa2a
+ts=2026-07-21T11:04:49.732Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=120 trace_id=dd7d73333eb4324f08b8801617eadae2 req_id=req_328fbf4d5d2c
+ts=2026-07-21T11:05:00.280Z level=info svc=shipping-rates-api msg="rate cache configured" ttl_s=300 prev_ttl_s=60 build=3.3.1
+ts=2026-07-21T11:05:03.645Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=89 trace_id=540cd0a0d20374b08747e74490f583e8 req_id=req_eeaf21e53561
+ts=2026-07-21T11:05:04.637Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T11:05:04.989Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4250 status=200
+ts=2026-07-21T11:05:13.365Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4230 status=200
+ts=2026-07-21T11:05:17.638Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T11:05:28.616Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=149 trace_id=4b153c701fd13b316f9db32df44d5f85 req_id=req_bf2cf8b38d16
+ts=2026-07-21T11:05:38.636Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=72 trace_id=161dd13fbf5411e1e6299d2769c9c41f req_id=req_1e3e500d17b4
+ts=2026-07-21T11:05:43.084Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=96 trace_id=8bac1adb4b4a26606b235438c1641e60 req_id=req_731d7b27c5c5
+ts=2026-07-21T11:05:44.903Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=71 trace_id=c4f48c6eca74ea8a4eb80ea24f6aefdc req_id=req_1d3c69c34926
+ts=2026-07-21T11:05:47.938Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=155 req_id=req_51defaf3694d
+ts=2026-07-21T11:05:50.097Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=91 trace_id=10b3cdeebb6dda47a4ac27f49ceeb87f req_id=req_15f962499356
+ts=2026-07-21T11:05:57.214Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=237 trace_id=bed94b0ea5ca593fa2ae18fb8a03dd27 req_id=req_6c40708ae1ab
+ts=2026-07-21T11:05:58.635Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4330 status=200
+ts=2026-07-21T11:06:16.686Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=18 trace_id=b61a44b538a98b0e91b71b760551656a req_id=req_d396d756123a
+ts=2026-07-21T11:06:22.233Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=151 req_id=req_ff500946694c
+ts=2026-07-21T11:06:22.856Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=22 trace_id=8f95b9e558321998143732b1023c4d13 req_id=req_beb92fce2b22
+ts=2026-07-21T11:06:30.485Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=98 trace_id=bcda7e7a19a56ac9d8887f1c683999a1 req_id=req_e01b4bb40d8f
+ts=2026-07-21T11:06:31.519Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=460 status=200
+ts=2026-07-21T11:06:39.576Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5280 status=200
+ts=2026-07-21T11:06:39.806Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=165 trace_id=4b9f6b2e77355bc00c4955d01dbe6c3f req_id=req_099004b2a2ca
+ts=2026-07-21T11:06:39.811Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5290 status=200
+ts=2026-07-21T11:06:46.929Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T11:06:48.544Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=219 req_id=req_22e991af612a
+ts=2026-07-21T11:06:52.023Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5400 status=200
+ts=2026-07-21T11:06:53.287Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=136 req_id=req_5f06616e4893
+ts=2026-07-21T11:06:59.112Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=167 trace_id=325097d9e0e5614f6207e53f7f810196 req_id=req_d536b4cac967
+ts=2026-07-21T11:07:02.598Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=76 trace_id=7483933de398ec9f26b3a108143ec06d req_id=req_ca9c3c8d715f
+ts=2026-07-21T11:07:20.937Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=14 trace_id=ed9a48d0cb73c50f99f50a7cb5999201 req_id=req_6abce95a2733
+ts=2026-07-21T11:07:24.805Z level=info svc=shipping-rates-api msg="auth token validated" user_id=usr_917576 issuer=identity-service
+ts=2026-07-21T11:07:25.606Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=19 req_id=req_f2ed5ad01638
+ts=2026-07-21T11:07:28.150Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5350 status=200
+ts=2026-07-21T11:07:38.582Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T11:07:52.824Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5110 status=200
+ts=2026-07-21T11:07:59.217Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T11:08:01.505Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=73 req_id=req_4ca451d90c2b
+ts=2026-07-21T11:08:02.150Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=231 req_id=req_6419007d9d28
+ts=2026-07-21T11:08:02.958Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=8 req_id=req_d9da6aeddbda
+ts=2026-07-21T11:08:19.167Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=210 trace_id=1b223270d0ce38931c3ddb1e2572ae39 req_id=req_535c0b4a766c
+ts=2026-07-21T11:08:22.002Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=160 trace_id=1bd5960fc175599d631e759cf53f7baf req_id=req_b3c932e640fc
+ts=2026-07-21T11:08:24.862Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=97 trace_id=f23f0bf75d1056834c3a2d61bd158b6f req_id=req_9c943cf95b1b
+ts=2026-07-21T11:08:28.342Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=76 trace_id=a2b20277466e62caa7efb8b448406878 req_id=req_4993b0447cd9
+ts=2026-07-21T11:08:34.152Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=163 req_id=req_1561cda949be
+ts=2026-07-21T11:08:42.653Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=81 trace_id=a22f31034cde05ad0560d8ee61f3c657 req_id=req_334c194a1d91
+ts=2026-07-21T11:08:55.613Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=216 trace_id=30e868103e2675cb4cc54f97bca976c5 req_id=req_76492db2eebb
+ts=2026-07-21T11:08:56.040Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-24643 ttl_left_s=2250
+ts=2026-07-21T11:09:00.311Z level=info svc=shipping-rates-api msg="auth token validated" user_id=usr_251878 issuer=identity-service
+ts=2026-07-21T11:09:05.475Z level=debug svc=shipping-rates-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_406069
+ts=2026-07-21T11:09:17.518Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T11:09:22.627Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=168 trace_id=7eef6f33e58d41c6565fa3fdf402ea98 req_id=req_34a91b7b5ed0
+ts=2026-07-21T11:09:28.932Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=182 trace_id=f1533052734f5d276811e5f86e0e7679 req_id=req_8eb3e5a63322
+ts=2026-07-21T11:09:43.904Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=196 trace_id=71f02ee5746702fe6aca6ae5940f361b req_id=req_a087676e48bc
+ts=2026-07-21T11:09:55.843Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5240 status=200
+ts=2026-07-21T11:10:02.906Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-21T11:10:06.996Z level=info svc=shipping-rates-api msg="/v1/rates completed" method=GET path=/v1/rates status=200 duration_ms=16 trace_id=ba32f378eaeb8f268260ea7833cbec7d req_id=req_b6d235286e51
+ts=2026-07-21T11:10:14.152Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=55 req_id=req_981dbf8a5456
+ts=2026-07-21T11:10:16.331Z level=debug svc=shipping-rates-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_676328
+ts=2026-07-21T11:10:16.423Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=54 trace_id=395ea116b868d01e2bad81527b75c5de req_id=req_738032cda6c8
+ts=2026-07-21T11:10:32.608Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=185 trace_id=9c6c9118e7ce585d8301b196286b54f9 req_id=req_06f7858591d9
+ts=2026-07-21T11:10:38.740Z level=info svc=shipping-rates-api msg="/v1/rates/bulk completed" method=GET path=/v1/rates/bulk status=200 duration_ms=40 trace_id=1f644e81f1a7d7b6f1880e8e8acbf5b7 req_id=req_2bd3cbdb7f94
+ts=2026-07-21T11:10:45.927Z level=info svc=shipping-rates-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-21T11:10:48.178Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=92 trace_id=5fd81fb5f2052a32cec962da1e24bde4 req_id=req_1e576e635a15
+ts=2026-07-21T11:10:48.672Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=113 trace_id=7444554a4d4c3ae24f58b10842a603ef req_id=req_f44a99a1e03e
+ts=2026-07-21T11:10:57.565Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=20 trace_id=900dbb02cca240ce05faf9b48131d8bd req_id=req_d170fc2d0cef
+ts=2026-07-21T11:11:01.852Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-b duration_ms=5210 status=200
+ts=2026-07-21T11:11:12.672Z level=info svc=shipping-rates-api msg="quote returned" carriers=4 cheapest=carrier-b duration_ms=87 req_id=req_932db7de08e3
+ts=2026-07-21T11:11:18.220Z level=info svc=shipping-rates-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=224 trace_id=293b6a9bbe7c00c556beab323389e78c req_id=req_89e7d984e858
+ts=2026-07-21T11:11:24.057Z level=debug svc=shipping-rates-api msg="rate cache hit" key=rates:eu:SKU-92333 ttl_left_s=270
+ts=2026-07-21T11:11:29.744Z level=debug svc=shipping-rates-api msg="metrics scrape served" path=/metrics status=200 bytes=9214
+ts=2026-07-21T11:11:47.447Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4180 status=200
+ts=2026-07-21T11:12:00.168Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=51912 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:12:05.703Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3310 status=200
+ts=2026-07-21T11:12:14.285Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=53612 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:12:19.861Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3370 status=200
+ts=2026-07-21T11:12:21.005Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3230 status=200
+ts=2026-07-21T11:12:21.447Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4240 status=200
+ts=2026-07-21T11:12:22.673Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6130 status=200
+ts=2026-07-21T11:12:27.339Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9301 req_id=req_cde00ce529a6
+ts=2026-07-21T11:12:28.033Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=5612 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:12:42.167Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=5612 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:12:43.720Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6390 status=200
+ts=2026-07-21T11:12:50.496Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92801 req_id=req_9165cbbb07ee
+ts=2026-07-21T11:12:51.354Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3330 status=200
+ts=2026-07-21T11:12:56.306Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=51812 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:13:00.276Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_c9db96989f3a
+ts=2026-07-21T11:13:01.279Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6260 status=200
+ts=2026-07-21T11:13:10.109Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=53812 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:13:10.254Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_1cbcc27b458b
+ts=2026-07-21T11:13:24.008Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=51212 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:13:24.025Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_a6254ba2a2f8
+ts=2026-07-21T11:13:24.989Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4210 status=200
+ts=2026-07-21T11:13:25.599Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:13:25.657Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=340 status=200
+ts=2026-07-21T11:13:29.338Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4180 status=200
+ts=2026-07-21T11:13:32.824Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4370 status=200
+ts=2026-07-21T11:13:36.562Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91801 req_id=req_ad2fede1ea9a
+ts=2026-07-21T11:13:37.330Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_17ecf03ef86f
+ts=2026-07-21T11:13:38.085Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=5812 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:13:39.665Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4370 status=200
+ts=2026-07-21T11:13:41.095Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4180 status=200
+ts=2026-07-21T11:13:41.751Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:13:48.205Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_a301b9e71b48
+ts=2026-07-21T11:13:52.309Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=5612 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:13:58.697Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_9a49c790a3d0
+ts=2026-07-21T11:14:00.090Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:14:02.383Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3190 status=200
+ts=2026-07-21T11:14:04.152Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_abd7eba4138b
+ts=2026-07-21T11:14:06.349Z level=warn svc=shipping-rates-api msg="carrier call slow" carrier=carrier-b duration_ms=53512 status=200 endpoint=https://api.carrier-b.example/v3/rates
+ts=2026-07-21T11:14:07.582Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3110 status=200
+ts=2026-07-21T11:14:12.261Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_5eff7699ca0a
+ts=2026-07-21T11:14:16.155Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=650 status=200
+ts=2026-07-21T11:14:31.162Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_fcba11a86474
+ts=2026-07-21T11:14:36.173Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_56ec16db4db2
+ts=2026-07-21T11:14:40.087Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:14:43.065Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91501 req_id=req_78cc286f7484
+ts=2026-07-21T11:14:47.047Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=640 status=200
+ts=2026-07-21T11:14:49.384Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93101 req_id=req_cf1c7f76c19e
+ts=2026-07-21T11:14:49.762Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3370 status=200
+ts=2026-07-21T11:14:50.122Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91601 req_id=req_1116c548424c
+ts=2026-07-21T11:14:50.759Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=320 status=200
+ts=2026-07-21T11:14:53.829Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4230 status=200
+ts=2026-07-21T11:14:56.466Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:14:58.161Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_27fd847f4b09
+ts=2026-07-21T11:14:59.983Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9301 req_id=req_5920c8d506ea
+ts=2026-07-21T11:15:00.029Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=382 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:15:00.289Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_2c3ce9c5ab0b
+ts=2026-07-21T11:15:03.484Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_adec181daef1
+ts=2026-07-21T11:15:08.180Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=470 status=200
+ts=2026-07-21T11:15:09.690Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93501 req_id=req_31f19742ece0
+ts=2026-07-21T11:15:12.830Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91401 req_id=req_e7c855d7e6f8
+ts=2026-07-21T11:15:14.920Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93401 req_id=req_417dcddf18c5
+ts=2026-07-21T11:15:16.298Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_620f566292c2
+ts=2026-07-21T11:15:20.189Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:15:24.257Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_59391877f0ae
+ts=2026-07-21T11:15:25.276Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_377916f11733
+ts=2026-07-21T11:15:33.512Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6180 status=200
+ts=2026-07-21T11:15:33.964Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92501 req_id=req_0481635ce801
+ts=2026-07-21T11:15:36.007Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93401 req_id=req_eddef4872f9a
+ts=2026-07-21T11:15:45.280Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92601 req_id=req_8670f6cd2c03
+ts=2026-07-21T11:15:46.380Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=350 status=200
+ts=2026-07-21T11:15:48.100Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_2f195772cbd8
+ts=2026-07-21T11:15:52.208Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_22801e8cbc10
+ts=2026-07-21T11:15:56.408Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3200 status=200
+ts=2026-07-21T11:16:00.000Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:16:00.108Z level=info svc=shipping-rates-api msg="circuit breaker state" carrier-a=closed carrier-b=disabled carrier-c=closed carrier-d=closed
+ts=2026-07-21T11:16:00.241Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=302 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:16:06.341Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93401 req_id=req_5cf905a0c2cc
+ts=2026-07-21T11:16:12.224Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_a5e8e3e0fd42
+ts=2026-07-21T11:16:14.730Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3170 status=200
+ts=2026-07-21T11:16:17.568Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92001 req_id=req_671191f6ddb5
+ts=2026-07-21T11:16:19.315Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_98eb4f276b09
+ts=2026-07-21T11:16:25.373Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4180 status=200
+ts=2026-07-21T11:16:30.183Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3120 status=200
+ts=2026-07-21T11:16:30.595Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6130 status=200
+ts=2026-07-21T11:16:36.052Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_708051bcb298
+ts=2026-07-21T11:16:37.208Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91501 req_id=req_29bcba6043d8
+ts=2026-07-21T11:16:40.287Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:16:42.833Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3310 status=200
+ts=2026-07-21T11:16:43.625Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92501 req_id=req_a0949bc9b587
+ts=2026-07-21T11:16:46.001Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_73397fa417a9
+ts=2026-07-21T11:16:50.469Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_7078839b75c3
+ts=2026-07-21T11:16:57.029Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3110 status=200
+ts=2026-07-21T11:17:00.214Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_6f389c0e2536
+ts=2026-07-21T11:17:00.271Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=172 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:17:00.327Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_ec02b9af8a7e
+ts=2026-07-21T11:17:03.242Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91501 req_id=req_bcea55d2a772
+ts=2026-07-21T11:17:10.891Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_69bf9b728dbe
+ts=2026-07-21T11:17:13.276Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_4ad2d947777a
+ts=2026-07-21T11:17:20.192Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:17:22.075Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_3feb7135cf2d
+ts=2026-07-21T11:17:23.259Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6230 status=200
+ts=2026-07-21T11:17:23.496Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3150 status=200
+ts=2026-07-21T11:17:24.234Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_5355cdc4fc9f
+ts=2026-07-21T11:17:30.593Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4100 status=200
+ts=2026-07-21T11:17:33.952Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4280 status=200
+ts=2026-07-21T11:17:35.969Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=380 status=200
+ts=2026-07-21T11:17:38.505Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4180 status=200
+ts=2026-07-21T11:17:40.271Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_76da7a0605e2
+ts=2026-07-21T11:17:44.145Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_34b5b49c21d4
+ts=2026-07-21T11:17:48.191Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9101 req_id=req_c395115ba9b8
+ts=2026-07-21T11:17:48.265Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_e28932c47521
+ts=2026-07-21T11:17:48.480Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_398292e8f47c
+ts=2026-07-21T11:17:49.204Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91501 req_id=req_5ab88ccd1274
+ts=2026-07-21T11:17:49.925Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4170 status=200
+ts=2026-07-21T11:17:51.543Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91101 req_id=req_d81fcf1fa750
+ts=2026-07-21T11:17:53.324Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4390 status=200
+ts=2026-07-21T11:18:00.090Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:18:00.221Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=72 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:18:00.767Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4370 status=200
+ts=2026-07-21T11:18:06.150Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_233a720a8cc8
+ts=2026-07-21T11:18:07.072Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_75600481b673
+ts=2026-07-21T11:18:11.786Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_efc60ca9f905
+ts=2026-07-21T11:18:12.050Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_3a5727cec49f
+ts=2026-07-21T11:18:15.654Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:18:20.420Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=640 status=200
+ts=2026-07-21T11:18:20.865Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9301 req_id=req_b4b526f48e54
+ts=2026-07-21T11:18:28.182Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_aaf42ecba59d
+ts=2026-07-21T11:18:28.866Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:18:30.314Z level=info svc=shipping-rates-api msg="circuit breaker state" carrier-a=closed carrier-b=disabled carrier-c=closed carrier-d=closed
+ts=2026-07-21T11:18:31.723Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93801 req_id=req_d8bb94066140
+ts=2026-07-21T11:18:34.327Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_36f13c005fce
+ts=2026-07-21T11:18:36.334Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_d30ba16a5947
+ts=2026-07-21T11:18:40.321Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:18:42.893Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:18:50.058Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_2d3d680391a8
+ts=2026-07-21T11:18:57.309Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92601 req_id=req_1135a3848600
+ts=2026-07-21T11:18:57.790Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6100 status=200
+ts=2026-07-21T11:19:00.200Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=342 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:19:00.322Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_49231be5457d
+ts=2026-07-21T11:19:00.713Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91001 req_id=req_e6f2feac210a
+ts=2026-07-21T11:19:01.346Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_01ddff2ecdef
+ts=2026-07-21T11:19:07.991Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3360 status=200
+ts=2026-07-21T11:19:10.421Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4390 status=200
+ts=2026-07-21T11:19:12.190Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_73097acc2147
+ts=2026-07-21T11:19:20.149Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:19:20.949Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4390 status=200
+ts=2026-07-21T11:19:24.250Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_7d6fb469aaab
+ts=2026-07-21T11:19:28.175Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_cd0f01dd42a1
+ts=2026-07-21T11:19:30.715Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3310 status=200
+ts=2026-07-21T11:19:34.232Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_03ae21139d51
+ts=2026-07-21T11:19:43.649Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93101 req_id=req_d72cb7a5b779
+ts=2026-07-21T11:19:45.204Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9201 req_id=req_ecf34333800d
+ts=2026-07-21T11:19:47.310Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3280 status=200
+ts=2026-07-21T11:19:48.304Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_d88dba94b7d4
+ts=2026-07-21T11:19:48.847Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92801 req_id=req_d97093ef670b
+ts=2026-07-21T11:19:55.237Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_e5a2164185d2
+ts=2026-07-21T11:19:56.239Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_b4035aaeabbb
+ts=2026-07-21T11:19:56.586Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92401 req_id=req_d12a007b6224
+ts=2026-07-21T11:19:57.928Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9201 req_id=req_2a7c17855541
+ts=2026-07-21T11:20:00.251Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:20:00.337Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=272 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:20:01.735Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91201 req_id=req_1b879cc3cf95
+ts=2026-07-21T11:20:05.969Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:20:09.180Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:20:12.119Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_937ed4e8ced2
+ts=2026-07-21T11:20:12.388Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6240 status=200
+ts=2026-07-21T11:20:16.206Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92501 req_id=req_3ccba1c352f2
+ts=2026-07-21T11:20:17.821Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=440 status=200
+ts=2026-07-21T11:20:18.241Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_d0038be5f03d
+ts=2026-07-21T11:20:22.172Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_23e6458abbcf
+ts=2026-07-21T11:20:26.374Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_bc067920f055
+ts=2026-07-21T11:20:26.538Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4200 status=200
+ts=2026-07-21T11:20:36.104Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_d8aa3120875b
+ts=2026-07-21T11:20:37.261Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_267aa6df05e4
+ts=2026-07-21T11:20:40.134Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:20:40.279Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_633f809a9819
+ts=2026-07-21T11:20:49.166Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_067c1c3cf849
+ts=2026-07-21T11:20:55.215Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4370 status=200
+ts=2026-07-21T11:20:58.702Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92501 req_id=req_0eb8010555ce
+ts=2026-07-21T11:21:00.111Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_be2d36acf5a2
+ts=2026-07-21T11:21:00.180Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=202 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:21:00.320Z level=info svc=shipping-rates-api msg="circuit breaker state" carrier-a=closed carrier-b=disabled carrier-c=closed carrier-d=closed
+ts=2026-07-21T11:21:02.345Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_6875056f0a8d
+ts=2026-07-21T11:21:10.560Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92001 req_id=req_cf6fa02618d9
+ts=2026-07-21T11:21:11.167Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:21:16.214Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_3fd2a3686606
+ts=2026-07-21T11:21:16.680Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:21:18.236Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=94001 req_id=req_c77efaf7ed65
+ts=2026-07-21T11:21:18.675Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:21:20.046Z level=warn svc=shipping-rates-api msg="carrier returned 503" carrier=carrier-b status=503 body_snippet="upstream capacity exceeded, retry later" retry_after_s=30
+ts=2026-07-21T11:21:21.435Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91301 req_id=req_51a45cb4066f
+ts=2026-07-21T11:21:24.321Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_cd69dcd6b1c3
+ts=2026-07-21T11:21:24.325Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_7cacd9aedce8
+ts=2026-07-21T11:21:29.085Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91601 req_id=req_7b960b5edf67
+ts=2026-07-21T11:21:38.111Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4210 status=200
+ts=2026-07-21T11:21:39.617Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91901 req_id=req_74ee94dc383e
+ts=2026-07-21T11:21:41.694Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4110 status=200
+ts=2026-07-21T11:21:43.007Z level=warn svc=shipping-rates-api msg="retrying carrier call immediately (no backoff configured)" carrier=carrier-b attempt=2 max_attempts=3 req_id=req_b840786033ff
+ts=2026-07-21T11:21:44.654Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93601 req_id=req_41ecb783e903
+ts=2026-07-21T11:21:44.870Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4110 status=200
+ts=2026-07-21T11:21:46.198Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_fc377a5d9c4e
+ts=2026-07-21T11:21:48.236Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_f2ac2473bd2b
+ts=2026-07-21T11:21:55.053Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=480 status=200
+ts=2026-07-21T11:22:00.091Z level=warn svc=shipping-rates-api msg="worker pool saturated" busy=198 max=200 queue=42 dominant_stack=CarrierBClient.fetchRates
+ts=2026-07-21T11:22:08.246Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_c01be6d91d0d
+ts=2026-07-21T11:22:12.186Z level=error svc=shipping-rates-api msg="carrier call failed" carrier=carrier-b duration_ms=6001 error="read timeout after 6000ms" endpoint=https://api.carrier-b.example/v3/rates attempt=1 req_id=req_561f59682936
+ts=2026-07-21T11:22:13.683Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91301 req_id=req_b16f0bbcb35e
+ts=2026-07-21T11:22:25.142Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_df456de31d6c
+ts=2026-07-21T11:22:30.319Z level=error svc=shipping-rates-api msg="quote timed out" status=504 waiting_on=carrier-b elapsed_ms=9001 req_id=req_75e13daa153b
+ts=2026-07-21T11:22:36.162Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:22:36.800Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3170 status=200
+ts=2026-07-21T11:22:44.447Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3220 status=200
+ts=2026-07-21T11:22:45.580Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:22:51.031Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=480 status=200
+ts=2026-07-21T11:22:56.462Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_0a870f86b28f
+ts=2026-07-21T11:22:58.068Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3100 status=200
+ts=2026-07-21T11:23:01.037Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:23:14.723Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_40feef18ac50
+ts=2026-07-21T11:23:18.140Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9701 req_id=req_0f21a1e0d40f
+ts=2026-07-21T11:23:28.223Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_86b06d86ee0c
+ts=2026-07-21T11:23:32.038Z level=info svc=shipping-rates-api msg="health check ok" path=/healthz status=200
+ts=2026-07-21T11:23:41.925Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92701 req_id=req_f266d0425288
+ts=2026-07-21T11:23:43.884Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_5262112e928f
+ts=2026-07-21T11:23:46.501Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9201 req_id=req_6245ef63c1ee
+ts=2026-07-21T11:23:50.370Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=9101 req_id=req_35b9d60c7758
+ts=2026-07-21T11:23:50.439Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91501 req_id=req_9b0048cfc824
+ts=2026-07-21T11:23:54.346Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4150 status=200
+ts=2026-07-21T11:24:06.548Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3160 status=200
+ts=2026-07-21T11:24:07.082Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3150 status=200
+ts=2026-07-21T11:24:08.233Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=91101 req_id=req_f404047823b2
+ts=2026-07-21T11:24:08.940Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93701 req_id=req_caf556f369a7
+ts=2026-07-21T11:24:12.733Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=93501 req_id=req_2025d11b6698
+ts=2026-07-21T11:24:17.598Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6370 status=200
+ts=2026-07-21T11:24:30.987Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_d8442b9ba0ed
+ts=2026-07-21T11:24:31.675Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=620 status=200
+ts=2026-07-21T11:24:35.021Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=94001 req_id=req_be0f711faa55
+ts=2026-07-21T11:24:36.392Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_6f70afab5ab3
+ts=2026-07-21T11:24:44.824Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=6360 status=200
+ts=2026-07-21T11:24:52.573Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-d duration_ms=660 status=200
+ts=2026-07-21T11:25:09.872Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4110 status=200
+ts=2026-07-21T11:25:15.954Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4250 status=200
+ts=2026-07-21T11:25:17.146Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=340 status=200
+ts=2026-07-21T11:25:29.061Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3320 status=200
+ts=2026-07-21T11:25:30.942Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4210 status=200
+ts=2026-07-21T11:25:31.345Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-c duration_ms=3360 status=200
+ts=2026-07-21T11:25:34.474Z level=error svc=shipping-rates-api msg="quote timed out" status=504 duration_ms=9001 req_id=req_88980eee8fec
+ts=2026-07-21T11:25:37.980Z level=info svc=shipping-rates-api msg="carrier call ok" carrier=carrier-a duration_ms=4230 status=200
+ts=2026-07-21T11:25:53.607Z level=warn svc=shipping-rates-api msg="quote degraded" carriers_ok=3 carriers_failed=1 duration_ms=92501 req_id=req_7dfa3d0e686d

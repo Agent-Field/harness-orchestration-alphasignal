@@ -1,0 +1,87 @@
+{
+  "root": "orders-service",
+  "nodes": [
+    {
+      "id": "cart-api",
+      "kind": "service",
+      "team": "checkout",
+      "zone_spread": [
+        "us-east-1a",
+        "us-east-1b",
+        "us-east-1c"
+      ]
+    },
+    {
+      "id": "orders-service",
+      "kind": "service",
+      "team": "orders",
+      "replicas": 12,
+      "zone_spread": [
+        "us-east-1a",
+        "us-east-1b",
+        "us-east-1c"
+      ]
+    },
+    {
+      "id": "notification-worker",
+      "kind": "worker",
+      "team": "growth"
+    },
+    {
+      "id": "coredns",
+      "kind": "platform",
+      "team": "platform",
+      "replicas_desired": 2,
+      "replicas_ready": 1,
+      "node_pool": "general-1",
+      "anti_affinity": "requiredDuringScheduling (one per node)",
+      "qps_limit_per_pod": 1000
+    },
+    {
+      "id": "postgres-orders",
+      "kind": "database",
+      "team": "orders"
+    },
+    {
+      "id": "node/general-1-d",
+      "kind": "node",
+      "zone": "us-east-1a",
+      "state": "drained 03:50Z (kernel patch)"
+    },
+    {
+      "id": "node/general-1-e",
+      "kind": "node",
+      "zone": "us-east-1a",
+      "state": "Ready, cpu allocatable exhausted"
+    }
+  ],
+  "edges": [
+    {
+      "from": "cart-api",
+      "to": "orders-service",
+      "protocol": "http",
+      "resolves_via": "coredns",
+      "dns_ndots": 5,
+      "search_domains": [
+        "prod.svc.cluster.local",
+        "svc.cluster.local",
+        "cluster.local",
+        "ec2.internal"
+      ]
+    },
+    {
+      "from": "notification-worker",
+      "to": "orders-service",
+      "protocol": "http",
+      "resolves_via": "coredns"
+    },
+    {
+      "from": "orders-service",
+      "to": "postgres-orders",
+      "protocol": "jdbc",
+      "resolves_via": "coredns",
+      "note": "connection established at startup, long-lived"
+    }
+  ],
+  "notes": "coredns runs 2 replicas with required anti-affinity. Pods that already hold a connection are unaffected; new connections require a fresh lookup."
+}

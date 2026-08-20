@@ -1,0 +1,396 @@
+ts=2026-08-12T07:24:02.963Z level=info svc=feed-api msg="feed built" user_id=usr_528786 items=29 duration_ms=173 replica=feed-api-7fd2f-8e3f4
+ts=2026-08-12T07:24:10.493Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:24:12.109Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=26 trace_id=3cec38323625a54205eae6e74ddd047c req_id=req_297a745cb79a
+ts=2026-08-12T07:24:14.870Z level=info svc=feed-api msg="feed built" user_id=usr_189668 items=7 duration_ms=66 replica=feed-api-49e9e-12077
+ts=2026-08-12T07:24:31.741Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=190 trace_id=d08dbaa2131103f35785be448e0494ae req_id=req_8624b73cd194
+ts=2026-08-12T07:24:33.686Z level=info svc=feed-api msg="feed built" user_id=usr_526095 items=26 duration_ms=197 replica=feed-api-eb6e9-ad78d
+ts=2026-08-12T07:24:36.117Z level=info svc=feed-api msg="feed built" user_id=usr_691028 items=2 duration_ms=170 replica=feed-api-99b69-aef51
+ts=2026-08-12T07:25:00.079Z level=debug svc=feed-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_956771
+ts=2026-08-12T07:25:06.809Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=212 trace_id=91c66611b5fc7e6ca854ff04f07554bd req_id=req_9f4023499a5c
+ts=2026-08-12T07:25:18.025Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=55 trace_id=e26ea7374a91a78a207141dce59054ed req_id=req_b722c2cc03b5
+ts=2026-08-12T07:25:27.398Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_153241
+ts=2026-08-12T07:25:40.203Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:25:46.227Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=143 trace_id=42b62e92a708b6c9f88aa49c2176143c req_id=req_b300cca370bd
+ts=2026-08-12T07:26:00.888Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=160 trace_id=11f7b30829cb95ec287327778bd176ca req_id=req_c9a88170dec7
+ts=2026-08-12T07:26:21.772Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=95 trace_id=d1b979a6ae7e490b7e7c311f07847176 req_id=req_c66ed7915493
+ts=2026-08-12T07:26:22.922Z level=info svc=feed-api msg="feed built" user_id=usr_230316 items=22 duration_ms=167 replica=feed-api-ff0d1-a1e01
+ts=2026-08-12T07:26:23.978Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=208 trace_id=1fa873883ffa08a4b7bc72ce465c1e01 req_id=req_375c291444b7
+ts=2026-08-12T07:26:24.538Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=142 trace_id=3beb67a883307152e039f666f535ad91 req_id=req_050896639a0c
+ts=2026-08-12T07:26:24.961Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=14 trace_id=959ad93f22c25434ae798d2c532d9014 req_id=req_5d5bd6be82bd
+ts=2026-08-12T07:27:08.982Z level=info svc=feed-api msg="feed built" user_id=usr_386540 items=40 duration_ms=218 replica=feed-api-0ca49-c9283
+ts=2026-08-12T07:27:32.698Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_750556
+ts=2026-08-12T07:27:38.590Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=27 trace_id=04192ed3a5c74b11e6f2bbcd428ba207 req_id=req_9592d99c2c44
+ts=2026-08-12T07:27:40.978Z level=info svc=feed-api msg="feed built" user_id=usr_968707 items=29 duration_ms=223 replica=feed-api-3bf28-541e8
+ts=2026-08-12T07:27:44.371Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=186 trace_id=f7eeac1f88b9193f5080aa5043772d90 req_id=req_6d7835baa507
+ts=2026-08-12T07:28:04.059Z level=info svc=feed-api msg="feed built" user_id=usr_714728 items=30 duration_ms=106 replica=feed-api-d2a87-d69cd
+ts=2026-08-12T07:28:06.848Z level=info svc=feed-api msg="feed built" user_id=usr_841095 items=1 duration_ms=147 replica=feed-api-64c61-e7f80
+ts=2026-08-12T07:28:13.752Z level=info svc=feed-api msg="feed built" user_id=usr_726651 items=23 duration_ms=129 replica=feed-api-2cce8-9a242
+ts=2026-08-12T07:28:27.915Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:28:43.374Z level=info svc=feed-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-12T07:28:46.985Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:28:51.042Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=51 trace_id=1b5fd2595e3ef47ff9aedc20a8a00b49 req_id=req_92036da0b4dc
+ts=2026-08-12T07:28:52.520Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=185 trace_id=6597859276b45490208d95ae517ef6d3 req_id=req_2f5bfc053eca
+ts=2026-08-12T07:29:05.027Z level=info svc=feed-api msg="feed built" user_id=usr_536860 items=28 duration_ms=8 replica=feed-api-b3d01-d63b7
+ts=2026-08-12T07:29:09.121Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_959355
+ts=2026-08-12T07:29:12.233Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_465657
+ts=2026-08-12T07:29:20.940Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=96 trace_id=86b118cee8b4ca21e23facbf9a233d3c req_id=req_81aecadea9a2
+ts=2026-08-12T07:29:22.706Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=140 trace_id=65bd1ce8857ccaac9bd65ad5b04a9d9b req_id=req_7e65bffe4d4a
+ts=2026-08-12T07:29:26.987Z level=info svc=feed-api msg="feed built" user_id=usr_319418 items=6 duration_ms=146 replica=feed-api-96283-2d5fc
+ts=2026-08-12T07:29:42.406Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=66 trace_id=84f5ee2b46c5f928f3ac989473e96801 req_id=req_c82be64c68c1
+ts=2026-08-12T07:29:42.469Z level=info svc=feed-api msg="auth token validated" user_id=usr_322036 issuer=identity-service
+ts=2026-08-12T07:29:59.097Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=64 trace_id=e9d665526af811245873a5090d76306e req_id=req_3382b349ce2e
+ts=2026-08-12T07:30:00.048Z level=info svc=feed-api msg="postgres index build progress" index=feed_item_user_id_created_at_idx phase="building index" pct=8 blocks_done=180421
+ts=2026-08-12T07:30:15.846Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=19214
+ts=2026-08-12T07:30:16.923Z level=info svc=feed-api msg="auth token validated" user_id=usr_969703 issuer=identity-service
+ts=2026-08-12T07:30:17.442Z level=info svc=feed-api msg="auth token validated" user_id=usr_849921 issuer=identity-service
+ts=2026-08-12T07:30:27.427Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=209 trace_id=8c9b5bb477bb38baa2abc6a095bd7c56 req_id=req_4a41b601c144
+ts=2026-08-12T07:30:28.413Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=108 trace_id=55e04974766590670e1b477c9df8c72b req_id=req_5322ea5f6318
+ts=2026-08-12T07:30:32.281Z level=info svc=feed-api msg="feed built" user_id=usr_391941 items=9 duration_ms=231 replica=feed-api-ae110-d275b
+ts=2026-08-12T07:30:38.338Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=229 trace_id=9d44495e2f993dbaf72a2dcf30d7e4e0 req_id=req_1c24dd22dc96
+ts=2026-08-12T07:30:41.945Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_991765
+ts=2026-08-12T07:30:52.166Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=180 trace_id=de0b6490984cd49cbbcd5dfea1548469 req_id=req_0362efb41ae6
+ts=2026-08-12T07:30:55.414Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=33 trace_id=a4993731a1215fabc041620dc544026e req_id=req_1c13b3b7eab9
+ts=2026-08-12T07:31:35.188Z level=info svc=feed-api msg="session refreshed" user_id=usr_268620 ttl_s=1800
+ts=2026-08-12T07:31:50.470Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=136 trace_id=32d96f34a931f8927ac9f21e321d12db req_id=req_4aa2180e49ce
+ts=2026-08-12T07:32:00.853Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=12214
+ts=2026-08-12T07:32:02.551Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=23 trace_id=8c291b1ab47b4c5ac8855bd2181a18c8 req_id=req_9ad9aff9fdca
+ts=2026-08-12T07:32:08.227Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:32:16.813Z level=info svc=feed-api msg="feed built" user_id=usr_975046 items=19 duration_ms=33 replica=feed-api-f1278-4f445
+ts=2026-08-12T07:32:21.526Z level=debug svc=feed-api msg="ranking fanout complete" shards=4 duration_ms=1220
+ts=2026-08-12T07:32:27.618Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:32:39.715Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=23214
+ts=2026-08-12T07:32:57.188Z level=info svc=feed-api msg="feed built" user_id=usr_115396 items=33 duration_ms=193 replica=feed-api-f8ecb-cb52e
+ts=2026-08-12T07:33:13.259Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=88 trace_id=cb67415d3cd794189ca1717d129d5a5e req_id=req_0a71bc5c4ea3
+ts=2026-08-12T07:33:14.588Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=30 trace_id=03d851a0a63d82674ef8589b5c35651a req_id=req_3f255639ceaa
+ts=2026-08-12T07:33:16.995Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=14214
+ts=2026-08-12T07:33:20.972Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=193 trace_id=e21538b7f27a7517b83fe1fda3350713 req_id=req_39aa534bb195
+ts=2026-08-12T07:33:28.847Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_881791
+ts=2026-08-12T07:33:35.031Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_164773
+ts=2026-08-12T07:33:42.686Z level=info svc=feed-api msg="feed built" user_id=usr_319179 items=23 duration_ms=216 replica=feed-api-dc95a-e5c49
+ts=2026-08-12T07:33:45.015Z level=info svc=feed-api msg="feed built" user_id=usr_728501 items=20 duration_ms=202 replica=feed-api-9cb6e-fa1c9
+ts=2026-08-12T07:33:50.701Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=132 trace_id=065a0715c86e13a6620f3d6e0397837e req_id=req_464c462c6271
+ts=2026-08-12T07:33:57.957Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=124 trace_id=c9a09f70b9ecaa43e596a2f224d95d8e req_id=req_5ae9b9b837df
+ts=2026-08-12T07:33:59.349Z level=info svc=feed-api msg="session refreshed" user_id=usr_300260 ttl_s=1800
+ts=2026-08-12T07:34:00.339Z level=info svc=feed-api msg="postgres index build progress" index=feed_item_user_id_created_at_idx phase="building index" pct=34 blocks_done=1340421
+ts=2026-08-12T07:34:00.804Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=44 trace_id=90240b037fb68b82880cc69c8f62251a req_id=req_d24308447848
+ts=2026-08-12T07:34:09.274Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=24214
+ts=2026-08-12T07:34:16.582Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=140 trace_id=da2eaf0e20d383e2b92f4f7ad8ce5dae req_id=req_b0ed6bb246a0
+ts=2026-08-12T07:34:20.973Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=64 trace_id=923c2dd93166126287d2f310ac5d7edb req_id=req_a11cecdbe728
+ts=2026-08-12T07:34:26.075Z level=info svc=feed-api msg="feed built" user_id=usr_774191 items=37 duration_ms=57 replica=feed-api-2afb2-c6f95
+ts=2026-08-12T07:34:33.174Z level=info svc=feed-api msg="feed built" user_id=usr_444357 items=34 duration_ms=122 replica=feed-api-1536a-40a38
+ts=2026-08-12T07:34:33.694Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_896108
+ts=2026-08-12T07:34:42.815Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=41 trace_id=9cf5a2ae7228e908b2c78b2f7d6a2b9e req_id=req_4b830bc377fc
+ts=2026-08-12T07:34:44.012Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=133 trace_id=33e9f47979848671f3856a1aa3f2091b req_id=req_96fae68d0d3c
+ts=2026-08-12T07:34:49.232Z level=info svc=feed-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-12T07:34:53.502Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=58 trace_id=0dfa840825a5d75e48b0e398195322d6 req_id=req_bf595a414487
+ts=2026-08-12T07:34:54.733Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=211 trace_id=f45559b02fd3a5c7d9aaccd23e8972f7 req_id=req_dcfede95c0b3
+ts=2026-08-12T07:35:03.536Z level=info svc=feed-api msg="feed built" user_id=usr_204975 items=3 duration_ms=162 replica=feed-api-cda9a-768b3
+ts=2026-08-12T07:35:05.923Z level=info svc=feed-api msg="session refreshed" user_id=usr_555126 ttl_s=1800
+ts=2026-08-12T07:35:06.836Z level=info svc=feed-api msg="feed built" user_id=usr_461995 items=31 duration_ms=84 replica=feed-api-d9d07-abeb9
+ts=2026-08-12T07:35:12.756Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=180 trace_id=6fb81327ecd9fd33b28e530ecb3c1353 req_id=req_3f1f5db895c3
+ts=2026-08-12T07:35:18.226Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=117 trace_id=97edd33e85c0db8a3d622bd5bd110c9b req_id=req_9bcbc3212528
+ts=2026-08-12T07:35:33.599Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=167 trace_id=5c66ff19d0645cb2b429258d0d5d02a7 req_id=req_9212dc05a223
+ts=2026-08-12T07:35:44.498Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=24 trace_id=c29246670a477a719e0551430dfd106e req_id=req_b3ad799df22d
+ts=2026-08-12T07:35:48.451Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=40 trace_id=80ddccf4e68e0596a688394b624dbad9 req_id=req_ac94ab1bd3db
+Aug 12 07:36:00 control-plane-2 kube-controller-manager[7191]: INFO horizontal pod autoscaler scaled deployment deployment=feed-api from=12 to=6 metric=resource/cpu current_pct=17 target_pct=70
+ts=2026-08-12T07:36:05.566Z level=info svc=feed-api msg="feed built" user_id=usr_686408 items=29 duration_ms=72 replica=feed-api-5eb09-8d7fa
+ts=2026-08-12T07:36:11.646Z level=info svc=feed-api msg="feed built" user_id=usr_254013 items=32 duration_ms=201 replica=feed-api-287ab-72bbb
+ts=2026-08-12T07:36:12.285Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=64 trace_id=b6accefd6d44769be61bef162876cab0 req_id=req_d6cd35da2c35
+ts=2026-08-12T07:36:13.521Z level=info svc=feed-api msg="feed built" user_id=usr_654811 items=18 duration_ms=185 replica=feed-api-f1b37-0a012
+ts=2026-08-12T07:36:15.535Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=126 trace_id=6227d23e3d04e007c0d5570f3fba3fd8 req_id=req_b581c929dbc5
+ts=2026-08-12T07:36:17.859Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=93 trace_id=bbf5bb60c0b4c0ec74868767d1fe8e86 req_id=req_31496373e07a
+ts=2026-08-12T07:36:22.783Z level=info svc=feed-api msg="feed built" user_id=usr_960345 items=12 duration_ms=236 replica=feed-api-8078d-240f1
+ts=2026-08-12T07:36:41.141Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=164 trace_id=dac39a3e020cfef66423d7517c4a4cbf req_id=req_5ec9bbd5fbbf
+ts=2026-08-12T07:36:43.308Z level=info svc=feed-api msg="auth token validated" user_id=usr_267941 issuer=identity-service
+ts=2026-08-12T07:36:58.792Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=8 trace_id=faddc8a023a71a3afafcd530dd834ce3 req_id=req_3d52535870d7
+ts=2026-08-12T07:37:02.016Z level=info svc=feed-api msg="session refreshed" user_id=usr_353247 ttl_s=1800
+ts=2026-08-12T07:37:08.481Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:37:10.728Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=157 trace_id=a39a2e45041f104d55b2fb17a825004f req_id=req_f5bbd2ec033d
+ts=2026-08-12T07:37:10.957Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=233 trace_id=8c85ecbfc64cf8fbc5da002ef5d50ab7 req_id=req_8982c48739df
+ts=2026-08-12T07:37:18.237Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=186 trace_id=b289e62d5baa94aed3d0bda06e26ce55 req_id=req_6dadb581bd1d
+ts=2026-08-12T07:37:20.289Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=205 trace_id=785d5764f13a3aca099cd4f3b044a5f2 req_id=req_0436d0ca1166
+ts=2026-08-12T07:37:40.265Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=218 trace_id=5acc53869ba474e204bcf97882e12085 req_id=req_c84325448025
+ts=2026-08-12T07:37:50.793Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=164 trace_id=ac33cd7b463b8cf707c3382de810facc req_id=req_c188f39f10a9
+ts=2026-08-12T07:37:53.347Z level=info svc=feed-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-12T07:38:00.078Z level=info svc=feed-api msg="postgres index build progress" index=feed_item_user_id_created_at_idx phase="building index" pct=3 blocks_done=130421
+ts=2026-08-12T07:38:08.632Z level=info svc=feed-api msg="auth token validated" user_id=usr_238206 issuer=identity-service
+ts=2026-08-12T07:38:10.222Z level=info svc=feed-api msg="feed built" user_id=usr_694171 items=26 duration_ms=239 replica=feed-api-e61f3-553b2
+ts=2026-08-12T07:38:36.252Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=28 trace_id=d50fd50ce2d0fd1789fcd71ee3daf575 req_id=req_d974f6e4046b
+ts=2026-08-12T07:38:42.134Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=185 trace_id=8a51f2ea84b9db7f32e09eebf407b211 req_id=req_4a1eccdcb5c8
+ts=2026-08-12T07:38:57.097Z level=info svc=feed-api msg="feed built" user_id=usr_267513 items=28 duration_ms=38 replica=feed-api-75751-031b8
+ts=2026-08-12T07:39:02.608Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=197 trace_id=417e6416ed2c9d7cd381751241fb1ee2 req_id=req_2b0ea6c4194c
+ts=2026-08-12T07:39:04.125Z level=info svc=feed-api msg="feed built" user_id=usr_280143 items=15 duration_ms=120 replica=feed-api-fd0a3-983f8
+ts=2026-08-12T07:39:08.347Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=7214
+ts=2026-08-12T07:39:24.011Z level=info svc=feed-api msg="feed built" user_id=usr_308257 items=31 duration_ms=192 replica=feed-api-8e705-378c1
+ts=2026-08-12T07:39:24.886Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=58 trace_id=c58f9a1014be77b1dbb59feb93a4bb71 req_id=req_ecf73317f632
+ts=2026-08-12T07:39:31.814Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=114 trace_id=d2b88bb7a5b0b894447a6374cee742b3 req_id=req_8a3bac155059
+ts=2026-08-12T07:39:41.911Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=166 trace_id=10695ef4bde842b2da0adf7bd35d9601 req_id=req_7f708d4f558d
+ts=2026-08-12T07:39:46.643Z level=info svc=feed-api msg="feed built" user_id=usr_722852 items=2 duration_ms=193 replica=feed-api-d79dc-0bbfc
+ts=2026-08-12T07:40:13.406Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=156 trace_id=ee6a91fee42da082528d00a707650f35 req_id=req_21c56509581c
+ts=2026-08-12T07:40:14.134Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_963026
+ts=2026-08-12T07:40:16.495Z level=info svc=feed-api msg="feed built" user_id=usr_678073 items=2 duration_ms=36 replica=feed-api-43256-4c714
+ts=2026-08-12T07:40:18.240Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=80 trace_id=49d88ffd9f82b99aab52f5d813735475 req_id=req_faf9014899b1
+ts=2026-08-12T07:40:23.589Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:40:57.557Z level=info svc=feed-api msg="feed built" user_id=usr_934997 items=3 duration_ms=103 replica=feed-api-fafd1-ab389
+ts=2026-08-12T07:41:11.924Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=134 trace_id=caa3226016c14c9f23b70df1d39699b2 req_id=req_c5061ba58536
+ts=2026-08-12T07:41:15.639Z level=info svc=feed-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-12T07:41:32.530Z level=debug svc=feed-api msg="metrics scrape served" path=/metrics status=200 bytes=17214
+ts=2026-08-12T07:41:37.257Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=77 trace_id=fb0ce4124bca3613a8dde65ab9b25349 req_id=req_01f1f75fc479
+ts=2026-08-12T07:41:37.428Z level=info svc=feed-api msg="feed built" user_id=usr_567909 items=10 duration_ms=83 replica=feed-api-7524d-c6bee
+ts=2026-08-12T07:41:39.189Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=53 trace_id=5e6224f126f1c976d7ee39a2aeb06566 req_id=req_36e03a0dfc34
+ts=2026-08-12T07:41:41.685Z level=info svc=feed-api msg="feed built" user_id=usr_208454 items=17 duration_ms=25 replica=feed-api-a469c-dc08a
+ts=2026-08-12T07:41:53.921Z level=info svc=feed-api msg="/v1/feed/refresh completed" method=GET path=/v1/feed/refresh status=200 duration_ms=149 trace_id=eee25324a0a201e1b309468a64c10fbd req_id=req_22ee7f0f36db
+ts=2026-08-12T07:41:57.824Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=63 trace_id=0e414c33ff03819acbe3dbc5355c3347 req_id=req_c883f34cfeca
+ts=2026-08-12T07:42:00.127Z level=info svc=feed-api msg="postgres index build progress" index=feed_item_user_id_created_at_idx phase="building index" pct=27 blocks_done=1270421
+ts=2026-08-12T07:42:03.495Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=201 trace_id=2f9a317e9c699171a41e4659a080fb76 req_id=req_5265ba0dac0a
+ts=2026-08-12T07:42:05.172Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=176 trace_id=7b59a4a7697d0b94cb7b1e3862014dbc req_id=req_19f655068218
+ts=2026-08-12T07:42:11.865Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=104 trace_id=be88c2cad4739a17a14589b0a75bbd56 req_id=req_ca251051e9fd
+ts=2026-08-12T07:42:32.576Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=11 trace_id=7e4fcb84079405b41c3ed33d8e7c8187 req_id=req_024589752c86
+ts=2026-08-12T07:42:39.804Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=124 trace_id=1b288673261904aa6453731c58c92606 req_id=req_2b2029fc7a3c
+ts=2026-08-12T07:42:45.108Z level=debug svc=feed-api msg="feed cache hit" user_id=usr_209809
+ts=2026-08-12T07:43:02.991Z level=info svc=feed-api msg="feed built" user_id=usr_903748 items=28 duration_ms=68 replica=feed-api-9779d-3b510
+ts=2026-08-12T07:43:08.976Z level=info svc=feed-api msg="/v1/feed completed" method=GET path=/v1/feed status=200 duration_ms=200 trace_id=1c0779e40938b902e2122f40a84b8912 req_id=req_70c8a2b5458f
+ts=2026-08-12T07:43:11.107Z level=info svc=feed-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=156 trace_id=7491afb91df21f0e5dc7bec24b473758 req_id=req_591cf220f0ef
+ts=2026-08-12T07:43:21.079Z level=warn svc=feed-api msg="request queued" queue_depth=129 inflight=120 max_inflight=120
+ts=2026-08-12T07:43:27.693Z level=info svc=feed-api msg="feed built" user_id=usr_372803 items=13 duration_ms=31340 replica=feed-api-1eeda-2000e
+ts=2026-08-12T07:43:30.508Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:43:43.207Z level=warn svc=feed-api msg="request queued" queue_depth=124 inflight=120 max_inflight=120
+ts=2026-08-12T07:43:55.573Z level=info svc=feed-api msg="feed built" user_id=usr_417676 items=25 duration_ms=32540 replica=feed-api-b82f1-0ab13
+Aug 12 07:44:00 control-plane-2 kube-controller-manager[7191]: INFO horizontal pod autoscaler scaled deployment deployment=feed-api from=6 to=3 metric=resource/cpu current_pct=21 target_pct=70 note=clamped at minReplicas=3
+ts=2026-08-12T07:44:45.191Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:44:53.733Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_201232
+ts=2026-08-12T07:44:55.307Z level=info svc=feed-api msg="feed built" user_id=usr_835355 items=33 duration_ms=33340 replica=feed-api-5d41e-f5455
+ts=2026-08-12T07:45:04.764Z level=info svc=feed-api msg="feed built" user_id=usr_767598 items=1 duration_ms=3140 replica=feed-api-5fdd5-619c9
+ts=2026-08-12T07:45:08.643Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_935879
+ts=2026-08-12T07:45:22.451Z level=info svc=feed-api msg="feed built" user_id=usr_997767 items=2 duration_ms=3240 replica=feed-api-fdcb1-a3166
+ts=2026-08-12T07:45:39.929Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_294223
+ts=2026-08-12T07:45:39.946Z level=info svc=feed-api msg="feed built" user_id=usr_994409 items=6 duration_ms=3640 replica=feed-api-a1cae-8f899
+ts=2026-08-12T07:45:57.239Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:45:59.488Z level=info svc=feed-api msg="feed built" user_id=usr_482031 items=20 duration_ms=32040 replica=feed-api-ec34d-64f57
+ts=2026-08-12T07:46:00.027Z level=info svc=feed-api msg="postgres index build progress" index=feed_item_user_id_created_at_idx phase="building index" pct=1 blocks_done=110421
+ts=2026-08-12T07:46:17.533Z level=info svc=feed-api msg="feed built" user_id=usr_459570 items=16 duration_ms=31640 replica=feed-api-172c0-67dc7
+ts=2026-08-12T07:46:42.203Z level=warn svc=feed-api msg="request queued" queue_depth=14 inflight=120 max_inflight=120
+ts=2026-08-12T07:46:44.623Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_357116
+ts=2026-08-12T07:47:02.329Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_760155
+ts=2026-08-12T07:47:06.682Z level=info svc=feed-api msg="feed built" user_id=usr_944378 items=21 duration_ms=32140 replica=feed-api-cd9b9-99978
+ts=2026-08-12T07:47:12.032Z level=info svc=feed-api msg="feed built" user_id=usr_197512 items=33 duration_ms=33340 replica=feed-api-745bb-8bf03
+ts=2026-08-12T07:47:18.211Z level=warn svc=feed-api msg="request queued" queue_depth=11 inflight=120 max_inflight=120
+ts=2026-08-12T07:47:34.614Z level=warn svc=feed-api msg="request queued" queue_depth=126 inflight=120 max_inflight=120
+ts=2026-08-12T07:47:47.555Z level=info svc=feed-api msg="feed built" user_id=usr_243448 items=23 duration_ms=32340 replica=feed-api-c3699-71d69
+ts=2026-08-12T07:47:59.277Z level=warn svc=feed-api msg="request queued" queue_depth=129 inflight=120 max_inflight=120
+ts=2026-08-12T07:48:00.183Z level=warn svc=feed-api msg="request queued" queue_depth=125 inflight=120 max_inflight=120
+ts=2026-08-12T07:48:01.452Z level=warn svc=feed-api msg="request queued" queue_depth=139 inflight=120 max_inflight=120
+ts=2026-08-12T07:48:05.034Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:48:09.525Z level=warn svc=feed-api msg="request queued" queue_depth=119 inflight=120 max_inflight=120
+ts=2026-08-12T07:48:19.381Z level=info svc=feed-api msg="feed built" user_id=usr_607972 items=2 duration_ms=3240 replica=feed-api-d4241-c165e
+ts=2026-08-12T07:48:26.566Z level=info svc=feed-api msg="feed built" user_id=usr_242597 items=33 duration_ms=33340 replica=feed-api-516e6-a5ddb
+ts=2026-08-12T07:48:51.631Z level=info svc=feed-api msg="feed built" user_id=usr_929675 items=32 duration_ms=33240 replica=feed-api-d2cde-ffa0e
+ts=2026-08-12T07:48:54.619Z level=warn svc=feed-api msg="request queued" queue_depth=17 inflight=120 max_inflight=120
+ts=2026-08-12T07:49:00.158Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-6ff08-47f75 inflight=120 max_inflight=120 cpu_pct=35
+ts=2026-08-12T07:49:07.741Z level=info svc=feed-api msg="feed built" user_id=usr_623256 items=8 duration_ms=3840 replica=feed-api-0525a-6b176
+ts=2026-08-12T07:49:32.563Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_977509
+ts=2026-08-12T07:49:36.212Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_988414
+ts=2026-08-12T07:49:37.646Z level=warn svc=feed-api msg="request queued" queue_depth=114 inflight=120 max_inflight=120
+ts=2026-08-12T07:49:40.220Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-f254c-0b66d inflight=120 max_inflight=120 cpu_pct=39
+ts=2026-08-12T07:49:44.154Z level=info svc=feed-api msg="feed built" user_id=usr_715142 items=3 duration_ms=3340 replica=feed-api-908db-fa697
+ts=2026-08-12T07:50:00.279Z level=info svc=feed-api msg="postgres index build progress" index=feed_item_user_id_created_at_idx phase="building index" pct=24 blocks_done=1240421
+Aug 12 07:50:00 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=1360
+ts=2026-08-12T07:50:10.120Z level=info svc=feed-api msg="feed built" user_id=usr_420317 items=19 duration_ms=31940 replica=feed-api-262dd-fe144
+ts=2026-08-12T07:50:11.288Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_537977
+ts=2026-08-12T07:50:12.547Z level=info svc=feed-api msg="feed built" user_id=usr_724063 items=1 duration_ms=3140 replica=feed-api-98690-519f2
+ts=2026-08-12T07:50:20.070Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-f26e9-fcec8 inflight=120 max_inflight=120 cpu_pct=34
+ts=2026-08-12T07:50:21.856Z level=info svc=feed-api msg="feed built" user_id=usr_178538 items=23 duration_ms=32340 replica=feed-api-d5d26-745fa
+ts=2026-08-12T07:50:42.261Z level=info svc=feed-api msg="feed built" user_id=usr_921110 items=21 duration_ms=32140 replica=feed-api-915c3-76686
+ts=2026-08-12T07:51:00.319Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-65784-8bda7 inflight=120 max_inflight=120 cpu_pct=326
+ts=2026-08-12T07:51:01.464Z level=warn svc=feed-api msg="request queued" queue_depth=125 inflight=120 max_inflight=120
+ts=2026-08-12T07:51:03.203Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:51:15.581Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_531586
+ts=2026-08-12T07:51:16.493Z level=info svc=feed-api msg="feed built" user_id=usr_311766 items=9 duration_ms=3940 replica=feed-api-77131-1b45d
+Aug 12 07:51:30 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=1110
+ts=2026-08-12T07:51:40.221Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-717b1-97090 inflight=120 max_inflight=120 cpu_pct=332
+ts=2026-08-12T07:51:40.570Z level=info svc=feed-api msg="feed built" user_id=usr_832383 items=29 duration_ms=32940 replica=feed-api-cbaa5-63dd1
+ts=2026-08-12T07:51:41.286Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_944790
+ts=2026-08-12T07:51:46.133Z level=info svc=feed-api msg="feed built" user_id=usr_774438 items=27 duration_ms=32740 replica=feed-api-3b376-ae4a0
+ts=2026-08-12T07:51:54.974Z level=info svc=feed-api msg="feed built" user_id=usr_343006 items=17 duration_ms=31740 replica=feed-api-6716d-31a8d
+ts=2026-08-12T07:52:03.238Z level=warn svc=feed-api msg="request queued" queue_depth=13 inflight=120 max_inflight=120
+ts=2026-08-12T07:52:20.218Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-5be42-fddb2 inflight=120 max_inflight=120 cpu_pct=318
+ts=2026-08-12T07:52:24.152Z level=info svc=feed-api msg="feed built" user_id=usr_444981 items=9 duration_ms=3940 replica=feed-api-6cedf-4984d
+ts=2026-08-12T07:52:29.245Z level=info svc=feed-api msg="feed built" user_id=usr_192571 items=40 duration_ms=34040 replica=feed-api-23d7d-5d918
+ts=2026-08-12T07:52:35.077Z level=warn svc=feed-api msg="request queued" queue_depth=138 inflight=120 max_inflight=120
+ts=2026-08-12T07:52:35.873Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_309760
+ts=2026-08-12T07:52:43.815Z level=warn svc=feed-api msg="request queued" queue_depth=11 inflight=120 max_inflight=120
+ts=2026-08-12T07:52:45.696Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_633942
+ts=2026-08-12T07:52:53.839Z level=info svc=feed-api msg="feed built" user_id=usr_534214 items=17 duration_ms=31740 replica=feed-api-56dd4-2bd66
+ts=2026-08-12T07:52:57.273Z level=warn svc=feed-api msg="request queued" queue_depth=11 inflight=120 max_inflight=120
+Aug 12 07:53:00 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=1310
+ts=2026-08-12T07:53:00.009Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-d19ef-8738d inflight=120 max_inflight=120 cpu_pct=335
+ts=2026-08-12T07:53:06.080Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_407881
+ts=2026-08-12T07:53:07.878Z level=warn svc=feed-api msg="request queued" queue_depth=134 inflight=120 max_inflight=120
+ts=2026-08-12T07:53:19.289Z level=warn svc=feed-api msg="request queued" queue_depth=14 inflight=120 max_inflight=120
+ts=2026-08-12T07:53:23.625Z level=info svc=feed-api msg="feed built" user_id=usr_966871 items=27 duration_ms=32740 replica=feed-api-c8c21-f0c47
+ts=2026-08-12T07:53:28.545Z level=info svc=feed-api msg="feed built" user_id=usr_998416 items=10 duration_ms=31040 replica=feed-api-1ed47-23e6a
+ts=2026-08-12T07:53:30.598Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_782730
+ts=2026-08-12T07:53:40.103Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-946e9-86935 inflight=120 max_inflight=120 cpu_pct=35
+ts=2026-08-12T07:53:48.194Z level=warn svc=feed-api msg="request queued" queue_depth=124 inflight=120 max_inflight=120
+ts=2026-08-12T07:53:48.700Z level=info svc=feed-api msg="feed built" user_id=usr_223392 items=13 duration_ms=31340 replica=feed-api-44cca-13c7c
+ts=2026-08-12T07:54:00.147Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=416 replica=feed-api-6b9-4fdc0-ec383
+ts=2026-08-12T07:54:20.141Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-61209-0c43e inflight=120 max_inflight=120 cpu_pct=325
+ts=2026-08-12T07:54:30.111Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=411 replica=feed-api-6b9-2c618-1b165
+Aug 12 07:54:30 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=140
+ts=2026-08-12T07:54:34.133Z level=warn svc=feed-api msg="request queued" queue_depth=123 inflight=120 max_inflight=120
+ts=2026-08-12T07:54:57.355Z level=info svc=feed-api msg="feed built" user_id=usr_491325 items=28 duration_ms=32840 replica=feed-api-8ab77-f828b
+ts=2026-08-12T07:55:00.065Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-262e8-2b773 inflight=120 max_inflight=120 cpu_pct=33
+ts=2026-08-12T07:55:00.082Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=46 replica=feed-api-6b9-d8fae-fe5bc
+ts=2026-08-12T07:55:09.132Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_788204
+ts=2026-08-12T07:55:22.934Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_542017
+ts=2026-08-12T07:55:30.218Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=419 replica=feed-api-6b9-60191-7a6df
+ts=2026-08-12T07:55:36.174Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_469589
+ts=2026-08-12T07:55:39.427Z level=warn svc=feed-api msg="request queued" queue_depth=16 inflight=120 max_inflight=120
+ts=2026-08-12T07:55:40.003Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-1cdd8-fbc4a inflight=120 max_inflight=120 cpu_pct=331
+ts=2026-08-12T07:55:42.817Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_731477
+ts=2026-08-12T07:55:47.701Z level=info svc=feed-api msg="feed built" user_id=usr_532147 items=11 duration_ms=31140 replica=feed-api-741e4-487a7
+Aug 12 07:56:00 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=1400
+ts=2026-08-12T07:56:00.294Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=47 replica=feed-api-6b9-a0ea8-61f71
+ts=2026-08-12T07:56:03.690Z level=info svc=feed-api msg="feed built" user_id=usr_148407 items=22 duration_ms=32240 replica=feed-api-b3e6d-a66c0
+ts=2026-08-12T07:56:07.853Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_920824
+ts=2026-08-12T07:56:20.155Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-f9536-2c798 inflight=120 max_inflight=120 cpu_pct=339
+ts=2026-08-12T07:56:21.887Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:56:30.025Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=438 replica=feed-api-6b9-be051-65100
+ts=2026-08-12T07:56:47.795Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_424803
+ts=2026-08-12T07:56:51.944Z level=warn svc=feed-api msg="request queued" queue_depth=134 inflight=120 max_inflight=120
+ts=2026-08-12T07:56:52.308Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:56:54.544Z level=warn svc=feed-api msg="request queued" queue_depth=134 inflight=120 max_inflight=120
+ts=2026-08-12T07:56:55.101Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:57:00.135Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-8150f-d56b6 inflight=120 max_inflight=120 cpu_pct=330
+ts=2026-08-12T07:57:00.256Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=426 replica=feed-api-6b9-18ef5-8b825
+ts=2026-08-12T07:57:11.017Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+Aug 12 07:57:30 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=1180
+ts=2026-08-12T07:57:30.155Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=413 replica=feed-api-6b9-cbb4f-9674e
+ts=2026-08-12T07:57:32.652Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_763967
+ts=2026-08-12T07:57:33.520Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_837089
+ts=2026-08-12T07:57:40.239Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-f1161-0203c inflight=120 max_inflight=120 cpu_pct=31
+ts=2026-08-12T07:57:42.696Z level=warn svc=feed-api msg="request queued" queue_depth=140 inflight=120 max_inflight=120
+ts=2026-08-12T07:58:00.120Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=429 replica=feed-api-6b9-27e78-12ad8
+ts=2026-08-12T07:58:01.675Z level=info svc=feed-api msg="feed built" user_id=usr_727064 items=14 duration_ms=31440 replica=feed-api-dc3f6-a0090
+ts=2026-08-12T07:58:02.263Z level=info svc=feed-api msg="feed built" user_id=usr_622039 items=22 duration_ms=32240 replica=feed-api-3433e-b41c3
+ts=2026-08-12T07:58:05.023Z level=warn svc=feed-api msg="request queued" queue_depth=19 inflight=120 max_inflight=120
+ts=2026-08-12T07:58:12.823Z level=info svc=feed-api msg="feed built" user_id=usr_972303 items=16 duration_ms=31640 replica=feed-api-31861-e1c12
+ts=2026-08-12T07:58:13.779Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_885428
+ts=2026-08-12T07:58:15.473Z level=warn svc=feed-api msg="request queued" queue_depth=117 inflight=120 max_inflight=120
+ts=2026-08-12T07:58:17.693Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_622560
+ts=2026-08-12T07:58:20.314Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-57cba-6c0b3 inflight=120 max_inflight=120 cpu_pct=330
+ts=2026-08-12T07:58:30.092Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=431 replica=feed-api-6b9-17c62-c23db
+ts=2026-08-12T07:58:40.503Z level=info svc=feed-api msg="feed built" user_id=usr_494211 items=6 duration_ms=3640 replica=feed-api-1d00c-b8730
+ts=2026-08-12T07:58:45.859Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:58:47.459Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:58:53.607Z level=info svc=feed-api msg="feed built" user_id=usr_163717 items=29 duration_ms=32940 replica=feed-api-06679-1259b
+ts=2026-08-12T07:58:55.896Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:59:00.008Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-94aa8-62225 inflight=120 max_inflight=120 cpu_pct=336
+ts=2026-08-12T07:59:00.073Z level=info svc=feed-api msg="capacity summary" replicas=3 rps=44000 rps_per_replica=15400 cpu_pct=68 designed_rps_per_replica=400
+ts=2026-08-12T07:59:00.079Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=416 replica=feed-api-6b9-15bc1-28be9
+Aug 12 07:59:00 control-plane-2 kube-controller-manager[7191]: WARN hpa scale-up suppressed by stabilization window deployment=feed-api desired=8 current=3 stabilization_window_s=180 seconds_remaining=1230
+ts=2026-08-12T07:59:10.457Z level=info svc=feed-api msg="feed built" user_id=usr_611138 items=35 duration_ms=33540 replica=feed-api-7ffe7-239ac
+ts=2026-08-12T07:59:30.035Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=440 replica=feed-api-6b9-92add-4e8f1
+ts=2026-08-12T07:59:40.265Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-e944b-0436e inflight=120 max_inflight=120 cpu_pct=36
+ts=2026-08-12T07:59:48.836Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_688876
+ts=2026-08-12T07:59:49.447Z level=warn svc=feed-api msg="request queued" queue_depth=12 inflight=120 max_inflight=120
+ts=2026-08-12T07:59:52.930Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T07:59:55.269Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:00:00.086Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=417 replica=feed-api-6b9-159c8-9ec1f
+ts=2026-08-12T08:00:08.025Z level=info svc=feed-api msg="feed built" user_id=usr_376371 items=40 duration_ms=34040 replica=feed-api-4b704-de269
+ts=2026-08-12T08:00:11.466Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:00:14.789Z level=warn svc=feed-api msg="request queued" queue_depth=117 inflight=120 max_inflight=120
+ts=2026-08-12T08:00:15.282Z level=info svc=feed-api msg="feed built" user_id=usr_899189 items=33 duration_ms=33340 replica=feed-api-376d8-a123a
+ts=2026-08-12T08:00:20.049Z level=warn svc=feed-api msg="inflight limit reached, shedding" replica=feed-api-6b9-234a4-1366f inflight=120 max_inflight=120 cpu_pct=317
+ts=2026-08-12T08:00:24.843Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_101447
+ts=2026-08-12T08:00:26.009Z level=warn svc=feed-api msg="request queued" queue_depth=123 inflight=120 max_inflight=120
+ts=2026-08-12T08:00:29.286Z level=info svc=feed-api msg="feed built" user_id=usr_863903 items=12 duration_ms=31240 replica=feed-api-65a81-a32c8
+ts=2026-08-12T08:00:30.240Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=422 replica=feed-api-6b9-a1262-89ac0
+ts=2026-08-12T08:00:43.041Z level=info svc=feed-api msg="feed built" user_id=usr_221388 items=32 duration_ms=33240 replica=feed-api-11ba8-a2343
+ts=2026-08-12T08:00:44.235Z level=info svc=feed-api msg="feed built" user_id=usr_860327 items=14 duration_ms=31440 replica=feed-api-3c484-15eea
+ts=2026-08-12T08:00:52.979Z level=warn svc=feed-api msg="request queued" queue_depth=12 inflight=120 max_inflight=120
+ts=2026-08-12T08:01:00.099Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=434 replica=feed-api-6b9-44e46-1b1ce
+ts=2026-08-12T08:01:04.725Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_620197
+ts=2026-08-12T08:01:05.711Z level=info svc=feed-api msg="feed built" user_id=usr_379408 items=7 duration_ms=3740 replica=feed-api-6497b-11d44
+ts=2026-08-12T08:01:06.998Z level=info svc=feed-api msg="feed built" user_id=usr_362387 items=6 duration_ms=3640 replica=feed-api-b68c8-43add
+ts=2026-08-12T08:01:10.689Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_855809
+ts=2026-08-12T08:01:14.021Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_647282
+ts=2026-08-12T08:01:17.176Z level=info svc=feed-api msg="feed built" user_id=usr_790047 items=15 duration_ms=31540 replica=feed-api-7e76d-c78cb
+ts=2026-08-12T08:01:24.734Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_264536
+ts=2026-08-12T08:01:30.317Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=421 replica=feed-api-6b9-de3fa-29b7e
+ts=2026-08-12T08:01:41.846Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_515673
+ts=2026-08-12T08:01:58.376Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_571700
+ts=2026-08-12T08:02:00.295Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=49 replica=feed-api-6b9-2b8ad-45753
+ts=2026-08-12T08:02:20.019Z level=info svc=feed-api msg="capacity summary" replicas=3 rps=41700 rps_per_replica=15170 cpu_pct=68 designed_rps_per_replica=400
+ts=2026-08-12T08:02:30.337Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=437 replica=feed-api-6b9-74dc2-51a83
+ts=2026-08-12T08:02:33.238Z level=info svc=feed-api msg="feed built" user_id=usr_206679 items=4 duration_ms=3440 replica=feed-api-8a88c-278b0
+ts=2026-08-12T08:02:49.514Z level=warn svc=feed-api msg="request queued" queue_depth=132 inflight=120 max_inflight=120
+ts=2026-08-12T08:03:00.185Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=43 replica=feed-api-6b9-3bde2-fc706
+ts=2026-08-12T08:03:10.049Z level=info svc=feed-api msg="feed built" user_id=usr_404984 items=8 duration_ms=3840 replica=feed-api-6e8cc-96991
+ts=2026-08-12T08:03:11.825Z level=info svc=feed-api msg="feed built" user_id=usr_846571 items=26 duration_ms=32640 replica=feed-api-43a9f-e81b0
+ts=2026-08-12T08:03:22.655Z level=warn svc=feed-api msg="request queued" queue_depth=130 inflight=120 max_inflight=120
+ts=2026-08-12T08:03:30.211Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded cpu_pct=41 replica=feed-api-6b9-9c924-a0c9b
+ts=2026-08-12T08:03:39.308Z level=info svc=feed-api msg="feed built" user_id=usr_937187 items=39 duration_ms=33940 replica=feed-api-b957f-1399d
+ts=2026-08-12T08:03:57.240Z level=info svc=feed-api msg="feed built" user_id=usr_768320 items=37 duration_ms=33740 replica=feed-api-9a1c9-ab75c
+ts=2026-08-12T08:03:59.426Z level=info svc=feed-api msg="feed built" user_id=usr_258984 items=23 duration_ms=32340 replica=feed-api-83b19-6dfff
+ts=2026-08-12T08:04:04.061Z level=warn svc=feed-api msg="request queued" queue_depth=117 inflight=120 max_inflight=120
+ts=2026-08-12T08:04:09.056Z level=warn svc=feed-api msg="request queued" queue_depth=124 inflight=120 max_inflight=120
+ts=2026-08-12T08:04:09.126Z level=info svc=feed-api msg="feed built" user_id=usr_676095 items=32 duration_ms=33240 replica=feed-api-1b3e3-49e03
+ts=2026-08-12T08:04:17.111Z level=info svc=feed-api msg="feed built" user_id=usr_467429 items=2 duration_ms=3240 replica=feed-api-4391a-07d16
+ts=2026-08-12T08:04:26.727Z level=info svc=feed-api msg="feed built" user_id=usr_233435 items=15 duration_ms=31540 replica=feed-api-22a3d-f19b9
+ts=2026-08-12T08:04:28.469Z level=info svc=feed-api msg="feed built" user_id=usr_929386 items=8 duration_ms=3840 replica=feed-api-92e1d-2e1ef
+ts=2026-08-12T08:04:32.069Z level=info svc=feed-api msg="feed built" user_id=usr_393265 items=15 duration_ms=31540 replica=feed-api-0de8f-bf144
+ts=2026-08-12T08:04:34.051Z level=info svc=feed-api msg="feed built" user_id=usr_698142 items=22 duration_ms=32240 replica=feed-api-bc1ed-d3a1c
+ts=2026-08-12T08:04:34.377Z level=warn svc=feed-api msg="request queued" queue_depth=130 inflight=120 max_inflight=120
+ts=2026-08-12T08:04:43.879Z level=info svc=feed-api msg="feed built" user_id=usr_771636 items=8 duration_ms=3840 replica=feed-api-fe621-c8907
+ts=2026-08-12T08:05:06.083Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:05:14.410Z level=info svc=feed-api msg="feed built" user_id=usr_505152 items=12 duration_ms=31240 replica=feed-api-c26c2-761b2
+ts=2026-08-12T08:05:17.683Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:05:24.943Z level=warn svc=feed-api msg="request queued" queue_depth=136 inflight=120 max_inflight=120
+ts=2026-08-12T08:05:26.603Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_582569
+ts=2026-08-12T08:05:33.462Z level=warn svc=feed-api msg="request queued" queue_depth=122 inflight=120 max_inflight=120
+ts=2026-08-12T08:05:40.120Z level=info svc=feed-api msg="capacity summary" replicas=3 rps=43800 rps_per_replica=15380 cpu_pct=68 designed_rps_per_replica=400
+ts=2026-08-12T08:05:48.324Z level=info svc=feed-api msg="feed built" user_id=usr_639809 items=22 duration_ms=32240 replica=feed-api-502f7-cb213
+ts=2026-08-12T08:05:57.249Z level=warn svc=feed-api msg="request queued" queue_depth=125 inflight=120 max_inflight=120
+ts=2026-08-12T08:05:59.648Z level=warn svc=feed-api msg="request queued" queue_depth=112 inflight=120 max_inflight=120
+ts=2026-08-12T08:06:07.215Z level=info svc=feed-api msg="feed built" user_id=usr_383140 items=23 duration_ms=32340 replica=feed-api-2be7b-44f8c
+ts=2026-08-12T08:06:41.383Z level=warn svc=feed-api msg="request queued" queue_depth=130 inflight=120 max_inflight=120
+ts=2026-08-12T08:06:47.621Z level=warn svc=feed-api msg="request queued" queue_depth=17 inflight=120 max_inflight=120
+ts=2026-08-12T08:06:52.554Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_203427
+ts=2026-08-12T08:07:09.036Z level=info svc=feed-api msg="feed built" user_id=usr_428354 items=17 duration_ms=31740 replica=feed-api-22300-2cac2
+ts=2026-08-12T08:07:12.218Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_567488
+ts=2026-08-12T08:07:17.300Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_565943
+ts=2026-08-12T08:07:20.934Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_901334
+ts=2026-08-12T08:07:25.308Z level=info svc=feed-api msg="feed built" user_id=usr_148264 items=18 duration_ms=31840 replica=feed-api-9562d-695ec
+ts=2026-08-12T08:07:28.520Z level=info svc=feed-api msg="feed built" user_id=usr_289729 items=7 duration_ms=3740 replica=feed-api-965c2-5ef74
+ts=2026-08-12T08:07:29.728Z level=info svc=feed-api msg="feed built" user_id=usr_771492 items=21 duration_ms=32140 replica=feed-api-9857a-0ef65
+ts=2026-08-12T08:07:31.745Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_363236
+ts=2026-08-12T08:07:40.379Z level=info svc=feed-api msg="feed built" user_id=usr_808863 items=23 duration_ms=32340 replica=feed-api-9c15b-3e38e
+ts=2026-08-12T08:07:42.003Z level=warn svc=feed-api msg="request queued" queue_depth=19 inflight=120 max_inflight=120
+ts=2026-08-12T08:07:50.527Z level=info svc=feed-api msg="feed built" user_id=usr_125226 items=28 duration_ms=32840 replica=feed-api-adb01-40e48
+ts=2026-08-12T08:07:52.593Z level=info svc=feed-api msg="feed built" user_id=usr_138551 items=25 duration_ms=32540 replica=feed-api-95513-6530e
+ts=2026-08-12T08:08:03.247Z level=info svc=feed-api msg="feed built" user_id=usr_409590 items=13 duration_ms=31340 replica=feed-api-3b77a-edcc0
+ts=2026-08-12T08:08:20.788Z level=info svc=feed-api msg="feed built" user_id=usr_666747 items=20 duration_ms=32040 replica=feed-api-f4e09-c5e07
+ts=2026-08-12T08:08:24.952Z level=info svc=feed-api msg="feed built" user_id=usr_276256 items=25 duration_ms=32540 replica=feed-api-24931-54f14
+ts=2026-08-12T08:08:29.734Z level=info svc=feed-api msg="feed built" user_id=usr_237559 items=32 duration_ms=33240 replica=feed-api-852d0-6be3d
+ts=2026-08-12T08:08:35.904Z level=info svc=feed-api msg="feed built" user_id=usr_524483 items=7 duration_ms=3740 replica=feed-api-76016-23b6d
+ts=2026-08-12T08:08:38.147Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:08:42.402Z level=info svc=feed-api msg="feed built" user_id=usr_209820 items=7 duration_ms=3740 replica=feed-api-7f614-b042a
+ts=2026-08-12T08:08:53.088Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_803326
+ts=2026-08-12T08:08:59.542Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_775420
+ts=2026-08-12T08:09:02.279Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_110553
+ts=2026-08-12T08:09:32.255Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:09:35.358Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_832071
+ts=2026-08-12T08:09:40.349Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_357065
+ts=2026-08-12T08:09:51.558Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:10:05.505Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:10:19.385Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_797509
+ts=2026-08-12T08:10:30.286Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:10:45.874Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:10:48.068Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_320276
+ts=2026-08-12T08:10:53.656Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_457550
+ts=2026-08-12T08:11:18.003Z level=info svc=feed-api msg="feed built" user_id=usr_763051 items=18 duration_ms=31840 replica=feed-api-70c21-965c3
+ts=2026-08-12T08:11:32.208Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_545749
+ts=2026-08-12T08:11:33.541Z level=info svc=feed-api msg="health check ok" path=/healthz status=200
+ts=2026-08-12T08:11:33.922Z level=error svc=feed-api msg="request rejected" status=503 reason=max_inflight_exceeded user_id=usr_594776
+ts=2026-08-12T08:11:40.100Z level=warn svc=feed-api msg="request queued" queue_depth=133 inflight=120 max_inflight=120

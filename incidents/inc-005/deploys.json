@@ -1,0 +1,32 @@
+{
+  "lookback_hours": 24,
+  "events": [
+    {
+      "id": "dep-5510",
+      "at": "2026-07-21T08:55:00Z",
+      "kind": "deploy",
+      "service": "shipping-rates-api",
+      "version": "3.3.1",
+      "actor": "lmoreau",
+      "change": "raise rate-cache TTL 60s -> 300s to cut carrier spend",
+      "diff_summary": "RateCache.kt +9/-3; application.yml: cache.ttl 60 -> 300"
+    },
+    {
+      "id": "dep-5514",
+      "at": "2026-07-21T10:40:00Z",
+      "kind": "deploy",
+      "service": "web-frontend",
+      "version": "2026.7.21-1",
+      "actor": "jtan",
+      "change": "shipping selector UI"
+    },
+    {
+      "id": "vendor-note-88",
+      "at": "2026-07-21T11:14:00Z",
+      "kind": "vendor_status",
+      "service": "carrier-b-api",
+      "actor": "statuspage-webhook",
+      "change": "carrier-b status page: 'Investigating elevated API latency in EU region' (investigating)"
+    }
+  ]
+}

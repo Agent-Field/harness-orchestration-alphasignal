@@ -1,0 +1,44 @@
+{
+  "lookback_hours": 24,
+  "events": [
+    {
+      "id": "dep-4463",
+      "at": "2026-08-13T18:04:00Z",
+      "kind": "deploy",
+      "service": "inventory-service",
+      "version": "1.22.4",
+      "actor": "hkim",
+      "change": "bump grpc-go, no behaviour change",
+      "rollback_of": null
+    },
+    {
+      "id": "dep-4468",
+      "at": "2026-08-13T23:52:00Z",
+      "kind": "deploy",
+      "service": "checkout-api",
+      "version": "3.8.2",
+      "actor": "mrivera",
+      "change": "add POST /v2/checkout/quote (tax preview before order create)",
+      "diff_summary": "OrderQuoteService.java +214/-6; QuoteController.java +88/-0; application.yml +2/-0"
+    },
+    {
+      "id": "dep-4470",
+      "at": "2026-08-14T01:52:00Z",
+      "kind": "config",
+      "service": "checkout-api",
+      "actor": "ci-bot",
+      "change": "feature flag checkout_v2_quote rollout 5% -> 100%",
+      "diff_summary": "flags/checkout.yaml: checkout_v2_quote.rollout 5 -> 100"
+    },
+    {
+      "id": "dep-4471",
+      "at": "2026-08-14T02:32:00Z",
+      "kind": "deploy",
+      "service": "web-frontend",
+      "version": "2026.8.13-4",
+      "actor": "jtan",
+      "change": "checkout page CSS + copy tweaks, no API changes",
+      "diff_summary": "checkout.module.css +40/-31; en-US.json +6/-6"
+    }
+  ]
+}

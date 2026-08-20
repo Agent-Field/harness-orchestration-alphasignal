@@ -1,0 +1,441 @@
+{"ts":"2026-06-18T04:00:03.017Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"221","trace_id":"695d74cbcbeb03a17fc2e4911eee0856","req_id":"req_a639f2d5a62b"}
+{"ts":"2026-06-18T04:00:03.769Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"38","trace_id":"585506d4af284812d409a188fe86a4f8","req_id":"req_ca5672cc7c4e"}
+{"ts":"2026-06-18T04:00:13.282Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"52","trace_id":"156381eed9d1f46cf847ec3841e878a0","req_id":"req_adf443af9c3a"}
+{"ts":"2026-06-18T04:00:16.970Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-56337","source":"cache","duration_ms":"37","trace_id":"0d1917cbf37c4dae95f8f858ea1f347c"}
+{"ts":"2026-06-18T04:00:18.425Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"56","trace_id":"0a48978091448abf2dca5e50fc7e5261","req_id":"req_3227c923900d"}
+{"ts":"2026-06-18T04:00:19.203Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"172","trace_id":"03dddeae4a06daa4ed3ba5327bf3ad6e","req_id":"req_033eb7a26448"}
+{"ts":"2026-06-18T04:00:23.638Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"184","trace_id":"969263b44b9583c2b192810a5aa0b0ec","req_id":"req_d9ae5ca7f049"}
+{"ts":"2026-06-18T04:00:27.348Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"36","trace_id":"5d40c94eba55911f66dfe8bebab7526c","req_id":"req_01cdcbc775a1"}
+{"ts":"2026-06-18T04:00:29.041Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-23917","source":"cache","duration_ms":"40","trace_id":"3595095ab60ee2b3f4f82c3dd0a82de4"}
+{"ts":"2026-06-18T04:00:33.138Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-58791 completed","method":"GET","path":"/v1/products/SKU-58791","status":200,"duration_ms":"205","trace_id":"3c53c4f5217165e19196ad8ad14ec2e6","req_id":"req_0a9f541176b0"}
+{"ts":"2026-06-18T04:00:34.003Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"115","trace_id":"56556059f780eeadec4071715d704dd1","req_id":"req_159aae29a935"}
+{"ts":"2026-06-18T04:00:36.308Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"9","trace_id":"fd0661d417f84f93b8cfb392cfb80b6d","req_id":"req_5bec94ae190b"}
+{"ts":"2026-06-18T04:00:47.744Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-60915 completed","method":"GET","path":"/v1/products/SKU-60915","status":200,"duration_ms":"192","trace_id":"dd2874d990dcf930db2752a2e250a081","req_id":"req_27ca79adfc7b"}
+{"ts":"2026-06-18T04:00:50.850Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-91991 completed","method":"GET","path":"/v1/products/SKU-91991","status":200,"duration_ms":"122","trace_id":"b602f35e13ee41b6e68af365317618f9","req_id":"req_67b9e8ea8a33"}
+{"ts":"2026-06-18T04:00:52.909Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:01:01.235Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"22","trace_id":"a4a47cc115d25131b0b939e414a8f93f","req_id":"req_7c4b0fe41659"}
+{"ts":"2026-06-18T04:01:05.082Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":200}
+{"ts":"2026-06-18T04:01:06.263Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:01:10.797Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-61784","source":"cache","duration_ms":"16","trace_id":"a97bb2e2dc2e8cb6ae8d417a3d9947ad"}
+{"ts":"2026-06-18T04:01:12.880Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"233","trace_id":"6e98d7cc0c0b76546a7151fa59f1dfd2","req_id":"req_d47b08eb1a57"}
+{"ts":"2026-06-18T04:01:19.236Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:01:21.246Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-89077","source":"cache","duration_ms":"2","trace_id":"7f9bc1ecc844119cd9f281af96fb7128"}
+{"ts":"2026-06-18T04:01:21.862Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"220","trace_id":"36ab3fdee36acc43cce8ea6db45bad10","req_id":"req_44b4cec6d3d0"}
+{"ts":"2026-06-18T04:01:33.921Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"66","trace_id":"614903e9d6d690ca358cba48d7068ae0","req_id":"req_fa260c30082f"}
+{"ts":"2026-06-18T04:01:34.327Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-61843 completed","method":"GET","path":"/v1/products/SKU-61843","status":200,"duration_ms":"33","trace_id":"abbfea53cf845caef5bc3f27ed5cd92e","req_id":"req_4748fb02da56"}
+{"ts":"2026-06-18T04:01:36.763Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-42395 completed","method":"GET","path":"/v1/products/SKU-42395","status":200,"duration_ms":"229","trace_id":"12587c93a90d609be1ecb1f7860ec820","req_id":"req_c7c94afdbb65"}
+{"ts":"2026-06-18T04:01:38.494Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-85225 completed","method":"GET","path":"/v1/products/SKU-85225","status":200,"duration_ms":"82","trace_id":"118c586bef1ecb8768a2dbdef213df69","req_id":"req_841f42257819"}
+{"ts":"2026-06-18T04:01:45.179Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-75816","source":"cache","duration_ms":"3","trace_id":"15035de2d2e650726f916c97abaa4e58"}
+{"ts":"2026-06-18T04:01:51.723Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-33933","source":"cache","duration_ms":"7","trace_id":"7ae4014427376fe391d0175a9156668a"}
+{"ts":"2026-06-18T04:02:06.647Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"22","trace_id":"d4a4d3b19b7cbddcad1e4b71288c9cd7","req_id":"req_d704abec0d39"}
+{"ts":"2026-06-18T04:02:19.588Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:02:26.834Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"163","trace_id":"68ea8dffb0f9713441263996f9e724b4","req_id":"req_b107dfd08c36"}
+{"ts":"2026-06-18T04:02:45.935Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:02:46.999Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"114","trace_id":"9994ea1a26f839ee5a1199e0eeff8156","req_id":"req_2b45fb125266"}
+{"ts":"2026-06-18T04:02:51.445Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:02:51.540Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:02:54.564Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:02:56.681Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v7:sku:SKU-29749","hit":"true"}
+{"ts":"2026-06-18T04:03:07.494Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-35306 completed","method":"GET","path":"/v1/products/SKU-35306","status":200,"duration_ms":"172","trace_id":"eb5aa2bb6200ac2dccfdf2d8ba2a31c5","req_id":"req_dd10865f068c"}
+{"ts":"2026-06-18T04:03:09.837Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-84361","source":"cache","duration_ms":"23","trace_id":"855c40b9f360c6f9ea056b37deb0750d"}
+{"ts":"2026-06-18T04:03:15.893Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"8","trace_id":"c3704658aaeb0acb68587c3b6b2091c4","req_id":"req_1466b3a04bc7"}
+{"ts":"2026-06-18T04:03:19.170Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"187","trace_id":"788eee9523992d4ba2c9b109523448f6","req_id":"req_7ce9d7a1479c"}
+{"ts":"2026-06-18T04:03:20.869Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-49043","source":"cache","duration_ms":"23","trace_id":"23073d6d6aea236e8e01244c5022ae01"}
+{"ts":"2026-06-18T04:03:27.688Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"35","trace_id":"2ebd9478edc265e36ffbe8cb16f2d32f","req_id":"req_c4791101f6ac"}
+{"ts":"2026-06-18T04:03:30.116Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"202","trace_id":"85cd1d7f6b9ca0a93ab07c8d57c18ed5","req_id":"req_d4bf536ef1e1"}
+{"ts":"2026-06-18T04:03:33.451Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"50","trace_id":"f4b490399b8e5921f14596177e39b966","req_id":"req_8ae4f56a656f"}
+{"ts":"2026-06-18T04:03:33.828Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"99","trace_id":"6565df74e7b43cb257659ec1cabf35d4","req_id":"req_c3ca6ef9baa0"}
+{"ts":"2026-06-18T04:03:34.185Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"152","trace_id":"eb65dad8c83f5ccf081b337df66993a8","req_id":"req_0064a77f01f1"}
+{"ts":"2026-06-18T04:03:41.870Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":200}
+{"ts":"2026-06-18T04:03:42.015Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-52977 completed","method":"GET","path":"/v1/products/SKU-52977","status":200,"duration_ms":"169","trace_id":"5a4b65ea2b2602208d062e3b11538d54","req_id":"req_f4858f237bc8"}
+{"ts":"2026-06-18T04:03:52.578Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-91644","source":"db","duration_ms":"181","trace_id":"fd1eea8877343d9a60043613bf1a4cee"}
+{"ts":"2026-06-18T04:03:54.431Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:03:56.911Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:03:59.422Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-44105","source":"db","duration_ms":"130","trace_id":"df02c2d3e013fb27ee3d9e148fa349a7"}
+{"ts":"2026-06-18T04:03:59.916Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":200}
+{"ts":"2026-06-18T04:04:00.592Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-49895","source":"cache","duration_ms":"13","trace_id":"e6487eb8d7026e6881cbd1447c4e0933"}
+{"ts":"2026-06-18T04:04:13.388Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-52577 completed","method":"GET","path":"/v1/products/SKU-52577","status":200,"duration_ms":"217","trace_id":"ac164a39f48e3fd6fa0e202de4caa894","req_id":"req_66dcca58dd2f"}
+{"ts":"2026-06-18T04:04:14.623Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-99954","source":"db","duration_ms":"208","trace_id":"5d126039b77b0de73eb629f43d905418"}
+{"ts":"2026-06-18T04:04:17.510Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"203","trace_id":"66e66ad807329b39bc9d56e6967405df","req_id":"req_98d73dd418b1"}
+{"ts":"2026-06-18T04:04:19.096Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:04:27.634Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-42918 completed","method":"GET","path":"/v1/products/SKU-42918","status":200,"duration_ms":"133","trace_id":"5a68a906c9515b8a794c1e9d60819191","req_id":"req_4bbdc31ff062"}
+{"ts":"2026-06-18T04:04:35.697Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-10999","source":"cache","duration_ms":"20","trace_id":"cbb5dac1fb171ad49075e42804db2538"}
+{"ts":"2026-06-18T04:04:37.801Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"159","trace_id":"2f5dd640f38f482598fa73348686072a","req_id":"req_00108b8d1312"}
+{"ts":"2026-06-18T04:04:38.799Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-34684","source":"cache","duration_ms":"11","trace_id":"c73cf1412562dd1fd999c20dc5adf1a1"}
+{"ts":"2026-06-18T04:04:47.962Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-88478","source":"cache","duration_ms":"11","trace_id":"f35c838826ebb5bad79f9d2b7dd8da55"}
+{"ts":"2026-06-18T04:04:57.647Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"26","trace_id":"b95c0b1b605736368dc4c04afeb9185e","req_id":"req_0a99a8e5f8b2"}
+{"ts":"2026-06-18T04:05:01.989Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:05:04.341Z","level":"debug","service":"product-catalog-api","msg":"feature flag evaluated","flag":"checkout_v2_layout","value":"true","user_id":"usr_177884"}
+{"ts":"2026-06-18T04:05:05.197Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"226","trace_id":"f83e04c08efb5091078c728444007ab6","req_id":"req_2daaf34bd560"}
+{"ts":"2026-06-18T04:05:11.669Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"161","trace_id":"242604cfb22e2385eb98e11affdbef09","req_id":"req_39e391791b3f"}
+{"ts":"2026-06-18T04:05:16.678Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-61575","source":"cache","duration_ms":"27","trace_id":"0186305d864543deb0e985a9e1d8cf9f"}
+{"ts":"2026-06-18T04:05:21.966Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-91355","source":"cache","duration_ms":"6","trace_id":"fb9a722100015eab2d25b4f01857ccec"}
+{"ts":"2026-06-18T04:05:33.877Z","level":"info","service":"product-catalog-api","msg":"auth token validated","user_id":"usr_403557","issuer":"identity-service"}
+{"ts":"2026-06-18T04:05:34.639Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-74010","source":"cache","duration_ms":"23","trace_id":"173536077edcd6b6d95b90c54f57e5ca"}
+{"ts":"2026-06-18T04:05:39.381Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-23051","source":"db","duration_ms":"189","trace_id":"0d6797e2a9ec772e452cde40b837ffcc"}
+{"ts":"2026-06-18T04:05:40.707Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-39380","source":"cache","duration_ms":"8","trace_id":"53bf3248be811bed47d8f985b73e6d4d"}
+{"ts":"2026-06-18T04:05:43.382Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-67581","source":"cache","duration_ms":"9","trace_id":"c564d697ac9ea5439caa551002b3d7ae"}
+{"ts":"2026-06-18T04:05:45.819Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:05:59.623Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-67460","source":"cache","duration_ms":"22","trace_id":"8476f2ea4ea42dd7622fc9e66ce1b35f"}
+{"ts":"2026-06-18T04:06:05.050Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-16885 completed","method":"GET","path":"/v1/products/SKU-16885","status":200,"duration_ms":"20","trace_id":"8bd11d6c40db015eb2705956422c343c","req_id":"req_2a50e35c535c"}
+{"ts":"2026-06-18T04:06:11.165Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-80353","source":"cache","duration_ms":"7","trace_id":"f7852be1d591b4566e9a4ff6b3d9d56a"}
+{"ts":"2026-06-18T04:06:21.993Z","level":"debug","service":"product-catalog-api","msg":"feature flag evaluated","flag":"checkout_v2_layout","value":"true","user_id":"usr_657794"}
+{"ts":"2026-06-18T04:06:31.420Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-15346 completed","method":"GET","path":"/v1/products/SKU-15346","status":200,"duration_ms":"29","trace_id":"6bfc2f446d7c05f0b0ca6f266affd581","req_id":"req_6eef13283943"}
+{"ts":"2026-06-18T04:06:33.729Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:06:50.882Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:07:01.284Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-50447","source":"cache","duration_ms":"35","trace_id":"beea9f9f395bdf593d131e3042c80f24"}
+{"ts":"2026-06-18T04:07:06.472Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:07:07.433Z","level":"info","service":"product-catalog-api","msg":"readiness probe ok","path":"/readyz","status":200,"duration_ms":1}
+{"ts":"2026-06-18T04:07:09.436Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-90641","source":"cache","duration_ms":"32","trace_id":"d4fb60e741b13bd2e9941da3ad7d6689"}
+{"ts":"2026-06-18T04:07:14.648Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-91150","source":"cache","duration_ms":"6","trace_id":"f0225419ca304638bcd23a235c1641c5"}
+{"ts":"2026-06-18T04:07:23.080Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:07:23.592Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-68162 completed","method":"GET","path":"/v1/products/SKU-68162","status":200,"duration_ms":"159","trace_id":"9e2f4e336d1e07d9618d5453dd6fbf28","req_id":"req_83c7ca33b8d0"}
+{"ts":"2026-06-18T04:07:24.347Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"146","trace_id":"4ffc8d18742884893ee06cebaca57340","req_id":"req_99d3a931a50a"}
+{"ts":"2026-06-18T04:07:28.450Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-78737 completed","method":"GET","path":"/v1/products/SKU-78737","status":200,"duration_ms":"112","trace_id":"fa0261d77cfaa0f092de703d751185ec","req_id":"req_d8b5bce46259"}
+{"ts":"2026-06-18T04:07:31.743Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-36262","source":"cache","duration_ms":"15","trace_id":"6f24060860432ef9437751df037617ca"}
+{"ts":"2026-06-18T04:07:40.999Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:07:41.939Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"156","trace_id":"089b086b2284341563833346e0f06e44","req_id":"req_5085367e6a65"}
+{"ts":"2026-06-18T04:07:47.787Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"220","trace_id":"ed828062a25bd636d977b6206d6327ec","req_id":"req_87f8f13863a0"}
+{"ts":"2026-06-18T04:07:55.595Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-42602","source":"cache","duration_ms":"1","trace_id":"faccc1b5892d1ae448067ccf551ffa44"}
+{"ts":"2026-06-18T04:07:55.708Z","level":"info","service":"product-catalog-api","msg":"health check ok","path":"/healthz","status":200,"duration_ms":2}
+{"ts":"2026-06-18T04:07:55.862Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-69724","source":"cache","duration_ms":"25","trace_id":"d0d356bf45c55e214a34f9b06bd8f42a"}
+{"ts":"2026-06-18T04:07:57.276Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"222","trace_id":"8c0f6b559c8f07804ffe7e3ea1cc922c","req_id":"req_63967bd1c913"}
+{"ts":"2026-06-18T04:08:05.270Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"100","trace_id":"1b77d3adc46f16f091cf0ae3a64080df","req_id":"req_e3fcb6c1d521"}
+{"ts":"2026-06-18T04:08:06.442Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"8","trace_id":"a0c19171e09726861e36c28dc4229dec","req_id":"req_8ca7b81bfef3"}
+{"ts":"2026-06-18T04:08:18.033Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v7:sku:SKU-41858","hit":"true"}
+{"ts":"2026-06-18T04:08:18.119Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-59123","source":"cache","duration_ms":"31","trace_id":"4e99f29c08322c37a8734b1c65c23f5f"}
+{"ts":"2026-06-18T04:08:19.308Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-81899 completed","method":"GET","path":"/v1/products/SKU-81899","status":200,"duration_ms":"226","trace_id":"51c9e0ae722ed2562f431281df276866","req_id":"req_46d84573b257"}
+{"ts":"2026-06-18T04:08:20.349Z","level":"info","service":"product-catalog-api","msg":"rolling update started","version":"7.4.1","strategy":"rolling","max_surge":4,"replicas":20,"deploy_id":"dep-8814"}
+{"ts":"2026-06-18T04:08:22.885Z","level":"info","service":"product-catalog-api","msg":"auth token validated","user_id":"usr_536953","issuer":"identity-service"}
+{"ts":"2026-06-18T04:08:25.573Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-56572","source":"cache","duration_ms":"31","trace_id":"7cb8aa1068b3e00533e0867bb3cf2b69"}
+{"ts":"2026-06-18T04:08:28.460Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"145","trace_id":"65eb79f76b553019f6a7b63cb5cb9679","req_id":"req_4a13995eea34"}
+{"ts":"2026-06-18T04:08:32.348Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-22312 completed","method":"GET","path":"/v1/products/SKU-22312","status":200,"duration_ms":"131","trace_id":"a8b0a1da4be618b6bda977bca14eabf4","req_id":"req_db11f04c46fc"}
+{"ts":"2026-06-18T04:08:32.567Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"145","trace_id":"2a9920c826e07b632824bb06adae9b3b","req_id":"req_6d994c7b686c"}
+{"ts":"2026-06-18T04:08:42.543Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-88574","source":"cache","duration_ms":"2","trace_id":"6a8a115f2f3e4e75f7c0f0ad4858b598"}
+{"ts":"2026-06-18T04:08:45.268Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-49849","source":"db","duration_ms":"113","trace_id":"e1fa3fd43f59a35873aa0e182de14216"}
+{"ts":"2026-06-18T04:08:46.315Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"177","trace_id":"9b970a8a1e1545a0f29601dfc642a364","req_id":"req_74b46e7d3bfa"}
+{"ts":"2026-06-18T04:08:47.993Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-62193","source":"cache","duration_ms":"5","trace_id":"f36c6741896b9142bd70d6d468dab8bc"}
+{"ts":"2026-06-18T04:08:59.448Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-26500 completed","method":"GET","path":"/v1/products/SKU-26500","status":200,"duration_ms":"213","trace_id":"96ba46155fd0273da08bc36a137bb68b","req_id":"req_28c8b1a8595b"}
+{"ts":"2026-06-18T04:09:01.309Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-12562","source":"cache","duration_ms":"11","trace_id":"72132f90e10994cd2c93fd7fa1fbd5a6"}
+{"ts":"2026-06-18T04:09:05.737Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-51938","source":"cache","duration_ms":"8","trace_id":"f8669e992389dfc01fa465e40bcded0b"}
+{"ts":"2026-06-18T04:09:08.289Z","level":"info","service":"product-catalog-api","msg":"/v1/facets completed","method":"GET","path":"/v1/facets","status":200,"duration_ms":"167","trace_id":"7ecc132e0fcddb717af3b7f1f82f724f","req_id":"req_8ca578720bdf"}
+{"ts":"2026-06-18T04:09:12.007Z","level":"debug","service":"product-catalog-api","msg":"metrics scrape served","path":"/metrics","status":200,"bytes":"7214"}
+{"ts":"2026-06-18T04:09:15.720Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-60883 completed","method":"GET","path":"/v1/products/SKU-60883","status":200,"duration_ms":"121","trace_id":"aff16d2fe057f545406770523ea0bf92","req_id":"req_6edfbfdfc04f"}
+{"ts":"2026-06-18T04:09:20.764Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-21956","source":"cache","duration_ms":"39","trace_id":"a16a56767567dd4f697f5a14be61f370"}
+{"ts":"2026-06-18T04:09:22.952Z","level":"info","service":"product-catalog-api","msg":"/v1/products/SKU-53767 completed","method":"GET","path":"/v1/products/SKU-53767","status":200,"duration_ms":"164","trace_id":"87115c0f5c7baf221ebe296268de11c9","req_id":"req_8d02db74bf70"}
+{"ts":"2026-06-18T04:09:28.962Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-48254","source":"cache","duration_ms":"1","trace_id":"f9e95c46e16c1f95065880d875510057"}
+{"ts":"2026-06-18T04:09:32.991Z","level":"info","service":"product-catalog-api","msg":"/v1/products completed","method":"GET","path":"/v1/products","status":200,"duration_ms":"174","trace_id":"ec6ca6eb776f46af9e133f80cdbe2663","req_id":"req_16cea99574d1"}
+{"ts":"2026-06-18T04:09:33.697Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-29687","source":"cache","duration_ms":"12","trace_id":"12bd4025c44b426361b822cc740c69c2"}
+{"ts":"2026-06-18T04:09:37.406Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-39545","source":"cache","duration_ms":"12","trace_id":"2e1171648147a1f97358af9d3248bc01"}
+{"ts":"2026-06-18T04:09:46.998Z","level":"info","service":"product-catalog-api","msg":"/healthz completed","method":"GET","path":"/healthz","status":200,"duration_ms":"43","trace_id":"6c06db539d997da68a8fc6596fd09617","req_id":"req_3eade84c44fd"}
+{"ts":"2026-06-18T04:09:53.066Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"32312","sku":"SKU-26142"}
+{"ts":"2026-06-18T04:09:53.236Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-73296","hit":"false"}
+{"ts":"2026-06-18T04:09:55.055Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-35654","source":"db","duration_ms":"23340","trace_id":"138678d9fd67f9fca9799e2f1d9156bb"}
+{"ts":"2026-06-18T04:09:56.188Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-62130","source":"db","duration_ms":"2540","trace_id":"2f527a35db29736b02e9da98b17f3485"}
+{"ts":"2026-06-18T04:09:57.495Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:10:00.013Z","level":"info","service":"product-catalog-api","msg":"cache namespace in use","namespace":"pcat:v8","previous":"pcat:v7","prewarm":"false"}
+{"ts":"2026-06-18T04:10:02.733Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-78234","hit":"false"}
+{"ts":"2026-06-18T04:10:05.908Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-46854","source":"db","duration_ms":"22840","trace_id":"b70428aeb7bd13b62bac7e3b8aadfeba"}
+{"ts":"2026-06-18T04:10:08.259Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-11412","source":"db","duration_ms":"2840","trace_id":"95e44275b0b087e7eafa4067ec3c86a3"}
+{"ts":"2026-06-18T04:10:10.546Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-82529","hit":"false"}
+{"ts":"2026-06-18T04:10:11.419Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-48048","source":"db","duration_ms":"22740","trace_id":"59704577de96777ad5707e79b8851922"}
+{"ts":"2026-06-18T04:10:16.414Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-17800","source":"db","duration_ms":"2940","trace_id":"d04693bd98b788eab8c22211ac60563c"}
+{"ts":"2026-06-18T04:10:17.303Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3412","sku":"SKU-22782"}
+{"ts":"2026-06-18T04:10:20.322Z","level":"info","service":"product-catalog-api","msg":"cache namespace in use","namespace":"pcat:v8","previous":"pcat:v7","prewarm":"false"}
+{"ts":"2026-06-18T04:10:20.794Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"32212","sku":"SKU-26777"}
+{"ts":"2026-06-18T04:10:23.860Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"971b8b54b28e2c019fab76f2b70f46cd"}
+{"ts":"2026-06-18T04:10:26.699Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-56786","source":"db","duration_ms":"21840","trace_id":"b5978e43512984fe82de21cbf6249790"}
+{"ts":"2026-06-18T04:10:28.448Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-76439","source":"db","duration_ms":"22240","trace_id":"5a5b5669379d6172ecaed20e0e9fef63"}
+{"ts":"2026-06-18T04:10:28.693Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-21041","hit":"false"}
+{"ts":"2026-06-18T04:10:30.763Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-91279","source":"db","duration_ms":"22740","trace_id":"c228c45492d039e6ef0c64f317afc73c"}
+{"ts":"2026-06-18T04:10:37.243Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-23024","source":"db","duration_ms":"2340","trace_id":"11b3dc2707e87cf9c69120d42a673f5f"}
+{"ts":"2026-06-18T04:10:39.485Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:10:40.121Z","level":"info","service":"product-catalog-api","msg":"cache namespace in use","namespace":"pcat:v8","previous":"pcat:v7","prewarm":"false"}
+{"ts":"2026-06-18T04:10:47.145Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-67828","source":"db","duration_ms":"22340","trace_id":"66ae5b5bd3f0aac13f81c407e65080ed"}
+{"ts":"2026-06-18T04:10:53.668Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-21320","source":"db","duration_ms":"23240","trace_id":"352f4919a7bed4403a22a515b41a66dc"}
+{"ts":"2026-06-18T04:11:00.112Z","level":"info","service":"product-catalog-api","msg":"cache namespace in use","namespace":"pcat:v8","previous":"pcat:v7","prewarm":"false"}
+{"ts":"2026-06-18T04:11:00.311Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:11:03.984Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-80698","hit":"false"}
+{"ts":"2026-06-18T04:11:04.439Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-93735","hit":"false"}
+{"ts":"2026-06-18T04:11:05.234Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-27022","hit":"false"}
+{"ts":"2026-06-18T04:11:06.839Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-24966","source":"db","duration_ms":"22240","trace_id":"d843a9f9fc7394e6b41e99ad02b146b3"}
+{"ts":"2026-06-18T04:11:09.846Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-99005","source":"db","duration_ms":"21840","trace_id":"9d7cd77f389427d7a4c17a44e571d591"}
+{"ts":"2026-06-18T04:11:16.388Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-28291","source":"db","duration_ms":"23540","trace_id":"cd440e37f612ff4f296c7656a1dadf10"}
+{"ts":"2026-06-18T04:11:30.037Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-70926","inflight":"388","coalescing":"disabled"}
+{"ts":"2026-06-18T04:11:36.205Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31112","sku":"SKU-68481"}
+{"ts":"2026-06-18T04:11:40.148Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-19411","source":"db","duration_ms":"2740","trace_id":"64318cbc00e5ed9b2edafb14a7842e81"}
+{"ts":"2026-06-18T04:11:44.298Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-39094","source":"db","duration_ms":"22240","trace_id":"8a3ba60c39d42950c217b2591dceacb3"}
+{"ts":"2026-06-18T04:11:44.331Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-67583","source":"db","duration_ms":"23640","trace_id":"befbcc2c2fb55437df38f0422d77a577"}
+{"ts":"2026-06-18T04:11:50.344Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-17591","source":"db","duration_ms":"23940","trace_id":"7be2afdc8bc7cb0a3ebe7afab5550b6c"}
+{"ts":"2026-06-18T04:11:59.464Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-66845","source":"db","duration_ms":"21940","trace_id":"9d4845647df79937e3c7c75bbb83cb77"}
+{"ts":"2026-06-18T04:12:00.100Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:12:00.109Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"11840","rows":1,"sku":"SKU-86540"}
+{"ts":"2026-06-18T04:12:01.314Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-34670","source":"db","duration_ms":"21840","trace_id":"270e36fbfdfe710db4868a39b1ecc1f5"}
+{"ts":"2026-06-18T04:12:04.263Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-74835","inflight":"88","coalescing":"disabled"}
+{"ts":"2026-06-18T04:12:07.703Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"bc9a6e9f3c06c4c505a2567af31f2129"}
+{"ts":"2026-06-18T04:12:16.991Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-99756","source":"db","duration_ms":"22040","trace_id":"518267a4b9cd95d5e0b8ca80c45e7be7"}
+{"ts":"2026-06-18T04:12:17.951Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-52887","source":"db","duration_ms":"2740","trace_id":"bfb508d704a9cbce84d063083c2ba2ef"}
+{"ts":"2026-06-18T04:12:18.159Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-11837","source":"db","duration_ms":"21740","trace_id":"9f086db885c4c2a6ed1a7110b6d5beb0"}
+{"ts":"2026-06-18T04:12:22.194Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"1140","rows":1,"sku":"SKU-40178"}
+{"ts":"2026-06-18T04:12:22.587Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-95262","hit":"false"}
+{"ts":"2026-06-18T04:12:30.650Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-72494","source":"db","duration_ms":"23840","trace_id":"5d6563f2dadc8e67c84f81ccfcbe99be"}
+{"ts":"2026-06-18T04:12:36.967Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"b7b6acfed35c87112b69e2132652fb2a"}
+{"ts":"2026-06-18T04:12:38.226Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-33738","inflight":"48","coalescing":"disabled"}
+{"ts":"2026-06-18T04:12:41.468Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-75486","source":"db","duration_ms":"2540","trace_id":"63dc5247b519a06557bb8d4338e619c6"}
+{"ts":"2026-06-18T04:12:44.026Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"11840","rows":1,"sku":"SKU-63727"}
+{"ts":"2026-06-18T04:12:46.133Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-10330","source":"db","duration_ms":"21940","trace_id":"230a9bcb2076bfb8b68fece532b1ccda"}
+{"ts":"2026-06-18T04:12:48.853Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-53018","hit":"false"}
+{"ts":"2026-06-18T04:12:58.134Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-63975","source":"db","duration_ms":"24040","trace_id":"55d8d0cd4f7faf8c50734f5367177db8"}
+{"ts":"2026-06-18T04:12:59.096Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-38362","hit":"false"}
+{"ts":"2026-06-18T04:13:00.023Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:13:00.273Z","level":"warn","service":"product-catalog-api","msg":"seq scan detected by pg_stat_statements sampler","table":"product_variant","calls_last_min":4120,"mean_ms":61,"note":"known missing index PCAT-1187, open since 2026-04"}
+{"ts":"2026-06-18T04:13:00.700Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3812","sku":"SKU-34072"}
+{"ts":"2026-06-18T04:13:02.294Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33012","sku":"SKU-21334"}
+{"ts":"2026-06-18T04:13:02.424Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-33230","source":"db","duration_ms":"21540","trace_id":"b9850bf123cd29b73011f7e3d4854954"}
+{"ts":"2026-06-18T04:13:06.196Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"12140","rows":1,"sku":"SKU-74497"}
+{"ts":"2026-06-18T04:13:09.133Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-75060","source":"db","duration_ms":"22840","trace_id":"64cbf0a2dba71e6d9d6a009a07b24168"}
+{"ts":"2026-06-18T04:13:12.006Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-62292","inflight":"328","coalescing":"disabled"}
+{"ts":"2026-06-18T04:13:25.950Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31712","sku":"SKU-99912"}
+{"ts":"2026-06-18T04:13:26.452Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-89952","source":"db","duration_ms":"22940","trace_id":"45a681c5c26a6109e99bbcc4feb26654"}
+{"ts":"2026-06-18T04:13:28.055Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"11840","rows":1,"sku":"SKU-41373"}
+{"ts":"2026-06-18T04:13:29.597Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:13:46.012Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-40835","inflight":"398","coalescing":"disabled"}
+{"ts":"2026-06-18T04:13:46.710Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-53834","source":"db","duration_ms":"21840","trace_id":"f2576a772845378bfc7cbeb29eca9a63"}
+{"ts":"2026-06-18T04:13:50.139Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"13140","rows":1,"sku":"SKU-24114"}
+{"ts":"2026-06-18T04:13:52.190Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31612","sku":"SKU-46384"}
+{"ts":"2026-06-18T04:13:55.169Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"51ba65ccbcfa2fb98c3e06923ecd22b3"}
+{"ts":"2026-06-18T04:13:59.105Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"32212","sku":"SKU-80949"}
+{"ts":"2026-06-18T04:14:00.228Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"331","timeout_ms":5000}
+{"ts":"2026-06-18T04:14:00.318Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:14:01.863Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"8e5a9c360dfbf1f1ef2ad2bcbb1bb70c"}
+{"ts":"2026-06-18T04:14:06.434Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-99877","source":"db","duration_ms":"21740","trace_id":"294ab1a23b5e96f7eb56c854ff889224"}
+{"ts":"2026-06-18T04:14:12.288Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"1740","rows":1,"sku":"SKU-67594"}
+{"ts":"2026-06-18T04:14:15.304Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-89944","source":"db","duration_ms":"22840","trace_id":"621bab55c3b0fbbaac625ed16db9b747"}
+{"ts":"2026-06-18T04:14:16.720Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-95357","source":"db","duration_ms":"21940","trace_id":"b83b37e7c3a8702b9715dca0b369320c"}
+{"ts":"2026-06-18T04:14:20.094Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-97696","inflight":"368","coalescing":"disabled"}
+{"ts":"2026-06-18T04:14:24.705Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-43980","source":"db","duration_ms":"23640","trace_id":"d4e91be50589d1c65e64b42aa1eabd5d"}
+{"ts":"2026-06-18T04:14:28.558Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-14062","source":"db","duration_ms":"21340","trace_id":"9a1d7431e954e338b41e3baff2bf0bbb"}
+{"ts":"2026-06-18T04:14:30.104Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"391","timeout_ms":5000}
+{"ts":"2026-06-18T04:14:30.342Z","level":"warn","service":"product-catalog-api","msg":"seq scan detected by pg_stat_statements sampler","table":"product_variant","calls_last_min":4120,"mean_ms":61,"note":"known missing index PCAT-1187, open since 2026-04"}
+{"ts":"2026-06-18T04:14:30.479Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"401dfbdbdb7b628b9064d29a42acb425"}
+{"ts":"2026-06-18T04:14:30.762Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-16517","source":"db","duration_ms":"23940","trace_id":"8c5f28757387e5f2c8bc4e0d89aa5408"}
+{"ts":"2026-06-18T04:14:30.765Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:14:31.814Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-85060","hit":"false"}
+{"ts":"2026-06-18T04:14:32.192Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"ae601d768257e008c4af1f3115122a2e"}
+{"ts":"2026-06-18T04:14:32.275Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:14:32.876Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-68527","hit":"false"}
+{"ts":"2026-06-18T04:14:34.342Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"13040","rows":1,"sku":"SKU-36109"}
+{"ts":"2026-06-18T04:14:34.603Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-92929","source":"db","duration_ms":"23040","trace_id":"445c4fd67f1f7d091e5a7aaea18f9e59"}
+{"ts":"2026-06-18T04:14:35.408Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"9d7abf8bae586d21bf533639bfaa655b"}
+{"ts":"2026-06-18T04:14:35.467Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-88705","source":"db","duration_ms":"23440","trace_id":"1ddb302314730659c0613589f356e063"}
+{"ts":"2026-06-18T04:14:43.604Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-14888","hit":"false"}
+{"ts":"2026-06-18T04:14:45.874Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-82377","source":"db","duration_ms":"23840","trace_id":"bd568344fe5b71fec83f14ca126eae4d"}
+{"ts":"2026-06-18T04:14:49.021Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-32709","source":"db","duration_ms":"2940","trace_id":"aeb5e8c58622b6b40780c5d2b222ef95"}
+{"ts":"2026-06-18T04:14:50.694Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-36186","source":"db","duration_ms":"21740","trace_id":"022ee40949b2e52b7446ce9b28444e5b"}
+{"ts":"2026-06-18T04:14:54.288Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-61700","inflight":"308","coalescing":"disabled"}
+{"ts":"2026-06-18T04:14:56.305Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"13340","rows":1,"sku":"SKU-21004"}
+{"ts":"2026-06-18T04:14:56.364Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-36028","hit":"false"}
+{"ts":"2026-06-18T04:14:57.905Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-91193","source":"db","duration_ms":"2440","trace_id":"1594dacc0d4bca024769983620995be5"}
+{"ts":"2026-06-18T04:14:58.786Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-73884","source":"db","duration_ms":"21240","trace_id":"b7dafb0f30a460aed43efc353cb5b1b0"}
+{"ts":"2026-06-18T04:14:59.470Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"8c90c039de682656b37a1996ee356add"}
+{"ts":"2026-06-18T04:15:00.068Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"8a4460dbe6c4aba819f6decf4bc501d8"}
+{"ts":"2026-06-18T04:15:00.140Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"41","timeout_ms":5000}
+{"ts":"2026-06-18T04:15:00.298Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:15:01.455Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-20054","source":"db","duration_ms":"22540","trace_id":"c7f0a28efa354c51a51e51e52625f3eb"}
+{"ts":"2026-06-18T04:15:02.071Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-66552","source":"db","duration_ms":"22440","trace_id":"f375f392e106d95a5b9c2c91d950db1a"}
+{"ts":"2026-06-18T04:15:03.705Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-66979","hit":"false"}
+{"ts":"2026-06-18T04:15:17.732Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-46814","hit":"false"}
+{"ts":"2026-06-18T04:15:18.164Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"12540","rows":1,"sku":"SKU-49845"}
+{"ts":"2026-06-18T04:15:20.443Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-64576","source":"db","duration_ms":"23040","trace_id":"7145379918fb0442fda1f24601630d46"}
+{"ts":"2026-06-18T04:15:20.848Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-76718","source":"db","duration_ms":"21340","trace_id":"45bf14e77d92afb936e621ec3c93ffa4"}
+{"ts":"2026-06-18T04:15:28.037Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-67941","inflight":"338","coalescing":"disabled"}
+{"ts":"2026-06-18T04:15:28.109Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"9012eccf547261eecd6031714b70390b"}
+{"ts":"2026-06-18T04:15:30.053Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"371","timeout_ms":5000}
+{"ts":"2026-06-18T04:15:30.481Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"2a89b05002d1eb245d4daebea5e93e18"}
+{"ts":"2026-06-18T04:15:36.294Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-56776","source":"db","duration_ms":"22540","trace_id":"4f60f4eedf20ff70a2d271b69a869a28"}
+{"ts":"2026-06-18T04:15:38.117Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-13700","source":"db","duration_ms":"23640","trace_id":"93b07453f547f43331828d8aed71e841"}
+{"ts":"2026-06-18T04:15:40.261Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"1740","rows":1,"sku":"SKU-67072"}
+{"ts":"2026-06-18T04:15:44.935Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-80348","source":"db","duration_ms":"2540","trace_id":"4aebd21d195aacf836f4fe19ad527517"}
+{"ts":"2026-06-18T04:15:56.150Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-93746","source":"db","duration_ms":"21640","trace_id":"50b7b22bb9b8dcf9c0ddbb05074d6024"}
+{"ts":"2026-06-18T04:15:56.304Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"114a58af422c869e67773cb33b534a09"}
+{"ts":"2026-06-18T04:16:00.008Z","level":"warn","service":"product-catalog-api","msg":"seq scan detected by pg_stat_statements sampler","table":"product_variant","calls_last_min":4120,"mean_ms":61,"note":"known missing index PCAT-1187, open since 2026-04"}
+{"ts":"2026-06-18T04:16:00.124Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"291","timeout_ms":5000}
+{"ts":"2026-06-18T04:16:00.154Z","level":"info","service":"product-catalog-api","msg":"redis info snapshot","used_memory_gb":0.4,"keys":118422,"evicted_keys_total":0,"uptime_days":63,"connected_clients":220}
+{"ts":"2026-06-18T04:16:00.233Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:16:02.049Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-31390","inflight":"148","coalescing":"disabled"}
+{"ts":"2026-06-18T04:16:02.251Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"1340","rows":1,"sku":"SKU-76754"}
+{"ts":"2026-06-18T04:16:05.457Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33812","sku":"SKU-86330"}
+{"ts":"2026-06-18T04:16:06.991Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-56087","hit":"false"}
+{"ts":"2026-06-18T04:16:10.493Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-70644","source":"db","duration_ms":"22740","trace_id":"d968ae9bf4be4c2bee092bf519131d9c"}
+{"ts":"2026-06-18T04:16:24.023Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"16715b005e235280603c6f06971d541a"}
+{"ts":"2026-06-18T04:16:24.319Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"1440","rows":1,"sku":"SKU-41493"}
+{"ts":"2026-06-18T04:16:30.245Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"401","timeout_ms":5000}
+{"ts":"2026-06-18T04:16:34.774Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3412","sku":"SKU-19116"}
+{"ts":"2026-06-18T04:16:36.096Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-21764","inflight":"378","coalescing":"disabled"}
+{"ts":"2026-06-18T04:16:39.782Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-30470","source":"db","duration_ms":"23040","trace_id":"86afb9e0f2ba9837ebf470e769dba76e"}
+{"ts":"2026-06-18T04:16:40.166Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-55512","source":"db","duration_ms":"2340","trace_id":"9f2515f54b14e1426ad82169fa038032"}
+{"ts":"2026-06-18T04:16:40.784Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-47482","source":"db","duration_ms":"21340","trace_id":"8599aeda026252353b74eadf1378bf87"}
+{"ts":"2026-06-18T04:16:45.392Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:16:46.133Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"12740","rows":1,"sku":"SKU-52077"}
+{"ts":"2026-06-18T04:16:52.025Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"e02c8441a9e01a8cb81488e1fcb1ab67"}
+{"ts":"2026-06-18T04:16:58.484Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-29256","source":"db","duration_ms":"22440","trace_id":"f3911725dde4fa150d4a4fa16bf72c62"}
+{"ts":"2026-06-18T04:16:58.808Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-83144","source":"db","duration_ms":"23440","trace_id":"c528198824de74ad93a24e7a923e2a47"}
+{"ts":"2026-06-18T04:17:00.049Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:17:00.114Z","level":"info","service":"product-catalog-api","msg":"crawler budget updated by config change","ua":"PartnerBot/1.4","rps_limit":60,"previous":40}
+{"ts":"2026-06-18T04:17:00.201Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"41","timeout_ms":5000}
+{"ts":"2026-06-18T04:17:05.976Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-61365","source":"db","duration_ms":"2740","trace_id":"64bfbbbc61d83eef37ed8393e5e809c3"}
+{"ts":"2026-06-18T04:17:08.057Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"13040","rows":1,"sku":"SKU-46950"}
+{"ts":"2026-06-18T04:17:09.627Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-54253","source":"db","duration_ms":"22040","trace_id":"6464be0191cd9c3c17451ab643f05701"}
+{"ts":"2026-06-18T04:17:10.202Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-84368","inflight":"138","coalescing":"disabled"}
+{"ts":"2026-06-18T04:17:15.084Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-63061","source":"db","duration_ms":"21740","trace_id":"311b5c8d4f0bf9754522fc640d8b3988"}
+{"ts":"2026-06-18T04:17:16.542Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-38767","hit":"false"}
+{"ts":"2026-06-18T04:17:18.957Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-83430","source":"db","duration_ms":"23840","trace_id":"00208730f03b732f14f9331cfbcd1c79"}
+{"ts":"2026-06-18T04:17:18.995Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-70927","hit":"false"}
+{"ts":"2026-06-18T04:17:20.053Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"5d97f78b8f4113f3d8570fe9a7300461"}
+{"ts":"2026-06-18T04:17:24.262Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-81397","source":"db","duration_ms":"2640","trace_id":"0235aa44c8751c5c1d32fa2a904ba99e"}
+{"ts":"2026-06-18T04:17:26.274Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-54402","hit":"false"}
+{"ts":"2026-06-18T04:17:30.036Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"291","timeout_ms":5000}
+{"ts":"2026-06-18T04:17:30.133Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"12540","rows":1,"sku":"SKU-92790"}
+{"ts":"2026-06-18T04:17:30.262Z","level":"warn","service":"product-catalog-api","msg":"seq scan detected by pg_stat_statements sampler","table":"product_variant","calls_last_min":4120,"mean_ms":61,"note":"known missing index PCAT-1187, open since 2026-04"}
+{"ts":"2026-06-18T04:17:30.958Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-47229","hit":"false"}
+{"ts":"2026-06-18T04:17:31.982Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:17:35.905Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-54737","hit":"false"}
+{"ts":"2026-06-18T04:17:37.866Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-83391","source":"db","duration_ms":"23040","trace_id":"ad9cf491f7f5a3be297c0edb84c0d8a6"}
+{"ts":"2026-06-18T04:17:42.067Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-93258","source":"db","duration_ms":"21740","trace_id":"266cec47216eb0d3a563c67d305c62d7"}
+{"ts":"2026-06-18T04:17:44.133Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-89230","inflight":"228","coalescing":"disabled"}
+{"ts":"2026-06-18T04:17:44.671Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-80465","source":"db","duration_ms":"2140","trace_id":"d56ae10412b1cebe0246f56c2312a7d6"}
+{"ts":"2026-06-18T04:17:47.279Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-21985","hit":"false"}
+{"ts":"2026-06-18T04:17:48.026Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"7f9fd1d3feeeb9ed7f8d3819b41bf734"}
+{"ts":"2026-06-18T04:17:52.271Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"1240","rows":1,"sku":"SKU-73756"}
+{"ts":"2026-06-18T04:17:54.254Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:17:54.428Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-23059","source":"db","duration_ms":"2440","trace_id":"12ab631ec0d3e02d2399285d2a5407f0"}
+{"ts":"2026-06-18T04:17:59.412Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-76273","source":"db","duration_ms":"22140","trace_id":"8e5e0da579ed5d7dd4ffb42e7039739d"}
+{"ts":"2026-06-18T04:18:00.026Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"311","timeout_ms":5000}
+{"ts":"2026-06-18T04:18:00.227Z","level":"warn","service":"product-catalog-api","msg":"cache miss ratio above threshold","window_s":60,"hit_pct":3.1,"expected_pct":97.0}
+{"ts":"2026-06-18T04:18:00.327Z","level":"info","service":"product-catalog-api","msg":"redis info snapshot","used_memory_gb":0.4,"keys":118422,"evicted_keys_total":0,"uptime_days":63,"connected_clients":220}
+{"ts":"2026-06-18T04:18:05.060Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-74092","hit":"false"}
+{"ts":"2026-06-18T04:18:07.943Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-49526","source":"db","duration_ms":"2340","trace_id":"3dcd646c937d03d072416769ecc8714b"}
+{"ts":"2026-06-18T04:18:14.048Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"12040","rows":1,"sku":"SKU-98383"}
+{"ts":"2026-06-18T04:18:16.131Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"5ae366d08162a6ec733dee1fcacaae53"}
+{"ts":"2026-06-18T04:18:18.072Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-25018","inflight":"268","coalescing":"disabled"}
+{"ts":"2026-06-18T04:18:18.529Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31812","sku":"SKU-25204"}
+{"ts":"2026-06-18T04:18:19.516Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-40429","source":"db","duration_ms":"2740","trace_id":"842ed3aa0adf84e52d15dc6fc74eef4f"}
+{"ts":"2026-06-18T04:18:22.286Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"861446626dbd901decef1845dee0599a"}
+{"ts":"2026-06-18T04:18:30.032Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"261","timeout_ms":5000}
+{"ts":"2026-06-18T04:18:36.043Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"12240","rows":1,"sku":"SKU-16521"}
+{"ts":"2026-06-18T04:18:42.158Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-12883","source":"db","duration_ms":"23840","trace_id":"1ac8e678a9c4a7fe944b349693d879c3"}
+{"ts":"2026-06-18T04:18:44.325Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-24436","source":"db","duration_ms":"21040","trace_id":"5927804407604c1fe48234239f97ffa7"}
+{"ts":"2026-06-18T04:18:44.338Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"820b0a1ebed2b450845c32d5bf41a4ab"}
+{"ts":"2026-06-18T04:18:45.396Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"aad07d8e0615c02fce56479788e914f0"}
+{"ts":"2026-06-18T04:18:52.095Z","level":"warn","service":"product-catalog-api","msg":"concurrent identical cache fills for same key","key":"pcat:v8:sku:SKU-58006","inflight":"18","coalescing":"disabled"}
+{"ts":"2026-06-18T04:18:55.708Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-41112","source":"db","duration_ms":"21340","trace_id":"1b722bef3caecd1fe352c8fb5bfa85b5"}
+{"ts":"2026-06-18T04:18:58.329Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"11240","rows":1,"sku":"SKU-61165"}
+{"ts":"2026-06-18T04:18:58.975Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-25406","source":"db","duration_ms":"22440","trace_id":"8977dd4544eae8492b3f5a2e91c37e85"}
+{"ts":"2026-06-18T04:19:00.090Z","level":"warn","service":"product-catalog-api","msg":"seq scan detected by pg_stat_statements sampler","table":"product_variant","calls_last_min":4120,"mean_ms":61,"note":"known missing index PCAT-1187, open since 2026-04"}
+{"ts":"2026-06-18T04:19:00.297Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"31","timeout_ms":5000}
+{"ts":"2026-06-18T04:19:01.992Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-23165","hit":"false"}
+{"ts":"2026-06-18T04:19:05.599Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-39191","source":"db","duration_ms":"2540","trace_id":"a4e14731071454e76f8b649b8b6a101b"}
+{"ts":"2026-06-18T04:19:06.423Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-19499","source":"db","duration_ms":"21940","trace_id":"275df3ee6a717650304c0962515a1066"}
+{"ts":"2026-06-18T04:19:12.237Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"3518a74f1a1cd66c66e4b0816f04e0b7"}
+{"ts":"2026-06-18T04:19:21.937Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-71158","source":"db","duration_ms":"22740","trace_id":"f467dfc0ec53ee5b188434ee209b3533"}
+{"ts":"2026-06-18T04:19:29.133Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-28290","source":"db","duration_ms":"23140","trace_id":"7047325381546ef1a5f6a6c39ce59a2a"}
+{"ts":"2026-06-18T04:19:30.217Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"201","timeout_ms":5000}
+{"ts":"2026-06-18T04:19:35.639Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:19:38.877Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:19:39.095Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"32612","sku":"SKU-79850"}
+{"ts":"2026-06-18T04:19:40.275Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"6d8cb9733c644eaada494a7df48224f6"}
+{"ts":"2026-06-18T04:19:41.752Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:19:45.647Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-46998","source":"db","duration_ms":"22340","trace_id":"f57b2c181d0866df9e18e9715c33c24c"}
+{"ts":"2026-06-18T04:19:46.573Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-31895","source":"db","duration_ms":"21140","trace_id":"af69204067c07aee9db5a4fdb3bfc0df"}
+{"ts":"2026-06-18T04:19:52.557Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-31407","source":"db","duration_ms":"21140","trace_id":"470eb597cfd55161e155fe8b27bdef43"}
+{"ts":"2026-06-18T04:19:59.355Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-28093","hit":"false"}
+{"ts":"2026-06-18T04:20:00.165Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"161","timeout_ms":5000}
+{"ts":"2026-06-18T04:20:00.325Z","level":"info","service":"product-catalog-api","msg":"redis info snapshot","used_memory_gb":0.4,"keys":118422,"evicted_keys_total":0,"uptime_days":63,"connected_clients":220}
+{"ts":"2026-06-18T04:20:08.116Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"d4f33c2d0371eaaff11af260aab685c5"}
+{"ts":"2026-06-18T04:20:16.111Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-41474","hit":"false"}
+{"ts":"2026-06-18T04:20:25.872Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-47197","hit":"false"}
+{"ts":"2026-06-18T04:20:29.948Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-91177","source":"db","duration_ms":"21540","trace_id":"30d75e78fec7acfd79196fc3afc54b01"}
+{"ts":"2026-06-18T04:20:30.104Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"281","timeout_ms":5000}
+{"ts":"2026-06-18T04:20:36.117Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"0c6a58b42242521a375f247e156f2ce7"}
+{"ts":"2026-06-18T04:20:36.268Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"2900ed875c934f48045597caae4eedf7"}
+{"ts":"2026-06-18T04:20:37.554Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33812","sku":"SKU-50123"}
+{"ts":"2026-06-18T04:20:39.633Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-74865","hit":"false"}
+{"ts":"2026-06-18T04:20:39.677Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-59026","hit":"false"}
+{"ts":"2026-06-18T04:20:42.880Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"3426dcf12861b3e552f56f0c8ba09086"}
+{"ts":"2026-06-18T04:20:47.875Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3912","sku":"SKU-43771"}
+{"ts":"2026-06-18T04:20:49.324Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-50578","source":"db","duration_ms":"23540","trace_id":"da694c45d888e6c99eea044e41adabf2"}
+{"ts":"2026-06-18T04:20:52.350Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-57581","hit":"false"}
+{"ts":"2026-06-18T04:20:52.396Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-43118","source":"db","duration_ms":"2940","trace_id":"3069f289c715f96b657217b303b22994"}
+{"ts":"2026-06-18T04:20:54.275Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-28632","hit":"false"}
+{"ts":"2026-06-18T04:21:00.031Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"91","timeout_ms":5000}
+{"ts":"2026-06-18T04:21:03.261Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"1bbf40483714a7cc48b64c6e1cdc97b7"}
+{"ts":"2026-06-18T04:21:04.052Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-22273","source":"db","duration_ms":"23340","trace_id":"776d367c8f57733bc9d280647c937558"}
+{"ts":"2026-06-18T04:21:04.264Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"2220919069457174ba2ab291f07ceca6"}
+{"ts":"2026-06-18T04:21:06.827Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3112","sku":"SKU-31272"}
+{"ts":"2026-06-18T04:21:16.992Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-25052","source":"db","duration_ms":"22340","trace_id":"a2fe7c00b1c2d877d92209c7fe8745d9"}
+{"ts":"2026-06-18T04:21:30.164Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"61","timeout_ms":5000}
+{"ts":"2026-06-18T04:21:30.743Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-85209","source":"db","duration_ms":"23640","trace_id":"5db9d3f6a4648be6766b8ac7240f5f3c"}
+{"ts":"2026-06-18T04:21:32.197Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"ce7fa5968b67fcde8adc56f1aab41499"}
+{"ts":"2026-06-18T04:21:32.425Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3512","sku":"SKU-41884"}
+{"ts":"2026-06-18T04:21:36.312Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-27979","source":"db","duration_ms":"21640","trace_id":"944618b8eb66c82ce121953b496f031a"}
+{"ts":"2026-06-18T04:21:41.716Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31512","sku":"SKU-78264"}
+{"ts":"2026-06-18T04:21:46.531Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-83659","hit":"false"}
+{"ts":"2026-06-18T04:21:51.058Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"ee851c22d44c52d0f809ed7fe8fdba48"}
+{"ts":"2026-06-18T04:21:58.128Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-50489","source":"db","duration_ms":"23140","trace_id":"95d429a9eeb0bf4efac491a7a5ded1a7"}
+{"ts":"2026-06-18T04:22:00.176Z","level":"info","service":"product-catalog-api","msg":"redis info snapshot","used_memory_gb":0.4,"keys":118422,"evicted_keys_total":0,"uptime_days":63,"connected_clients":220}
+{"ts":"2026-06-18T04:22:00.295Z","level":"warn","service":"product-catalog-api","msg":"edge retry received for already-inflight request","path":"/v1/products","retry_attempt":2,"trace_id":"4b97a313ec8a3da9e653bd833a1c3a67"}
+{"ts":"2026-06-18T04:22:00.331Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"71","timeout_ms":5000}
+{"ts":"2026-06-18T04:22:11.426Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"8eef73c8850b2d82547178c677e8d55d"}
+{"ts":"2026-06-18T04:22:17.307Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"be4715bf7054d730b13105eddd8d761d"}
+{"ts":"2026-06-18T04:22:18.508Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-27375","source":"db","duration_ms":"21440","trace_id":"8ea4c6a86eac945fc4e3677b30fbee3c"}
+{"ts":"2026-06-18T04:22:22.704Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-32238","hit":"false"}
+{"ts":"2026-06-18T04:22:30.212Z","level":"error","service":"product-catalog-api","msg":"connection pool timeout","pool":"catalog-pg","active":25,"idle":0,"waiting":"281","timeout_ms":5000}
+{"ts":"2026-06-18T04:22:31.393Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-87545","source":"db","duration_ms":"22240","trace_id":"70f46f507ace7cd8f1b9c27cb698a1a9"}
+{"ts":"2026-06-18T04:22:38.423Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"10c31c049e1d0b3275fc4d074679baf7"}
+{"ts":"2026-06-18T04:22:41.610Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-48260","source":"db","duration_ms":"21040","trace_id":"2697f23f23530859cb4b5d583dd0cb6a"}
+{"ts":"2026-06-18T04:22:47.872Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-11881","source":"db","duration_ms":"21940","trace_id":"42841dabd87c480122242a61c95ac177"}
+{"ts":"2026-06-18T04:22:49.972Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-19222","source":"db","duration_ms":"23740","trace_id":"19fdc48f3e1ed7df4d7162e87fb71285"}
+{"ts":"2026-06-18T04:22:50.628Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:22:55.937Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-19582","hit":"false"}
+{"ts":"2026-06-18T04:22:57.714Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"81dbf000e651fd3ac26707ca7d0456d3"}
+{"ts":"2026-06-18T04:22:58.075Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-54690","source":"db","duration_ms":"2840","trace_id":"af9dc2573758c07efdac5efb043618c2"}
+{"ts":"2026-06-18T04:22:58.674Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31012","sku":"SKU-88289"}
+{"ts":"2026-06-18T04:22:58.720Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-50510","source":"db","duration_ms":"22840","trace_id":"1b5c5c79dc7e54c61674ba2412d3cc45"}
+{"ts":"2026-06-18T04:22:58.996Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-44290","source":"db","duration_ms":"2340","trace_id":"97096d79cf66dfbb2f6bae732d5da1d2"}
+{"ts":"2026-06-18T04:23:02.194Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-34065","source":"db","duration_ms":"23040","trace_id":"97e77c3eea63c885e1657da50a3efa2c"}
+{"ts":"2026-06-18T04:23:08.457Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-77095","source":"db","duration_ms":"2740","trace_id":"7dfb1f88a325c8ea3c43912aaa1f6b91"}
+{"ts":"2026-06-18T04:23:09.962Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-41189","hit":"false"}
+{"ts":"2026-06-18T04:23:10.031Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"3312","sku":"SKU-10604"}
+{"ts":"2026-06-18T04:23:10.868Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-60581","hit":"false"}
+{"ts":"2026-06-18T04:23:21.237Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-97850","source":"db","duration_ms":"22840","trace_id":"cb07f3f76ff4a842aeacfa535ede09b4"}
+{"ts":"2026-06-18T04:23:26.126Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-22216","source":"db","duration_ms":"21440","trace_id":"7d97f51efec4713ad4bd798437ac41bc"}
+{"ts":"2026-06-18T04:23:28.653Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-12610","source":"db","duration_ms":"21340","trace_id":"af5494e4c33e7fbd076ba769a0457114"}
+{"ts":"2026-06-18T04:23:33.346Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-23794","source":"db","duration_ms":"22740","trace_id":"e6e881ef6d2a9e75ef5bc767c31d10d7"}
+{"ts":"2026-06-18T04:23:38.593Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33912","sku":"SKU-89626"}
+{"ts":"2026-06-18T04:23:42.336Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-29276","source":"db","duration_ms":"22340","trace_id":"6e43694302c0102c3005f08b968642b0"}
+{"ts":"2026-06-18T04:23:43.753Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-50678","source":"db","duration_ms":"23140","trace_id":"bd19c7c0063331591222216cae793d3e"}
+{"ts":"2026-06-18T04:23:45.296Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-32078","hit":"false"}
+{"ts":"2026-06-18T04:23:47.623Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-19375","source":"db","duration_ms":"2440","trace_id":"ed4e02723310d47e91468dcac268d389"}
+{"ts":"2026-06-18T04:23:57.301Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33912","sku":"SKU-74934"}
+{"ts":"2026-06-18T04:24:00.556Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-83699","source":"db","duration_ms":"2840","trace_id":"5f6b3e5a113aa48a54160cec8b65a3e5"}
+{"ts":"2026-06-18T04:24:14.157Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-36474","hit":"false"}
+{"ts":"2026-06-18T04:24:24.685Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"31012","sku":"SKU-38858"}
+{"ts":"2026-06-18T04:24:30.905Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-31500","source":"db","duration_ms":"23840","trace_id":"0c905d72489c14ec75074a03761f1ef1"}
+{"ts":"2026-06-18T04:24:44.482Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-27761","source":"db","duration_ms":"23540","trace_id":"a5c39f9b94816ab68ef594f2f5f7ee4b"}
+{"ts":"2026-06-18T04:24:47.268Z","level":"debug","service":"product-catalog-api","msg":"cache get","key":"pcat:v8:sku:SKU-15992","hit":"false"}
+{"ts":"2026-06-18T04:24:53.050Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-85108","source":"db","duration_ms":"22240","trace_id":"39eb20eccf3768c7f936d5f6aea30e9a"}
+{"ts":"2026-06-18T04:24:54.262Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:24:56.158Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-51807","source":"db","duration_ms":"23940","trace_id":"9d7bfa0eb8b1a119cb4b716bfca238f8"}
+{"ts":"2026-06-18T04:25:07.534Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33512","sku":"SKU-67182"}
+{"ts":"2026-06-18T04:25:11.114Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-17405","source":"db","duration_ms":"2540","trace_id":"8b30c2fb9d8c8677a3f8effddf493b60"}
+{"ts":"2026-06-18T04:25:19.682Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-15565","source":"db","duration_ms":"2140","trace_id":"00b65a1322c063a09bbdf2aaf49122f3"}
+{"ts":"2026-06-18T04:25:23.359Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-55956","source":"db","duration_ms":"22240","trace_id":"bb144606b69892cce292b3285cb3272d"}
+{"ts":"2026-06-18T04:25:38.104Z","level":"info","service":"product-catalog-api","msg":"crawler request","ua":"PartnerBot/1.4","path":"/v1/products","status":503}
+{"ts":"2026-06-18T04:25:45.401Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-74964","source":"db","duration_ms":"2440","trace_id":"3ad7530b250fc5c7b192e732834ffece"}
+{"ts":"2026-06-18T04:25:47.287Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33712","sku":"SKU-50483"}
+{"ts":"2026-06-18T04:25:50.005Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-86389","source":"db","duration_ms":"23140","trace_id":"46753a8c18a26c426099cb74e9a67629"}
+{"ts":"2026-06-18T04:25:50.132Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"2539462bf2665fdc534498a43ddc89f9"}
+{"ts":"2026-06-18T04:25:51.800Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"33112","sku":"SKU-38143"}
+{"ts":"2026-06-18T04:25:55.522Z","level":"warn","service":"product-catalog-api","msg":"db call slow","query":"select_product_by_sku","duration_ms":"32612","sku":"SKU-88735"}
+{"ts":"2026-06-18T04:25:55.564Z","level":"error","service":"product-catalog-api","msg":"request failed","status":503,"cause":"JdbcConnectionTimeout","trace_id":"8a7d74f133fdfb6c4766fb1c1eb8139e"}
+{"ts":"2026-06-18T04:25:59.932Z","level":"info","service":"product-catalog-api","msg":"product fetched","sku":"SKU-11424","source":"db","duration_ms":"2640","trace_id":"f3ae8de81ba14d845458e79368181a81"}

@@ -1,0 +1,63 @@
+{
+  "root": "notification-worker",
+  "nodes": [
+    {
+      "id": "kafka/notifications",
+      "kind": "queue",
+      "team": "platform",
+      "partitions": 24
+    },
+    {
+      "id": "notification-worker",
+      "kind": "worker",
+      "team": "growth",
+      "runtime": "node-22",
+      "replicas": 6,
+      "memory_limit": "1.5Gi",
+      "memory_request": "768Mi",
+      "restart_policy": "Always"
+    },
+    {
+      "id": "template-service",
+      "kind": "service",
+      "team": "growth"
+    },
+    {
+      "id": "email-gateway",
+      "kind": "service",
+      "team": "growth"
+    },
+    {
+      "id": "postgres-users",
+      "kind": "database",
+      "team": "platform"
+    }
+  ],
+  "edges": [
+    {
+      "from": "kafka/notifications",
+      "to": "notification-worker",
+      "protocol": "kafka",
+      "consumer_group": "notif-w"
+    },
+    {
+      "from": "notification-worker",
+      "to": "template-service",
+      "protocol": "http",
+      "timeout_ms": 1500
+    },
+    {
+      "from": "notification-worker",
+      "to": "email-gateway",
+      "protocol": "http",
+      "timeout_ms": 4000
+    },
+    {
+      "from": "notification-worker",
+      "to": "postgres-users",
+      "protocol": "pg",
+      "pool_max_size": 10
+    }
+  ],
+  "notes": "Worker is stateless per message. Steady-state RSS after a restart is ~410MB."
+}

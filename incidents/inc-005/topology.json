@@ -1,0 +1,93 @@
+{
+  "root": "shipping-rates-api",
+  "nodes": [
+    {
+      "id": "checkout-api",
+      "kind": "service",
+      "team": "payments"
+    },
+    {
+      "id": "shipping-rates-api",
+      "kind": "service",
+      "team": "fulfilment",
+      "runtime": "jvm-21",
+      "replicas": 6,
+      "worker_threads": 200,
+      "request_timeout_ms": 9000
+    },
+    {
+      "id": "carrier-a-api",
+      "kind": "third_party",
+      "vendor": "carrier-a",
+      "share_of_quotes": 0.31,
+      "timeout_ms": 6000
+    },
+    {
+      "id": "carrier-b-api",
+      "kind": "third_party",
+      "vendor": "carrier-b",
+      "share_of_quotes": 0.44,
+      "timeout_ms": 6000,
+      "retries": 3,
+      "retry_backoff": "none"
+    },
+    {
+      "id": "carrier-c-api",
+      "kind": "third_party",
+      "vendor": "carrier-c",
+      "share_of_quotes": 0.18,
+      "timeout_ms": 6000
+    },
+    {
+      "id": "carrier-d-api",
+      "kind": "third_party",
+      "vendor": "carrier-d",
+      "share_of_quotes": 0.07,
+      "timeout_ms": 6000
+    },
+    {
+      "id": "redis-rates",
+      "kind": "cache",
+      "team": "fulfilment"
+    }
+  ],
+  "edges": [
+    {
+      "from": "checkout-api",
+      "to": "shipping-rates-api",
+      "protocol": "http",
+      "timeout_ms": 10000
+    },
+    {
+      "from": "shipping-rates-api",
+      "to": "carrier-a-api",
+      "protocol": "https",
+      "circuit_breaker": true
+    },
+    {
+      "from": "shipping-rates-api",
+      "to": "carrier-b-api",
+      "protocol": "https",
+      "circuit_breaker": false,
+      "note": "breaker disabled 2026-03 after false trips"
+    },
+    {
+      "from": "shipping-rates-api",
+      "to": "carrier-c-api",
+      "protocol": "https",
+      "circuit_breaker": true
+    },
+    {
+      "from": "shipping-rates-api",
+      "to": "carrier-d-api",
+      "protocol": "https",
+      "circuit_breaker": true
+    },
+    {
+      "from": "shipping-rates-api",
+      "to": "redis-rates",
+      "protocol": "resp"
+    }
+  ],
+  "notes": "A quote fans out to all four carriers and waits for all of them. One slow carrier stalls the whole quote."
+}

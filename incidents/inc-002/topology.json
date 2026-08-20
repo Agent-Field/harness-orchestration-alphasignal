@@ -1,0 +1,73 @@
+{
+  "root": "payments-gateway",
+  "nodes": [
+    {
+      "id": "edge-proxy",
+      "kind": "gateway",
+      "team": "platform"
+    },
+    {
+      "id": "payments-gateway",
+      "kind": "service",
+      "team": "payments",
+      "runtime": "jvm-21",
+      "replicas": 12
+    },
+    {
+      "id": "acquirer-api",
+      "kind": "third_party",
+      "vendor": "card-acquirer",
+      "sla_p99_ms": 1200
+    },
+    {
+      "id": "ledger-service",
+      "kind": "service",
+      "team": "finance",
+      "replicas": 6
+    },
+    {
+      "id": "redis-ratelimit",
+      "kind": "cache",
+      "team": "platform"
+    },
+    {
+      "id": "postgres-payments",
+      "kind": "database",
+      "team": "payments"
+    }
+  ],
+  "edges": [
+    {
+      "from": "edge-proxy",
+      "to": "payments-gateway",
+      "protocol": "http",
+      "timeout_ms": 10000
+    },
+    {
+      "from": "payments-gateway",
+      "to": "acquirer-api",
+      "protocol": "https",
+      "timeout_ms": 8000
+    },
+    {
+      "from": "payments-gateway",
+      "to": "ledger-service",
+      "protocol": "grpc",
+      "timeout_ms": 2000
+    },
+    {
+      "from": "payments-gateway",
+      "to": "redis-ratelimit",
+      "protocol": "resp",
+      "timeout_ms": 150,
+      "fail_open": true
+    },
+    {
+      "from": "payments-gateway",
+      "to": "postgres-payments",
+      "protocol": "jdbc",
+      "pool_max_size": 30
+    }
+  ],
+  "notes": "Currency mix in eu-west-1: EUR 71%, GBP 19%, USD 4%, JPY 5.4%, other 0.6%."
+}

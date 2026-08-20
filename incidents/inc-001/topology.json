@@ -1,0 +1,79 @@
+{
+  "root": "checkout-api",
+  "nodes": [
+    {
+      "id": "edge-proxy",
+      "kind": "gateway",
+      "team": "platform"
+    },
+    {
+      "id": "checkout-api",
+      "kind": "service",
+      "team": "payments",
+      "runtime": "jvm-21",
+      "replicas": 6
+    },
+    {
+      "id": "postgres-orders",
+      "kind": "database",
+      "team": "payments",
+      "engine": "postgres-15",
+      "max_connections": 400
+    },
+    {
+      "id": "inventory-service",
+      "kind": "service",
+      "team": "fulfilment",
+      "replicas": 8
+    },
+    {
+      "id": "tax-vendor-api",
+      "kind": "third_party",
+      "vendor": "avalara-like",
+      "sla_p99_ms": 900
+    },
+    {
+      "id": "redis-session",
+      "kind": "cache",
+      "team": "platform"
+    }
+  ],
+  "edges": [
+    {
+      "from": "edge-proxy",
+      "to": "checkout-api",
+      "protocol": "http",
+      "timeout_ms": 30000
+    },
+    {
+      "from": "checkout-api",
+      "to": "postgres-orders",
+      "protocol": "jdbc",
+      "pool": "HikariPool-1",
+      "pool_max_size": 20,
+      "pool_min_idle": 4,
+      "connection_timeout_ms": 30000
+    },
+    {
+      "from": "checkout-api",
+      "to": "tax-vendor-api",
+      "protocol": "https",
+      "timeout_ms": 4000,
+      "retries": 2,
+      "observed_p99_ms": 2100
+    },
+    {
+      "from": "checkout-api",
+      "to": "inventory-service",
+      "protocol": "grpc",
+      "timeout_ms": 1500
+    },
+    {
+      "from": "checkout-api",
+      "to": "redis-session",
+      "protocol": "resp",
+      "timeout_ms": 200
+    }
+  ],
+  "notes": "checkout-api runs 6 replicas x 20 JDBC connections = 120 of 400 postgres slots."
+}

@@ -1,0 +1,518 @@
+{"ts":"2026-08-18T15:44:14.116Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-66830","price_cents":"15499","schema_version":6}
+{"ts":"2026-08-18T15:44:35.761Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-76086","price_cents":"5499","schema_version":6}
+{"ts":"2026-08-18T15:44:54.746Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"20","offset":"42083221"}
+{"ts":"2026-08-18T15:45:25.382Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-29579","price_cents":"23499","schema_version":6}
+{"ts":"2026-08-18T15:45:49.401Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"240","duration_ms":"91"}
+{"ts":"2026-08-18T15:45:58.421Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-93480","price_cents":"10499","schema_version":6}
+{"ts":"2026-08-18T15:46:00.295Z","level":"warn","service":"pricing-consumer","msg":"coordinator unavailable, rejoining group","group":"pricing-consumer","broker":"kafka-3","cause":"broker restart"}
+{"ts":"2026-08-18T15:46:20.048Z","level":"warn","service":"pricing-consumer","msg":"coordinator unavailable, rejoining group","group":"pricing-consumer","broker":"kafka-3","cause":"broker restart"}
+{"ts":"2026-08-18T15:46:30.050Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"27","offset":"42783221"}
+{"ts":"2026-08-18T15:46:35.127Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"33","records":"33"}
+{"ts":"2026-08-18T15:46:40.123Z","level":"warn","service":"pricing-consumer","msg":"coordinator unavailable, rejoining group","group":"pricing-consumer","broker":"kafka-3","cause":"broker restart"}
+{"ts":"2026-08-18T15:46:46.199Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"9","offset":"4983221"}
+{"ts":"2026-08-18T15:47:00.132Z","level":"warn","service":"pricing-consumer","msg":"coordinator unavailable, rejoining group","group":"pricing-consumer","broker":"kafka-3","cause":"broker restart"}
+{"ts":"2026-08-18T15:47:15.345Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"14","offset":"41483221"}
+{"ts":"2026-08-18T15:47:20.205Z","level":"warn","service":"pricing-consumer","msg":"coordinator unavailable, rejoining group","group":"pricing-consumer","broker":"kafka-3","cause":"broker restart"}
+{"ts":"2026-08-18T15:47:22.442Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"4","offset":"4483221"}
+{"ts":"2026-08-18T15:47:28.605Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-44340","price_cents":"23499","schema_version":6}
+{"ts":"2026-08-18T15:47:45.626Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"14","offset":"41483221"}
+{"ts":"2026-08-18T15:48:00.060Z","level":"info","service":"pricing-consumer","msg":"group rebalance complete, partitions assigned","group":"pricing-consumer","assigned":12,"members":4,"generation":119}
+{"ts":"2026-08-18T15:48:09.491Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"19","offset":"41983221"}
+{"ts":"2026-08-18T15:48:23.039Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"140"}
+{"ts":"2026-08-18T15:48:27.457Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"14","records":"14"}
+{"ts":"2026-08-18T15:48:28.649Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-73966","price_cents":"37499","schema_version":6}
+{"ts":"2026-08-18T15:48:37.306Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"360"}
+{"ts":"2026-08-18T15:48:46.538Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-20558","price_cents":"5499","schema_version":6}
+{"ts":"2026-08-18T15:48:47.427Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-76717","price_cents":"8499","schema_version":6}
+{"ts":"2026-08-18T15:48:59.353Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-12441","price_cents":"20499","schema_version":6}
+{"ts":"2026-08-18T15:49:20.053Z","level":"info","service":"pricing-consumer","msg":"lag recovered after rebalance","lag":1180,"group":"pricing-consumer"}
+{"ts":"2026-08-18T15:49:20.414Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"19","offset":"41983221"}
+{"ts":"2026-08-18T15:49:22.498Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"2","offset":"4283221"}
+{"ts":"2026-08-18T15:49:31.603Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"25","offset":"42583221"}
+{"ts":"2026-08-18T15:49:42.817Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"35","offset":"43583221"}
+{"ts":"2026-08-18T15:49:44.811Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T15:49:45.869Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"9","offset":"4983221"}
+{"ts":"2026-08-18T15:50:08.326Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T15:50:09.351Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-52912","price_cents":"16499","schema_version":6}
+{"ts":"2026-08-18T15:50:33.131Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"20","offset":"42083221"}
+{"ts":"2026-08-18T15:51:08.563Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"18","offset":"41883221"}
+{"ts":"2026-08-18T15:51:30.217Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-22530","price_cents":"7499","schema_version":6}
+{"ts":"2026-08-18T15:51:49.978Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-60297","price_cents":"23499","schema_version":6}
+{"ts":"2026-08-18T15:52:02.577Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T15:52:04.444Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"6","offset":"4683221"}
+{"ts":"2026-08-18T15:52:19.642Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-88799","price_cents":"9499","schema_version":6}
+{"ts":"2026-08-18T15:52:32.847Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"20","records":"20"}
+{"ts":"2026-08-18T15:52:41.823Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-70451","price_cents":"33499","schema_version":6}
+{"ts":"2026-08-18T15:52:55.734Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"380"}
+{"ts":"2026-08-18T15:53:13.537Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-79295","price_cents":"8499","schema_version":6}
+{"ts":"2026-08-18T15:53:31.163Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-78689","price_cents":"6499","schema_version":6}
+{"ts":"2026-08-18T15:53:33.195Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"150"}
+{"ts":"2026-08-18T15:53:36.533Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"39","offset":"43983221"}
+{"ts":"2026-08-18T15:53:40.704Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"20","duration_ms":"205"}
+{"ts":"2026-08-18T15:53:42.935Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"230","duration_ms":"118"}
+{"ts":"2026-08-18T15:53:55.191Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"9","offset":"4983221"}
+{"ts":"2026-08-18T15:53:55.428Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-39898","price_cents":"14499","schema_version":6}
+{"ts":"2026-08-18T15:53:59.930Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"40","offset":"44083221"}
+{"ts":"2026-08-18T15:54:07.471Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"39","offset":"43983221"}
+{"ts":"2026-08-18T15:54:20.830Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"10","offset":"41083221"}
+{"ts":"2026-08-18T15:54:22.962Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-97900","price_cents":"40499","schema_version":6}
+{"ts":"2026-08-18T15:54:29.185Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"2","offset":"4283221"}
+{"ts":"2026-08-18T15:54:39.248Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"6","records":"6"}
+{"ts":"2026-08-18T15:54:49.650Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"20","offset":"42083221"}
+{"ts":"2026-08-18T15:55:04.847Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"390"}
+{"ts":"2026-08-18T15:55:11.031Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-42442","price_cents":"4499","schema_version":6}
+{"ts":"2026-08-18T15:55:32.221Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"30","records":"30"}
+{"ts":"2026-08-18T15:55:42.042Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"190"}
+{"ts":"2026-08-18T15:55:48.774Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-34716","price_cents":"35499","schema_version":6}
+{"ts":"2026-08-18T15:55:49.459Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-23855","price_cents":"28499","schema_version":6}
+{"ts":"2026-08-18T15:55:52.484Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"10","offset":"41083221"}
+{"ts":"2026-08-18T15:56:43.133Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-84963","price_cents":"25499","schema_version":6}
+{"ts":"2026-08-18T15:56:55.889Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"27","offset":"42783221"}
+{"ts":"2026-08-18T15:57:06.642Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-41471","price_cents":"38499","schema_version":6}
+{"ts":"2026-08-18T15:57:18.990Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"5","offset":"4583221"}
+{"ts":"2026-08-18T15:57:49.632Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-31513","price_cents":"40499","schema_version":6}
+{"ts":"2026-08-18T15:57:50.772Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"200"}
+{"ts":"2026-08-18T15:58:11.487Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"5","offset":"4583221"}
+{"ts":"2026-08-18T15:58:14.718Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"2","offset":"4283221"}
+{"ts":"2026-08-18T15:58:17.436Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-25782","price_cents":"39499","schema_version":6}
+{"ts":"2026-08-18T15:58:29.241Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-25563","price_cents":"30499","schema_version":6}
+{"ts":"2026-08-18T15:58:33.370Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"90","duration_ms":"48"}
+{"ts":"2026-08-18T15:58:50.369Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-77555","price_cents":"21499","schema_version":6}
+{"ts":"2026-08-18T15:58:53.264Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"180","duration_ms":"69"}
+{"ts":"2026-08-18T15:58:56.354Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"180","duration_ms":"212"}
+{"ts":"2026-08-18T15:59:02.303Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"39","records":"39"}
+{"ts":"2026-08-18T15:59:26.034Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"34","offset":"43483221"}
+{"ts":"2026-08-18T15:59:29.728Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"350","duration_ms":"157"}
+{"ts":"2026-08-18T15:59:32.248Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-81172","price_cents":"27499","schema_version":6}
+{"ts":"2026-08-18T15:59:43.955Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-70977","price_cents":"18499","schema_version":6}
+{"ts":"2026-08-18T16:00:00.143Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-53860","price_cents":"32499","schema_version":6}
+{"ts":"2026-08-18T16:00:00.497Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-23428","price_cents":"27499","schema_version":6}
+{"ts":"2026-08-18T16:00:05.846Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"24","records":"24"}
+{"ts":"2026-08-18T16:00:19.802Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-36229","price_cents":"3499","schema_version":6}
+{"ts":"2026-08-18T16:00:34.145Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"380"}
+{"ts":"2026-08-18T16:00:38.649Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-44337","price_cents":"29499","schema_version":6}
+{"ts":"2026-08-18T16:00:40.212Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"40","offset":"44083221"}
+{"ts":"2026-08-18T16:01:15.454Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"36","offset":"43683221"}
+{"ts":"2026-08-18T16:01:23.461Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"200","duration_ms":"87"}
+{"ts":"2026-08-18T16:01:39.124Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"37","offset":"43783221"}
+{"ts":"2026-08-18T16:02:23.605Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"4","records":"4"}
+{"ts":"2026-08-18T16:02:27.844Z","level":"info","service":"pricing-consumer","msg":"postgres upsert","table":"price_current","rows":"330"}
+{"ts":"2026-08-18T16:02:44.289Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-73446","price_cents":"24499","schema_version":6}
+{"ts":"2026-08-18T16:02:49.421Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-67733","price_cents":"23499","schema_version":6}
+{"ts":"2026-08-18T16:02:53.476Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"290","duration_ms":"97"}
+{"ts":"2026-08-18T16:03:09.535Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"7","offset":"4783221"}
+{"ts":"2026-08-18T16:03:36.006Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-98191","price_cents":"16499","schema_version":6}
+{"ts":"2026-08-18T16:03:41.149Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-47947","price_cents":"16499","schema_version":6}
+{"ts":"2026-08-18T16:03:47.350Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"60","duration_ms":"94"}
+{"ts":"2026-08-18T16:03:48.807Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-97530","price_cents":"16499","schema_version":6}
+{"ts":"2026-08-18T16:03:59.058Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"17","offset":"41783221"}
+{"ts":"2026-08-18T16:05:00.056Z","level":"info","service":"pricing-consumer","msg":"schema registry lookup","subject":"catalog.price.v1-value","writer_version":7,"reader_version":6,"compatibility":"NONE"}
+{"ts":"2026-08-18T16:05:10.689Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"130","duration_ms":"26"}
+{"ts":"2026-08-18T16:05:40.113Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"1","offset":"4183244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:05:58.197Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-88783","price_cents":"10499","schema_version":6}
+{"ts":"2026-08-18T16:06:02.310Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"20","offset":"42083244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:06:14.370Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-40197","price_cents":"5499","schema_version":6}
+{"ts":"2026-08-18T16:06:20.161Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:06:20.749Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"36","records":"36"}
+{"ts":"2026-08-18T16:06:24.334Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"32","offset":"43283244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:06:27.218Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-45213","price_cents":"20499","schema_version":6}
+{"ts":"2026-08-18T16:06:30.347Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"39","offset":"43983221","reason":"deserialization"}
+{"ts":"2026-08-18T16:06:30.836Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-69280","price_cents":"33499","schema_version":6}
+{"ts":"2026-08-18T16:06:41.531Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"5","offset":"4583221"}
+{"ts":"2026-08-18T16:06:46.220Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"37","offset":"43783244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:07:00.092Z","level":"info","service":"pricing-consumer","msg":"schema registry lookup","subject":"catalog.price.v1-value","writer_version":7,"reader_version":6,"compatibility":"NONE"}
+{"ts":"2026-08-18T16:07:00.238Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:07:08.314Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"8","offset":"4883244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:07:18.305Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"9","records":"9"}
+{"ts":"2026-08-18T16:07:20.283Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:07:30.102Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"5","offset":"4583244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:07:30.570Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"34","offset":"43483221","reason":"deserialization"}
+{"ts":"2026-08-18T16:07:34.969Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"35","offset":"43583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:07:40.217Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:07:41.688Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"21","offset":"42183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:07:44.489Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"7","offset":"4783221","reason":"deserialization"}
+{"ts":"2026-08-18T16:07:46.810Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"23","offset":"42383221"}
+{"ts":"2026-08-18T16:07:50.328Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:07:50.728Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"160","duration_ms":"218"}
+{"ts":"2026-08-18T16:07:52.132Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"1","offset":"4183244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:08:14.042Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"10","offset":"41083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:08:14.349Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"36","offset":"43683244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:08:20.151Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:08:20.303Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:08:21.365Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"13","records":"13"}
+{"ts":"2026-08-18T16:08:21.750Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-86570","price_cents":"12499","schema_version":6}
+{"ts":"2026-08-18T16:08:30.719Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-36403","price_cents":"25499","schema_version":6}
+{"ts":"2026-08-18T16:08:34.220Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"90","failed":"90"}
+{"ts":"2026-08-18T16:08:36.185Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"15","offset":"41583244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:08:50.277Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:08:55.155Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"5","records":"5"}
+{"ts":"2026-08-18T16:08:55.917Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"32","offset":"43283221"}
+{"ts":"2026-08-18T16:08:58.000Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"19","offset":"41983244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:08:59.520Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-91689","price_cents":"30499","schema_version":6}
+{"ts":"2026-08-18T16:09:00.059Z","level":"info","service":"pricing-consumer","msg":"schema registry lookup","subject":"catalog.price.v1-value","writer_version":7,"reader_version":6,"compatibility":"NONE"}
+{"ts":"2026-08-18T16:09:00.238Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"42083400","failed_in_batch":"200"}
+{"ts":"2026-08-18T16:09:00.349Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:09:19.272Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"110","failed":"110"}
+{"ts":"2026-08-18T16:09:20.033Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"5","offset":"4583244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:09:20.187Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"60","duration_ms":"69"}
+{"ts":"2026-08-18T16:09:20.284Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:09:33.515Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"32","offset":"43283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:09:40.342Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:09:42.133Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"12","offset":"41283244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:09:43.142Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"140","duration_ms":"174"}
+{"ts":"2026-08-18T16:09:50.119Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:10:01.229Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"35","offset":"43583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:10:04.213Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"30","offset":"43083244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:10:09.710Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"40","offset":"44083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:10:20.131Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:10:20.315Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:10:22.372Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:10:23.648Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"18","records":"18"}
+{"ts":"2026-08-18T16:10:24.537Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"30","failed":"30"}
+{"ts":"2026-08-18T16:10:26.140Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"17","offset":"41783244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:10:28.984Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"50","failed":"50"}
+{"ts":"2026-08-18T16:10:30.205Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"43483400","failed_in_batch":"340"}
+{"ts":"2026-08-18T16:10:47.046Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"36","offset":"43683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:10:48.162Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"34","offset":"43483244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:10:50.178Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:10:58.039Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"380","failed":"380"}
+{"ts":"2026-08-18T16:10:59.819Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"23","offset":"42383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:11:00.051Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:11:00.282Z","level":"info","service":"pricing-consumer","msg":"schema registry lookup","subject":"catalog.price.v1-value","writer_version":7,"reader_version":6,"compatibility":"NONE"}
+{"ts":"2026-08-18T16:11:10.246Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"39","offset":"43983244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:11:10.605Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"10","offset":"41083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:11:20.106Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:11:28.139Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"6","offset":"4683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:11:28.952Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-50676","price_cents":"24499","schema_version":6}
+{"ts":"2026-08-18T16:11:32.246Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"1","offset":"4183244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:11:40.114Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:11:45.420Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"38","records":"38"}
+{"ts":"2026-08-18T16:11:50.207Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:11:54.337Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"18","offset":"41883244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:12:00.024Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"4583400","failed_in_batch":"50"}
+{"ts":"2026-08-18T16:12:16.205Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"3","offset":"4383244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:12:17.385Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"33","records":"33"}
+{"ts":"2026-08-18T16:12:18.380Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"6","offset":"4683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:12:20.277Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:12:20.335Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:12:30.980Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"17","offset":"41783221"}
+{"ts":"2026-08-18T16:12:38.187Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"17","offset":"41783244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:12:50.346Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:13:00.107Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:13:00.130Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"23","offset":"42383244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:13:20.224Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:13:21.900Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"8","records":"8"}
+{"ts":"2026-08-18T16:13:22.110Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"39","offset":"43983244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:13:30.302Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"41083400","failed_in_batch":"100"}
+{"ts":"2026-08-18T16:13:30.442Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"5","offset":"4583221"}
+{"ts":"2026-08-18T16:13:40.221Z","level":"warn","service":"pricing-consumer","msg":"unknown field in payload, ignoring","field":"promotion","topic":"catalog.price.v1","reader_schema":6}
+{"ts":"2026-08-18T16:13:44.323Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"22","offset":"42283244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:13:50.089Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:13:54.841Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"20","offset":"42083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:13:59.674Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"90","duration_ms":"159"}
+{"ts":"2026-08-18T16:14:06.082Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"38","offset":"43883244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:14:20.256Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:14:21.042Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"350","duration_ms":"45"}
+{"ts":"2026-08-18T16:14:28.304Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"34","offset":"43483244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:14:31.018Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"37","offset":"43783221","reason":"deserialization"}
+{"ts":"2026-08-18T16:14:41.300Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-51610","price_cents":"32499","schema_version":6}
+{"ts":"2026-08-18T16:14:42.157Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"22","records":"22"}
+{"ts":"2026-08-18T16:14:42.954Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"16","offset":"41683221"}
+{"ts":"2026-08-18T16:14:43.639Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"360","failed":"360"}
+{"ts":"2026-08-18T16:14:50.256Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:14:50.342Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"13","offset":"41383244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:14:56.151Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"270","duration_ms":"230"}
+{"ts":"2026-08-18T16:15:00.272Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"41483400","failed_in_batch":"140"}
+{"ts":"2026-08-18T16:15:06.260Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"120","failed":"120"}
+{"ts":"2026-08-18T16:15:12.053Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"10","offset":"41083244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:15:20.313Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:15:20.659Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:15:29.896Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"13","offset":"41383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:15:34.213Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"13","offset":"41383244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:15:36.034Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-16570","price_cents":"14499","schema_version":6}
+{"ts":"2026-08-18T16:15:41.515Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-46887","price_cents":"30499","schema_version":6}
+{"ts":"2026-08-18T16:15:41.894Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-27294","price_cents":"27499","schema_version":6}
+{"ts":"2026-08-18T16:15:50.141Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:15:55.716Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"270","failed":"270"}
+{"ts":"2026-08-18T16:15:56.301Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"35","offset":"43583244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:16:17.494Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"32","records":"32"}
+{"ts":"2026-08-18T16:16:18.318Z","level":"error","service":"pricing-consumer","msg":"failed to deserialize record","topic":"catalog.price.v1","partition":"5","offset":"4583244","error":"Cannot deserialize value of type `int` from String \"12.99\": not a valid Integer value","field":"price_cents","writer_schema":7,"reader_schema":6}
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.acme.pricing.PriceEventDeserializer.deserialize(PriceEventDeserializer.java:58)
+	at com.acme.pricing.PricingConsumer.poll(PricingConsumer.java:131)
+{"ts":"2026-08-18T16:16:20.195Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:16:21.426Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"11","offset":"41183221"}
+{"ts":"2026-08-18T16:16:30.043Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"4583400","failed_in_batch":"50"}
+{"ts":"2026-08-18T16:16:50.013Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","dlq":"pricing.dlq","reason":"deserialization","sample_payload":"{\"sku\":\"SKU-40218\",\"price_cents\":\"12.99\",\"currency\":\"USD\",\"promotion\":null}"}
+{"ts":"2026-08-18T16:16:57.716Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"230","failed":"230"}
+{"ts":"2026-08-18T16:17:20.304Z","level":"warn","service":"pricing-consumer","msg":"downstream freshness degraded","table":"price_current","rows_updated_last_10m":2140,"expected":120000,"oldest_stale_sku_age_min":"32"}
+{"ts":"2026-08-18T16:17:21.918Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:18:00.110Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"43883400","failed_in_batch":"380"}
+{"ts":"2026-08-18T16:18:15.459Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"24","offset":"42483221"}
+{"ts":"2026-08-18T16:18:36.224Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:18:54.449Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"350","duration_ms":"173"}
+{"ts":"2026-08-18T16:19:04.713Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"31","offset":"43183221"}
+{"ts":"2026-08-18T16:19:07.625Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"7","offset":"4783221","reason":"deserialization"}
+{"ts":"2026-08-18T16:19:30.084Z","level":"info","service":"pricing-consumer","msg":"offsets committed despite failures (dlq policy = commit_and_continue)","group":"pricing-consumer","committed":"4283400","failed_in_batch":"20"}
+{"ts":"2026-08-18T16:19:33.670Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-42125","price_cents":"37499","schema_version":6}
+{"ts":"2026-08-18T16:19:39.433Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"20","failed":"20"}
+{"ts":"2026-08-18T16:19:47.567Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-96472","price_cents":"32499","schema_version":6}
+{"ts":"2026-08-18T16:19:49.719Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"26","records":"26"}
+{"ts":"2026-08-18T16:20:00.235Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"150","failed":"150"}
+{"ts":"2026-08-18T16:20:04.056Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"10","offset":"41083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:20:08.389Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"40","offset":"44083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:20:33.644Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"40","offset":"44083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:20:35.195Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-38359","price_cents":"14499","schema_version":6}
+{"ts":"2026-08-18T16:20:40.014Z","level":"warn","service":"pricing-consumer","msg":"downstream freshness degraded","table":"price_current","rows_updated_last_10m":2140,"expected":120000,"oldest_stale_sku_age_min":"7"}
+{"ts":"2026-08-18T16:20:43.593Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"35","offset":"43583221"}
+{"ts":"2026-08-18T16:21:06.232Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:21:14.054Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:21:15.705Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"12","offset":"41283221"}
+{"ts":"2026-08-18T16:21:21.543Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"7","offset":"4783221"}
+{"ts":"2026-08-18T16:21:34.812Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"190","duration_ms":"197"}
+{"ts":"2026-08-18T16:21:37.025Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-38937","price_cents":"35499","schema_version":6}
+{"ts":"2026-08-18T16:21:56.073Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-61012","price_cents":"5499","schema_version":6}
+{"ts":"2026-08-18T16:21:56.369Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"180","duration_ms":"143"}
+{"ts":"2026-08-18T16:22:11.869Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-91248","price_cents":"40499","schema_version":6}
+{"ts":"2026-08-18T16:22:27.402Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"7","offset":"4783221"}
+{"ts":"2026-08-18T16:22:46.429Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-51278","price_cents":"9499","schema_version":6}
+{"ts":"2026-08-18T16:23:02.545Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"200","duration_ms":"224"}
+{"ts":"2026-08-18T16:23:04.045Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"2","records":"2"}
+{"ts":"2026-08-18T16:23:12.137Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"5","offset":"4583221"}
+{"ts":"2026-08-18T16:23:22.320Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"10","offset":"41083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:23:42.710Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-75783","price_cents":"35499","schema_version":6}
+{"ts":"2026-08-18T16:23:47.731Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-50267","price_cents":"2499","schema_version":6}
+{"ts":"2026-08-18T16:23:50.097Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"23","offset":"42383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:24:00.058Z","level":"warn","service":"pricing-consumer","msg":"downstream freshness degraded","table":"price_current","rows_updated_last_10m":2140,"expected":120000,"oldest_stale_sku_age_min":"15"}
+{"ts":"2026-08-18T16:24:00.282Z","level":"info","service":"pricing-consumer","msg":"producer identity for recent offsets","topic":"catalog.price.v1","producer_app":"pricing-publisher","producer_version":"5.0.0","first_seen":"2026-08-18T16:06:11Z"}
+{"ts":"2026-08-18T16:24:09.109Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"36","offset":"43683221"}
+{"ts":"2026-08-18T16:24:48.045Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"4","offset":"4483221","reason":"deserialization"}
+{"ts":"2026-08-18T16:24:49.152Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"160","failed":"160"}
+{"ts":"2026-08-18T16:25:11.180Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"10","offset":"41083221"}
+{"ts":"2026-08-18T16:25:18.640Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"70","failed":"70"}
+{"ts":"2026-08-18T16:25:38.672Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"200","duration_ms":"46"}
+{"ts":"2026-08-18T16:25:39.464Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"37","offset":"43783221"}
+{"ts":"2026-08-18T16:25:39.713Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"180","failed":"180"}
+{"ts":"2026-08-18T16:25:56.838Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-14994","price_cents":"18499","schema_version":6}
+{"ts":"2026-08-18T16:26:23.283Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"34","offset":"43483221","reason":"deserialization"}
+{"ts":"2026-08-18T16:26:26.159Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"1","offset":"4183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:27:00.919Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"230","failed":"230"}
+{"ts":"2026-08-18T16:27:20.344Z","level":"warn","service":"pricing-consumer","msg":"downstream freshness degraded","table":"price_current","rows_updated_last_10m":2140,"expected":120000,"oldest_stale_sku_age_min":"14"}
+{"ts":"2026-08-18T16:27:23.836Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-21197","price_cents":"1499","schema_version":6}
+{"ts":"2026-08-18T16:27:32.809Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"39","offset":"43983221","reason":"deserialization"}
+{"ts":"2026-08-18T16:27:37.781Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"13","offset":"41383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:27:38.262Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"260","failed":"260"}
+{"ts":"2026-08-18T16:27:50.801Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"8","offset":"4883221","reason":"deserialization"}
+{"ts":"2026-08-18T16:28:00.748Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"10","records":"10"}
+{"ts":"2026-08-18T16:28:02.948Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"22","offset":"42283221"}
+{"ts":"2026-08-18T16:28:27.992Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"28","offset":"42883221","reason":"deserialization"}
+{"ts":"2026-08-18T16:28:44.327Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-40716","price_cents":"34499","schema_version":6}
+{"ts":"2026-08-18T16:28:51.237Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-58550","price_cents":"30499","schema_version":6}
+{"ts":"2026-08-18T16:29:00.136Z","level":"info","service":"pricing-consumer","msg":"producer identity for recent offsets","topic":"catalog.price.v1","producer_app":"pricing-publisher","producer_version":"5.0.0","first_seen":"2026-08-18T16:06:11Z"}
+{"ts":"2026-08-18T16:29:10.122Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:30:11.265Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-34676","price_cents":"12499","schema_version":6}
+{"ts":"2026-08-18T16:30:15.783Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"32","offset":"43283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:30:29.723Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"220","failed":"220"}
+{"ts":"2026-08-18T16:30:37.495Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"13","offset":"41383221"}
+{"ts":"2026-08-18T16:30:38.395Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-54434","price_cents":"22499","schema_version":6}
+{"ts":"2026-08-18T16:30:40.320Z","level":"warn","service":"pricing-consumer","msg":"downstream freshness degraded","table":"price_current","rows_updated_last_10m":2140,"expected":120000,"oldest_stale_sku_age_min":"2"}
+{"ts":"2026-08-18T16:31:01.037Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"10","offset":"41083221"}
+{"ts":"2026-08-18T16:31:02.459Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-11779","price_cents":"23499","schema_version":6}
+{"ts":"2026-08-18T16:31:28.805Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-27736","price_cents":"40499","schema_version":6}
+{"ts":"2026-08-18T16:31:37.963Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-41764","price_cents":"11499","schema_version":6}
+{"ts":"2026-08-18T16:31:40.723Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"7","offset":"4783221"}
+{"ts":"2026-08-18T16:31:44.667Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"25","offset":"42583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:31:47.720Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"90","failed":"90"}
+{"ts":"2026-08-18T16:31:50.501Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-96062","price_cents":"39499","schema_version":6}
+{"ts":"2026-08-18T16:31:54.168Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"80","duration_ms":"237"}
+{"ts":"2026-08-18T16:32:09.307Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:32:17.687Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"9","offset":"4983221","reason":"deserialization"}
+{"ts":"2026-08-18T16:32:23.469Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"2","offset":"4283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:32:27.044Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"27","offset":"42783221"}
+{"ts":"2026-08-18T16:32:27.951Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"3","offset":"4383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:32:38.700Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"11","offset":"41183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:32:41.267Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"29","offset":"42983221"}
+{"ts":"2026-08-18T16:33:06.324Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"12","records":"12"}
+{"ts":"2026-08-18T16:33:11.603Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"370","failed":"370"}
+{"ts":"2026-08-18T16:33:22.133Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"40","offset":"44083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:33:28.702Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"5","records":"5"}
+{"ts":"2026-08-18T16:33:39.136Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"26","records":"26"}
+{"ts":"2026-08-18T16:34:09.747Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:34:24.022Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"35","offset":"43583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:34:34.189Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"33","records":"33"}
+{"ts":"2026-08-18T16:34:43.457Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"4","offset":"4483221"}
+{"ts":"2026-08-18T16:34:53.915Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"5","offset":"4583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:34:54.413Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"39","offset":"43983221","reason":"deserialization"}
+{"ts":"2026-08-18T16:35:19.403Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"31","offset":"43183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:35:24.112Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"22","offset":"42283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:35:25.992Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"12","offset":"41283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:35:29.184Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-15372","price_cents":"4499","schema_version":6}
+{"ts":"2026-08-18T16:35:41.682Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-39760","price_cents":"34499","schema_version":6}
+{"ts":"2026-08-18T16:35:43.941Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:35:49.145Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"36","offset":"43683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:35:58.040Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"40","failed":"40"}
+{"ts":"2026-08-18T16:36:53.796Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"10","records":"10"}
+{"ts":"2026-08-18T16:37:14.065Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-45118","price_cents":"9499","schema_version":6}
+{"ts":"2026-08-18T16:37:56.292Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"90","failed":"90"}
+{"ts":"2026-08-18T16:38:01.649Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"18","offset":"41883221"}
+{"ts":"2026-08-18T16:38:13.653Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"21","records":"21"}
+{"ts":"2026-08-18T16:38:41.277Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"3","offset":"4383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:38:52.248Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:38:58.024Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"15","offset":"41583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:39:15.349Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-20121","price_cents":"8499","schema_version":6}
+{"ts":"2026-08-18T16:39:20.356Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"5","offset":"4583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:39:25.195Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:39:46.846Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"3","offset":"4383221"}
+{"ts":"2026-08-18T16:40:06.531Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-29657","price_cents":"34499","schema_version":6}
+{"ts":"2026-08-18T16:40:14.437Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"11","offset":"41183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:40:17.364Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-12052","price_cents":"28499","schema_version":6}
+{"ts":"2026-08-18T16:40:44.931Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"4","records":"4"}
+{"ts":"2026-08-18T16:40:58.089Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"4","records":"4"}
+{"ts":"2026-08-18T16:40:59.788Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"12","offset":"41283221"}
+{"ts":"2026-08-18T16:41:06.273Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"2","offset":"4283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:41:12.640Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"34","offset":"43483221"}
+{"ts":"2026-08-18T16:41:39.182Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-52573","price_cents":"32499","schema_version":6}
+{"ts":"2026-08-18T16:41:46.327Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"18","offset":"41883221"}
+{"ts":"2026-08-18T16:41:47.149Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"37","records":"37"}
+{"ts":"2026-08-18T16:41:58.440Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"3","offset":"4383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:42:12.402Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"120","duration_ms":"106"}
+{"ts":"2026-08-18T16:42:21.367Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"100","failed":"100"}
+{"ts":"2026-08-18T16:42:30.407Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"20","records":"20"}
+{"ts":"2026-08-18T16:42:31.039Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"28","offset":"42883221","reason":"deserialization"}
+{"ts":"2026-08-18T16:42:33.961Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"390","failed":"390"}
+{"ts":"2026-08-18T16:42:41.072Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"190","failed":"190"}
+{"ts":"2026-08-18T16:42:59.153Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-64742","price_cents":"7499","schema_version":6}
+{"ts":"2026-08-18T16:43:11.736Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"370","failed":"370"}
+{"ts":"2026-08-18T16:43:17.781Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"380","failed":"380"}
+{"ts":"2026-08-18T16:43:45.638Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-36033","price_cents":"15499","schema_version":6}
+{"ts":"2026-08-18T16:43:50.432Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"16","records":"16"}
+{"ts":"2026-08-18T16:43:59.898Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"33","offset":"43383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:44:21.808Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"32","offset":"43283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:44:44.565Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"38","offset":"43883221","reason":"deserialization"}
+{"ts":"2026-08-18T16:45:27.193Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"37","offset":"43783221"}
+{"ts":"2026-08-18T16:45:28.026Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"10","records":"10"}
+{"ts":"2026-08-18T16:45:31.727Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-24823","price_cents":"35499","schema_version":6}
+{"ts":"2026-08-18T16:45:53.942Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"380","failed":"380"}
+{"ts":"2026-08-18T16:45:56.714Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"17","offset":"41783221"}
+{"ts":"2026-08-18T16:45:59.413Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"22","offset":"42283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:46:35.968Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-28309","price_cents":"15499","schema_version":6}
+{"ts":"2026-08-18T16:46:36.990Z","level":"debug","service":"pricing-consumer","msg":"batch processed","records":"30","duration_ms":"12"}
+{"ts":"2026-08-18T16:47:03.618Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"21","offset":"42183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:47:10.045Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"30","offset":"43083221"}
+{"ts":"2026-08-18T16:47:13.782Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"30","offset":"43083221","reason":"deserialization"}
+{"ts":"2026-08-18T16:47:14.276Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"6","offset":"4683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:47:32.038Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-54448","price_cents":"17499","schema_version":6}
+{"ts":"2026-08-18T16:47:34.171Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"36","offset":"43683221"}
+{"ts":"2026-08-18T16:48:05.237Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"27","offset":"42783221"}
+{"ts":"2026-08-18T16:48:11.093Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-20702","price_cents":"37499","schema_version":6}
+{"ts":"2026-08-18T16:48:21.222Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-89293","price_cents":"23499","schema_version":6}
+{"ts":"2026-08-18T16:48:24.627Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"37","offset":"43783221","reason":"deserialization"}
+{"ts":"2026-08-18T16:48:26.386Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"1","records":"1"}
+{"ts":"2026-08-18T16:48:34.384Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"16","offset":"41683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:48:35.666Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-41782","price_cents":"38499","schema_version":6}
+{"ts":"2026-08-18T16:48:36.199Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"6","offset":"4683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:48:37.899Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"15","offset":"41583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:48:38.306Z","level":"debug","service":"pricing-consumer","msg":"fetch response received","topic":"catalog.price.v1","partition":"4","records":"4"}
+{"ts":"2026-08-18T16:48:52.146Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"36","offset":"43683221","reason":"deserialization"}
+{"ts":"2026-08-18T16:49:05.804Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"32","offset":"43283221","reason":"deserialization"}
+{"ts":"2026-08-18T16:49:12.503Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-90847","price_cents":"8499","schema_version":6}
+{"ts":"2026-08-18T16:49:14.633Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"17","offset":"41783221","reason":"deserialization"}
+{"ts":"2026-08-18T16:49:17.894Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"3","offset":"4383221","reason":"deserialization"}
+{"ts":"2026-08-18T16:49:20.256Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-19540","price_cents":"14499","schema_version":6}
+{"ts":"2026-08-18T16:49:23.932Z","level":"warn","service":"pricing-consumer","msg":"batch partially failed","records":"70","failed":"70"}
+{"ts":"2026-08-18T16:49:28.584Z","level":"info","service":"pricing-consumer","msg":"price applied","sku":"SKU-60244","price_cents":"28499","schema_version":6}
+{"ts":"2026-08-18T16:49:34.836Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"25","offset":"42583221","reason":"deserialization"}
+{"ts":"2026-08-18T16:50:09.820Z","level":"error","service":"pricing-consumer","msg":"record sent to dlq","topic":"catalog.price.v1","partition":"1","offset":"4183221","reason":"deserialization"}
+{"ts":"2026-08-18T16:50:18.784Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:50:32.285Z","level":"info","service":"pricing-consumer","msg":"heartbeat sent to coordinator","group":"pricing-consumer","generation":118}
+{"ts":"2026-08-18T16:50:33.213Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"19","offset":"41983221"}
+{"ts":"2026-08-18T16:50:40.743Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"35","offset":"43583221"}
+{"ts":"2026-08-18T16:51:36.835Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"31","offset":"43183221"}
+{"ts":"2026-08-18T16:51:42.007Z","level":"info","service":"pricing-consumer","msg":"offsets committed","topic":"catalog.price.v1","group":"pricing-consumer","partition":"31","offset":"43183221"}

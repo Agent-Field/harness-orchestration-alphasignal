@@ -1,0 +1,29 @@
+{
+  "alert_id": "alt-2026-07-09-0214-payg",
+  "monitor_name": "payments-gateway :: 5xx rate > 1% (3m)",
+  "monitor_id": "mon-0402",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-07-09T02:14:00Z",
+  "detected_change_at": "2026-07-09T02:11:00Z",
+  "threshold": {
+    "metric": "http.server.5xx_rate",
+    "comparator": ">",
+    "value": 1.0,
+    "unit": "%",
+    "window": "3m"
+  },
+  "observed_value": 6.2,
+  "service": "payments-gateway",
+  "environment": "prod",
+  "region": "eu-west-1",
+  "notified": [
+    "oncall-payments"
+  ],
+  "runbook": "https://runbooks.internal/payments-gateway/5xx",
+  "tags": [
+    "tier:1",
+    "team:payments",
+    "pci-scope"
+  ]
+}

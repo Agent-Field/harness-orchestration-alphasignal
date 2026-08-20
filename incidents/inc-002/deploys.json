@@ -1,0 +1,33 @@
+{
+  "lookback_hours": 24,
+  "events": [
+    {
+      "id": "dep-7712",
+      "at": "2026-07-08T14:31:00Z",
+      "kind": "deploy",
+      "service": "ledger-service",
+      "version": "4.9.0",
+      "actor": "release-train",
+      "change": "batch settlement job tuning"
+    },
+    {
+      "id": "dep-7719",
+      "at": "2026-07-09T02:07:00Z",
+      "kind": "deploy",
+      "service": "payments-gateway",
+      "version": "2.14.0",
+      "actor": "release-train",
+      "change": "multi-currency rounding refactor; add JPY/KRW support",
+      "diff_summary": "MoneyRounding.java +96/-40; CurrencyRegistry.java +31/-4; AuthorizationHandler.java +12/-9",
+      "canary": "skipped (release-train off-hours policy)"
+    },
+    {
+      "id": "dep-7720",
+      "at": "2026-07-09T02:09:00Z",
+      "kind": "config",
+      "service": "redis-ratelimit",
+      "actor": "platform-bot",
+      "change": "scheduled failover to replica for patching (announced)"
+    }
+  ]
+}

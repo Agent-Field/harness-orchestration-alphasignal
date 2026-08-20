@@ -1,0 +1,29 @@
+{
+  "alert_id": "alt-2026-06-30-1422-booking",
+  "monitor_name": "booking-api :: 401 rate > 5% (5m)",
+  "monitor_id": "mon-2410",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-06-30T14:22:00Z",
+  "detected_change_at": "2026-06-30T14:08:00Z",
+  "threshold": {
+    "metric": "http.server.401_rate",
+    "comparator": ">",
+    "value": 5.0,
+    "unit": "%",
+    "window": "5m"
+  },
+  "observed_value": 16.8,
+  "service": "booking-api",
+  "environment": "prod",
+  "region": "eu-central-1",
+  "notified": [
+    "oncall-booking",
+    "oncall-platform"
+  ],
+  "runbook": "https://runbooks.internal/booking-api/401",
+  "tags": [
+    "tier:1",
+    "team:booking"
+  ]
+}

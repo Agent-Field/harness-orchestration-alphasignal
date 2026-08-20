@@ -1,0 +1,33 @@
+{
+  "lookback_hours": 24,
+  "events": [
+    {
+      "id": "dep-8801",
+      "at": "2026-06-17T16:22:00Z",
+      "kind": "deploy",
+      "service": "product-catalog-api",
+      "version": "7.4.0",
+      "actor": "abenali",
+      "change": "add colour-family facet to product response"
+    },
+    {
+      "id": "dep-8814",
+      "at": "2026-06-18T04:10:00Z",
+      "kind": "deploy",
+      "service": "product-catalog-api",
+      "version": "7.4.1",
+      "actor": "abenali",
+      "change": "chore: bump cache key namespace after response shape change",
+      "diff_summary": "CacheKeys.kt: NAMESPACE = \"pcat:v7\" -> \"pcat:v8\"  (1 line)",
+      "review_note": "approved as no-op, 1-line change, canary skipped"
+    },
+    {
+      "id": "dep-8815",
+      "at": "2026-06-18T04:14:00Z",
+      "kind": "config",
+      "service": "crawler-allowlist",
+      "actor": "seo-bot",
+      "change": "raise crawl budget for partner bot 40 rps -> 60 rps"
+    }
+  ]
+}

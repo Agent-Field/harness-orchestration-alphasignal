@@ -1,0 +1,86 @@
+{
+  "root": "search-api",
+  "nodes": [
+    {
+      "id": "search-api",
+      "kind": "service",
+      "team": "discovery",
+      "runtime": "go-1.24",
+      "replicas": 8,
+      "node_pool": "general-2",
+      "cpu_request": "500m",
+      "cpu_limit": "1000m"
+    },
+    {
+      "id": "elasticsearch-catalog",
+      "kind": "datastore",
+      "team": "platform",
+      "nodes": 6,
+      "node_pool": "data-1"
+    },
+    {
+      "id": "redis-suggest",
+      "kind": "cache",
+      "team": "discovery",
+      "node_pool": "general-2"
+    },
+    {
+      "id": "ml-featurizer",
+      "kind": "batch_job",
+      "team": "ml",
+      "node_pool": "general-2 (since 2026-08-05)",
+      "cpu_request": "200m",
+      "cpu_limit": null,
+      "parallelism": 16
+    },
+    {
+      "id": "node/general-2-a",
+      "kind": "node",
+      "cpu_cores": 8,
+      "pods": [
+        "search-api-7d4c9-xk2",
+        "search-api-7d4c9-pl9",
+        "ml-featurizer-*"
+      ]
+    },
+    {
+      "id": "node/general-2-b",
+      "kind": "node",
+      "cpu_cores": 8,
+      "pods": [
+        "search-api-7d4c9-r8m",
+        "redis-suggest-0"
+      ]
+    },
+    {
+      "id": "node/general-2-c",
+      "kind": "node",
+      "cpu_cores": 8,
+      "pods": [
+        "search-api-7d4c9-w2t",
+        "ml-featurizer-*"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "search-api",
+      "to": "elasticsearch-catalog",
+      "protocol": "http",
+      "timeout_ms": 2000
+    },
+    {
+      "from": "search-api",
+      "to": "redis-suggest",
+      "protocol": "resp",
+      "timeout_ms": 100
+    },
+    {
+      "from": "ml-featurizer",
+      "to": "elasticsearch-catalog",
+      "protocol": "http",
+      "note": "bulk writes"
+    }
+  ],
+  "notes": "general-2 is a shared pool. Only pods scheduled onto general-2-a and general-2-c share nodes with ml-featurizer."
+}

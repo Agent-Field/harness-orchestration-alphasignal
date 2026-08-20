@@ -1,0 +1,38 @@
+{
+  "alert_id": "alt-2026-06-18-0416-catalogdb",
+  "monitor_name": "postgres-catalog :: cpu > 90% (3m)",
+  "monitor_id": "mon-0918",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-06-18T04:16:00Z",
+  "detected_change_at": "2026-06-18T04:11:00Z",
+  "threshold": {
+    "metric": "rds.cpu_utilization",
+    "comparator": ">",
+    "value": 90,
+    "unit": "%",
+    "window": "3m"
+  },
+  "observed_value": 99.7,
+  "secondary_conditions": [
+    {
+      "metric": "product-catalog-api.http.server.duration.p99",
+      "comparator": ">",
+      "value": 1000,
+      "unit": "ms",
+      "observed": 6400
+    }
+  ],
+  "service": "product-catalog-api",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-catalog",
+    "oncall-dba"
+  ],
+  "runbook": "https://runbooks.internal/postgres/high-cpu",
+  "tags": [
+    "tier:1",
+    "team:catalog"
+  ]
+}

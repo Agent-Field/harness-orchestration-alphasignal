@@ -1,0 +1,379 @@
+ts=2026-07-31T23:44:03.415Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=113 trace_id=0f6f89f1940b9184e3e27dbc6156e261 req_id=req_25a2dc22a1f2
+ts=2026-07-31T23:44:06.232Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:44:06.281Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=237 trace_id=ae78a9ff2de9db38c17b8e397df55513 req_id=req_6c3c76913548
+ts=2026-07-31T23:44:38.092Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:44:48.396Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=199 trace_id=053763f380730902601631ddda92ee09 req_id=req_a6014c55ba03
+ts=2026-07-31T23:44:48.834Z level=info svc=identity-service msg="mTLS peer verified" peer=edge-proxy-client serial=0x3f9a21
+ts=2026-07-31T23:45:03.227Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:45:09.703Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=207 trace_id=d6c749d104229dd6b4b49f0a90986bd6 req_id=req_bb8636346a59
+ts=2026-07-31T23:45:17.553Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_461795 client=web ttl_s=900
+ts=2026-07-31T23:45:18.121Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:45:18.742Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=41 trace_id=b73ca3fd0e22cda66cbdc4aaff2e5eb0 req_id=req_ad5a55186e21
+ts=2026-07-31T23:45:19.760Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:45:27.273Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:45:29.704Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=112 trace_id=f2ba1be3b7b4fcc461d4155430f880c7 req_id=req_98d37d1d935b
+ts=2026-07-31T23:45:44.445Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=55 trace_id=60efaeb25a54c6ca4d2d2643021cc349 req_id=req_2ef51e517531
+ts=2026-07-31T23:45:49.071Z level=info svc=identity-service msg="mTLS peer verified" peer=edge-proxy-client serial=0x3f9a21
+ts=2026-07-31T23:45:50.341Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_163777 client=web ttl_s=900
+ts=2026-07-31T23:45:51.135Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_102978 src_ip=203.0.113.26 ua=python-requests/2.32
+ts=2026-07-31T23:45:51.312Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=224 trace_id=1f5a5c2d3003f3ae47fdf53bb07f5ff7 req_id=req_e3187d40cfd9
+ts=2026-07-31T23:45:53.582Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=64 trace_id=27406802b77f5e86352389c4b19a20bc req_id=req_e8a48f7d4ebb
+ts=2026-07-31T23:46:07.853Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_866067 client=web ttl_s=900
+ts=2026-07-31T23:46:11.337Z level=debug svc=identity-service msg="metrics scrape served" path=/metrics status=200 bytes=1214
+ts=2026-07-31T23:46:13.993Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=112 trace_id=c8d6b2f2f27587a5f58e56c80caf6a79 req_id=req_216fcaa37326
+ts=2026-07-31T23:46:22.728Z level=debug svc=identity-service msg="metrics scrape served" path=/metrics status=200 bytes=6214
+ts=2026-07-31T23:46:34.278Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=89 trace_id=0c5749b9b919480732687f112c6714ac req_id=req_829a74866e5b
+ts=2026-07-31T23:46:39.382Z level=info svc=identity-service msg="auth token validated" user_id=usr_484031 issuer=identity-service
+ts=2026-07-31T23:46:39.607Z level=info svc=identity-service msg="mTLS peer verified" peer=edge-proxy-client serial=0x3f9a21
+ts=2026-07-31T23:46:40.109Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:46:50.644Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=25 trace_id=1fc1e1201ed34443e912a68f72168d83 req_id=req_b9c2c82888be
+ts=2026-07-31T23:47:00.333Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:47:12.403Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=194 trace_id=81f653627c77de934a8a3133faa2aaf4 req_id=req_0417d44349e5
+ts=2026-07-31T23:47:12.977Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_429721 client=web ttl_s=900
+ts=2026-07-31T23:47:14.889Z level=info svc=identity-service msg="mTLS peer verified" peer=edge-proxy-client serial=0x3f9a21
+ts=2026-07-31T23:47:18.025Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_303682 src_ip=203.0.113.29 ua=python-requests/2.32
+ts=2026-07-31T23:47:21.534Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_114694 client=web ttl_s=900
+ts=2026-07-31T23:47:22.649Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=174 trace_id=c752d2839039857925be48c0071ba3d9 req_id=req_d84756ddc5f3
+ts=2026-07-31T23:47:37.320Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_677370 client=web ttl_s=900
+ts=2026-07-31T23:47:39.420Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=196 trace_id=da5908eb22daa78e1bda32dc7f175c5c req_id=req_0984b66b9123
+ts=2026-07-31T23:47:45.297Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_789771 client=web ttl_s=900
+ts=2026-07-31T23:47:46.471Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=76 trace_id=7a9ee35d3239908e92f5419355f08c10 req_id=req_69d5a6edc5e6
+ts=2026-07-31T23:47:49.780Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=74 trace_id=82b6211386aab54d7e797cc9d81408b8 req_id=req_78807cfd0ff7
+ts=2026-07-31T23:47:53.979Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:47:59.040Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:48:07.552Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=131 trace_id=e534b1f94946bda4a0431c2ffafeba09 req_id=req_a07257bbf203
+ts=2026-07-31T23:48:09.695Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_384502 client=web ttl_s=900
+ts=2026-07-31T23:48:15.953Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_558494 client=web ttl_s=900
+ts=2026-07-31T23:48:18.271Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_294435 client=web ttl_s=900
+ts=2026-07-31T23:48:20.004Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:48:27.183Z level=debug svc=identity-service msg="metrics scrape served" path=/metrics status=200 bytes=23214
+ts=2026-07-31T23:48:28.553Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=18 trace_id=7bf402f02249a7b7bb516ecf8905ddbb req_id=req_272b9613a3b6
+ts=2026-07-31T23:48:29.219Z level=debug svc=identity-service msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_787830
+ts=2026-07-31T23:48:39.127Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:48:39.302Z level=info svc=identity-service msg="mTLS peer verified" peer=edge-proxy-client serial=0x3f9a21
+ts=2026-07-31T23:48:41.958Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=75 trace_id=de09bbf539b868d437cd6ef570fff5f6 req_id=req_3d655a185eb5
+ts=2026-07-31T23:48:42.667Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:48:50.632Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-checkout-client serial=0x7c22be
+ts=2026-07-31T23:49:06.034Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=185 trace_id=18c771a80f7d825f1de9f953286f516f req_id=req_17ed2ee5d138
+ts=2026-07-31T23:49:18.800Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:49:31.058Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=88 trace_id=7c0443ea34edfc2100350be3020ae467 req_id=req_901e8118428f
+ts=2026-07-31T23:49:32.321Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=79 trace_id=ae205b3be602fb23c2aa7e61d99cdd9a req_id=req_781c4bd868eb
+ts=2026-07-31T23:49:38.003Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=91 trace_id=872fa2b9d2bcaf68bbf4b5bfb81b5a1e req_id=req_b56c37412011
+ts=2026-07-31T23:49:42.797Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:49:44.199Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=234 trace_id=ba88eeb697b6813a11d109ba52787285 req_id=req_c6fd467438da
+ts=2026-07-31T23:49:52.107Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:49:56.047Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=196 trace_id=c6754fab6b0eb870e25940c8aaaf89bb req_id=req_954de914a5d6
+ts=2026-07-31T23:49:57.638Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=96 trace_id=bb3467a48833ddf389e327cdc390a611 req_id=req_4c21ac7a386e
+ts=2026-07-31T23:49:59.699Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_482706 client=web ttl_s=900
+ts=2026-07-31T23:50:02.069Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=46 trace_id=6345b01139548b3c3187fdf8ba90f847 req_id=req_3c7706e8a514
+ts=2026-07-31T23:50:02.674Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=176 trace_id=35db4e41a63e9e6de6e35b978a82b9e2 req_id=req_fd7765d42be2
+ts=2026-07-31T23:50:03.153Z level=info svc=identity-service msg="session refreshed" user_id=usr_124907 ttl_s=1800
+ts=2026-07-31T23:50:07.160Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=39 trace_id=57b1c7310bd518956896b8ae60b037d1 req_id=req_65e1e29b2841
+ts=2026-07-31T23:50:09.734Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_578404 src_ip=203.0.113.35 ua=python-requests/2.32
+ts=2026-07-31T23:50:28.627Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=100 trace_id=6d0f154a65f28f32a42be9a6a849da12 req_id=req_420a9a839f78
+ts=2026-07-31T23:50:29.997Z level=debug svc=identity-service msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_940218
+ts=2026-07-31T23:50:39.622Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=119 trace_id=6aef7e8726b3f6b30474fdd14476d5eb req_id=req_3ea4d33fd535
+ts=2026-07-31T23:50:39.791Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_465054 client=web ttl_s=900
+ts=2026-07-31T23:50:42.987Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_623403 src_ip=203.0.113.15 ua=python-requests/2.32
+ts=2026-07-31T23:50:48.578Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_498793 client=web ttl_s=900
+ts=2026-07-31T23:50:53.623Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=52 trace_id=fd9a5c717f4ec66be7dcf02924b026ed req_id=req_efd46bd5d085
+ts=2026-07-31T23:50:55.766Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:51:02.269Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-checkout-client serial=0x7c22be
+ts=2026-07-31T23:51:08.009Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=162 trace_id=8bf4a46f003ad6f97d2a465bec58fc93 req_id=req_7a15f19bbef3
+ts=2026-07-31T23:51:24.976Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=142 trace_id=65fcdf0e8c7d26d2aeafd942e96c9efd req_id=req_b4f019ab77e7
+ts=2026-07-31T23:51:26.488Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_375339 client=web ttl_s=900
+ts=2026-07-31T23:51:35.594Z level=info svc=identity-service msg="session refreshed" user_id=usr_670980 ttl_s=1800
+ts=2026-07-31T23:51:36.857Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:51:37.519Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=188 trace_id=ac4aaba8af20b6d28c08f6cfa2aef970 req_id=req_f451471f6d2a
+ts=2026-07-31T23:51:49.507Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-checkout-client serial=0x7c22be
+ts=2026-07-31T23:52:10.733Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=144 trace_id=a3acc1d0d167dc4f6b92e3f7340505c1 req_id=req_05e7ccbb7936
+ts=2026-07-31T23:52:13.874Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=52 trace_id=3ba06def1a39118f20e1b3cdaf894038 req_id=req_a9c89e65868e
+ts=2026-07-31T23:52:16.714Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:52:26.366Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=137 trace_id=b37c0c6c5369abacab2955680224cfec req_id=req_2421e1b5504e
+ts=2026-07-31T23:52:26.452Z level=info svc=identity-service msg="auth token validated" user_id=usr_361313 issuer=identity-service
+ts=2026-07-31T23:52:42.830Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_689581 client=web ttl_s=900
+ts=2026-07-31T23:52:45.834Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=187 trace_id=68b8c191211f60f37edebba7440f38ac req_id=req_d1250b95effd
+ts=2026-07-31T23:52:48.373Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_697258 client=web ttl_s=900
+ts=2026-07-31T23:52:52.962Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=233 trace_id=1d4869340dc8e232b2f5520b6f59344c req_id=req_6a2cce52b748
+ts=2026-07-31T23:52:54.342Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=161 trace_id=0948f6f5c0b140676c605342989e5de9 req_id=req_34ae4fa3fee8
+ts=2026-07-31T23:52:59.668Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=225 trace_id=cf430415546020c042dc7c9e3c2d094d req_id=req_0b2bd71049c4
+ts=2026-07-31T23:52:59.957Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=163 trace_id=33b56eecd5ec11c2fcfb42012c07bfc5 req_id=req_5cfa891a20db
+ts=2026-07-31T23:53:14.084Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_298200 client=web ttl_s=900
+ts=2026-07-31T23:53:16.613Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=227 trace_id=2d1b94f985adff70c05b8f5bd88efddf req_id=req_e20ee506e65f
+ts=2026-07-31T23:53:19.006Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_682409 client=web ttl_s=900
+ts=2026-07-31T23:53:26.128Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=147 trace_id=df6ee9300b507e2120e412c1a64fb9c8 req_id=req_e8f3c6c7fcfe
+ts=2026-07-31T23:53:36.802Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=146 trace_id=2091b586df96709b6d267dda5cd53d77 req_id=req_e0ecf2646df8
+ts=2026-07-31T23:53:38.422Z level=debug svc=identity-service msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_109210
+ts=2026-07-31T23:53:44.643Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:54:01.517Z level=info svc=identity-service msg="mTLS peer verified" peer=edge-proxy-client serial=0x3f9a21
+ts=2026-07-31T23:54:09.342Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-checkout-client serial=0x7c22be
+ts=2026-07-31T23:54:11.784Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:54:13.470Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:54:32.118Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_346280 src_ip=203.0.113.2 ua=python-requests/2.32
+ts=2026-07-31T23:54:35.166Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=51 trace_id=29f02535a99b4a0f4d4c7cdb9ef50944 req_id=req_bd1ba95e2916
+ts=2026-07-31T23:54:37.926Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=200 trace_id=5e803657e2fd359d8233eab713a6a3af req_id=req_5ca718780795
+ts=2026-07-31T23:54:40.688Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:54:44.568Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_622665 src_ip=203.0.113.20 ua=python-requests/2.32
+ts=2026-07-31T23:54:53.585Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=204 trace_id=c89ee9994dfe0f1d9ffdc16f3b4ce257 req_id=req_059ff5b8717b
+ts=2026-07-31T23:54:54.286Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_598467 src_ip=203.0.113.24 ua=python-requests/2.32
+ts=2026-07-31T23:54:56.935Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=142 trace_id=d0e39817b8d45ad6f6799f2a1f9cead5 req_id=req_b3c6ee2158f4
+ts=2026-07-31T23:55:02.670Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=92 trace_id=02f0a360faa5c5109c055208b08fb582 req_id=req_d6e9003f4e37
+ts=2026-07-31T23:55:03.959Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:55:04.508Z level=debug svc=identity-service msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_754919
+ts=2026-07-31T23:55:09.056Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=107 trace_id=0e77786ee6ec3ab3966a89f709607c38 req_id=req_c26754b379a3
+ts=2026-07-31T23:55:12.511Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=19 trace_id=e59cb5934ecdab16403e53db8c45e56d req_id=req_242c65f42dc3
+ts=2026-07-31T23:55:16.546Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_389465 client=web ttl_s=900
+ts=2026-07-31T23:55:20.712Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_676481 client=web ttl_s=900
+ts=2026-07-31T23:55:24.592Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:55:39.051Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_668499 client=web ttl_s=900
+ts=2026-07-31T23:55:41.455Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=173 trace_id=704d60721429611da4275952a77e8cc2 req_id=req_b9d34e2efec8
+ts=2026-07-31T23:55:43.678Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=180 trace_id=b2f4bff088d88dcd7ae762e208159d19 req_id=req_757ea667d899
+ts=2026-07-31T23:55:47.815Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=88 trace_id=7569e0ede1d7888d1f63665dc3a6e8ae req_id=req_ccd825c5982d
+ts=2026-07-31T23:55:48.912Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:55:50.777Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=126 trace_id=2c05b8bb0fdce2498b4633c2179f2f22 req_id=req_9a6df963b7d5
+ts=2026-07-31T23:55:58.046Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:56:00.177Z level=warn svc=identity-service msg="client certificate approaching expiry" peer=edge-proxy-client serial=0x3f9a21 not_after=2026-07-31T23:59:59Z remaining_h=0
+ts=2026-07-31T23:56:05.382Z level=info svc=identity-service msg="auth token validated" user_id=usr_879650 issuer=identity-service
+ts=2026-07-31T23:56:28.349Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=46 trace_id=a16d019422a19d33e34af87cdc7786c7 req_id=req_6d1d4d09e5c4
+ts=2026-07-31T23:56:29.049Z level=debug svc=identity-service msg="metrics scrape served" path=/metrics status=200 bytes=18214
+ts=2026-07-31T23:56:32.599Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=184 trace_id=94fca5a6ea03c3773812a7ea41389c84 req_id=req_5a4ca82d9112
+ts=2026-07-31T23:56:49.710Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_144575 client=web ttl_s=900
+ts=2026-07-31T23:56:57.822Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=85 trace_id=e92aef3042a2f13362b50e4f0a0e6156 req_id=req_dd8c5237ac2d
+ts=2026-07-31T23:56:59.536Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=135 trace_id=deef99ed6c9b08ba3385fc6f8bca6e55 req_id=req_1ede0de6307f
+ts=2026-07-31T23:57:01.217Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=199 trace_id=00365564673bab2f1ef5fde6debfc210 req_id=req_9279900ca4d8
+ts=2026-07-31T23:57:08.860Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=210 trace_id=fe81d23e9d08fe662c8a361e93d6f083 req_id=req_dc907e82e0fe
+ts=2026-07-31T23:57:16.132Z level=debug svc=identity-service msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_422814
+ts=2026-07-31T23:57:20.463Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_342692 client=web ttl_s=900
+ts=2026-07-31T23:57:32.520Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=29 trace_id=e02a478c21c0cbcd0d50377b98b0d229 req_id=req_7879a7a153d7
+ts=2026-07-31T23:57:36.664Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=61 trace_id=2744dfa0f817a07f66b9f311a767487c req_id=req_1336aaf3a78e
+ts=2026-07-31T23:57:40.803Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=107 trace_id=f36ffee2ff9ce958d7020439949f3987 req_id=req_473fa29dd6f5
+ts=2026-07-31T23:57:48.111Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=126 trace_id=1d1cce8c068238d1a4fb213eae29eeac req_id=req_66bab3310682
+ts=2026-07-31T23:57:52.826Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:57:56.964Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=190 trace_id=9fd92fca4ade28abecef9143fc2cc32e req_id=req_10303c6b5519
+ts=2026-07-31T23:57:57.925Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=210 trace_id=0ec6cf1c58ca9077e31407b058783f92 req_id=req_4e925171950c
+ts=2026-07-31T23:58:00.632Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=39 trace_id=dcfae2c53da27620a1b9232ff6467ad5 req_id=req_98f28132c662
+ts=2026-07-31T23:58:05.517Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=91 trace_id=1b7a5edeb7cc140caf1cd21960224d40 req_id=req_22874468893a
+ts=2026-07-31T23:58:06.569Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:58:16.631Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_813774 client=web ttl_s=900
+ts=2026-07-31T23:58:17.022Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=39 trace_id=d4d9260993c32169302151c8cff40970 req_id=req_5088c37cf1b6
+ts=2026-07-31T23:58:20.303Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_540626 client=web ttl_s=900
+ts=2026-07-31T23:58:22.919Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=55 trace_id=ccc40ab2dba90d98de5d322c57b929eb req_id=req_266220d578b1
+ts=2026-07-31T23:58:23.786Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=23 trace_id=f6049090661d4b822623ccfc321fd498 req_id=req_c208bad828d7
+ts=2026-07-31T23:58:26.289Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:58:31.717Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=179 trace_id=c8d623e66e9524893bc17f3794485819 req_id=req_1c25b22e7466
+ts=2026-07-31T23:58:35.719Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=173 trace_id=26c1ef9704ff19f459ccdc1896e31320 req_id=req_3b353faad820
+ts=2026-07-31T23:58:44.701Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=227 trace_id=4ee266681fa3748232fbc63b1435f62f req_id=req_f5ffb02ff2bc
+ts=2026-07-31T23:58:56.604Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=233 trace_id=ed8f49dbfb84e2e10e6caacf5b009291 req_id=req_3fe99946342e
+ts=2026-07-31T23:58:57.429Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_415388 client=web ttl_s=900
+ts=2026-07-31T23:59:05.328Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=202 trace_id=619a4e966ddbbbdd1f5293d0c630af29 req_id=req_52728909ab5e
+ts=2026-07-31T23:59:08.012Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_446597 client=web ttl_s=900
+ts=2026-07-31T23:59:09.079Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=135 trace_id=191555e3af598ae251b0e7d3b89f9da0 req_id=req_e3c2a1c70388
+ts=2026-07-31T23:59:09.437Z level=info svc=identity-service msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=181 trace_id=ad51c4c70b2a65add28b2acdea11bf07 req_id=req_b43ec5f1fc4b
+ts=2026-07-31T23:59:11.269Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:59:12.929Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_314376 client=web ttl_s=900
+ts=2026-07-31T23:59:15.285Z level=debug svc=identity-service msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_481356
+ts=2026-07-31T23:59:15.486Z level=info svc=identity-service msg="token issued" grant=refresh_token user_id=usr_388419 client=web ttl_s=900
+ts=2026-07-31T23:59:18.983Z level=info svc=identity-service msg="/v1/userinfo completed" method=GET path=/v1/userinfo status=200 duration_ms=105 trace_id=ba90b78b6a9063c6e6f26cf4d7ade82e req_id=req_3ea2ef189243
+ts=2026-07-31T23:59:22.935Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=110 trace_id=1f3417fef459b466ba894e3f17746f80 req_id=req_5b9e8876ff25
+ts=2026-07-31T23:59:23.043Z level=debug svc=identity-service msg="metrics scrape served" path=/metrics status=200 bytes=21214
+ts=2026-07-31T23:59:24.057Z level=info svc=identity-service msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-07-31T23:59:31.187Z level=info svc=identity-service msg="/oauth/token completed" method=GET path=/oauth/token status=200 duration_ms=192 trace_id=2576b5ddeb913850b9fe1a3527ab8d02 req_id=req_d15d20d82707
+ts=2026-07-31T23:59:31.707Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-07-31T23:59:34.046Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_615904 src_ip=203.0.113.30 ua=python-requests/2.32
+ts=2026-07-31T23:59:36.089Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=207 trace_id=7a1ecee328293386925c334af9fe7342 req_id=req_a17bece615d8
+ts=2026-07-31T23:59:38.243Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=172 trace_id=1325e866e1b0a3b914f70bcc199da0d8 req_id=req_e654f638858d
+ts=2026-07-31T23:59:47.317Z level=info svc=identity-service msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-07-31T23:59:49.361Z level=info svc=identity-service msg="/oauth/introspect completed" method=GET path=/oauth/introspect status=200 duration_ms=233 trace_id=013db4440943eb6c86f0284f946b5623 req_id=req_af42797a7b15
+ts=2026-08-01T00:00:00.339Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.33 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:00:06.278Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:00:08.302Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.29 alert=certificate_expired(45)
+ts=2026-08-01T00:00:10.792Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:00:13.318Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_616311 src_ip=203.0.113.5 ua=python-requests/2.32
+ts=2026-08-01T00:00:15.269Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_170166 src_ip=203.0.113.40 ua=python-requests/2.32
+ts=2026-08-01T00:00:17.019Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_147844 src_ip=203.0.113.20 ua=python-requests/2.32
+ts=2026-08-01T00:00:21.592Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:00:22.193Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.18 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:00:26.848Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:00:40.064Z level=warn svc=identity-service msg="waf rule oauth-token-ratelimit tripped" src_ip=203.0.113.19 rule_id=wf-2291 action=throttle count=19
+ts=2026-08-01T00:00:44.050Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.3 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:00:44.283Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.11 alert=certificate_expired(45)
+ts=2026-08-01T00:01:03.413Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:01:06.205Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.30 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:01:06.784Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_758979 src_ip=203.0.113.3 ua=python-requests/2.32
+ts=2026-08-01T00:01:16.357Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:01:20.203Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.16 alert=certificate_expired(45)
+ts=2026-08-01T00:01:24.631Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_422027 src_ip=203.0.113.24 ua=python-requests/2.32
+ts=2026-08-01T00:01:26.701Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:01:28.277Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.33 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:01:28.615Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:01:33.880Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_586551 src_ip=203.0.113.32 ua=python-requests/2.32
+ts=2026-08-01T00:01:36.381Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:01:40.130Z level=warn svc=identity-service msg="waf rule oauth-token-ratelimit tripped" src_ip=203.0.113.24 rule_id=wf-2291 action=throttle count=24
+ts=2026-08-01T00:01:41.623Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:01:49.055Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:01:50.132Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.19 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:01:50.723Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:01:56.248Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.16 alert=certificate_expired(45)
+ts=2026-08-01T00:02:00.227Z level=info svc=identity-service msg="internal-ca renewal reminder digest (weekly)" expiring_30d=3 expired=1 detail="edge-proxy-client expired 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:02:00.845Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:02:12.230Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.8 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:02:21.560Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_126647 src_ip=203.0.113.39 ua=python-requests/2.32
+ts=2026-08-01T00:02:21.977Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:02:22.079Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:02:23.918Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_964413 src_ip=203.0.113.30 ua=python-requests/2.32
+ts=2026-08-01T00:02:24.315Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:02:27.394Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_939228 src_ip=203.0.113.37 ua=python-requests/2.32
+ts=2026-08-01T00:02:30.588Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:02:32.211Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.18 alert=certificate_expired(45)
+ts=2026-08-01T00:02:34.283Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.27 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:02:36.644Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:02:38.545Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_723361 src_ip=203.0.113.17 ua=python-requests/2.32
+ts=2026-08-01T00:02:38.766Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:02:40.052Z level=warn svc=identity-service msg="waf rule oauth-token-ratelimit tripped" src_ip=203.0.113.25 rule_id=wf-2291 action=throttle count=25
+ts=2026-08-01T00:02:43.759Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:02:54.638Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:02:56.138Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:02:56.155Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.2 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:03:00.121Z level=info svc=identity-service msg="peer connection counts" edge-proxy=0 checkout-api=41 mobile-bff=27
+ts=2026-08-01T00:03:08.276Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.5 alert=certificate_expired(45)
+ts=2026-08-01T00:03:12.341Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:03:12.425Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_808476 src_ip=203.0.113.2 ua=python-requests/2.32
+ts=2026-08-01T00:03:18.065Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.12 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:03:22.435Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:24.245Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:25.223Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:28.930Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:31.955Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:33.083Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:35.290Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:03:40.103Z level=warn svc=identity-service msg="waf rule oauth-token-ratelimit tripped" src_ip=203.0.113.29 rule_id=wf-2291 action=throttle count=29
+ts=2026-08-01T00:03:40.157Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.6 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:03:40.168Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:03:40.998Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_464386 src_ip=203.0.113.21 ua=python-requests/2.32
+ts=2026-08-01T00:03:44.089Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.35 alert=certificate_expired(45)
+ts=2026-08-01T00:03:44.635Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:03:45.305Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:03:50.351Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:03:59.696Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:03:59.798Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:04:02.342Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.25 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:04:02.938Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:04:17.155Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:04:20.042Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.17 alert=certificate_expired(45)
+ts=2026-08-01T00:04:23.016Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_852929 src_ip=203.0.113.15 ua=python-requests/2.32
+ts=2026-08-01T00:04:24.075Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.9 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:04:27.406Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:04:36.856Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:04:40.057Z level=warn svc=identity-service msg="waf rule oauth-token-ratelimit tripped" src_ip=203.0.113.14 rule_id=wf-2291 action=throttle count=14
+ts=2026-08-01T00:04:40.430Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:04:46.152Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.9 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:04:46.659Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_330173 src_ip=203.0.113.5 ua=python-requests/2.32
+ts=2026-08-01T00:04:56.181Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.28 alert=certificate_expired(45)
+ts=2026-08-01T00:04:58.729Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:05:00.230Z level=info svc=identity-service msg="peer connection counts" edge-proxy=0 checkout-api=41 mobile-bff=27
+ts=2026-08-01T00:05:06.299Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:05:08.290Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.12 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:05:12.067Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:05:16.233Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:05:30.291Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.32 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:05:32.109Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.36 alert=certificate_expired(45)
+ts=2026-08-01T00:05:32.649Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:05:37.668Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_451388 src_ip=203.0.113.16 ua=python-requests/2.32
+ts=2026-08-01T00:05:39.472Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_532860 src_ip=203.0.113.20 ua=python-requests/2.32
+ts=2026-08-01T00:05:40.100Z level=warn svc=identity-service msg="waf rule oauth-token-ratelimit tripped" src_ip=203.0.113.17 rule_id=wf-2291 action=throttle count=17
+ts=2026-08-01T00:05:41.467Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:05:45.629Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:05:52.011Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.29 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:05:57.240Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:05:58.010Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:06:05.228Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:06.054Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:06:08.265Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.40 alert=certificate_expired(45)
+ts=2026-08-01T00:06:08.301Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:10.123Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:11.585Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:06:13.850Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_901810 src_ip=203.0.113.25 ua=python-requests/2.32
+ts=2026-08-01T00:06:14.311Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.19 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:06:14.794Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:19.520Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_180079 src_ip=203.0.113.27 ua=python-requests/2.32
+ts=2026-08-01T00:06:20.036Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:32.539Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:36.013Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.26 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:06:42.964Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:44.273Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.28 alert=certificate_expired(45)
+ts=2026-08-01T00:06:49.187Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:54.686Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:06:58.314Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.2 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:07:00.047Z level=info svc=identity-service msg="peer connection counts" edge-proxy=0 checkout-api=41 mobile-bff=27
+ts=2026-08-01T00:07:12.798Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:07:20.009Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.29 alert=certificate_expired(45)
+ts=2026-08-01T00:07:20.200Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.21 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:07:24.416Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_389633 src_ip=203.0.113.29 ua=python-requests/2.32
+ts=2026-08-01T00:07:28.051Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:07:33.824Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:07:36.865Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:07:41.929Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:07:42.200Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.37 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:07:44.198Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:07:52.344Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:07:55.899Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:07:56.035Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.10 alert=certificate_expired(45)
+ts=2026-08-01T00:08:01.547Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_564797 src_ip=203.0.113.22 ua=python-requests/2.32
+ts=2026-08-01T00:08:02.195Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:08:03.151Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_199708 src_ip=203.0.113.31 ua=python-requests/2.32
+ts=2026-08-01T00:08:04.321Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.30 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:08:06.141Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:08:08.978Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_376779 src_ip=203.0.113.9 ua=python-requests/2.32
+ts=2026-08-01T00:08:23.458Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:08:24.307Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:08:26.286Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.12 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:08:32.066Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.3 alert=certificate_expired(45)
+ts=2026-08-01T00:08:39.133Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:08:48.266Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.6 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:09:02.556Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:09:05.588Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_319005 src_ip=203.0.113.33 ua=python-requests/2.32
+ts=2026-08-01T00:09:07.861Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:09:08.243Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.25 alert=certificate_expired(45)
+ts=2026-08-01T00:09:10.316Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.3 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:09:14.408Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_660767 src_ip=203.0.113.35 ua=python-requests/2.32
+ts=2026-08-01T00:09:16.915Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:09:22.910Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:09:23.518Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:09:29.002Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:09:29.299Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:09:32.266Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.3 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:09:43.646Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_696740 src_ip=203.0.113.24 ua=python-requests/2.32
+ts=2026-08-01T00:09:44.059Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.5 alert=certificate_expired(45)
+ts=2026-08-01T00:09:45.860Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:09:51.175Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:09:54.125Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.25 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:09:58.526Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:10:01.759Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:10:16.042Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.34 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:10:16.222Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:10:20.142Z level=error svc=identity-service msg="handshake aborted" listener=0.0.0.0:8443 peer_addr=10.4.11.29 alert=certificate_expired(45)
+ts=2026-08-01T00:10:20.172Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:10:24.101Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_520032 src_ip=203.0.113.32 ua=python-requests/2.32
+ts=2026-08-01T00:10:24.183Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:10:29.672Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_689079 src_ip=203.0.113.21 ua=python-requests/2.32
+ts=2026-08-01T00:10:31.053Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:10:32.175Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:10:33.105Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:10:38.181Z level=error svc=identity-service msg="tls: failed to verify client certificate" peer_addr=10.4.11.3 peer_cn=edge-proxy-client serial=0x3f9a21 error="x509: certificate has expired or is not yet valid: current time 2026-08-01T00:00:14Z is after 2026-07-31T23:59:59Z"
+ts=2026-08-01T00:10:42.074Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_645162 src_ip=203.0.113.35 ua=python-requests/2.32
+ts=2026-08-01T00:10:48.774Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_785053 src_ip=203.0.113.31 ua=python-requests/2.32
+ts=2026-08-01T00:11:01.479Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:11:06.838Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_656323 src_ip=203.0.113.35 ua=python-requests/2.32
+ts=2026-08-01T00:11:24.998Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:11:31.842Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:11:31.931Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:11:38.592Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:11:38.876Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:11:41.096Z level=warn svc=identity-service msg="login failed" reason=invalid_credentials user_id=usr_383658 src_ip=203.0.113.26 ua=python-requests/2.32
+ts=2026-08-01T00:11:42.601Z level=info svc=identity-service msg="mTLS peer verified" peer=svc-mobile-client serial=0x91aa03
+ts=2026-08-01T00:11:43.788Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:11:46.336Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:11:49.676Z level=info svc=identity-service msg="health check ok" path=/healthz status=200
+ts=2026-08-01T00:11:52.254Z level=info svc=identity-service msg="token issued" grant=client_credentials client=mobile-bff ttl_s=900
+ts=2026-08-01T00:11:55.062Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true
+ts=2026-08-01T00:11:57.550Z level=info svc=identity-service msg="token introspected" client=checkout-api active=true

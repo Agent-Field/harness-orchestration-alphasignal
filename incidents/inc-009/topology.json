@@ -1,0 +1,75 @@
+{
+  "root": "feed-api",
+  "nodes": [
+    {
+      "id": "edge-proxy",
+      "kind": "gateway",
+      "team": "platform"
+    },
+    {
+      "id": "feed-api",
+      "kind": "service",
+      "team": "feed",
+      "runtime": "go-1.24",
+      "replicas_min": 3,
+      "replicas_max": 40,
+      "profile": "io-bound: ~85% of wall time waiting on downstreams",
+      "cpu_at_full_load_pct": 22,
+      "max_inflight_per_replica": 120
+    },
+    {
+      "id": "ranking-service",
+      "kind": "service",
+      "team": "ml",
+      "timeout_ms": 700
+    },
+    {
+      "id": "profile-service",
+      "kind": "service",
+      "team": "identity",
+      "timeout_ms": 400
+    },
+    {
+      "id": "postgres-feed",
+      "kind": "database",
+      "team": "feed"
+    },
+    {
+      "id": "redis-feed",
+      "kind": "cache",
+      "team": "feed"
+    }
+  ],
+  "edges": [
+    {
+      "from": "edge-proxy",
+      "to": "feed-api",
+      "protocol": "http",
+      "timeout_ms": 5000
+    },
+    {
+      "from": "feed-api",
+      "to": "ranking-service",
+      "protocol": "grpc",
+      "fanout": 4
+    },
+    {
+      "from": "feed-api",
+      "to": "profile-service",
+      "protocol": "grpc",
+      "fanout": 1
+    },
+    {
+      "from": "feed-api",
+      "to": "postgres-feed",
+      "protocol": "pg",
+      "pool_max_size": 20
+    },
+    {
+      "from": "feed-api",
+      "to": "redis-feed",
+      "protocol": "resp"
+    }
+  ],
+  "notes": "feed-api spends most of its time blocked on IO, so CPU is a poor proxy for how loaded it is."
+}

@@ -1,0 +1,41 @@
+{
+  "lookback_hours": 240,
+  "events": [
+    {
+      "id": "dep-3301",
+      "at": "2026-07-27T10:12:00Z",
+      "kind": "deploy",
+      "service": "search-api",
+      "version": "1.9.7",
+      "actor": "dwu",
+      "change": "query parser: support quoted phrases"
+    },
+    {
+      "id": "dep-3388",
+      "at": "2026-08-05T15:48:00Z",
+      "kind": "config",
+      "service": "search-api",
+      "actor": "dwu",
+      "change": "LOG_LEVEL info -> debug for query-parser investigation",
+      "diff_summary": "configmap search-api-env: LOG_LEVEL info -> debug"
+    },
+    {
+      "id": "dep-3390",
+      "at": "2026-08-05T20:00:00Z",
+      "kind": "schedule",
+      "service": "elasticsearch-catalog",
+      "actor": "platform-bot",
+      "change": "nightly force-merge / index rebuild window 20:00-23:00 UTC (recurring)"
+    },
+    {
+      "id": "dep-3391",
+      "at": "2026-08-05T21:04:00Z",
+      "kind": "deploy",
+      "service": "ml-featurizer",
+      "version": "0.4.0",
+      "actor": "rgupta",
+      "change": "nightly embedding backfill job; moved from batch-pool to default scheduling",
+      "diff_summary": "cronjob.yaml: nodeSelector pool=batch-1 REMOVED; resources.limits.cpu REMOVED; parallelism 4 -> 16"
+    }
+  ]
+}

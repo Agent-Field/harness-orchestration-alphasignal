@@ -1,0 +1,30 @@
+{
+  "alert_id": "alt-2026-08-01-0002-identity",
+  "monitor_name": "edge-proxy :: upstream_5xx{upstream=identity-service} > 5% (2m)",
+  "monitor_id": "mon-0771",
+  "severity": "SEV1",
+  "state": "firing",
+  "fired_at": "2026-08-01T00:02:00Z",
+  "detected_change_at": "2026-08-01T00:00:14Z",
+  "threshold": {
+    "metric": "nginx.upstream.5xx_rate",
+    "comparator": ">",
+    "value": 5.0,
+    "unit": "%",
+    "window": "2m"
+  },
+  "observed_value": 97.8,
+  "service": "identity-service",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-platform",
+    "oncall-security"
+  ],
+  "runbook": "https://runbooks.internal/identity/upstream-errors",
+  "tags": [
+    "tier:0",
+    "team:platform",
+    "auth"
+  ]
+}

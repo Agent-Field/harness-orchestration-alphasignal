@@ -1,0 +1,34 @@
+{
+  "lookback_hours": 24,
+  "events": [
+    {
+      "id": "dep-9110",
+      "at": "2026-08-18T09:15:00Z",
+      "kind": "deploy",
+      "service": "pricing-consumer",
+      "version": "2.6.4",
+      "actor": "ci-bot",
+      "change": "dependency bump: kafka client 3.6.1 -> 3.7.0, jackson 2.16 -> 2.17",
+      "diff_summary": "pom.xml +2/-2"
+    },
+    {
+      "id": "dep-9133",
+      "at": "2026-08-18T15:02:00Z",
+      "kind": "maintenance",
+      "service": "kafka/cluster-main",
+      "actor": "platform-bot",
+      "change": "rolling broker restart for patch (brokers 1-5, completed 15:38Z)"
+    },
+    {
+      "id": "dep-9140",
+      "at": "2026-08-18T16:05:00Z",
+      "kind": "deploy",
+      "service": "pricing-publisher",
+      "version": "5.0.0",
+      "actor": "team-merch",
+      "change": "price feed v5: promotional pricing support",
+      "diff_summary": "PriceEvent.avsc: add field 'promotion' (record, nullable); change 'price_cents' from int to string (decimal-as-string); schema registry subject catalog.price.v1-value new version 7 registered, compatibility check set to NONE for this release",
+      "note": "cross-team change; pricing-consumer is a registered downstream of this subject"
+    }
+  ]
+}

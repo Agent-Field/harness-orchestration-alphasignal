@@ -1,0 +1,29 @@
+{
+  "alert_id": "alt-2026-07-21-1120-shipping",
+  "monitor_name": "shipping-rates-api :: 504 rate > 5% (5m)",
+  "monitor_id": "mon-1533",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-07-21T11:20:00Z",
+  "detected_change_at": "2026-07-21T11:12:00Z",
+  "threshold": {
+    "metric": "http.server.504_rate",
+    "comparator": ">",
+    "value": 5.0,
+    "unit": "%",
+    "window": "5m"
+  },
+  "observed_value": 21.4,
+  "service": "shipping-rates-api",
+  "environment": "prod",
+  "region": "eu-west-1",
+  "notified": [
+    "oncall-fulfilment"
+  ],
+  "runbook": "https://runbooks.internal/shipping-rates/timeouts",
+  "tags": [
+    "tier:1",
+    "team:fulfilment",
+    "revenue-path"
+  ]
+}

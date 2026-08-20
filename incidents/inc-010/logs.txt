@@ -1,0 +1,451 @@
+ts=2026-07-28T08:56:01.281Z level=info svc=auth-service msg="verify ok" client=checkout-api session=usr_856572 duration_ms=36 attempt=1
+ts=2026-07-28T08:56:03.488Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_241002 duration_ms=23 attempt=1
+ts=2026-07-28T08:56:13.173Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_820899 duration_ms=10 attempt=1
+ts=2026-07-28T08:56:13.910Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_995600 duration_ms=29 attempt=1
+ts=2026-07-28T08:56:18.875Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_423224 duration_ms=33 attempt=1
+ts=2026-07-28T08:56:24.168Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_987468 duration_ms=25 attempt=1
+ts=2026-07-28T08:56:24.645Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_653642 duration_ms=24 attempt=1
+ts=2026-07-28T08:56:27.274Z level=info svc=auth-service msg="verify ok" client=mobile-bff session=usr_769760 duration_ms=15 attempt=1
+ts=2026-07-28T08:56:28.188Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_741855 duration_ms=33 attempt=1
+ts=2026-07-28T08:56:33.787Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_534442 duration_ms=6 attempt=1
+ts=2026-07-28T08:56:34.127Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_812371 duration_ms=30 attempt=1
+ts=2026-07-28T08:56:34.423Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_752199 duration_ms=38 attempt=1
+ts=2026-07-28T08:56:35.213Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T08:56:38.969Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_251254 duration_ms=29 attempt=1
+ts=2026-07-28T08:56:39.250Z level=info svc=auth-service msg="verify ok" client=checkout-api session=usr_513591 duration_ms=7 attempt=1
+ts=2026-07-28T08:56:48.153Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_977565 duration_ms=30 attempt=1
+ts=2026-07-28T08:56:48.322Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_730103 duration_ms=25 attempt=1
+ts=2026-07-28T08:56:52.116Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_487483 duration_ms=40 attempt=1
+ts=2026-07-28T08:56:57.083Z level=info svc=auth-service msg="verify ok" client=mobile-bff session=usr_190825 duration_ms=27 attempt=1
+ts=2026-07-28T08:57:03.965Z level=debug svc=auth-service msg="introspection cache hit" ttl_left_s=35
+ts=2026-07-28T08:57:21.185Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T08:57:22.944Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_101790 duration_ms=9 attempt=1
+ts=2026-07-28T08:57:24.612Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_670824 duration_ms=21 attempt=1
+ts=2026-07-28T08:57:24.924Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_310052 duration_ms=19 attempt=1
+ts=2026-07-28T08:57:26.250Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_709319 duration_ms=25 attempt=1
+ts=2026-07-28T08:57:27.683Z level=info svc=auth-service msg="verify ok" client=mobile-bff session=usr_667008 duration_ms=7 attempt=1
+ts=2026-07-28T08:57:35.014Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_510144 duration_ms=6 attempt=1
+ts=2026-07-28T08:57:35.699Z level=info svc=auth-service msg="verify ok" client=mobile-bff session=usr_102675 duration_ms=34 attempt=1
+ts=2026-07-28T08:57:36.796Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_888699 duration_ms=39 attempt=1
+ts=2026-07-28T08:57:49.857Z level=info svc=auth-service msg="verify ok" client=mobile-bff session=usr_918963 duration_ms=8 attempt=1
+ts=2026-07-28T08:57:53.163Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_649485 duration_ms=4 attempt=1
+ts=2026-07-28T08:58:07.756Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_163329 duration_ms=4 attempt=1
+ts=2026-07-28T08:58:10.231Z level=debug svc=auth-service msg="introspection cache hit" ttl_left_s=18
+ts=2026-07-28T08:58:11.217Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_957425 duration_ms=34 attempt=1
+ts=2026-07-28T08:58:15.608Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_628709 duration_ms=16 attempt=1
+ts=2026-07-28T08:58:23.481Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_510481 duration_ms=33 attempt=1
+ts=2026-07-28T08:58:31.024Z level=debug svc=auth-service msg="introspection cache hit" ttl_left_s=39
+ts=2026-07-28T08:58:32.437Z level=debug svc=auth-service msg="introspection cache hit" ttl_left_s=27
+ts=2026-07-28T08:58:39.122Z level=info svc=auth-service msg="verify ok" client=mobile-bff session=usr_339840 duration_ms=34 attempt=1
+ts=2026-07-28T08:58:39.569Z level=info svc=auth-service msg="verify ok" client=checkout-api session=usr_314445 duration_ms=1 attempt=1
+ts=2026-07-28T08:58:49.777Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_987208 duration_ms=35 attempt=1
+ts=2026-07-28T08:58:54.172Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_295299 duration_ms=32 attempt=1
+ts=2026-07-28T08:58:56.055Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_346593 duration_ms=39 attempt=1
+ts=2026-07-28T08:58:58.646Z level=info svc=auth-service msg="verify ok" client=checkout-api session=usr_505337 duration_ms=13 attempt=1
+ts=2026-07-28T08:58:58.794Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T08:59:19.103Z level=info svc=auth-service msg="verify ok" client=checkout-api session=usr_151725 duration_ms=33 attempt=1
+ts=2026-07-28T08:59:23.023Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_264736 duration_ms=13 attempt=1
+ts=2026-07-28T08:59:29.083Z level=info svc=auth-service msg="verify ok" client=checkout-api session=usr_510559 duration_ms=28 attempt=1
+ts=2026-07-28T08:59:32.992Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_808827 duration_ms=12 attempt=1
+ts=2026-07-28T08:59:48.749Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_524778 duration_ms=10 attempt=1
+ts=2026-07-28T08:59:54.366Z level=warn svc=auth-service msg="request queued" queue_depth=36021 workers_busy=256 workers_max=256
+Jul 28 09:00:00 general-4-c kubelet[1000]: WARN pod terminated by node drain pod=auth-service-5f7c-w9k reason=NodeReboot
+ts=2026-07-28T09:00:03.804Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_809652 duration_ms=23800 attempt=38
+ts=2026-07-28T09:00:06.507Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_682544 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=33
+ts=2026-07-28T09:00:08.871Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_826586 duration_ms=22800 attempt=28
+ts=2026-07-28T09:00:10.285Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_338266 attempt=1
+ts=2026-07-28T09:00:13.259Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_357424 attempt=1
+ts=2026-07-28T09:00:15.465Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_306584 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=15
+ts=2026-07-28T09:00:15.990Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:00:16.122Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_757738 attempt=1
+ts=2026-07-28T09:00:17.048Z level=warn svc=auth-service msg="request queued" queue_depth=11021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:00:19.241Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_324010 attempt=1
+ts=2026-07-28T09:00:22.124Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_743255 attempt=1
+ts=2026-07-28T09:00:25.122Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_128100 attempt=1
+ts=2026-07-28T09:00:28.196Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_186948 attempt=1
+ts=2026-07-28T09:00:31.288Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_472752 attempt=1
+ts=2026-07-28T09:00:31.520Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_209554 duration_ms=22100 attempt=21
+ts=2026-07-28T09:00:34.331Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_683714 attempt=1
+ts=2026-07-28T09:00:37.119Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_525917 attempt=1
+ts=2026-07-28T09:00:40.061Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_870254 attempt=1
+ts=2026-07-28T09:00:40.583Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:00:41.810Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_373384 error=RESOURCE_EXHAUSTED queue_depth=37021
+ts=2026-07-28T09:00:43.220Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_399753 attempt=1
+ts=2026-07-28T09:00:43.556Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_867197 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=13
+ts=2026-07-28T09:00:46.277Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_140799 attempt=1
+ts=2026-07-28T09:00:46.416Z level=warn svc=auth-service msg="request queued" queue_depth=17021 workers_busy=256 workers_max=256
+Jul 28 09:00:48 general-4-h kubelet[1000]: INFO replacement pod ready, endpoints updated pod=auth-service-5f7c-2bd ready=true healthy_replicas=9
+ts=2026-07-28T09:00:49.096Z level=error svc=auth-service msg="verify failed" client=web-bff error="UNAVAILABLE: connection reset" replica=auth-service-5f7c-w9k session=usr_722428 attempt=1
+ts=2026-07-28T09:00:54.901Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_132280 duration_ms=21100 attempt=11
+ts=2026-07-28T09:00:55.973Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_945518 duration_ms=22700 attempt=27
+ts=2026-07-28T09:00:59.782Z level=warn svc=auth-service msg="request queued" queue_depth=32021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:01:00.326Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=2e5112f34a762e260a33a48d7f08dfcf attempt=3 max_attempts=5 backoff=none original_age_ms=1390
+ts=2026-07-28T09:01:01.018Z level=warn svc=auth-service msg="request queued" queue_depth=27021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:01:02.282Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_407016 duration_ms=23300 attempt=33
+ts=2026-07-28T09:01:05.022Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_555163 error=RESOURCE_EXHAUSTED queue_depth=23021
+ts=2026-07-28T09:01:18.246Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=2b80f859901b6723dcd002b4daf95dcf attempt=3 max_attempts=5 backoff=none original_age_ms=1400
+ts=2026-07-28T09:01:19.349Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_617722 duration_ms=22300 attempt=23
+ts=2026-07-28T09:01:21.148Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_777000 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=22
+ts=2026-07-28T09:01:22.981Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_354027 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=32
+ts=2026-07-28T09:01:23.257Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_368553 error=RESOURCE_EXHAUSTED queue_depth=40021
+ts=2026-07-28T09:01:29.937Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_808294 duration_ms=23500 attempt=35
+ts=2026-07-28T09:01:30.154Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=26400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:01:33.242Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_788856 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=31
+ts=2026-07-28T09:01:33.296Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_736740 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=39
+ts=2026-07-28T09:01:34.041Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_999312 duration_ms=21800 attempt=18
+ts=2026-07-28T09:01:35.776Z level=warn svc=auth-service msg="request queued" queue_depth=38021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:01:36.047Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=41b6fd8c0ba06a3e0fda1de8a67a7b8b attempt=3 max_attempts=5 backoff=none original_age_ms=1270
+ts=2026-07-28T09:01:40.044Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_137426 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=7
+ts=2026-07-28T09:01:41.602Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_542978 duration_ms=22400 attempt=24
+ts=2026-07-28T09:01:43.804Z level=warn svc=auth-service msg="request queued" queue_depth=30021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:01:46.498Z level=warn svc=auth-service msg="request queued" queue_depth=35021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:01:49.779Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:01:54.300Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=7bf0e08645c7969bb4fad4fc2a77891e attempt=3 max_attempts=5 backoff=none original_age_ms=1290
+ts=2026-07-28T09:02:04.369Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_198196 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=15
+ts=2026-07-28T09:02:07.454Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_875623 error=RESOURCE_EXHAUSTED queue_depth=37021
+ts=2026-07-28T09:02:08.694Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_894171 duration_ms=23000 attempt=30
+ts=2026-07-28T09:02:12.256Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=6de46760f9a025e3937ab5ea206bb226 attempt=3 max_attempts=5 backoff=none original_age_ms=1160
+ts=2026-07-28T09:02:14.491Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_365290 duration_ms=21100 attempt=11
+ts=2026-07-28T09:02:22.147Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_259052 duration_ms=22700 attempt=27
+ts=2026-07-28T09:02:24.474Z level=warn svc=auth-service msg="request queued" queue_depth=26021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:02:26.078Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_379797 error=RESOURCE_EXHAUSTED queue_depth=38021
+ts=2026-07-28T09:02:27.244Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_790134 duration_ms=22700 attempt=27
+ts=2026-07-28T09:02:30.023Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=af94955e3ec258122765aebb21020e52 attempt=3 max_attempts=5 backoff=none original_age_ms=1360
+ts=2026-07-28T09:02:30.101Z level=warn svc=auth-service msg="request queued" queue_depth=20021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:02:32.048Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_320424 duration_ms=21600 attempt=16
+ts=2026-07-28T09:02:35.566Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_597121 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=38
+ts=2026-07-28T09:02:37.004Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_859913 duration_ms=22100 attempt=21
+ts=2026-07-28T09:02:38.321Z level=warn svc=auth-service msg="request queued" queue_depth=5021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:02:39.175Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_144742 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=1
+ts=2026-07-28T09:02:39.570Z level=warn svc=auth-service msg="request queued" queue_depth=8021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:02:40.027Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=217400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:02:40.057Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:02:48.150Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=ff863d4708144bc4e1e9a6429d8688f6 attempt=3 max_attempts=5 backoff=none original_age_ms=1400
+ts=2026-07-28T09:02:53.868Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:03:03.225Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_660487 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=25
+ts=2026-07-28T09:03:04.798Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_204155 duration_ms=2600 attempt=6
+ts=2026-07-28T09:03:05.526Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_680377 duration_ms=21500 attempt=15
+ts=2026-07-28T09:03:06.037Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=16b79e339e2b4b15dd4d18631bf31b50 attempt=3 max_attempts=5 backoff=none original_age_ms=1120
+ts=2026-07-28T09:03:07.402Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_597255 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=32
+ts=2026-07-28T09:03:14.607Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_129549 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=36
+ts=2026-07-28T09:03:20.822Z level=warn svc=auth-service msg="request queued" queue_depth=7021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:03:22.327Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_690894 duration_ms=23200 attempt=32
+ts=2026-07-28T09:03:24.030Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=81250135a0e4b830bcb5402772111c31 attempt=3 max_attempts=5 backoff=none original_age_ms=1330
+ts=2026-07-28T09:03:25.792Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_849556 duration_ms=23900 attempt=39
+ts=2026-07-28T09:03:35.424Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_806815 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=31
+ts=2026-07-28T09:03:36.987Z level=warn svc=auth-service msg="request queued" queue_depth=39021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:03:42.233Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=f9b62ae6e8f7e48f2d33a80f0169eba8 attempt=3 max_attempts=5 backoff=none original_age_ms=120
+ts=2026-07-28T09:03:50.017Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=212400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:03:50.277Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_476915 error=RESOURCE_EXHAUSTED queue_depth=39021
+ts=2026-07-28T09:04:00.248Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=3b6ddfd519c23b94705b93cc1e7f7f8a attempt=3 max_attempts=5 backoff=none original_age_ms=1110
+ts=2026-07-28T09:04:03.213Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_255782 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=5
+ts=2026-07-28T09:04:05.491Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_219233 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=32
+ts=2026-07-28T09:04:06.920Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_575834 duration_ms=2300 attempt=3
+ts=2026-07-28T09:04:08.761Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_162389 duration_ms=21200 attempt=12
+ts=2026-07-28T09:04:18.332Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=7ce74f80e5ddcd5a94d3b9f2e7b20a79 attempt=3 max_attempts=5 backoff=none original_age_ms=1120
+ts=2026-07-28T09:04:23.830Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_767425 error=RESOURCE_EXHAUSTED queue_depth=37021
+ts=2026-07-28T09:04:33.331Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:04:36.323Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=c1855f49c0f985a55bfc97881d0c50f2 attempt=3 max_attempts=5 backoff=none original_age_ms=1120
+ts=2026-07-28T09:04:37.826Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:04:40.313Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:04:41.073Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_316108 error=RESOURCE_EXHAUSTED queue_depth=13021
+ts=2026-07-28T09:04:41.265Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_311731 duration_ms=21800 attempt=18
+ts=2026-07-28T09:04:50.936Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:04:54.019Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=fdf7e4f7b8240ffd4123d1eee2e61ba0 attempt=3 max_attempts=5 backoff=none original_age_ms=1300
+ts=2026-07-28T09:04:54.101Z level=warn svc=auth-service msg="request queued" queue_depth=15021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:04:58.270Z level=warn svc=auth-service msg="request queued" queue_depth=38021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:04:59.732Z level=warn svc=auth-service msg="request queued" queue_depth=35021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:05:00.145Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=216400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:05:12.189Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=464c9d4fd5e6d2d338a718f0b400ad57 attempt=3 max_attempts=5 backoff=none original_age_ms=1150
+ts=2026-07-28T09:05:13.468Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_882535 duration_ms=21200 attempt=12
+ts=2026-07-28T09:05:19.038Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_415390 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=22
+ts=2026-07-28T09:05:21.526Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_307357 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=14
+ts=2026-07-28T09:05:24.436Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_890427 error=RESOURCE_EXHAUSTED queue_depth=1021
+ts=2026-07-28T09:05:26.342Z level=warn svc=auth-service msg="request queued" queue_depth=35021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:05:28.036Z level=warn svc=auth-service msg="request queued" queue_depth=23021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:05:30.135Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=b15172d7cc10368820203e343b0ecff9 attempt=3 max_attempts=5 backoff=none original_age_ms=1280
+ts=2026-07-28T09:05:38.116Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_800996 duration_ms=22500 attempt=25
+ts=2026-07-28T09:05:47.629Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_683432 duration_ms=22800 attempt=28
+ts=2026-07-28T09:05:48.230Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=a0b9991c1d55f60d5a02bb4e58420225 attempt=3 max_attempts=5 backoff=none original_age_ms=180
+ts=2026-07-28T09:05:57.708Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_515364 duration_ms=22000 attempt=20
+ts=2026-07-28T09:05:59.222Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_432432 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=32
+ts=2026-07-28T09:06:00.076Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_576518 duration_ms=23200 attempt=32
+ts=2026-07-28T09:06:00.204Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3300 attempt=30 trace_id=ce8b9a13a45f6547bf6f900f709040b1
+ts=2026-07-28T09:06:00.659Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_329767 duration_ms=23900 attempt=39
+ts=2026-07-28T09:06:06.006Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=02a07a9f33d5ef21c330a4dbd93d340e attempt=3 max_attempts=5 backoff=none original_age_ms=1260
+ts=2026-07-28T09:06:10.135Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=240400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:06:17.012Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_408981 duration_ms=21000 attempt=10
+ts=2026-07-28T09:06:19.070Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_297302 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=28
+ts=2026-07-28T09:06:23.405Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_353109 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=24
+ts=2026-07-28T09:06:24.226Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=6be6a7c19edb6da4b3616c2132bef243 attempt=3 max_attempts=5 backoff=none original_age_ms=1180
+ts=2026-07-28T09:06:24.346Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=380 attempt=8 trace_id=cc9102ecda1c9d8cacb220a4fde2c34b
+ts=2026-07-28T09:06:24.406Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_969151 duration_ms=23600 attempt=36
+ts=2026-07-28T09:06:27.284Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:06:29.408Z level=warn svc=auth-service msg="request queued" queue_depth=29021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:06:30.548Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_666145 error=RESOURCE_EXHAUSTED queue_depth=12021
+ts=2026-07-28T09:06:34.996Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_780521 duration_ms=21000 attempt=10
+ts=2026-07-28T09:06:39.725Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_937905 duration_ms=22400 attempt=24
+ts=2026-07-28T09:06:40.089Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:06:42.197Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=4a72d1233f86e0057b129098edfb4be2 attempt=3 max_attempts=5 backoff=none original_age_ms=1210
+ts=2026-07-28T09:06:48.193Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=390 attempt=9 trace_id=c653f1a8d9c0b33869920487e110606e
+ts=2026-07-28T09:06:49.481Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:06:50.352Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_219924 duration_ms=2200 attempt=2
+ts=2026-07-28T09:07:00.267Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=18ca1dae4e8fc139243247327c0ded55 attempt=3 max_attempts=5 backoff=none original_age_ms=160
+ts=2026-07-28T09:07:12.243Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3260 attempt=26 trace_id=22edc5fa08fa6420e4d5ff5bde46f73a
+ts=2026-07-28T09:07:15.843Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_589151 error=RESOURCE_EXHAUSTED queue_depth=8021
+ts=2026-07-28T09:07:17.933Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_247505 error=RESOURCE_EXHAUSTED queue_depth=33021
+ts=2026-07-28T09:07:18.083Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_962309 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=22
+ts=2026-07-28T09:07:18.202Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=a155886962c68bd4f4b59452153325ef attempt=3 max_attempts=5 backoff=none original_age_ms=1350
+ts=2026-07-28T09:07:20.224Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=220400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:07:22.453Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_849542 duration_ms=2500 attempt=5
+ts=2026-07-28T09:07:28.373Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_546901 duration_ms=2300 attempt=3
+ts=2026-07-28T09:07:28.942Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_258989 duration_ms=22600 attempt=26
+ts=2026-07-28T09:07:36.126Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=531d8deaf143af9b8518969666091d7a attempt=3 max_attempts=5 backoff=none original_age_ms=150
+ts=2026-07-28T09:07:36.341Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3180 attempt=18 trace_id=a540c1f6ce20c8cb8b371a8cb8edf6d3
+ts=2026-07-28T09:07:42.877Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_327780 duration_ms=21000 attempt=10
+ts=2026-07-28T09:07:45.407Z level=warn svc=auth-service msg="request queued" queue_depth=8021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:07:45.593Z level=warn svc=auth-service msg="request queued" queue_depth=36021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:07:47.298Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:07:48.796Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_786563 duration_ms=23400 attempt=34
+ts=2026-07-28T09:07:52.474Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_918215 duration_ms=21200 attempt=12
+ts=2026-07-28T09:07:54.036Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=5dd01ce612518d126eb38adc7dfa8ade attempt=3 max_attempts=5 backoff=none original_age_ms=1190
+ts=2026-07-28T09:07:56.720Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_456141 duration_ms=23700 attempt=37
+ts=2026-07-28T09:08:00.037Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3140 attempt=14 trace_id=610fe7a8a1da70b715b0ac84182dbacf
+ts=2026-07-28T09:08:07.485Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_886553 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=29
+ts=2026-07-28T09:08:12.208Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=1849ef40289e726035a8b84fe344346f attempt=3 max_attempts=5 backoff=none original_age_ms=1240
+ts=2026-07-28T09:08:14.113Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_436084 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=14
+ts=2026-07-28T09:08:14.963Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_118620 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=1
+ts=2026-07-28T09:08:19.155Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:08:20.827Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_252532 error=RESOURCE_EXHAUSTED queue_depth=38021
+ts=2026-07-28T09:08:21.722Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_503708 duration_ms=22100 attempt=21
+ts=2026-07-28T09:08:22.589Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_488609 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=40
+ts=2026-07-28T09:08:24.136Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3380 attempt=38 trace_id=1d2725318ec10c8658e99db5f49b42b8
+ts=2026-07-28T09:08:25.513Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_427579 duration_ms=23600 attempt=36
+ts=2026-07-28T09:08:26.619Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_548188 duration_ms=23000 attempt=30
+ts=2026-07-28T09:08:30.098Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=225400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:08:30.110Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=910ac34aae3c16ac4e432d7c269d1748 attempt=3 max_attempts=5 backoff=none original_age_ms=1140
+ts=2026-07-28T09:08:36.585Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_108456 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=39
+ts=2026-07-28T09:08:38.598Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_944589 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=32
+ts=2026-07-28T09:08:40.099Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:08:48.027Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=c03155c172cfdb33260eca24267b0ecc attempt=3 max_attempts=5 backoff=none original_age_ms=1110
+ts=2026-07-28T09:08:48.272Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3350 attempt=35 trace_id=9596a005ca61e0b27eacb6ebab30f236
+ts=2026-07-28T09:08:53.752Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_861801 duration_ms=21300 attempt=13
+ts=2026-07-28T09:08:54.072Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_558904 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=27
+ts=2026-07-28T09:09:06.056Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=d3c92ba0552fb25437ffcde181bf193c attempt=3 max_attempts=5 backoff=none original_age_ms=1180
+ts=2026-07-28T09:09:08.069Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_106108 duration_ms=2600 attempt=6
+ts=2026-07-28T09:09:08.625Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_948473 duration_ms=2600 attempt=6
+ts=2026-07-28T09:09:12.238Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3130 attempt=13 trace_id=0613cf3050b65500be68d9837da2a8ce
+ts=2026-07-28T09:09:14.433Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_665695 duration_ms=23900 attempt=39
+ts=2026-07-28T09:09:16.092Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_353766 duration_ms=22600 attempt=26
+ts=2026-07-28T09:09:17.764Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_112544 error=RESOURCE_EXHAUSTED queue_depth=17021
+ts=2026-07-28T09:09:20.402Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_264015 duration_ms=21900 attempt=19
+ts=2026-07-28T09:09:24.148Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=f3fa05715445f46e49ede9dc93fa9e42 attempt=3 max_attempts=5 backoff=none original_age_ms=1160
+ts=2026-07-28T09:09:27.922Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_491613 duration_ms=22500 attempt=25
+ts=2026-07-28T09:09:28.098Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:09:36.039Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=330 attempt=3 trace_id=754778842fdead2a5cb0413586dc2b3b
+ts=2026-07-28T09:09:40.156Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=25400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:09:40.959Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_922792 duration_ms=22900 attempt=29
+ts=2026-07-28T09:09:42.099Z level=warn svc=auth-service msg="retry received for request whose original is still inflight" client=web-bff trace_id=8a6c3cae214afa2b2b3322c6783b9a9d attempt=3 max_attempts=5 backoff=none original_age_ms=170
+ts=2026-07-28T09:09:44.929Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_859925 duration_ms=21400 attempt=14
+ts=2026-07-28T09:09:45.212Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_335102 duration_ms=22100 attempt=21
+ts=2026-07-28T09:09:47.481Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_863982 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=26
+ts=2026-07-28T09:09:53.485Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_158229 error=RESOURCE_EXHAUSTED queue_depth=12021
+ts=2026-07-28T09:09:59.404Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_410217 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=26
+ts=2026-07-28T09:10:00.111Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3210 attempt=21 trace_id=abe75cc305f94bc32bda0afeb8f9aa6d
+ts=2026-07-28T09:10:06.047Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_308880 duration_ms=2600 attempt=6
+ts=2026-07-28T09:10:09.291Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_922213 error=RESOURCE_EXHAUSTED queue_depth=15021
+ts=2026-07-28T09:10:14.902Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_452881 duration_ms=23100 attempt=31
+ts=2026-07-28T09:10:16.137Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_213360 error=RESOURCE_EXHAUSTED queue_depth=7021
+ts=2026-07-28T09:10:21.666Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_457789 duration_ms=21700 attempt=17
+ts=2026-07-28T09:10:24.289Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3310 attempt=31 trace_id=8dbba831504401de09d91ff578f5a75c
+ts=2026-07-28T09:10:25.127Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_934761 duration_ms=21300 attempt=13
+ts=2026-07-28T09:10:31.194Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:10:32.203Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_429665 duration_ms=23100 attempt=31
+ts=2026-07-28T09:10:34.211Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_369487 duration_ms=21900 attempt=19
+ts=2026-07-28T09:10:40.328Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:10:48.192Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3250 attempt=25 trace_id=1d0b0fe1921eeae444ae17e902af13ae
+ts=2026-07-28T09:10:50.151Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=27400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:10:58.603Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_672215 duration_ms=22100 attempt=21
+ts=2026-07-28T09:10:59.403Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_795291 duration_ms=23000 attempt=30
+ts=2026-07-28T09:11:00.044Z level=warn svc=auth-service msg="operator initiated rolling restart of auth-service" actor=oncall-platform replicas=9 reason="manual mitigation"
+ts=2026-07-28T09:11:02.206Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_431426 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=11
+ts=2026-07-28T09:11:03.168Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_599308 error=RESOURCE_EXHAUSTED queue_depth=40021
+ts=2026-07-28T09:11:12.097Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3270 attempt=27 trace_id=c471c96fb3098b08585311a4282ec7b0
+ts=2026-07-28T09:11:13.732Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_865719 error=RESOURCE_EXHAUSTED queue_depth=3021
+ts=2026-07-28T09:11:19.866Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_891466 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=13
+ts=2026-07-28T09:11:24.614Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:11:25.315Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_960347 duration_ms=22300 attempt=23
+ts=2026-07-28T09:11:32.189Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_960905 duration_ms=22000 attempt=20
+ts=2026-07-28T09:11:33.340Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_483262 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=13
+ts=2026-07-28T09:11:36.284Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3270 attempt=27 trace_id=c88389a5850327a9afad1126f60b6bbc
+ts=2026-07-28T09:11:40.622Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_817177 duration_ms=21300 attempt=13
+ts=2026-07-28T09:11:44.180Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_873561 error=RESOURCE_EXHAUSTED queue_depth=16021
+ts=2026-07-28T09:11:50.792Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_113149 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=15
+ts=2026-07-28T09:12:00.063Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=25400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:12:00.258Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3260 attempt=26 trace_id=4f6a4090aa0c8ed60c2eec7c67f3713f
+ts=2026-07-28T09:12:01.737Z level=warn svc=auth-service msg="request queued" queue_depth=34021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:12:06.035Z level=warn svc=auth-service msg="request queued" queue_depth=14021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:12:09.584Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_992696 duration_ms=21600 attempt=16
+ts=2026-07-28T09:12:12.490Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_838774 duration_ms=21900 attempt=19
+ts=2026-07-28T09:12:20.736Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_911799 duration_ms=2100 attempt=1
+ts=2026-07-28T09:12:24.216Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=380 attempt=8 trace_id=ab224e66229e52be8229404289f93779
+ts=2026-07-28T09:12:25.305Z level=warn svc=auth-service msg="request queued" queue_depth=37021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:12:25.577Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_505588 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=27
+ts=2026-07-28T09:12:30.196Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_616916 error=RESOURCE_EXHAUSTED queue_depth=32021
+ts=2026-07-28T09:12:36.447Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_711304 duration_ms=2300 attempt=3
+ts=2026-07-28T09:12:40.206Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:12:40.304Z level=info svc=auth-service msg="post-restart recovery window" error_rate_pct=1.4 duration_s=88 then="error rate returned to 31%"
+ts=2026-07-28T09:12:48.222Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=370 attempt=7 trace_id=ee61af7b98cfa3343c3b66190b1284d7
+ts=2026-07-28T09:12:48.746Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_193218 error=RESOURCE_EXHAUSTED queue_depth=17021
+ts=2026-07-28T09:12:49.143Z level=warn svc=auth-service msg="request queued" queue_depth=31021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:12:52.647Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_956295 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=15
+ts=2026-07-28T09:12:56.875Z level=warn svc=auth-service msg="request queued" queue_depth=36021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:13:08.853Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_279101 error=RESOURCE_EXHAUSTED queue_depth=21021
+ts=2026-07-28T09:13:10.200Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=228400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:13:12.251Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3390 attempt=39 trace_id=af5b5e92d08ee18e51debf37cb658b67
+ts=2026-07-28T09:13:13.032Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_658694 duration_ms=2600 attempt=6
+ts=2026-07-28T09:13:16.455Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_533737 duration_ms=23300 attempt=33
+ts=2026-07-28T09:13:17.773Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_978892 error=RESOURCE_EXHAUSTED queue_depth=11021
+ts=2026-07-28T09:13:27.844Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_589876 duration_ms=21800 attempt=18
+ts=2026-07-28T09:13:33.867Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_589464 error=RESOURCE_EXHAUSTED queue_depth=14021
+ts=2026-07-28T09:13:36.338Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3380 attempt=38 trace_id=a630eb50c7f52cf0b7890eab623169ab
+ts=2026-07-28T09:13:47.880Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_181267 duration_ms=2200 attempt=2
+ts=2026-07-28T09:13:52.594Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_833475 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=28
+ts=2026-07-28T09:14:00.150Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3230 attempt=23 trace_id=f4b7ab5baa46759c130053ba7678bfd3
+ts=2026-07-28T09:14:17.829Z level=warn svc=auth-service msg="request queued" queue_depth=29021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:14:20.149Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=210400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:14:24.271Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3350 attempt=35 trace_id=a689ac17fae1b8e79c1245b64008974b
+ts=2026-07-28T09:14:40.143Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:14:48.345Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3200 attempt=20 trace_id=ab1b3be42e341435c5fa560ba275e33f
+ts=2026-07-28T09:14:50.933Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_454327 duration_ms=22700 attempt=27
+ts=2026-07-28T09:14:52.109Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_311999 duration_ms=2900 attempt=9
+ts=2026-07-28T09:14:58.501Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:15:05.840Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:15:06.401Z level=warn svc=auth-service msg="request queued" queue_depth=7021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:15:11.883Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_611993 duration_ms=2100 attempt=1
+ts=2026-07-28T09:15:12.001Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3330 attempt=33 trace_id=befa7a0005309887a4b2ff6705ea7044
+ts=2026-07-28T09:15:19.225Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:15:21.813Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:15:29.015Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_672961 error=RESOURCE_EXHAUSTED queue_depth=10021
+ts=2026-07-28T09:15:30.334Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=236400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:15:33.297Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_915289 duration_ms=21900 attempt=19
+ts=2026-07-28T09:15:36.216Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3310 attempt=31 trace_id=2b0738bfd8dc5a90bb4f9c43a78d38c1
+ts=2026-07-28T09:15:37.382Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_322872 duration_ms=2700 attempt=7
+ts=2026-07-28T09:15:52.798Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_575436 duration_ms=22800 attempt=28
+ts=2026-07-28T09:16:00.212Z level=error svc=auth-service msg="verify failed" client=web-bff error=DEADLINE_EXCEEDED deadline_ms=400 server_processing_ms=3200 attempt=20 trace_id=f5c41a06d94ba610750f503d40272397
+ts=2026-07-28T09:16:00.266Z level=warn svc=auth-service msg="goodput vs offered load" offered_rps=29800 goodput_rps=5290 wasted_pct=79
+ts=2026-07-28T09:16:11.605Z level=warn svc=auth-service msg="request queued" queue_depth=23021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:16:20.314Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_657431 error=RESOURCE_EXHAUSTED queue_depth=37021
+ts=2026-07-28T09:16:29.542Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_982923 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=8
+ts=2026-07-28T09:16:32.762Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:16:39.709Z level=warn svc=auth-service msg="request queued" queue_depth=5021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:16:40.175Z level=warn svc=auth-service msg="inbound rate exceeds capacity" inbound_rps=28400 capacity_rps=8100 shedding=not_configured
+ts=2026-07-28T09:16:40.237Z level=info svc=auth-service msg="attempt histogram (last 60s)" attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388
+ts=2026-07-28T09:16:52.372Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_319844 duration_ms=21100 attempt=11
+ts=2026-07-28T09:16:56.713Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_283953 duration_ms=22000 attempt=20
+ts=2026-07-28T09:16:57.459Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:17:05.097Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_557246 duration_ms=22700 attempt=27
+ts=2026-07-28T09:17:05.490Z level=warn svc=auth-service msg="request queued" queue_depth=36021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:17:12.065Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_766805 duration_ms=22300 attempt=23
+ts=2026-07-28T09:17:24.333Z level=warn svc=auth-service msg="request queued" queue_depth=33021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:17:28.250Z level=warn svc=auth-service msg="request queued" queue_depth=1021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:17:29.133Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_715609 duration_ms=23100 attempt=31
+ts=2026-07-28T09:17:30.201Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_674387 duration_ms=21900 attempt=19
+ts=2026-07-28T09:17:32.150Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_919164 duration_ms=21000 attempt=10
+ts=2026-07-28T09:17:40.300Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_401804 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=22
+ts=2026-07-28T09:17:49.710Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_565155 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=17
+ts=2026-07-28T09:18:08.621Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_975107 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=7
+ts=2026-07-28T09:18:08.892Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_808149 duration_ms=2700 attempt=7
+ts=2026-07-28T09:18:10.180Z level=warn svc=auth-service msg="goodput vs offered load" offered_rps=237800 goodput_rps=52370 wasted_pct=79
+ts=2026-07-28T09:18:10.340Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_129025 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=37
+ts=2026-07-28T09:18:11.700Z level=warn svc=auth-service msg="request queued" queue_depth=38021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:18:12.890Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_190005 duration_ms=2200 attempt=2
+ts=2026-07-28T09:18:13.468Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_292724 duration_ms=2300 attempt=3
+ts=2026-07-28T09:18:19.821Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_273828 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=22
+ts=2026-07-28T09:18:20.398Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:18:21.570Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:18:26.616Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_930946 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=33
+ts=2026-07-28T09:18:29.728Z level=warn svc=auth-service msg="request queued" queue_depth=9021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:18:30.204Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_137041 duration_ms=23500 attempt=35
+ts=2026-07-28T09:18:35.482Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_555308 duration_ms=21900 attempt=19
+ts=2026-07-28T09:18:36.032Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_837546 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=2
+ts=2026-07-28T09:18:41.603Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_918341 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=26
+ts=2026-07-28T09:19:03.509Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_210626 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=11
+ts=2026-07-28T09:19:13.435Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_559675 error=RESOURCE_EXHAUSTED queue_depth=28021
+ts=2026-07-28T09:19:16.997Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_186975 duration_ms=21100 attempt=11
+ts=2026-07-28T09:19:32.133Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:19:36.177Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_299398 duration_ms=21600 attempt=16
+ts=2026-07-28T09:19:40.435Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_238774 duration_ms=2200 attempt=2
+ts=2026-07-28T09:19:45.859Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_210320 error=RESOURCE_EXHAUSTED queue_depth=8021
+ts=2026-07-28T09:19:50.615Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_694898 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=7
+ts=2026-07-28T09:19:52.477Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_541986 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=26
+ts=2026-07-28T09:20:08.109Z level=warn svc=auth-service msg="request queued" queue_depth=10021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:20:11.633Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_114655 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=14
+ts=2026-07-28T09:20:14.914Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_749159 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=18
+ts=2026-07-28T09:20:18.452Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_442173 error=RESOURCE_EXHAUSTED queue_depth=8021
+ts=2026-07-28T09:20:19.211Z level=warn svc=auth-service msg="request queued" queue_depth=14021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:20:20.239Z level=warn svc=auth-service msg="goodput vs offered load" offered_rps=214800 goodput_rps=52140 wasted_pct=79
+ts=2026-07-28T09:20:25.713Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_642911 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=13
+ts=2026-07-28T09:20:37.117Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_298693 duration_ms=2600 attempt=6
+ts=2026-07-28T09:20:43.485Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_936744 error=RESOURCE_EXHAUSTED queue_depth=21021
+ts=2026-07-28T09:20:48.541Z level=warn svc=auth-service msg="request queued" queue_depth=6021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:20:52.458Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_266440 duration_ms=24000 attempt=40
+ts=2026-07-28T09:21:00.290Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_140979 error=RESOURCE_EXHAUSTED queue_depth=28021
+ts=2026-07-28T09:21:08.107Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_664754 duration_ms=21700 attempt=17
+ts=2026-07-28T09:21:11.711Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_189352 error=RESOURCE_EXHAUSTED queue_depth=14021
+ts=2026-07-28T09:21:12.068Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_256072 error=RESOURCE_EXHAUSTED queue_depth=2021
+ts=2026-07-28T09:21:12.143Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_202648 duration_ms=22700 attempt=27
+ts=2026-07-28T09:21:12.642Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_751748 duration_ms=2500 attempt=5
+ts=2026-07-28T09:21:15.086Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_440092 duration_ms=23100 attempt=31
+ts=2026-07-28T09:21:16.827Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_563072 error=RESOURCE_EXHAUSTED queue_depth=26021
+ts=2026-07-28T09:21:23.778Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_782558 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=26
+ts=2026-07-28T09:21:38.316Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_942156 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=1
+ts=2026-07-28T09:21:46.590Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_413316 duration_ms=22400 attempt=24
+ts=2026-07-28T09:21:48.677Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_592912 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=18
+ts=2026-07-28T09:21:50.631Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_127321 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=1
+ts=2026-07-28T09:21:53.913Z level=warn svc=auth-service msg="request queued" queue_depth=20021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:21:59.045Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_822223 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=26
+ts=2026-07-28T09:22:00.094Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_443784 duration_ms=23300 attempt=33
+ts=2026-07-28T09:22:00.672Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_603953 error=RESOURCE_EXHAUSTED queue_depth=30021
+ts=2026-07-28T09:22:03.740Z level=warn svc=auth-service msg="request queued" queue_depth=13021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:22:08.721Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_574489 duration_ms=23800 attempt=38
+ts=2026-07-28T09:22:10.558Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_905388 duration_ms=2300 attempt=3
+ts=2026-07-28T09:22:20.905Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_581238 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=10
+ts=2026-07-28T09:22:24.799Z level=warn svc=auth-service msg="request queued" queue_depth=11021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:22:27.406Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_556312 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=1
+ts=2026-07-28T09:22:30.031Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:22:30.111Z level=warn svc=auth-service msg="goodput vs offered load" offered_rps=230800 goodput_rps=52300 wasted_pct=79
+ts=2026-07-28T09:22:30.339Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_201409 duration_ms=2200 attempt=2
+ts=2026-07-28T09:22:35.468Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_783045 duration_ms=2500 attempt=5
+ts=2026-07-28T09:22:36.071Z level=warn svc=auth-service msg="request queued" queue_depth=37021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:22:39.236Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_702726 error=RESOURCE_EXHAUSTED queue_depth=15021
+ts=2026-07-28T09:22:41.604Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_627030 duration_ms=23800 attempt=38
+ts=2026-07-28T09:22:53.915Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_209527 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=10
+ts=2026-07-28T09:23:03.228Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_115616 duration_ms=21400 attempt=14
+ts=2026-07-28T09:23:06.912Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_960581 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=36
+ts=2026-07-28T09:23:28.696Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_304998 duration_ms=23600 attempt=36
+ts=2026-07-28T09:23:29.276Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_387350 duration_ms=22100 attempt=21
+ts=2026-07-28T09:23:35.154Z level=warn svc=auth-service msg="request queued" queue_depth=18021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:23:39.847Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_462759 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=38
+ts=2026-07-28T09:23:42.719Z level=warn svc=auth-service msg="request queued" queue_depth=32021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:23:55.491Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_502105 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=11
+ts=2026-07-28T09:23:57.108Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_959891 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=31
+ts=2026-07-28T09:24:04.940Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_286738 duration_ms=23800 attempt=38
+ts=2026-07-28T09:24:18.704Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_813936 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=38
+ts=2026-07-28T09:24:27.592Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_785450 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=13
+ts=2026-07-28T09:24:28.594Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_818749 duration_ms=21300 attempt=13
+ts=2026-07-28T09:24:29.986Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_443047 duration_ms=2400 attempt=4
+ts=2026-07-28T09:24:31.668Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_902231 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=18
+ts=2026-07-28T09:24:34.511Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_173887 duration_ms=2200 attempt=2
+ts=2026-07-28T09:24:36.495Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_280619 duration_ms=2400 attempt=4
+ts=2026-07-28T09:24:40.021Z level=warn svc=auth-service msg="goodput vs offered load" offered_rps=211800 goodput_rps=52110 wasted_pct=79
+ts=2026-07-28T09:25:01.312Z level=error svc=auth-service msg="verify failed" client=checkout-api session=usr_832023 error=RESOURCE_EXHAUSTED queue_depth=31021
+ts=2026-07-28T09:25:11.690Z level=error svc=auth-service msg="verify failed" client=web-bff session=usr_899881 error=DEADLINE_EXCEEDED deadline_ms=400 attempt=38
+ts=2026-07-28T09:25:15.285Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:25:19.750Z level=warn svc=auth-service msg="request queued" queue_depth=40021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:25:33.387Z level=warn svc=auth-service msg="request queued" queue_depth=13021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:25:34.474Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_399807 duration_ms=2900 attempt=9
+ts=2026-07-28T09:25:44.476Z level=warn svc=auth-service msg="request queued" queue_depth=27021 workers_busy=256 workers_max=256
+ts=2026-07-28T09:25:46.369Z level=info svc=auth-service msg="health check ok" path=/healthz status=200
+ts=2026-07-28T09:25:55.070Z level=info svc=auth-service msg="verify ok" client=web-bff session=usr_465837 duration_ms=21300 attempt=13
+ts=2026-07-28T09:25:56.868Z level=warn svc=auth-service msg="request queued" queue_depth=8021 workers_busy=256 workers_max=256

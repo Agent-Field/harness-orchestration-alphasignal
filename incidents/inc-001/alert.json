@@ -1,0 +1,38 @@
+{
+  "alert_id": "alt-2026-08-14-0244-checkout",
+  "monitor_name": "checkout-api :: p99 latency > 8s (5m)",
+  "monitor_id": "mon-1189",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-08-14T02:44:00Z",
+  "detected_change_at": "2026-08-14T02:38:00Z",
+  "threshold": {
+    "metric": "http.server.duration.p99",
+    "comparator": ">",
+    "value": 8000,
+    "unit": "ms",
+    "window": "5m"
+  },
+  "observed_value": 21400,
+  "secondary_conditions": [
+    {
+      "metric": "http.server.error_rate",
+      "comparator": ">",
+      "value": 2.0,
+      "unit": "%",
+      "observed": 4.6
+    }
+  ],
+  "service": "checkout-api",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-payments"
+  ],
+  "runbook": "https://runbooks.internal/checkout-api/latency",
+  "tags": [
+    "tier:1",
+    "team:payments",
+    "revenue-path"
+  ]
+}

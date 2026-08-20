@@ -1,0 +1,190 @@
+{
+  "id": "inc-001",
+  "title": "checkout-api latency and 5xx from JDBC pool exhaustion",
+  "failure_class": "connection_pool_exhaustion",
+  "difficulty": "medium",
+  "difficulty_rank": 5,
+  "affected_service": "checkout-api",
+  "alert_id": "alt-2026-08-14-0244-checkout",
+  "incident_start_utc": "2026-08-14T02:38:00Z",
+  "alert_fired_utc": "2026-08-14T02:44:00Z",
+  "root_cause": {
+    "component": "checkout-api",
+    "summary": "The new POST /v2/checkout/quote handler opens a JDBC transaction and then makes a ~2.1s HTTPS call to the tax vendor while still holding the connection. When the feature flag went to 100% at 01:52Z, every in-flight quote pinned one of the 20 pool connections per replica for over two seconds, the HikariCP pool ran dry, and connection acquisition began timing out at 30s, which surfaced as p99 latency and 503s.",
+    "mechanism": "connection held across a network call -> pool exhaustion -> acquisition timeout",
+    "originating_change": "dep-4468 (checkout-api 3.8.2) shipped the handler; dep-4470 (flag rollout 5% -> 100%) exposed it",
+    "originating_artifact": "deploys.json"
+  },
+  "root_cause_must_include": ["connection pool", "transaction", "tax"],
+  "root_cause_keywords": ["hikari", "pool exhaustion", "connection is not available", "quote endpoint", "v2/checkout/quote", "held across", "feature flag", "dep-4468", "dep-4470", "30000ms timeout"],
+  "contributing_factors": [
+    {"id": "cf-001-1", "summary": "Pool max size is 20 per replica with a 30s acquisition timeout, so exhaustion converts into very long waits rather than fast failures."},
+    {"id": "cf-001-2", "summary": "The flag went from 5% to 100% in one step with no load test and no canary."},
+    {"id": "cf-001-3", "summary": "The tax vendor's normal p99 of ~2.1s is inside SLA but is two orders of magnitude longer than a database call, so holding a connection across it is fatal."}
+  ],
+  "required_evidence": [
+    {"id": "ev-001-1", "artifact": "logs.txt", "kind": "log_line", "match": "Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0", "why": "Names the exhausted resource and shows the pool fully checked out with a large wait queue."},
+    {"id": "ev-001-2", "artifact": "logs.txt", "kind": "log_line", "match": "holds transaction across TaxClient.fetch", "why": "States the mechanism: the transaction stays open for the duration of the vendor call."},
+    {"id": "ev-001-3", "artifact": "logs.txt", "kind": "stack_frame", "match": "OrderQuoteService.persistQuote", "why": "Attributes the timeouts to the new quote path rather than to existing endpoints."},
+    {"id": "ev-001-4", "artifact": "metrics.json", "kind": "metric_series", "match": "db_query_p99_ms", "why": "Flat at ~13ms throughout. The database is fast; the wait is entirely on the client side, which rules out a database-performance cause."},
+    {"id": "ev-001-5", "artifact": "metrics.json", "kind": "metric_series", "match": "db_pool_pending", "why": "Goes from 1 to 128 waiting threads while db_pool_active is pinned at 20."},
+    {"id": "ev-001-6", "artifact": "deploys.json", "kind": "change_event", "match": "dep-4470", "why": "The 5% -> 100% flag rollout is the moment the latent bug became load-bearing."}
+  ],
+  "red_herrings": [
+    {"id": "rh-001-1", "artifact": "deploys.json", "match": "dep-4471", "why_tempting": "It is the most recent change, 12 minutes before the page, and it touches the checkout page.", "why_wrong": "It is a CSS and copy change in web-frontend with no API surface; latency started climbing at 02:38 on a rising curve that began before it.", "penalty": 1.0},
+    {"id": "rh-001-2", "artifact": "logs.txt", "match": "autovacuum: VACUUM ANALYZE public.orders", "why_tempting": "A vacuum to prevent wraparound during a maintenance window looks like the database is busy.", "why_wrong": "db_query_p99_ms never moves; postgres active backends stay at ~120 of 400.", "penalty": 1.0},
+    {"id": "rh-001-3", "artifact": "logs.txt", "match": "Thread starvation or clock leap detected", "why_tempting": "The words 'clock leap' invite a clock-skew theory.", "why_wrong": "This is HikariCP's standard message when its housekeeper thread is starved; it is a symptom of the pool being saturated, not a time problem.", "penalty": 1.0},
+    {"id": "rh-001-4", "artifact": "metrics.json", "match": "tax_vendor_p99_ms", "why_tempting": "2.1 seconds is slow for a dependency and it is on the failing path.", "why_wrong": "It is flat before and during the incident; the vendor did not change.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["connection_pool", "change_correlation", "dependency_health", "database_health", "timeline", "blast_scope"],
+  "lenses_not_warranted": ["dns_service_discovery", "clock_time", "credential_expiry", "data_contract", "security_abuse", "capacity_autoscaling", "memory_lifecycle"],
+  "requires_correlation_across": ["logs.txt", "metrics.json", "deploys.json"],
+  "correct_remediation": {
+    "immediate": "Set checkout_v2_quote back to 0% (dep-4470 is a config revert, faster and safer than rolling back the binary).",
+    "durable": "Move the tax vendor call outside the transaction boundary; do not hold a pooled connection across a network call. Add a pool-acquisition-time SLO and fail fast at 2s instead of 30s."
+  },
+  "wrong_remediations": ["Increase the pool size", "Increase the acquisition timeout", "Scale checkout-api horizontally", "Roll back web-frontend"],
+  "oneshot_prediction": {"verdict": "likely_solved", "rationale": "The Hikari timeout line and the TxAudit line together state the mechanism almost in words. The realistic failure mode is attribution: naming pool exhaustion but blaming dep-4471 or the vacuum."},
+  "scoring": {"min_required_evidence": 3}
+},
+{
+  "id": "inc-002",
+  "title": "payments-gateway 5xx from a currency-rounding regression",
+  "failure_class": "bad_deploy_regression",
+  "difficulty": "easy",
+  "difficulty_rank": 1,
+  "affected_service": "payments-gateway",
+  "alert_id": "alt-2026-07-09-0214-payg",
+  "incident_start_utc": "2026-07-09T02:11:00Z",
+  "alert_fired_utc": "2026-07-09T02:14:00Z",
+  "root_cause": {
+    "component": "payments-gateway",
+    "summary": "Release 2.14.0 (dep-7719) refactored money rounding and assumed every currency has two decimal places. JPY is a zero-decimal currency, so MoneyRounding.toMinorUnits throws ArithmeticException on every JPY authorisation. JPY is 5.4% of eu-west-1 traffic, which is why total 5xx sits at ~6% while EUR and GBP are untouched.",
+    "mechanism": "unhandled exception on a subset of inputs introduced by a specific release",
+    "originating_change": "dep-7719 (payments-gateway 2.14.0, deployed 02:07Z, canary skipped)",
+    "originating_artifact": "deploys.json"
+  },
+  "root_cause_must_include": ["2.14.0", "rounding", "JPY"],
+  "root_cause_keywords": ["dep-7719", "arithmeticexception", "rounding necessary", "zero-decimal", "moneyrounding", "scale", "currency", "deploy 02:07", "canary skipped"],
+  "contributing_factors": [
+    {"id": "cf-002-1", "summary": "The release train skipped canary under an off-hours policy, so a 100% JPY failure rate reached production directly."},
+    {"id": "cf-002-2", "summary": "CurrencyRegistry loaded with zero_decimal=[] — the registry that would have prevented this was empty at startup and the service logged it without failing."}
+  ],
+  "required_evidence": [
+    {"id": "ev-002-1", "artifact": "logs.txt", "kind": "log_line", "match": "java.lang.ArithmeticException: Rounding necessary", "why": "The exception, and it fires only on currency=JPY lines."},
+    {"id": "ev-002-2", "artifact": "logs.txt", "kind": "stack_frame", "match": "MoneyRounding.toMinorUnits(MoneyRounding.java:77)", "why": "Points at the file the deploy diff says was changed."},
+    {"id": "ev-002-3", "artifact": "logs.txt", "kind": "log_line", "match": "assumes scale=2 for currency=JPY (registry scale=0)", "why": "States the wrong assumption explicitly."},
+    {"id": "ev-002-4", "artifact": "metrics.json", "kind": "metric_series", "match": "error_rate_jpy_pct", "why": "100% for JPY against 0.1% for EUR: the blast scope is one currency, not the service."},
+    {"id": "ev-002-5", "artifact": "deploys.json", "kind": "change_event", "match": "dep-7719", "why": "Deployed at 02:07Z, four minutes before the step change; the diff names MoneyRounding.java."}
+  ],
+  "red_herrings": [
+    {"id": "rh-002-1", "artifact": "deploys.json", "match": "dep-7720", "why_tempting": "A Redis failover two minutes before the alert, and the log is full of rate-limiter reconnect warnings.", "why_wrong": "The rate limiter fails open by design; redis_ratelimit_errors returns to zero by 02:13 while the 5xx rate stays flat at 6%.", "penalty": 1.0},
+    {"id": "rh-002-2", "artifact": "metrics.json", "match": "acquirer_p99_ms", "why_tempting": "Card acquirer problems are a common cause of gateway 5xx.", "why_wrong": "Flat at ~900ms the whole window.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["change_correlation", "rollback_viability", "blast_scope", "timeline"],
+  "lenses_not_warranted": ["dns_service_discovery", "clock_time", "credential_expiry", "capacity_autoscaling", "resource_contention", "memory_lifecycle", "queue_backpressure"],
+  "requires_correlation_across": ["logs.txt", "deploys.json"],
+  "correct_remediation": {
+    "immediate": "Roll back payments-gateway to 2.13.x. The change is stateless and safe to revert.",
+    "durable": "Drive minor-unit scale from the currency registry rather than a constant, add zero-decimal currencies to the test matrix, and stop skipping canary for off-hours releases."
+  },
+  "wrong_remediations": ["Roll back the Redis failover", "Restart the gateway pods", "Raise the 5xx alert threshold because it is only 6%"],
+  "oneshot_prediction": {"verdict": "likely_solved", "rationale": "Stack trace, deploy four minutes earlier, and a currency-segmented error metric. This is the control case: every rung should get it, which is exactly what makes it useful for showing that extra machinery buys nothing here."},
+  "scoring": {"min_required_evidence": 2}
+},
+{
+  "id": "inc-003",
+  "title": "identity-service unreachable from the edge after an mTLS client certificate expired",
+  "failure_class": "credential_expiry",
+  "difficulty": "medium",
+  "difficulty_rank": 4,
+  "affected_service": "identity-service",
+  "alert_id": "alt-2026-08-01-0002-identity",
+  "incident_start_utc": "2026-08-01T00:00:14Z",
+  "alert_fired_utc": "2026-08-01T00:02:00Z",
+  "root_cause": {
+    "component": "edge-proxy -> identity-service mTLS",
+    "summary": "The client certificate edge-proxy uses for mutual TLS to identity-service (serial 0x3f9a21) had notAfter 2026-07-31T23:59:59Z and expired at the month boundary. identity-service rejected every handshake from the edge with certificate_expired, so all public login and token traffic failed while service-to-service traffic on separate, unexpired certs kept working.",
+    "mechanism": "time-triggered credential expiry on one edge of the graph, no deploy involved",
+    "originating_change": "none: the cert was issued a year earlier and internal-ca client certs are renewed manually",
+    "originating_artifact": "topology.json (cert_not_after) plus logs.txt"
+  },
+  "root_cause_must_include": ["certificate", "expired", "edge-proxy"],
+  "root_cause_keywords": ["mtls", "client certificate", "x509", "certificate has expired", "not_after", "0x3f9a21", "midnight", "handshake", "certificate_expired(45)", "manual renewal"],
+  "contributing_factors": [
+    {"id": "cf-003-1", "summary": "Public TLS is auto-renewed but internal mTLS client certs are renewed by hand, so nothing enforced the renewal."},
+    {"id": "cf-003-2", "summary": "The expiry warning existed but only in a weekly digest, and the digest reported the cert as already expired rather than paging in advance."},
+    {"id": "cf-003-3", "summary": "It happened during a weekend change freeze, which removed the usual 'what did we just deploy' reflex and slowed the response."}
+  ],
+  "required_evidence": [
+    {"id": "ev-003-1", "artifact": "logs.txt", "kind": "log_line", "match": "x509: certificate has expired or is not yet valid", "why": "The exact failure, with the current time and the notAfter in the same string."},
+    {"id": "ev-003-2", "artifact": "logs.txt", "kind": "log_line", "match": "certificate_expired(45)", "why": "The TLS alert code, confirming this is a handshake rejection and not an application error."},
+    {"id": "ev-003-3", "artifact": "topology.json", "kind": "topology_attribute", "match": "cert_not_after", "why": "Only the edge-proxy edge has a notAfter in the past; the checkout and mobile edges are valid for months."},
+    {"id": "ev-003-4", "artifact": "metrics.json", "kind": "metric_series", "match": "upstream_5xx_pct_via_checkout", "why": "Flat at 0.03% while the edge path is at 97%: the blast scope is one caller, which points at something specific to that edge rather than to identity-service itself."},
+    {"id": "ev-003-5", "artifact": "deploys.json", "kind": "change_event", "match": "freeze-08", "why": "Establishes that nothing shipped; the absence of a change is itself the clue that pushes you toward time-triggered causes."}
+  ],
+  "red_herrings": [
+    {"id": "rh-003-1", "artifact": "logs.txt", "match": "invalid_credentials", "why_tempting": "A steady stream of failed logins from 203.0.113.0/24 with a python-requests user agent looks exactly like credential stuffing taking the service down.", "why_wrong": "failed_login_rps is ~10/s before, during and after; it started an hour earlier and did not change at 00:00:14. It is background abuse, already rate-limited by the WAF.", "penalty": 1.0},
+    {"id": "rh-003-2", "artifact": "deploys.json", "match": "dep-9930", "why_tempting": "An IAM session-policy change that shortened refresh token TTL from 30d to 7d, two days before, is a plausible delayed-fuse auth failure.", "why_wrong": "Refresh tokens issued 7 days ago would expire gradually, not at one instant, and would produce 401s from the application, not TLS handshake failures.", "penalty": 1.0},
+    {"id": "rh-003-3", "artifact": "deploys.json", "match": "dep-9941", "why_tempting": "A WAF rate-limit rule added on /oauth/token the day before could plausibly be throttling real users.", "why_wrong": "It is scoped to one /24; legitimate traffic never reaches the WAF rule because it dies at the TLS layer first.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["credential_expiry", "network_path", "blast_scope", "timeline", "security_abuse", "change_correlation"],
+  "lenses_not_warranted": ["connection_pool", "cache_behavior", "capacity_autoscaling", "data_contract", "memory_lifecycle", "queue_backpressure", "resource_contention"],
+  "requires_correlation_across": ["logs.txt", "topology.json", "metrics.json"],
+  "correct_remediation": {
+    "immediate": "Issue and install a new edge-proxy client certificate from internal-ca and reload the proxy. This is a change-freeze exception.",
+    "durable": "Automate internal client cert renewal on the same footing as public TLS, and alert at 30/14/7 days remaining rather than in a weekly digest."
+  },
+  "wrong_remediations": ["Block 203.0.113.0/24 and declare the attack mitigated", "Roll back the IAM session policy", "Restart identity-service", "Scale identity-service up"],
+  "oneshot_prediction": {"verdict": "likely_solved", "rationale": "The x509 line is unambiguous once read. The risk is the security narrative: the README, the alert routing to oncall-security, and hundreds of failed-login lines all pull toward the attack story, and a model that summarises rather than reads may take it."},
+  "scoring": {"min_required_evidence": 2}
+},
+{
+  "id": "inc-004",
+  "title": "search-api latency from CPU starvation caused by an unbounded batch job on the same nodes",
+  "failure_class": "noisy_neighbour_resource_contention",
+  "difficulty": "hard",
+  "difficulty_rank": 11,
+  "affected_service": "search-api",
+  "alert_id": "alt-2026-08-05-2135-search",
+  "incident_start_utc": "2026-08-05T21:22:00Z",
+  "alert_fired_utc": "2026-08-05T21:35:00Z",
+  "root_cause": {
+    "component": "node-pool general-2",
+    "summary": "ml-featurizer 0.4.0 (dep-3391) removed its nodeSelector pinning it to the batch pool, removed its CPU limit, and raised parallelism from 4 to 16. Its pods landed on general-2-a and general-2-c alongside search-api, consumed all remaining node CPU, and pushed the search-api containers into hard cgroup throttling. Only the search-api replicas sharing a node with a featurizer pod are slow; the replica on general-2-b is unaffected.",
+    "mechanism": "co-tenancy on a shared node pool -> node CPU exhaustion -> cgroup throttling of the victim",
+    "originating_change": "dep-3391 (ml-featurizer 0.4.0, scheduling and resource change)",
+    "originating_artifact": "deploys.json"
+  },
+  "root_cause_must_include": ["ml-featurizer", "cpu", "node"],
+  "root_cause_keywords": ["throttl", "cgroup", "nodeselector", "cpu limit", "noisy neighbour", "noisy neighbor", "co-tenancy", "general-2", "parallelism", "dep-3391", "scheduling"],
+  "contributing_factors": [
+    {"id": "cf-004-1", "summary": "search-api has a 1000m CPU limit, so once the node is contended it is throttled rather than merely slowed, which produces a cliff instead of a gradient."},
+    {"id": "cf-004-2", "summary": "The batch job was Burstable with no limit, so the scheduler admitted it on a 200m request and it then took whatever it wanted."},
+    {"id": "cf-004-3", "summary": "The dashboard shows container CPU as a percentage of limit, which reads as 'at capacity' rather than 'being denied capacity', hiding the mechanism."}
+  ],
+  "required_evidence": [
+    {"id": "ev-004-1", "artifact": "logs.txt", "kind": "log_line", "match": "cgroup cpu throttling observed", "why": "nr_throttled 5412 of 6000 periods: the container is being stopped, not working hard."},
+    {"id": "ev-004-2", "artifact": "logs.txt", "kind": "log_line", "match": "cpu_limit=none", "why": "The featurizer pods were admitted with a 200m request and no limit."},
+    {"id": "ev-004-3", "artifact": "metrics.json", "kind": "metric_series", "match": "latency_p95_ms_pod_r8m", "why": "The replica on general-2-b stays at ~300ms while pod_xk2 goes to 5.2s. Per-pod divergence is the tell that the cause is node-local, not service-wide."},
+    {"id": "ev-004-4", "artifact": "metrics.json", "kind": "metric_series", "match": "node_cpu_pct_general_2_a", "why": "Node CPU goes to 98% while the search-api container reads only ~99% of its own 1-core limit."},
+    {"id": "ev-004-5", "artifact": "metrics.json", "kind": "metric_series", "match": "es_query_p99_ms", "why": "Elasticsearch went from 88ms to 141ms, which is nothing against a 3-second p95. The downstream is not the problem."},
+    {"id": "ev-004-6", "artifact": "deploys.json", "kind": "change_event", "match": "dep-3391", "why": "The diff names the removal of nodeSelector and cpu limit and the parallelism increase, 18 minutes before latency moved."},
+    {"id": "ev-004-7", "artifact": "topology.json", "kind": "topology_attribute", "match": "general-2-b", "why": "The node map shows which search-api pods share a node with the featurizer and which do not, and it matches the per-pod latency split exactly."}
+  ],
+  "red_herrings": [
+    {"id": "rh-004-1", "artifact": "deploys.json", "match": "dep-3390", "why_tempting": "A nightly Elasticsearch force-merge window opened at 20:00 and index rebuilds are a classic cause of search latency.", "why_wrong": "It is a recurring window that opens every night without incident, it started 82 minutes before the latency change, and es_query_p99_ms barely moved.", "penalty": 1.0},
+    {"id": "rh-004-2", "artifact": "deploys.json", "match": "dep-3388", "why_tempting": "Someone set LOG_LEVEL to debug that afternoon, and debug logging genuinely can cost latency.", "why_wrong": "It changed at 15:48, more than five hours before the incident, and it applies to all replicas equally while only some are slow.", "penalty": 1.0},
+    {"id": "rh-004-3", "artifact": "metrics.json", "match": "container_cpu_pct_of_limit", "why_tempting": "Reading 99-100% invites 'search-api needs a bigger CPU limit'.", "why_wrong": "It is at its limit because the limit is what is being enforced against it while the node has nothing left to give; raising the limit on a saturated node moves the pain rather than removing it.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["resource_contention", "saturation_compute", "blast_scope", "change_correlation", "dependency_health"],
+  "lenses_not_warranted": ["dns_service_discovery", "credential_expiry", "clock_time", "data_contract", "connection_pool", "queue_backpressure", "cache_behavior", "security_abuse"],
+  "requires_correlation_across": ["metrics.json", "topology.json", "deploys.json", "logs.txt"],
+  "correct_remediation": {
+    "immediate": "Restore the batch nodeSelector on ml-featurizer (or cordon it off general-2) so it stops sharing nodes with latency-sensitive services.",
+    "durable": "Require CPU limits and a pool selector on batch workloads, and add node-level CPU and per-container throttling to the search-api dashboard so the next occurrence is visible in one graph."
+  },
+  "wrong_remediations": ["Raise the search-api CPU limit", "Scale search-api out on the same pool", "Move the Elasticsearch force-merge window", "Set LOG_LEVEL back to info and call it fixed"],
+  "oneshot_prediction": {"verdict": "likely_missed", "rationale": "One of the two designed-to-fail cases. The throttling line is present but arrives as syslog-shaped kubelet noise in the middle of application JSON, and the story the README tells (index rebuild, debug logging, high CPU) is coherent and wrong. A one-shot call typically answers 'CPU saturation, give it more CPU', which names a symptom and prescribes a fix that makes the node worse."},
+  "scoring": {"min_required_evidence": 4}
+}

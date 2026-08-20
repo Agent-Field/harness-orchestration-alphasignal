@@ -1,0 +1,31 @@
+{
+  "lookback_hours": 24,
+  "events": [
+    {
+      "id": "dep-6602",
+      "at": "2026-08-08T19:15:00Z",
+      "kind": "deploy",
+      "service": "orders-service",
+      "version": "12.6.0",
+      "actor": "kbrandt",
+      "change": "add idempotency key to order submission"
+    },
+    {
+      "id": "dep-6610",
+      "at": "2026-08-09T03:40:00Z",
+      "kind": "maintenance",
+      "service": "node-pool/general-1",
+      "actor": "platform-bot",
+      "change": "rolling kernel patch: cordon+drain nodes one at a time (12 nodes, ~8 min each)",
+      "diff_summary": "drained general-1-d at 03:50Z; general-1-e queued"
+    },
+    {
+      "id": "dep-6611",
+      "at": "2026-08-09T03:52:00Z",
+      "kind": "config",
+      "service": "cart-api",
+      "actor": "ci-bot",
+      "change": "bump HTTP client connect timeout 500ms -> 800ms"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+ts=2026-08-09T03:44:03.566Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=189 trace_id=047619cf6ffd540a52e8db839b61b9da req_id=req_b208a957ed8f
+ts=2026-08-09T03:44:07.225Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=222 trace_id=d0dc67627fcdd3cbf831f262dd6a586f req_id=req_660890985162
+ts=2026-08-09T03:44:19.792Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:44:21.361Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=22 trace_id=175d4ee8ef564fba9e0da04796c9b03d req_id=req_10d1c607f0d0
+ts=2026-08-09T03:44:22.383Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:44:24.948Z level=info svc=cart-api msg="cart updated" user_id=usr_142582 items=22
+ts=2026-08-09T03:44:31.896Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=31 trace_id=492d0a36387f40e25f2d0252c757b0cd req_id=req_e642c6be1123
+ts=2026-08-09T03:44:36.832Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=97 trace_id=0cc4f26a08ebf9d22286721f5cccc5ff req_id=req_c4f185310e2b
+ts=2026-08-09T03:44:39.879Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:44:40.544Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=166 trace_id=7ba64f8e7c2c41dbd84ed8ad88fc31aa req_id=req_81bb39cdc76f
+ts=2026-08-09T03:44:43.922Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=20 trace_id=5931dd06dc9a4aebdeaeae7dbe88fa2c req_id=req_86b71c2ae667
+ts=2026-08-09T03:45:12.654Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=185 trace_id=5f41f73e57e91ffa51f80d696b3a0364 req_id=req_3cbf1157ea46
+ts=2026-08-09T03:45:15.248Z level=info svc=cart-api msg="session refreshed" user_id=usr_361191 ttl_s=1800
+ts=2026-08-09T03:45:20.078Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=92 trace_id=5bd78c793d1973a613363cffeff18553 req_id=req_a0f3059b4628
+ts=2026-08-09T03:45:20.991Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=44 trace_id=7e692425ca958f2dee30ece57ed988ed req_id=req_257088524a74
+ts=2026-08-09T03:45:28.791Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=14 status=200 trace_id=b8b9b0ca9a6714f47f0cb15250a64b3c
+ts=2026-08-09T03:45:38.241Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:45:39.490Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=203 trace_id=dc35f1a27a279514f5b6b5826c68b998 req_id=req_9e2ab0525553
+ts=2026-08-09T03:45:41.381Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=178 trace_id=8ad63bf5adae1baa8efc53188ff54088 req_id=req_0f443f7d45d2
+ts=2026-08-09T03:45:43.771Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=112 trace_id=c0f8cebc356746b0f1ab8afd34d08435 req_id=req_1c4f78c09517
+ts=2026-08-09T03:45:45.337Z level=info svc=cart-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-09T03:45:49.433Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:45:53.483Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=233 trace_id=6c86b228c794f022d9cdd96eca9a5526 req_id=req_77f299373a88
+ts=2026-08-09T03:45:57.321Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=66 trace_id=ae1ad65c9559fa0aab01a7355a73a8fd req_id=req_e23eb8ba9342
+ts=2026-08-09T03:46:00.185Z level=info svc=cart-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-09T03:46:00.736Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=214 trace_id=8ceaed42b436a3b57b28d3b222b4a2a8 req_id=req_f94213868afb
+ts=2026-08-09T03:46:07.012Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=25 trace_id=452980fa2034e95ab83b2ce1e688df83 req_id=req_358d3274b009
+ts=2026-08-09T03:46:08.666Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=211 trace_id=fe37aab8d7ab10892c0cee6ac922efd5 req_id=req_1a24e570a2c8
+ts=2026-08-09T03:46:09.990Z level=debug svc=cart-api msg="metrics scrape served" path=/metrics status=200 bytes=14214
+ts=2026-08-09T03:46:10.362Z level=debug svc=cart-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_506004
+ts=2026-08-09T03:46:14.649Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=108 status=200 trace_id=0f6fb6ae9c452ae5ff769f2b1b25c56f
+ts=2026-08-09T03:46:17.070Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=233 status=200 trace_id=47845ab22e59dd50bf4853ccf766b1e9
+ts=2026-08-09T03:46:19.718Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=232 trace_id=f2d6bb0d916eb49789aa989eaf3bb49f req_id=req_a815a3263adc
+ts=2026-08-09T03:46:23.576Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=41 trace_id=8d2fb4fd1122edc5d617286dd628a1ae req_id=req_3faef25ed9d7
+ts=2026-08-09T03:46:25.860Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:46:29.212Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=74 trace_id=f04367bf63f8e617d101de838393b9ef req_id=req_7b1eb29b365b
+ts=2026-08-09T03:46:34.585Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=62 status=200 trace_id=c031876f833bc6a42213adecd18568fd
+ts=2026-08-09T03:46:42.221Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:46:43.300Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=48 trace_id=37ec2810c8a28896463b75e375ebd88f req_id=req_0814cf681e0d
+ts=2026-08-09T03:46:46.078Z level=info svc=cart-api msg="auth token validated" user_id=usr_441422 issuer=identity-service
+ts=2026-08-09T03:46:47.174Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=107 trace_id=05109de21b92a664020eaaa6c699644d req_id=req_b7bf966aa1df
+ts=2026-08-09T03:46:51.809Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=176 status=200 trace_id=98e6fffa77f4a061e3799588dfc08a2f
+ts=2026-08-09T03:46:54.368Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=161 trace_id=5281406ba435e5b71e10fb4273f6116b req_id=req_e16301ae5e1d
+ts=2026-08-09T03:46:54.639Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=15 trace_id=3c4d6d662f059497526464d4949df3e8 req_id=req_ecd241e2bdd8
+ts=2026-08-09T03:46:56.576Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=127 trace_id=573a2cf2da52687a4d1cd81edc9821cd req_id=req_9dd5406bbd93
+ts=2026-08-09T03:47:08.119Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=124 trace_id=38129e34188ac8b50e98fc0cf8fe8c4d req_id=req_487b5f9ebff2
+ts=2026-08-09T03:47:13.032Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=209 trace_id=996f425598a7925fbc5878c03d0ef638 req_id=req_488f149c0c6a
+ts=2026-08-09T03:47:16.599Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=123 status=200 trace_id=72c076aef5a0b82ff75fbc641f60a0b7
+ts=2026-08-09T03:47:21.010Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=124 status=200 trace_id=8b2a16f8fdca4b48e29c160f423127fe
+ts=2026-08-09T03:47:22.597Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:47:23.566Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:47:25.328Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=59 trace_id=55ec6d41c96b39a7af620a8f679cbf13 req_id=req_da0f06a6288a
+ts=2026-08-09T03:47:26.026Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=67 status=200 trace_id=8fa12bdff3468e692475213ea61bc34a
+ts=2026-08-09T03:47:40.585Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=155 trace_id=b5f77d80fb43504ab17e909da771fd61 req_id=req_f97c099cddce
+ts=2026-08-09T03:47:41.256Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:47:43.074Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:47:45.718Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=196 trace_id=90ed2136df73e23141820066a46cc40f req_id=req_86a6128d05ee
+ts=2026-08-09T03:47:47.256Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=135 trace_id=553b0ba80463e4d030f27514cb8e02ed req_id=req_304babe80ff1
+ts=2026-08-09T03:48:04.118Z level=debug svc=cart-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_292368
+ts=2026-08-09T03:48:07.331Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:48:11.840Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=77 trace_id=bb898d8f2a4acd2d63252579b79a5b82 req_id=req_ce0179670e69
+ts=2026-08-09T03:48:17.357Z level=info svc=cart-api msg="auth token validated" user_id=usr_916867 issuer=identity-service
+ts=2026-08-09T03:48:20.833Z level=debug svc=cart-api msg="feature flag evaluated" flag=checkout_v2_layout value=true user_id=usr_288871
+ts=2026-08-09T03:48:21.574Z level=info svc=cart-api msg="session refreshed" user_id=usr_598280 ttl_s=1800
+ts=2026-08-09T03:48:31.149Z level=info svc=cart-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-09T03:48:33.571Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=17 trace_id=c8c8efd7f80abfe928d33ce0869c67e7 req_id=req_9db0b863aef7
+ts=2026-08-09T03:48:33.770Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=14 trace_id=a400c8ce24c016d893a00491ebb0e6d4 req_id=req_833e45ef3311
+ts=2026-08-09T03:48:39.414Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=61 trace_id=737b3f8e4c8f63f2e4b73dbd3482abf5 req_id=req_85e65a2790b0
+ts=2026-08-09T03:48:53.773Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=101 status=200 trace_id=b0c66cdda5a5ef08e6dd0934d0ea05c4
+ts=2026-08-09T03:48:57.567Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:49:12.255Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=212 status=200 trace_id=9f16dcd7c7f859d50d1001e5214c4999
+ts=2026-08-09T03:49:13.364Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:49:15.822Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=171 trace_id=edb60edec31ee2c733f30627490bea1e req_id=req_2a3ca1917d45
+ts=2026-08-09T03:49:20.031Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=112 trace_id=6b02a62a7c4cd62a8a1010eb69f30322 req_id=req_5c12b859734f
+ts=2026-08-09T03:49:20.244Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:49:24.321Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=164 trace_id=26be6844c7deee71ca0b822b4ada0636 req_id=req_d52bc45fe13b
+ts=2026-08-09T03:49:25.118Z level=info svc=cart-api msg="auth token validated" user_id=usr_261741 issuer=identity-service
+ts=2026-08-09T03:49:26.890Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=55 trace_id=b943dd27e5dca658ed2895535103ed5e req_id=req_a7032b08fcfa
+ts=2026-08-09T03:49:30.357Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=98 trace_id=b2de8a6ae7c4b4c51cdbeee9e9b24b59 req_id=req_1e3d87fafb24
+ts=2026-08-09T03:49:33.698Z level=info svc=cart-api msg="auth token validated" user_id=usr_276388 issuer=identity-service
+ts=2026-08-09T03:49:35.259Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:49:39.510Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=226 trace_id=0aceff1e1d3c29b6dcecb017b2043ee8 req_id=req_4901ee471ef5
+ts=2026-08-09T03:49:40.784Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=31 trace_id=dd3ae82710316a0cb8f8774840b4afed req_id=req_af8d7b0d617e
+ts=2026-08-09T03:49:40.998Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=140 status=200 trace_id=5568cd26b6d6121703d90803ca49b3da
+ts=2026-08-09T03:49:41.568Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=59 status=200 trace_id=bd9134f4fb20d6758952992c9560520d
+ts=2026-08-09T03:49:45.100Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:49:47.731Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=109 status=200 trace_id=42f1b30eda0f53fe8c9a23db2d66a0da
+ts=2026-08-09T03:49:51.680Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=76 status=200 trace_id=a00cce0eeab58c3654ebffba65764648
+ts=2026-08-09T03:49:59.647Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=131 status=200 trace_id=a736fe894da0066a1810d6c39d99c4ac
+Aug 09 03:50:00 general-1-d kubelet[1000]: INFO node cordoned for maintenance reason=kernel-patch taint=node.kubernetes.io/unschedulable
+ts=2026-08-09T03:50:01.723Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=139 trace_id=11fdb6bf97c6deed36d23620a3709386 req_id=req_e4355e4e8e2a
+ts=2026-08-09T03:50:01.849Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=212 trace_id=dbe7afb462ba9323a9c1bbc9663d5e6d req_id=req_739859d57d0d
+ts=2026-08-09T03:50:08.324Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:50:13.996Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=95 status=200 trace_id=76a330d0d508c4699f69e8f59b0e90fb
+ts=2026-08-09T03:50:14.057Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+Aug 09 03:50:15 general-1-d kubelet[1000]: INFO evicting pod pod=coredns-6f7b8c9d4-tq2xz grace_s=30
+ts=2026-08-09T03:50:15.118Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+ts=2026-08-09T03:50:26.684Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=138 trace_id=d6debf365881734cc8446a28a774dce1 req_id=req_e545a4bd0efe
+ts=2026-08-09T03:50:29.270Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=138 trace_id=1a224ca09259f40924adb839f9def3b2 req_id=req_78ea5027135c
+ts=2026-08-09T03:50:31.710Z level=debug svc=cart-api msg="metrics scrape served" path=/metrics status=200 bytes=4214
+ts=2026-08-09T03:50:34.454Z level=info svc=cart-api msg="readiness probe ok" path=/readyz status=200 duration_ms=1
+ts=2026-08-09T03:50:34.855Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=199 trace_id=1f764618a07e7abb3e7b03a16615167c req_id=req_0696770c40d5
+Aug 09 03:50:35 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:50:40.928Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=160 trace_id=eb469f99d8ae021265e15b3d8f247e06 req_id=req_955b77e66282
+ts=2026-08-09T03:50:43.360Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:50:43.419Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=194 trace_id=bd9e17770c90bea66f7b121da8f617ae req_id=req_7d076d973818
+ts=2026-08-09T03:50:46.509Z level=info svc=cart-api msg="auth token validated" user_id=usr_714637 issuer=identity-service
+ts=2026-08-09T03:50:54.674Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=192 status=200 trace_id=f3f2be79c34cc79feaa8823ca9fd4d05
+ts=2026-08-09T03:50:56.937Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=114 trace_id=0c3cd39b1e4e50ed1fe7d85e439ffe7e req_id=req_d1bc04c2294a
+ts=2026-08-09T03:50:59.869Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=189 trace_id=842f673f813d04ecf60601431902ce7f req_id=req_ae5127605b48
+ts=2026-08-09T03:51:00.021Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12704 server=10.96.0.10
+ts=2026-08-09T03:51:04.255Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=78 trace_id=1981b6623e9798426ad8aefe09f5f378 req_id=req_832132040230
+ts=2026-08-09T03:51:07.978Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=85 status=200 trace_id=b237fa6fe132a40ec5c5858512a9ff49
+ts=2026-08-09T03:51:19.327Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=32 trace_id=36ab2fa4a827aa1189fef7a1afe438fb req_id=req_d8a4f646b492
+ts=2026-08-09T03:51:20.327Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=167 trace_id=69fff8690618ad1fec71ec24fa21f36b req_id=req_14ee55ec92ec
+ts=2026-08-09T03:51:22.157Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=13304 server=10.96.0.10
+ts=2026-08-09T03:51:30.011Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=110 status=200 trace_id=ec70aa3f4021ce2445c298b67da9b661
+ts=2026-08-09T03:51:33.765Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=187 trace_id=0ea26f422c8eddec264c17eb061a3b6e req_id=req_bacd61920429
+ts=2026-08-09T03:51:34.639Z level=info svc=cart-api msg="health check ok" path=/healthz status=200 duration_ms=2
+ts=2026-08-09T03:51:35.679Z level=debug svc=cart-api msg="dns resolved" name=orders-service.prod.svc.cluster.local ttl_s=30 duration_ms=2
+Aug 09 03:51:37 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:51:40.323Z level=info svc=cart-api msg="/v1/cart completed" method=GET path=/v1/cart status=200 duration_ms=177 trace_id=bf3a81b722bb6d41b63a3da82fc509e1 req_id=req_a2208a643411
+ts=2026-08-09T03:51:40.417Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=173 status=200 trace_id=df22a98e3f0b3b52ffd5c5b9effb372a
+ts=2026-08-09T03:51:41.968Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=109 trace_id=d264e83ab4847d90f6733cbfb493bcaa req_id=req_fdb1afa04bd1
+ts=2026-08-09T03:51:43.165Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=148 status=200 trace_id=b0935c9994c801079e9d9bafdb896eed
+ts=2026-08-09T03:51:44.219Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=13704 server=10.96.0.10
+ts=2026-08-09T03:51:46.466Z level=info svc=cart-api msg="/healthz completed" method=GET path=/healthz status=200 duration_ms=204 trace_id=7cb9c2dcc98a0c4afccd8d58b84881b7 req_id=req_97482420593f
+ts=2026-08-09T03:51:47.932Z level=info svc=cart-api msg="/v1/cart/items completed" method=GET path=/v1/cart/items status=200 duration_ms=215 trace_id=c7dd3cf33e38b6e7d8b7c47ee55736e2 req_id=req_b901f26bd3e1
+ts=2026-08-09T03:51:48.371Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=46 status=200 trace_id=7d11a21b0cbb672c12921705437934e5
+ts=2026-08-09T03:51:51.478Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=112 status=200 trace_id=8ee7982adc173bdd3f1766e5930f3bce
+ts=2026-08-09T03:51:53.266Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5203 trace_id=cc4613b96270e71224b7e91539e9ebe4
+ts=2026-08-09T03:51:53.693Z level=info svc=cart-api msg="cart updated" user_id=usr_843701 items=22
+ts=2026-08-09T03:51:54.247Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=ba688b775b08d48fb9ff8c8840b96d70
+ts=2026-08-09T03:51:56.996Z level=info svc=cart-api msg="cart updated" user_id=usr_262366 items=8
+ts=2026-08-09T03:52:02.448Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=13 status=200 trace_id=e2c3bf8e7da7549ede0f610135cb4041
+ts=2026-08-09T03:52:05.615Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=174 status=200 trace_id=dc32e7ec7b3df504dc55a9cf8c94127c
+ts=2026-08-09T03:52:06.001Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=11504 server=10.96.0.10
+ts=2026-08-09T03:52:08.489Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=145 status=200 trace_id=abf31241922671d2db87566aa9db195b
+ts=2026-08-09T03:52:15.030Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52403 trace_id=6c6e44e2b207eb05d85e0628cd77555d
+ts=2026-08-09T03:52:17.433Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52903 trace_id=d271192372d5885ee190780fc63bbabc
+ts=2026-08-09T03:52:18.516Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=131 status=200 trace_id=94b2e768b94ce1c73bf874540bdd4145
+ts=2026-08-09T03:52:26.132Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51203 trace_id=de52f0543893948159f8993287df07ee
+ts=2026-08-09T03:52:28.309Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12504 server=10.96.0.10
+ts=2026-08-09T03:52:31.731Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=97 status=200 trace_id=059d7edfacf3b5cdec1541e97142eb0a
+ts=2026-08-09T03:52:32.160Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=41 status=200 trace_id=e7ae8c4d73812740fcfdfe934894bdb9
+ts=2026-08-09T03:52:34.547Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+Aug 09 03:52:39 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:52:43.426Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52703 trace_id=3a78d918b6cdd22fc376f0140891042c
+ts=2026-08-09T03:52:50.324Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=1904 server=10.96.0.10
+ts=2026-08-09T03:53:01.342Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=14 status=200 trace_id=2c8ddffc642d8fbfcbd1b8cf88982d95
+ts=2026-08-09T03:53:11.632Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=21 status=200 trace_id=084dfd57bcec62a5a0dd29154a8030cb
+ts=2026-08-09T03:53:12.182Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12104 server=10.96.0.10
+ts=2026-08-09T03:53:12.277Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=169 status=200 trace_id=32d28d274dec72fe360d98013218c0a4
+ts=2026-08-09T03:53:12.774Z level=info svc=cart-api msg="cart updated" user_id=usr_603058 items=3
+ts=2026-08-09T03:53:20.474Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51903 trace_id=bc57a5bd2fdda7344d5bdf39363852d7
+ts=2026-08-09T03:53:21.867Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53803 trace_id=bd38311ee5625a9841a1d17d18772a6f
+ts=2026-08-09T03:53:34.035Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=13204 server=10.96.0.10
+ts=2026-08-09T03:53:35.084Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=95 status=200 trace_id=5a42a3d07c9b43c2d32136a5f15c0e5b
+ts=2026-08-09T03:53:35.754Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=179 status=200 trace_id=ffdb0af3794f4485ff869ef2334dee13
+ts=2026-08-09T03:53:37.096Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=f93b30312b907a02c4dab51730f61d83
+ts=2026-08-09T03:53:38.466Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=c29c4dcbb80559640c04733df5429274
+Aug 09 03:53:41 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:53:46.168Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=6277a2f2ef4efca73bd221e492b54293
+ts=2026-08-09T03:53:49.090Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=158 status=200 trace_id=f24cc09ce9e1384efb4f135aff27ad50
+ts=2026-08-09T03:53:50.549Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=55 status=200 trace_id=6b51082c3b06a92012ab62935de19810
+ts=2026-08-09T03:53:52.610Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=23 status=200 trace_id=60848c8ff9a7fec6bf513e7d6cf28d40
+ts=2026-08-09T03:53:55.655Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=23 status=200 trace_id=423721c243849d5cc920a88627fad1c0
+ts=2026-08-09T03:53:56.111Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=11704 server=10.96.0.10
+ts=2026-08-09T03:53:58.575Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=75 status=200 trace_id=05d4584fa0635b0168afa5f7889bbe7c
+ts=2026-08-09T03:53:59.752Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=20 status=200 trace_id=c16efefcffe43e9c3c1ef34e22f22255
+ts=2026-08-09T03:54:00.094Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=b94a4c96fa28d9718615195f8d85dcde
+ts=2026-08-09T03:54:03.611Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53203 trace_id=67d7003e958b5477168d85ccb875f2a6
+ts=2026-08-09T03:54:05.028Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=191 status=200 trace_id=29555977edaaee058805bc2bcc02e272
+ts=2026-08-09T03:54:08.492Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=8f12047e1e6787d1ae132722f500d130
+ts=2026-08-09T03:54:14.912Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=72 status=200 trace_id=9630ff661edd1e3a386feac1aaf10809
+ts=2026-08-09T03:54:17.007Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=205 status=200 trace_id=6e2cd9da0df0aa63e1207ff148927f9a
+ts=2026-08-09T03:54:18.318Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12704 server=10.96.0.10
+ts=2026-08-09T03:54:19.168Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:54:20.120Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=836efb0c81169031ed36a1944ef411f3 attempt=3
+ts=2026-08-09T03:54:21.763Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=9b31cafe5fcc56a91087407afc4d0cf6
+ts=2026-08-09T03:54:26.206Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=38d561eac08406573b0b975a8acda92b
+ts=2026-08-09T03:54:27.486Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=41 status=200 trace_id=c312f16a98e18156150c9dca577e9342
+ts=2026-08-09T03:54:31.933Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52403 trace_id=ab6cb8c48bd4242eccc8c089d906912f
+ts=2026-08-09T03:54:39.912Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=125 status=200 trace_id=eaa2d6a053c7e280f3685ea73cda476c
+ts=2026-08-09T03:54:40.197Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12704 server=10.96.0.10
+Aug 09 03:54:43 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:54:50.179Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=cabc9417e4a88a9d76853e5700d6debe attempt=3
+ts=2026-08-09T03:54:51.651Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:54:52.007Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=02a018907ae09f5392c2d5e045ca8945
+ts=2026-08-09T03:54:53.139Z level=info svc=cart-api msg="cart updated" user_id=usr_443130 items=26
+ts=2026-08-09T03:55:00.672Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=821ce3ed5ed1a38d6ee7f3ffbc74b4a6
+ts=2026-08-09T03:55:02.209Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12904 server=10.96.0.10
+ts=2026-08-09T03:55:08.547Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=16 status=200 trace_id=11b2322fcbd6c62eecae626728ccbe15
+ts=2026-08-09T03:55:17.762Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=199 status=200 trace_id=e308758424849a8b2ef7d0a32ed6d070
+ts=2026-08-09T03:55:18.312Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=aca6d040958e287a6334f729da92848f
+ts=2026-08-09T03:55:20.046Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=77d5933a08739b4e1f8e5be54202f0bf attempt=3
+ts=2026-08-09T03:55:24.312Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=1904 server=10.96.0.10
+ts=2026-08-09T03:55:32.033Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51703 trace_id=d59c26450b8b31a13cf6f2e55bbacbd4
+ts=2026-08-09T03:55:32.735Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=84 status=200 trace_id=3a5a64a600ea0c6e9487c9f3508d8eaa
+ts=2026-08-09T03:55:37.031Z level=info svc=cart-api msg="cart updated" user_id=usr_227999 items=27
+ts=2026-08-09T03:55:37.248Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=132 status=200 trace_id=929084c06064721a56da2bfdaf6f677c
+Aug 09 03:55:40 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=282
+ts=2026-08-09T03:55:44.058Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=a6577b97a1d04eb1f2453a0f7d3b6873
+Aug 09 03:55:45 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:55:46.310Z level=warn svc=cart-api msg="dns lookup slow" name=orders-service.prod.svc.cluster.local duration_ms=12004 server=10.96.0.10
+ts=2026-08-09T03:55:50.037Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=747a6adc0777699b40b63dbaed2b8119 attempt=3
+ts=2026-08-09T03:55:50.873Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5803 trace_id=404afae302f2d34dae2a8ed29f8adc4e
+ts=2026-08-09T03:55:57.653Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=f038acaefa92a8a9dddadb400b52e62b
+ts=2026-08-09T03:55:57.977Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=216 status=200 trace_id=f000c37a833707843b8f8b3bea81fbd3
+ts=2026-08-09T03:56:10.337Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=4f9e8c422bb8a94d1c290baee47f0157
+ts=2026-08-09T03:56:14.760Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=225 status=200 trace_id=dcfb001733188fdae21f4e5fe4837888
+ts=2026-08-09T03:56:15.051Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51903 trace_id=bcb677f6704281aae15e44a5648c00aa
+ts=2026-08-09T03:56:15.836Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=5950c3d41b272306e9012c1c8f7b618c
+ts=2026-08-09T03:56:20.198Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=0e3830e349bd815cb7d077464e07acd8 attempt=3
+ts=2026-08-09T03:56:23.114Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=119 status=200 trace_id=2c18f41d5ac099bb3c0d9993fe684473
+ts=2026-08-09T03:56:28.613Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=85 status=200 trace_id=f17a2a329108337adffc009142697ea4
+ts=2026-08-09T03:56:28.630Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=29 status=200 trace_id=2d71cdb404c95052fccdecfcaad379ce
+ts=2026-08-09T03:56:29.635Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=72 status=200 trace_id=a8add2e3677021fe52081c056b126fa0
+ts=2026-08-09T03:56:33.024Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=160 status=200 trace_id=644675a371d0c81db310c98a55ac4bf7
+Aug 09 03:56:35 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=42
+ts=2026-08-09T03:56:36.142Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=2e6db72b9d3be657930a0b82295840b4
+ts=2026-08-09T03:56:44.554Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=219 status=200 trace_id=75ebf7ea0737438fbd10e21fd04e9cf3
+Aug 09 03:56:47 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:56:48.250Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51003 trace_id=aca4c5e445e8e0448ecdc009221cfa77
+ts=2026-08-09T03:56:50.005Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=fd1a3333c80d8e3dc053c90158a3b52c attempt=3
+ts=2026-08-09T03:56:52.037Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52303 trace_id=3e37e60111f71a168080c8df7c2c38c7
+ts=2026-08-09T03:56:53.185Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53003 trace_id=56671d1ff227550c74901840b703dfd8
+ts=2026-08-09T03:56:54.492Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=138 status=200 trace_id=6ed8f39f9ff812f19719398a23d4e5bb
+ts=2026-08-09T03:56:57.161Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=120 status=200 trace_id=ebb83911d878215849fde6c95163df12
+ts=2026-08-09T03:56:57.182Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=120 status=200 trace_id=13cadeebc33d1b66eb4499aafd85bdc0
+ts=2026-08-09T03:57:02.306Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=fc03ddef7edb7dde88356d6340bcdaad
+ts=2026-08-09T03:57:03.323Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:57:14.709Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5503 trace_id=80f97d298dd77d9d75055b3ab483237d
+ts=2026-08-09T03:57:18.894Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:57:20.184Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=fae5ab9a1f40493b7e16b1d5114ed0cf attempt=3
+ts=2026-08-09T03:57:28.282Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=d40726f639f48e6274df57ca4a856e48
+Aug 09 03:57:30 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=382
+ts=2026-08-09T03:57:45.177Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=147 status=200 trace_id=f1bcd941c3b8e5db66ffc772364bd82c
+Aug 09 03:57:49 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:57:50.173Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=758cc95264b3b4296a09902f99a7ce6b attempt=3
+ts=2026-08-09T03:57:54.129Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=6e8558cb6edc0204b07e5d5c43d84f80
+ts=2026-08-09T03:57:55.117Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=52 status=200 trace_id=6e69da5ba89466b4e241dc09153cbdb4
+ts=2026-08-09T03:57:55.473Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5403 trace_id=d62f41da7c900933e9b0a46d6ead89e6
+ts=2026-08-09T03:58:00.172Z level=info svc=cart-api msg="http client connect timeout updated" from_ms=500 to_ms=800 source="configmap cart-api-env"
+ts=2026-08-09T03:58:04.191Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51803 trace_id=5b35b470cb211c1b4d9adb23d6900a83
+ts=2026-08-09T03:58:04.394Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=207 status=200 trace_id=36617d3fa961db0bc865ec83a4805857
+ts=2026-08-09T03:58:07.010Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=85 status=200 trace_id=7fadcc56605668916f160c1ef7ff8f5f
+ts=2026-08-09T03:58:17.563Z level=info svc=cart-api msg="cart updated" user_id=usr_514500 items=33
+ts=2026-08-09T03:58:20.134Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=a6f66778dd34a191c6410076b84ee61e attempt=3
+ts=2026-08-09T03:58:20.238Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=3220331b9e5d7ed09311efc0548e7532
+Aug 09 03:58:25 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=372
+ts=2026-08-09T03:58:26.247Z level=info svc=cart-api msg="cart updated" user_id=usr_341682 items=21
+ts=2026-08-09T03:58:39.947Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=33 status=200 trace_id=200ab242a848d6a680c2b7156c0b2817
+ts=2026-08-09T03:58:44.736Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51603 trace_id=410b1c315fd852826f7e89b3a8b0b7ed
+ts=2026-08-09T03:58:46.113Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=e540ace670963dccb0e8a07679eb3cb4
+ts=2026-08-09T03:58:50.275Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=da1ab097d47eb02869db16561a7e6ce0 attempt=3
+Aug 09 03:58:51 control-plane-1 kube-scheduler[8667]: WARN pod unschedulable pod=coredns-6f7b8c9d4-9v4mn reason=0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu
+ts=2026-08-09T03:58:54.021Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=213 status=200 trace_id=28a2339e257ad7a4a94210d67ac041ed
+ts=2026-08-09T03:59:00.284Z level=info svc=cart-api msg="long-lived connection reused, no resolution needed" target=postgres-orders age_s=83240
+ts=2026-08-09T03:59:02.472Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:59:07.359Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:59:09.490Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=114 status=200 trace_id=36b77e5e367a53e5c6cbefac3b721727
+ts=2026-08-09T03:59:12.246Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=4ad9460f5d060131b31f212dfde4b8b2
+Aug 09 03:59:20 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=152
+ts=2026-08-09T03:59:20.071Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=61e816137e8ab02f85ae2305909cb829 attempt=3
+ts=2026-08-09T03:59:27.564Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52203 trace_id=ff5350685121fa8144d5b5c14990ee8d
+ts=2026-08-09T03:59:38.174Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=6d89331fd6b21a07147698a62c354528
+ts=2026-08-09T03:59:43.715Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=158 status=200 trace_id=11aed368099c3314dd27e1e0592bad37
+ts=2026-08-09T03:59:47.249Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=70 status=200 trace_id=fdcaeca327d9bfe46e9c1a87470fac31
+ts=2026-08-09T03:59:48.039Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T03:59:50.291Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=6f839e807e16b00ed3754650ad0af5c5 attempt=3
+ts=2026-08-09T04:00:00.049Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_8591533417
+ts=2026-08-09T04:00:04.319Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=7edd27b5f9ded5618046088b6b23b742
+ts=2026-08-09T04:00:12.524Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=1c7bc1c3eace130db47b8dea35cc521c
+Aug 09 04:00:15 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=222
+ts=2026-08-09T04:00:17.830Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=be0d62729027b71c560619ef0d3741cf
+ts=2026-08-09T04:00:20.251Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=705c05cfee4801b21bb57538bbd1599f attempt=3
+ts=2026-08-09T04:00:29.862Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=67 status=200 trace_id=859e4dd53ae18a223d03272b3e87ca71
+ts=2026-08-09T04:00:30.110Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=a38a3e9514a1dbb3f4f3319b2f0cab13
+ts=2026-08-09T04:00:34.832Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=45 status=200 trace_id=d1a8d1df1e2c36d062e6d4625cd9efa3
+ts=2026-08-09T04:00:35.350Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5803 trace_id=464b901a7c85fc223dfa5ae1f4af8467
+ts=2026-08-09T04:00:38.509Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=12 status=200 trace_id=7daa9bfffe3e7cffaa35cb5243c4498a
+ts=2026-08-09T04:00:40.270Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=56 status=200 trace_id=30ed2c7ed57ce5711758a46ded8dd971
+ts=2026-08-09T04:00:42.094Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_8181110750
+ts=2026-08-09T04:00:42.194Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53503 trace_id=82e727c1a76157e15f8ac2c89ef4ff21
+ts=2026-08-09T04:00:43.147Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52203 trace_id=13da552c8a139a494a749c988b21c63b
+ts=2026-08-09T04:00:45.743Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:00:50.283Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=c4095a62b83c74e58481672b85fe6d51 attempt=3
+ts=2026-08-09T04:00:56.172Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=15d996f61e9a6053b43d090577eaaecf
+ts=2026-08-09T04:00:59.087Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=104 status=200 trace_id=ac5f3c3bf96197ae5594237957245ae7
+ts=2026-08-09T04:01:03.890Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:01:10.044Z level=info svc=cart-api msg="long-lived connection reused, no resolution needed" target=postgres-orders age_s=83940
+Aug 09 04:01:10 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=122
+ts=2026-08-09T04:01:15.189Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=181 status=200 trace_id=5d8d581c8668818cd3a99671c700234d
+ts=2026-08-09T04:01:17.864Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=144 status=200 trace_id=0280e3a5ffbbf05b11c663a91b40eef9
+ts=2026-08-09T04:01:20.058Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=413f6b643a3d09d4956abf67dc263c1b attempt=3
+ts=2026-08-09T04:01:22.325Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=bc05b50d9917aac0a208a86f81b570d9
+ts=2026-08-09T04:01:22.523Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=40 status=200 trace_id=bd805e4eb3018df3f47ac9fe321f1acd
+ts=2026-08-09T04:01:24.337Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_1585423875
+ts=2026-08-09T04:01:40.553Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:01:41.223Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=170 status=200 trace_id=afa651d69094d4f449c1605fb61b11c9
+ts=2026-08-09T04:01:43.927Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5503 trace_id=888f29f2d8f783bd8588dfee54b8e065
+ts=2026-08-09T04:01:45.003Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=238 status=200 trace_id=c79835ffb1070945223aa84e0fb7843c
+ts=2026-08-09T04:01:48.002Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=b343569915d915a684dc5889e10e2ca9
+ts=2026-08-09T04:01:50.292Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=be1aaae6d1a81fff67ab7a7e9a9c6b81 attempt=3
+ts=2026-08-09T04:01:50.303Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:01:55.466Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:02:00.065Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:02:02.650Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=86 status=200 trace_id=6b81d5282c7d33cf62af696152b62129
+ts=2026-08-09T04:02:02.747Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=35 status=200 trace_id=e287cfe2b7777777146f37370e71c279
+Aug 09 04:02:05 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=332
+ts=2026-08-09T04:02:05.464Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52303 trace_id=8f3c9bc523e8aac4c8bd7268a6731d08
+ts=2026-08-09T04:02:06.263Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_9637357063
+ts=2026-08-09T04:02:14.341Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=c702947262e72e2b87a12cdce222ad19
+ts=2026-08-09T04:02:15.285Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=cdfdd5d5fcb5480675156a09d8f2b451
+ts=2026-08-09T04:02:17.172Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=5bc4d7780ebce570b0a278109270bd23
+ts=2026-08-09T04:02:19.231Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=173 status=200 trace_id=ce8be1258a457f5dbdefb848eb1f3662
+ts=2026-08-09T04:02:20.197Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=79b19cb921732fe4e77341b2b41f2c80 attempt=3
+ts=2026-08-09T04:02:30.883Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=175 status=200 trace_id=348c049a8e2be49b688c9c30c2b7f743
+ts=2026-08-09T04:02:40.049Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=7f513c9391b1a8aafefdb244596ad93e
+ts=2026-08-09T04:02:41.556Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51803 trace_id=d8e674adfc9c5c446c57dfeae8ed0a8e
+ts=2026-08-09T04:02:44.405Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=131 status=200 trace_id=5991227c7d369e4526f9ad83acf98f5b
+ts=2026-08-09T04:02:47.233Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5903 trace_id=c458a93ad1302026ed8ed2c0c38c5bda
+ts=2026-08-09T04:02:47.356Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52003 trace_id=f0ed9af608fbe932f95d7f21923c9f70
+ts=2026-08-09T04:02:48.020Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_8722515371
+ts=2026-08-09T04:02:48.572Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=101 status=200 trace_id=537f5bfb18aee821abed5be0bd84edd0
+ts=2026-08-09T04:02:50.047Z level=error svc=cart-api msg="dial tcp: lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host" target=orders-service trace_id=ba3d15813bff66d6aead87bb0e29a092 attempt=3
+ts=2026-08-09T04:02:50.087Z level=info svc=cart-api msg="cart updated" user_id=usr_344788 items=2
+ts=2026-08-09T04:02:52.873Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=58 status=200 trace_id=fbf81c8c141efb77cf0692f4c53c187b
+ts=2026-08-09T04:02:53.065Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=fb6edc0caa6112355cf2119af20b92b0
+ts=2026-08-09T04:02:53.231Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=86f2481560e865d5e1f110a902b43aa8
+ts=2026-08-09T04:02:57.132Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=122 status=200 trace_id=0ec7582849e0d86b44b3446f338ed2dc
+ts=2026-08-09T04:02:58.593Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=54 status=200 trace_id=9515d9f386b451bad6ff9063c676b754
+Aug 09 04:03:00 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=182
+ts=2026-08-09T04:03:04.718Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=203 status=200 trace_id=23dfa20c6c5154b4f860524a2b7dc1a9
+ts=2026-08-09T04:03:06.156Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=1d9f73f096f5e2a544002eb4925d814c
+ts=2026-08-09T04:03:13.130Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=891a013cef4133b005632ed5426895c6
+ts=2026-08-09T04:03:20.000Z level=info svc=cart-api msg="long-lived connection reused, no resolution needed" target=postgres-orders age_s=82140
+ts=2026-08-09T04:03:24.134Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=36 status=200 trace_id=5c4aee73c516d32cb137875d8e3a2074
+ts=2026-08-09T04:03:29.266Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=144 status=200 trace_id=b2578de7a7419b0a2d46567ded481ca4
+ts=2026-08-09T04:03:29.622Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5703 trace_id=b80792fc0c7bb3b2abed329f3e75cf78
+ts=2026-08-09T04:03:30.195Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_5017374371
+ts=2026-08-09T04:03:32.273Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=37a2e169a003c7abd42e110220ec54dd
+ts=2026-08-09T04:03:43.584Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51803 trace_id=3c054a4baf78a6ced62df29fa257e7ab
+ts=2026-08-09T04:03:49.014Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53203 trace_id=b87f9050ff86d8a8658104476749e7b7
+ts=2026-08-09T04:03:49.721Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=77 status=200 trace_id=8b7c505adaa02895372b597b698fac3b
+ts=2026-08-09T04:03:53.840Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:03:54.734Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=197 status=200 trace_id=d94ae2e3fded776bd6abe81dba94456e
+Aug 09 04:03:55 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=292
+ts=2026-08-09T04:03:58.274Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=9fedc0d0c01ddcd9b4cb138812194a14
+ts=2026-08-09T04:04:00.613Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=174 status=200 trace_id=64d552bada92fc54505c9fc762ada00f
+ts=2026-08-09T04:04:11.172Z level=info svc=cart-api msg="cart updated" user_id=usr_758277 items=17
+ts=2026-08-09T04:04:12.038Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_2398115576
+ts=2026-08-09T04:04:17.726Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=41146c2ee2e9287d15bcaed8b8ecc837
+ts=2026-08-09T04:04:17.824Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=9a69d35b25d33d12f4f78bc9a49b8f81
+ts=2026-08-09T04:04:19.514Z level=info svc=cart-api msg="cart updated" user_id=usr_769194 items=17
+ts=2026-08-09T04:04:23.332Z level=info svc=cart-api msg="cart updated" user_id=usr_267421 items=27
+ts=2026-08-09T04:04:24.331Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=9df5a190797f6740260f18be56316abf
+ts=2026-08-09T04:04:30.895Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=151 status=200 trace_id=a4d3735e489ad8739944009c7a85a301
+ts=2026-08-09T04:04:39.454Z level=info svc=cart-api msg="cart updated" user_id=usr_798877 items=10
+ts=2026-08-09T04:04:43.770Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=81 status=200 trace_id=9a34f6430d6de42b6cb8f57b053c376b
+ts=2026-08-09T04:04:50.008Z level=error svc=cart-api msg="dns lookup failed" name=orders-service.prod.svc.cluster.local server=10.96.0.10 error="i/o timeout after 5000ms" search_attempts=4 trace_id=92a0fd487cb08db47199f1558768b173
+Aug 09 04:04:50 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=272
+ts=2026-08-09T04:04:51.649Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=338e16373917fd2e2b222d0374d3d5e4
+ts=2026-08-09T04:04:54.334Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_5406932992
+ts=2026-08-09T04:04:56.288Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=149 status=200 trace_id=118cfff878d7b967da0fe4cc9d923c9a
+ts=2026-08-09T04:04:57.142Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=abd6b22e03e578f373c7a43e836e78ea
+ts=2026-08-09T04:04:57.257Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=71 status=200 trace_id=885371c777cdbdf44332439416606ff1
+ts=2026-08-09T04:04:57.595Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=31 status=200 trace_id=c1ccaf9ffeb74ec111652c3f92d935ac
+ts=2026-08-09T04:05:02.853Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:05:03.480Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5403 trace_id=72fb312139088dbc02f4f11231485279
+ts=2026-08-09T04:05:05.681Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=e2ed208c659c310889e0a1f58db9cb58
+ts=2026-08-09T04:05:08.044Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=199 status=200 trace_id=e296e749472da008ab1390adb5a09fb9
+ts=2026-08-09T04:05:11.201Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:05:21.413Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52103 trace_id=a06cdd7c219ff72b04515d49e4e83563
+ts=2026-08-09T04:05:23.209Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=60 status=200 trace_id=5820f38e93181abd0208f9892cc1a78d
+ts=2026-08-09T04:05:30.308Z level=info svc=cart-api msg="long-lived connection reused, no resolution needed" target=postgres-orders age_s=81540
+ts=2026-08-09T04:05:31.986Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=175 status=200 trace_id=6de00a01de527640fd9e076e6c119f22
+ts=2026-08-09T04:05:33.494Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:05:33.594Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5503 trace_id=9bd9cac4348764334ecfc4d8f9132c67
+ts=2026-08-09T04:05:36.061Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_8714321448
+ts=2026-08-09T04:05:42.091Z level=info svc=cart-api msg="cart updated" user_id=usr_172526 items=14
+Aug 09 04:05:45 general-1-b coredns[5775]: WARN coredns request throttled qps=1024 limit=1000 dropped=42
+ts=2026-08-09T04:05:47.913Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:05:49.048Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53903 trace_id=1c1e4ea6ad3f0f6081a5b3fb5fd36a8e
+ts=2026-08-09T04:05:52.053Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=210 status=200 trace_id=50a21df93f72cfa6ae469b192ed7be98
+ts=2026-08-09T04:05:52.165Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=183 status=200 trace_id=b5019482a7ff8ca3925ce6c7dda75edc
+ts=2026-08-09T04:06:12.539Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=161 status=200 trace_id=f3947b4f542d711bfc9b6733fd77aee2
+ts=2026-08-09T04:06:18.029Z level=error svc=notification-worker msg="job failed" job=order_confirmation error="lookup orders-service.prod.svc.cluster.local: no such host" attempt=3 order_id=ord_5385045135
+ts=2026-08-09T04:06:20.440Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=189 status=200 trace_id=0fb62c12fc08050ec075016b52519657
+ts=2026-08-09T04:06:35.277Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=9 status=200 trace_id=057afb4efda6ee499d703a58163271f7
+ts=2026-08-09T04:06:35.715Z level=info svc=cart-api msg="cart updated" user_id=usr_188221 items=35
+ts=2026-08-09T04:06:38.926Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=82 status=200 trace_id=534e283b5812e0bd1532f03ac68fd70b
+ts=2026-08-09T04:06:39.364Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=210 status=200 trace_id=ae5fd514757c3c0f77f537738d1a1079
+ts=2026-08-09T04:06:46.908Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=121 status=200 trace_id=d9c71aa54e5008ffecd3d7319a8c2706
+ts=2026-08-09T04:06:47.224Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:06:59.671Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=ddd7f3c7a24ea1dd1b4ed1321d6a92f9
+ts=2026-08-09T04:07:05.392Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=03f9b065de272e5f00da528e0379ab0e
+ts=2026-08-09T04:07:07.900Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5503 trace_id=e3fc49396764b9da33748ca78d908c4c
+ts=2026-08-09T04:07:13.974Z level=info svc=cart-api msg="cart updated" user_id=usr_696850 items=19
+ts=2026-08-09T04:07:25.626Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=190 status=200 trace_id=42ab8504caf097447c27068c89f18b97
+ts=2026-08-09T04:07:27.975Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53503 trace_id=a9556cf917d63cb87f1ca8b8b43343cd
+ts=2026-08-09T04:07:35.609Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:07:41.819Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=186 status=200 trace_id=535573909e76a8f7bd53716db572151c
+ts=2026-08-09T04:07:44.858Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=53303 trace_id=8918be9fd4954f28d3f19602514438b0
+ts=2026-08-09T04:07:45.731Z level=info svc=cart-api msg="health check ok" path=/healthz status=200
+ts=2026-08-09T04:07:45.837Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=f66bc989c161b069c340409b1e768b3f
+ts=2026-08-09T04:07:54.523Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=164 status=200 trace_id=d0f48b8cacb6f25bad19e02cd595b423
+ts=2026-08-09T04:08:05.870Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=5203 trace_id=477deb3aa27b6dbcf8fd061230091fd0
+ts=2026-08-09T04:08:07.968Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=176 status=200 trace_id=22c4db200efee9623ff5d6956e51df20
+ts=2026-08-09T04:08:15.732Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=37 status=200 trace_id=121957810f26f01d8f95eda9b5374010
+ts=2026-08-09T04:08:16.067Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=8 status=200 trace_id=fea40c3fdabc97e0a3c4e9222b23a180
+ts=2026-08-09T04:08:16.553Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=6f7d5d8b6559e70c8090bdd9f9ddc10e
+ts=2026-08-09T04:08:24.803Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=544f9f306e6a611122422c11e803138d
+ts=2026-08-09T04:08:24.986Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=152 status=200 trace_id=48c32de08cea67fb518856538280e5ac
+ts=2026-08-09T04:08:26.878Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=45 status=200 trace_id=582dce600484d0128cda23203bfd4f87
+ts=2026-08-09T04:08:34.391Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=51203 trace_id=9168db782df328719f97ffc370562936
+ts=2026-08-09T04:08:34.880Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=65 status=200 trace_id=5f5ae13276f97a94206eba51e6afb3ec
+ts=2026-08-09T04:08:38.480Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=54003 trace_id=6d3a0311ccd0d046fd5f9dd6f8244239
+ts=2026-08-09T04:08:38.846Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52803 trace_id=b66bb8f5c7499742bdd4a2b976437031
+ts=2026-08-09T04:08:39.392Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=157 status=200 trace_id=b95cd7a692e1fd30d0d21b5d62ddd7f1
+ts=2026-08-09T04:08:42.995Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=211 status=200 trace_id=12f5a4096f94f9d0d2e6c393a477dbf9
+ts=2026-08-09T04:08:43.325Z level=error svc=cart-api msg="downstream call failed" target=orders-service error="connect: no such host" duration_ms=52603 trace_id=470e8724bbd72e119af2f3f0b74246b6
+ts=2026-08-09T04:08:44.864Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=33 status=200 trace_id=616a6730ab393c752d9967e014e0bd33
+ts=2026-08-09T04:08:53.609Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=83 status=200 trace_id=cf8d51fb1661d1b1ab95a1f6b9801348
+ts=2026-08-09T04:08:59.045Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=114 status=200 trace_id=a5d52e43d13c61914c044388a711cb7d
+ts=2026-08-09T04:09:03.002Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=236 status=200 trace_id=af88eec82f82486f9615306454ea2817
+ts=2026-08-09T04:09:18.150Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=197 status=200 trace_id=71aeed7bc3400026553aefa156254661
+ts=2026-08-09T04:09:19.146Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=14 status=200 trace_id=4872b5c09b47477d8800e99289b1c9c4
+ts=2026-08-09T04:09:19.827Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=153 status=200 trace_id=d93c7a96fb61ef75acbe913dd3c8ccf1
+ts=2026-08-09T04:09:28.160Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=215 status=200 trace_id=e0d2ebce4903c566ab724708099a9cf7
+ts=2026-08-09T04:09:30.590Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=173 status=200 trace_id=28c7e56fa758b401c6e7b149fd9c3000
+ts=2026-08-09T04:09:31.256Z level=info svc=cart-api msg="cart updated" user_id=usr_926761 items=14
+ts=2026-08-09T04:09:33.361Z level=info svc=cart-api msg="downstream call ok" target=orders-service duration_ms=134 status=200 trace_id=f38a2870c545ff0d9c9e3e8d6a6eba86
+ts=2026-08-09T04:09:52.219Z level=warn svc=cart-api msg="retrying downstream call" target=orders-service attempt=2 trace_id=82d4ae4a44bf522702420df633e9b1f1
+ts=2026-08-09T04:09:59.750Z level=info svc=cart-api msg="cart updated" user_id=usr_838891 items=15

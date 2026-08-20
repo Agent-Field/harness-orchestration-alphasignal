@@ -1,0 +1,98 @@
+{
+  "root": "auth-service",
+  "nodes": [
+    {
+      "id": "auth-service",
+      "kind": "service",
+      "team": "platform",
+      "replicas": 9,
+      "capacity_rps_per_replica": 900,
+      "verify_p50_ms": 4
+    },
+    {
+      "id": "web-bff",
+      "kind": "service",
+      "team": "web",
+      "calls_auth": true,
+      "retry_policy": {
+        "max_attempts": 5,
+        "backoff": "none",
+        "jitter": false,
+        "timeout_ms": 400
+      }
+    },
+    {
+      "id": "mobile-bff",
+      "kind": "service",
+      "team": "mobile",
+      "calls_auth": true,
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "jitter": true,
+        "timeout_ms": 1500
+      }
+    },
+    {
+      "id": "checkout-api",
+      "kind": "service",
+      "team": "payments",
+      "calls_auth": true,
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "none",
+        "jitter": false,
+        "timeout_ms": 800
+      }
+    },
+    {
+      "id": "orders-service",
+      "kind": "service",
+      "team": "orders",
+      "calls_auth": true,
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "none",
+        "jitter": false,
+        "timeout_ms": 800
+      }
+    },
+    {
+      "id": "redis-auth",
+      "kind": "cache",
+      "team": "platform"
+    }
+  ],
+  "edges": [
+    {
+      "from": "web-bff",
+      "to": "auth-service",
+      "protocol": "grpc",
+      "share_of_traffic": 0.44
+    },
+    {
+      "from": "mobile-bff",
+      "to": "auth-service",
+      "protocol": "grpc",
+      "share_of_traffic": 0.31
+    },
+    {
+      "from": "checkout-api",
+      "to": "auth-service",
+      "protocol": "grpc",
+      "share_of_traffic": 0.15
+    },
+    {
+      "from": "orders-service",
+      "to": "auth-service",
+      "protocol": "grpc",
+      "share_of_traffic": 0.1
+    },
+    {
+      "from": "auth-service",
+      "to": "redis-auth",
+      "protocol": "resp"
+    }
+  ],
+  "notes": "Total steady-state verify load is ~5400 rps against 9 replicas x 900 rps = 8100 rps of capacity. auth-service has no admission control or load shedding."
+}

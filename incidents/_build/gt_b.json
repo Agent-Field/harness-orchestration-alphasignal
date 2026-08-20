@@ -1,0 +1,196 @@
+{
+  "id": "inc-005",
+  "title": "shipping-rates-api 504s from a degraded third-party carrier, amplified by fan-out and blind retries",
+  "failure_class": "upstream_third_party_degradation",
+  "difficulty": "easy",
+  "difficulty_rank": 2,
+  "affected_service": "shipping-rates-api",
+  "alert_id": "alt-2026-07-21-1120-shipping",
+  "incident_start_utc": "2026-07-21T11:12:00Z",
+  "alert_fired_utc": "2026-07-21T11:20:00Z",
+  "root_cause": {
+    "component": "carrier-b-api (third party)",
+    "summary": "carrier-b's EU API degraded from ~550ms p99 to 9-12s and began returning 503s. Because a quote fans out to all four carriers and waits for all of them, one slow carrier stalls every quote; with a 9s request timeout the whole endpoint starts returning 504. The service's own high CPU and fully occupied worker pool are consequences of threads parked on carrier-b, not causes.",
+    "mechanism": "external dependency degradation converted into total endpoint failure by wait-for-all fan-out",
+    "originating_change": "none of ours: carrier-b vendor incident, confirmed by their status page at 11:14Z",
+    "originating_artifact": "metrics.json (per-carrier latency) plus deploys.json vendor_status entry"
+  },
+  "root_cause_must_include": ["carrier-b", "third party", "timeout"],
+  "root_cause_keywords": ["vendor", "external", "carrier b", "read timeout after 6000ms", "503", "fan-out", "wait for all", "status page", "no circuit breaker", "no backoff"],
+  "contributing_factors": [
+    {"id": "cf-005-1", "summary": "The circuit breaker for carrier-b was disabled in March after false trips, so there was nothing to cut the failing dependency out."},
+    {"id": "cf-005-2", "summary": "Retries against carrier-b are 3 attempts with no backoff, which tripled outbound load to a carrier that was already returning 'upstream capacity exceeded' (196 -> 780 rps)."},
+    {"id": "cf-005-3", "summary": "The quote waits for all four carriers instead of returning the best of whatever answered inside the deadline."}
+  ],
+  "required_evidence": [
+    {"id": "ev-005-1", "artifact": "metrics.json", "kind": "metric_series", "match": "carrier_b_p99_ms", "why": "Goes to 12s while carrier_a, carrier_c and carrier_d stay flat. The per-dependency split is what isolates the cause."},
+    {"id": "ev-005-2", "artifact": "logs.txt", "kind": "log_line", "match": "upstream capacity exceeded, retry later", "why": "carrier-b's own 503 body, which is the vendor telling you it is the vendor."},
+    {"id": "ev-005-3", "artifact": "logs.txt", "kind": "log_line", "match": "read timeout after 6000ms", "why": "Ties our 504s to the carrier-b call specifically."},
+    {"id": "ev-005-4", "artifact": "deploys.json", "kind": "change_event", "match": "vendor-note-88", "why": "The vendor status page confirms an EU-region latency incident."},
+    {"id": "ev-005-5", "artifact": "logs.txt", "kind": "log_line", "match": "retrying carrier call immediately (no backoff configured)", "why": "Documents the amplification: our retries are part of the load on a struggling vendor."},
+    {"id": "ev-005-6", "artifact": "topology.json", "kind": "topology_attribute", "match": "breaker disabled 2026-03 after false trips", "why": "Explains why nothing isolated the failure automatically."}
+  ],
+  "red_herrings": [
+    {"id": "rh-005-1", "artifact": "deploys.json", "match": "dep-5510", "why_tempting": "A cache TTL change shipped this morning and the incident is about rate lookups, so 'the cache change did it' is the first instinct.", "why_wrong": "It shipped at 08:55, more than two hours earlier, and rate_cache_hit_pct actually improved from 61% to 76%. A higher hit rate means fewer carrier calls, not more.", "penalty": 1.0},
+    {"id": "rh-005-2", "artifact": "metrics.json", "match": "cpu_pct", "why_tempting": "CPU doubles and worker_threads_busy pins at 200, which reads as a service that needs more capacity.", "why_wrong": "Both are downstream of threads blocked on carrier-b; the dominant stack is named in the log as CarrierBClient.fetchRates.", "penalty": 0.5},
+    {"id": "rh-005-3", "artifact": "deploys.json", "match": "dep-5514", "why_tempting": "A web-frontend deploy 40 minutes earlier touched the shipping selector UI.", "why_wrong": "Request rate is unchanged; a UI change that caused this would show up as a traffic shape change.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["external_vendor", "dependency_health", "blast_scope", "retry_amplification", "timeline"],
+  "lenses_not_warranted": ["dns_service_discovery", "clock_time", "credential_expiry", "data_contract", "memory_lifecycle", "cache_behavior", "database_health", "resource_contention"],
+  "requires_correlation_across": ["metrics.json", "logs.txt", "topology.json"],
+  "correct_remediation": {
+    "immediate": "Trip the breaker on carrier-b manually (or drop it from the fan-out) and return quotes from the remaining three carriers.",
+    "durable": "Return best-of-responders at the deadline instead of waiting for all; re-enable the breaker with sane thresholds; add jittered exponential backoff and honour Retry-After."
+  },
+  "wrong_remediations": ["Scale shipping-rates-api out", "Raise the worker thread count", "Raise the request timeout above 9s", "Roll back the cache TTL change"],
+  "oneshot_prediction": {"verdict": "likely_solved", "rationale": "The per-carrier metric split plus the vendor's own 503 body make attribution easy. The part usually missed is the second half of the answer: that our own retry policy is amplifying it and that the fan-out design is what turns one bad vendor into a total outage."},
+  "scoring": {"min_required_evidence": 2}
+},
+{
+  "id": "inc-006",
+  "title": "catalog database saturation caused by a one-line cache namespace bump",
+  "failure_class": "cache_stampede",
+  "difficulty": "hard",
+  "difficulty_rank": 9,
+  "affected_service": "product-catalog-api",
+  "alert_id": "alt-2026-06-18-0416-catalogdb",
+  "incident_start_utc": "2026-06-18T04:11:00Z",
+  "alert_fired_utc": "2026-06-18T04:16:00Z",
+  "root_cause": {
+    "component": "product-catalog-api cache layer",
+    "summary": "Deploy 7.4.1 (dep-8814) changed the cache key namespace from pcat:v7 to pcat:v8. Every one of 14.2M warm keys became unreachable in an instant with no prewarm, so a workload that normally serves 97% from Redis began serving ~100% from postgres. With no request coalescing, identical concurrent misses each opened their own query, taking the database from 260 to 11,200 qps and 10% to 100% CPU. Edge retries on the resulting slow requests added a further 420 rps of duplicate work.",
+    "mechanism": "instantaneous total cache invalidation -> uncoalesced stampede -> database saturation",
+    "originating_change": "dep-8814, reviewed and approved as a no-op one-line change with canary skipped",
+    "originating_artifact": "deploys.json"
+  },
+  "root_cause_must_include": ["cache", "namespace", "stampede"],
+  "root_cause_keywords": ["pcat:v7", "pcat:v8", "cache key", "prefix", "invalidat", "miss rate", "thundering herd", "coalescing", "singleflight", "dep-8814", "7.4.1"],
+  "contributing_factors": [
+    {"id": "cf-006-1", "summary": "The read-through cache has no request coalescing, so N concurrent misses on one key become N database queries."},
+    {"id": "cf-006-2", "summary": "The edge retries twice on slow responses, adding duplicate load to a database that is already the bottleneck."},
+    {"id": "cf-006-3", "summary": "20 replicas x 25 connections means the app can open 500 connections and drive the database into the ground rather than queueing at its own edge."},
+    {"id": "cf-006-4", "summary": "A one-line diff was treated as risk-free and skipped canary; the risk was in the semantics, not the size."}
+  ],
+  "required_evidence": [
+    {"id": "ev-006-1", "artifact": "metrics.json", "kind": "metric_series", "match": "cache_hit_pct", "why": "97.4% to 3.0% in two minutes. This is the actual event; everything else in the incident is downstream of it."},
+    {"id": "ev-006-2", "artifact": "metrics.json", "kind": "metric_series", "match": "cache_keys_millions", "why": "14.2M keys to 0.02M with, per the note, zero evictions and no restart — so the keys were not evicted or lost, they were orphaned under a new prefix."},
+    {"id": "ev-006-3", "artifact": "logs.txt", "kind": "log_line", "match": "\"namespace\":\"pcat:v8\",\"previous\":\"pcat:v7\",\"prewarm\":\"false\"", "why": "Names the change and confirms no prewarm."},
+    {"id": "ev-006-4", "artifact": "logs.txt", "kind": "log_line", "match": "concurrent identical cache fills for same key", "why": "The stampede mechanism, with coalescing explicitly disabled."},
+    {"id": "ev-006-5", "artifact": "deploys.json", "kind": "change_event", "match": "dep-8814", "why": "The diff is literally NAMESPACE = \"pcat:v7\" -> \"pcat:v8\", one minute before the cliff."},
+    {"id": "ev-006-6", "artifact": "metrics.json", "kind": "metric_series", "match": "edge_rps", "why": "Incoming request volume is flat. Demand did not change, so a demand-side explanation cannot be right."}
+  ],
+  "red_herrings": [
+    {"id": "rh-006-1", "artifact": "logs.txt", "match": "known missing index PCAT-1187", "why_tempting": "A sequence scan on product_variant at 4120 calls/min with an open ticket since April is a satisfying, actionable database finding.", "why_wrong": "That query pattern is normal; it only becomes visible because volume rose 40x. The index would raise the ceiling, not explain the cliff.", "penalty": 1.0},
+    {"id": "rh-006-2", "artifact": "deploys.json", "match": "dep-8815", "why_tempting": "The crawler budget was raised from 40 to 60 rps four minutes before the alert, and bot traffic is a classic overnight cause.", "why_wrong": "20 extra rps against a baseline of ~900 cannot produce a 40x increase in database queries, and crawler_rps rose after the cache hit rate collapsed.", "penalty": 1.0},
+    {"id": "rh-006-3", "artifact": "metrics.json", "match": "db_cpu_pct", "why_tempting": "The alert is on database CPU, so the database looks like the subject of the incident.", "why_wrong": "The database is the victim. Naming 'postgres is overloaded' as the root cause is a restatement of the alert.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["cache_behavior", "change_correlation", "database_health", "traffic_demand", "retry_amplification", "timeline"],
+  "lenses_not_warranted": ["dns_service_discovery", "credential_expiry", "clock_time", "data_contract", "resource_contention", "memory_lifecycle", "security_abuse", "capacity_autoscaling"],
+  "requires_correlation_across": ["metrics.json", "deploys.json", "logs.txt"],
+  "correct_remediation": {
+    "immediate": "Roll back to 7.4.0 so the pcat:v7 keyspace is live again — the old keys are still resident in Redis and the hit rate recovers instantly. Do not try to ride it out.",
+    "durable": "Add request coalescing to the read-through cache; treat namespace changes as a dual-read/backfill migration rather than a flip; require canary for any change to cache keys regardless of diff size."
+  },
+  "wrong_remediations": ["Scale up the database instance", "Add the missing index and wait", "Throttle the crawler", "Raise the connection pool size", "Scale out product-catalog-api"],
+  "oneshot_prediction": {"verdict": "coin_flip", "rationale": "Everything needed is present and the namespace line is explicit, but the framing works hard against it: the page is on database CPU, the README offers two ready-made villains, and the deploy that did it is described in the feed as a chore. Models that reason from the alert downward tend to stop at 'database overloaded, add the index'. Models that ask 'what changed at exactly 04:10' get it."},
+  "scoring": {"min_required_evidence": 3}
+},
+{
+  "id": "inc-007",
+  "title": "cluster DNS capacity halved by a node drain, surfacing as errors attributed to orders-service",
+  "failure_class": "dns_service_discovery_failure",
+  "difficulty": "hard",
+  "difficulty_rank": 10,
+  "affected_service": "orders-service (apparent); coredns (actual)",
+  "alert_id": "alt-2026-08-09-0402-orders",
+  "incident_start_utc": "2026-08-09T03:56:00Z",
+  "alert_fired_utc": "2026-08-09T04:02:00Z",
+  "root_cause": {
+    "component": "coredns",
+    "summary": "The rolling kernel patch drained general-1-d at 03:50Z, evicting one of two coredns pods. Its replacement could not be scheduled because required pod anti-affinity plus exhausted CPU on the remaining nodes left nowhere to place it, so cluster DNS ran on a single replica. That replica hit its 1000 qps limit and began dropping queries, producing lookup timeouts and NXDOMAIN for callers of orders-service. orders-service itself never saw the failed requests.",
+    "mechanism": "platform capacity reduction during maintenance -> resolver saturation -> intermittent name resolution failure across many callers",
+    "originating_change": "dep-6610 (node-pool general-1 rolling kernel patch), interacting with a coredns anti-affinity rule and a full node pool",
+    "originating_artifact": "deploys.json plus logs.txt scheduler events"
+  },
+  "root_cause_must_include": ["dns", "coredns", "drain"],
+  "root_cause_keywords": ["no such host", "nxdomain", "resolver", "anti-affinity", "unschedulable", "1 of 2 replicas", "qps limit", "kernel patch", "dep-6610", "name resolution"],
+  "contributing_factors": [
+    {"id": "cf-007-1", "summary": "coredns runs only two replicas with required (not preferred) anti-affinity, so losing one node means losing half of DNS with no ability to reschedule."},
+    {"id": "cf-007-2", "summary": "ndots=5 with four search domains means each failed name costs four queries, multiplying load on the surviving resolver."},
+    {"id": "cf-007-3", "summary": "The maintenance automation drains nodes without checking whether critical platform pods can be rescheduled first."},
+    {"id": "cf-007-4", "summary": "Errors are attributed by callers to the callee, so three teams were paged about a service that was healthy."}
+  ],
+  "required_evidence": [
+    {"id": "ev-007-1", "artifact": "logs.txt", "kind": "log_line", "match": "lookup orders-service.prod.svc.cluster.local on 10.96.0.10:53: no such host", "why": "The failure is name resolution, not the target service."},
+    {"id": "ev-007-2", "artifact": "logs.txt", "kind": "log_line", "match": "0/12 nodes are available: 3 node(s) didn't match pod anti-affinity rules, 9 Insufficient cpu", "why": "The replacement coredns pod could not be placed, which is why capacity stayed halved instead of recovering."},
+    {"id": "ev-007-3", "artifact": "logs.txt", "kind": "log_line", "match": "coredns request throttled", "why": "The single surviving resolver is over its 1000 qps limit and dropping queries."},
+    {"id": "ev-007-4", "artifact": "metrics.json", "kind": "metric_series", "match": "server_error_rate_pct", "why": "orders-service's own error rate is 0.11% throughout while its callers measure 12%. The gap between caller-observed and server-observed error rate localises the fault to the path, not the endpoint."},
+    {"id": "ev-007-5", "artifact": "metrics.json", "kind": "metric_series", "match": "coredns_ready_replicas", "why": "Drops from 2 to 1 at 03:50 and never recovers."},
+    {"id": "ev-007-6", "artifact": "alert.json", "kind": "alert_field", "match": "correlated_alerts", "why": "Three unrelated services failing within 90 seconds points at shared infrastructure, not at any one of them."},
+    {"id": "ev-007-7", "artifact": "deploys.json", "kind": "change_event", "match": "dep-6610", "why": "The drain of general-1-d at 03:50Z is the change that removed the capacity."}
+  ],
+  "red_herrings": [
+    {"id": "rh-007-1", "artifact": "deploys.json", "match": "dep-6602", "why_tempting": "orders-service shipped an idempotency-key change last night and it is the service named in the alert.", "why_wrong": "It deployed eight hours before the incident, and orders-service's own error rate and latency are flat.", "penalty": 1.0},
+    {"id": "rh-007-2", "artifact": "deploys.json", "match": "dep-6611", "why_tempting": "cart-api's connect timeout was changed from 500ms to 800ms ten minutes before the alert, which is suspiciously close.", "why_wrong": "It is a reaction to slowness, not a cause, and it cannot produce NXDOMAIN.", "penalty": 1.0},
+    {"id": "rh-007-3", "artifact": "logs.txt", "match": "long-lived connection reused, no resolution needed", "why_tempting": "It suggests the database path is fine and therefore that the network is fine.", "why_wrong": "It is the control case that proves the point: only paths that need a fresh lookup fail. Read correctly it supports the DNS conclusion; read carelessly it is used to dismiss it.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["dns_service_discovery", "blast_scope", "change_correlation", "network_path", "timeline", "capacity_autoscaling"],
+  "lenses_not_warranted": ["data_contract", "cache_behavior", "credential_expiry", "clock_time", "memory_lifecycle", "database_health", "connection_pool", "security_abuse"],
+  "requires_correlation_across": ["logs.txt", "metrics.json", "deploys.json", "alert.json"],
+  "correct_remediation": {
+    "immediate": "Uncordon general-1-d (or free CPU on another node) so the second coredns replica can schedule, and pause the rolling patch until it is Ready.",
+    "durable": "Run coredns with more replicas and preferred rather than required anti-affinity, add a node-local DNS cache, and make the drain automation refuse to proceed while a critical platform pod is Pending."
+  },
+  "wrong_remediations": ["Roll back orders-service", "Restart orders-service pods", "Raise cart-api's retry count", "Raise the connect timeout further"],
+  "oneshot_prediction": {"verdict": "coin_flip", "rationale": "The 'no such host' lines are decisive if the model reads far enough into the log, and the correlated-alerts field is a strong hint. What is usually lost is the second step: why DNS was degraded and why it did not self-heal. Answers commonly stop at 'DNS problems' without connecting the drain, the anti-affinity rule, and the full node pool, which means the proposed fix does not work."},
+  "scoring": {"min_required_evidence": 4}
+},
+{
+  "id": "inc-008",
+  "title": "notification-worker OOM kills from a nine-day-old listener leak",
+  "failure_class": "slow_memory_leak",
+  "difficulty": "hard",
+  "difficulty_rank": 12,
+  "affected_service": "notification-worker",
+  "alert_id": "alt-2026-07-15-0741-notif",
+  "incident_start_utc": "2026-07-15T07:12:00Z",
+  "alert_fired_utc": "2026-07-15T07:41:00Z",
+  "root_cause": {
+    "component": "notification-worker TemplateRenderer",
+    "summary": "Release 5.2.0 (dep-2201, nine days earlier) added a metrics hook that attaches a listener to a module-level EventEmitter on every render and never removes it. Each listener retains its RecipientContext, so RSS grows monotonically with cumulative messages processed rather than with concurrency. Daily peak RSS climbed from ~405MB to 1394MB over nine days and crossed the 1.5Gi limit during this morning's ordinary peak, producing the OOM kill loop.",
+    "mechanism": "unbounded retention per unit of work -> monotonic RSS growth over days -> limit crossed during a routine peak",
+    "originating_change": "dep-2201 (notification-worker 5.2.0, 2026-07-06)",
+    "originating_artifact": "deploys.json (requires looking past the alert window) plus metrics.json long_window"
+  },
+  "root_cause_must_include": ["leak", "listener", "5.2.0"],
+  "root_cause_keywords": ["memory leak", "eventemitter", "maxlistenersexceeded", "templaterenderer", "retained", "recipientcontext", "monotonic", "dep-2201", "nine days", "oomkilled"],
+  "contributing_factors": [
+    {"id": "cf-008-1", "summary": "The memory limit was raised from 1Gi to 1.5Gi on 2026-07-10 in a capacity sweep, which absorbed the first OOM kills and delayed detection by four days."},
+    {"id": "cf-008-2", "summary": "The restart loop drains and re-reads the partition, so consumer lag grows to 71k while the worker spends its life restarting."},
+    {"id": "cf-008-3", "summary": "Nothing alerts on the shape of memory over days, only on restarts, so the leak was invisible until it produced a crash."}
+  ],
+  "required_evidence": [
+    {"id": "ev-008-1", "artifact": "metrics.json", "kind": "long_window", "match": "rss_mb_daily_max", "why": "402, 409, 398, 411, 405, 407, 512, 641, 763, 889, 1002, 1130, 1268, 1394 — flat for six days, then a straight line up starting on 2026-07-07, the day after the 5.2.0 deploy. This series is the whole case."},
+    {"id": "ev-008-2", "artifact": "metrics.json", "kind": "long_window", "match": "messages_per_day_millions", "why": "Daily volume is flat at ~4.1M throughout, so the growth is not load-driven."},
+    {"id": "ev-008-3", "artifact": "metrics.json", "kind": "heap", "match": "EventEmitter[render]", "why": "1.84M listeners retaining 812MB, attached to the module-level metrics emitter."},
+    {"id": "ev-008-4", "artifact": "logs.txt", "kind": "log_line", "match": "MaxListenersExceededWarning", "why": "Node's own warning, naming TemplateRenderer.ts:214 as the source."},
+    {"id": "ev-008-5", "artifact": "deploys.json", "kind": "change_event", "match": "dep-2201", "why": "The review note says the metrics hook registers a listener per render call. Found only if the lookback extends past the alert window."},
+    {"id": "ev-008-6", "artifact": "metrics.json", "kind": "metric_series", "match": "rss_mb", "why": "Within the incident window RSS resets to ~415MB on each restart and climbs again, showing steady-state RSS is far below the limit and the growth is with work done, not with concurrency."}
+  ],
+  "red_herrings": [
+    {"id": "rh-008-1", "artifact": "deploys.json", "match": "dep-2309", "why_tempting": "email-gateway shipped 17 minutes before the first OOM kill and switched to keepalive SMTP connections, which sounds memory-relevant.", "why_wrong": "It is a different service; the keepalive pool lives in email-gateway, and the worker's RSS was already at 1394MB the day before this deploy existed.", "penalty": 1.0},
+    {"id": "rh-008-2", "artifact": "metrics.json", "match": "messages_per_min", "why_tempting": "Volume doubles into the morning peak exactly when the kills start, which supports 'the peak is too big for the limit'.", "why_wrong": "The same peak happened every weekday for the previous eight days without OOM kills. What changed is the starting point, not the peak.", "penalty": 1.0},
+    {"id": "rh-008-3", "artifact": "deploys.json", "match": "dep-2244", "why_tempting": "Someone already raised the memory limit once, which makes raising it again look like the established fix.", "why_wrong": "That change bought four days. Doubling the limit again buys about eight days and hides the leak further.", "penalty": 1.0},
+    {"id": "rh-008-4", "artifact": "deploys.json", "match": "dep-2301", "why_tempting": "A new promo template family shipped yesterday and the log shows promo_flash_sale rendering during the degraded phase.", "why_wrong": "Template content does not change per-render retention; the growth predates it by a week.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["memory_lifecycle", "long_horizon_change", "traffic_demand", "change_correlation", "timeline"],
+  "lenses_not_warranted": ["dns_service_discovery", "credential_expiry", "clock_time", "data_contract", "cache_behavior", "external_vendor", "security_abuse", "resource_contention"],
+  "requires_correlation_across": ["metrics.json", "deploys.json", "logs.txt"],
+  "correct_remediation": {
+    "immediate": "Roll back to 5.1.x, or ship a one-line fix that removes the listener after render (or uses a single module-level listener). A scheduled restart is an acceptable stopgap but must be labelled as one.",
+    "durable": "Alert on RSS trend over days, not just on restarts. Add a retained-object assertion to the load test so per-request retention regressions fail CI."
+  },
+  "wrong_remediations": ["Raise the memory limit to 3Gi", "Add more replicas", "Roll back email-gateway", "Add a nightly restart and close the incident"],
+  "oneshot_prediction": {"verdict": "likely_missed", "rationale": "The second designed-to-fail case, and the harder of the two. Every framing signal points at today: the alert window is 45 minutes, the README supplies the peak-traffic story and pre-suggests raising the limit, and there is a fresh deploy 17 minutes before the first kill. The evidence that decides it lives in a 14-day array nested under metrics.extra and in a deploy nine days back. A one-shot call reliably produces 'memory pressure during peak, raise the limit', which is the one remediation the ground truth marks as wrong."},
+  "scoring": {"min_required_evidence": 3}
+}

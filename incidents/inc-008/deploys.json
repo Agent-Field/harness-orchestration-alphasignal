@@ -1,0 +1,42 @@
+{
+  "lookback_hours": 336,
+  "events": [
+    {
+      "id": "dep-2201",
+      "at": "2026-07-06T13:05:00Z",
+      "kind": "deploy",
+      "service": "notification-worker",
+      "version": "5.2.0",
+      "actor": "pnwosu",
+      "change": "per-recipient template personalisation; add render metrics hook",
+      "diff_summary": "TemplateRenderer.ts +148/-22; metrics.ts +37/-0; RecipientContext.ts +64/-3",
+      "review_note": "metrics hook registers a listener per render call on the shared emitter"
+    },
+    {
+      "id": "dep-2244",
+      "at": "2026-07-10T09:30:00Z",
+      "kind": "config",
+      "service": "notification-worker",
+      "actor": "platform-bot",
+      "change": "memory limit 1Gi -> 1.5Gi (capacity planning sweep)"
+    },
+    {
+      "id": "dep-2301",
+      "at": "2026-07-14T17:44:00Z",
+      "kind": "deploy",
+      "service": "template-service",
+      "version": "2.8.0",
+      "actor": "hkim",
+      "change": "new promo template family"
+    },
+    {
+      "id": "dep-2309",
+      "at": "2026-07-15T06:55:00Z",
+      "kind": "deploy",
+      "service": "email-gateway",
+      "version": "3.1.2",
+      "actor": "release-train",
+      "change": "switch SMTP pool to keepalive connections"
+    }
+  ]
+}

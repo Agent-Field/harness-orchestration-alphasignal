@@ -1,0 +1,81 @@
+{
+  "root": "identity-service",
+  "nodes": [
+    {
+      "id": "edge-proxy",
+      "kind": "gateway",
+      "team": "platform",
+      "tls": "public-cert (LE, auto-renewed)"
+    },
+    {
+      "id": "identity-service",
+      "kind": "service",
+      "team": "platform",
+      "replicas": 10,
+      "client_auth": "mTLS required on :8443"
+    },
+    {
+      "id": "internal-ca",
+      "kind": "pki",
+      "team": "security",
+      "note": "issues client certs, 1y lifetime, manual renewal"
+    },
+    {
+      "id": "postgres-identity",
+      "kind": "database",
+      "team": "platform"
+    },
+    {
+      "id": "redis-session",
+      "kind": "cache",
+      "team": "platform"
+    },
+    {
+      "id": "checkout-api",
+      "kind": "service",
+      "team": "payments",
+      "calls_identity": true
+    },
+    {
+      "id": "mobile-bff",
+      "kind": "service",
+      "team": "mobile",
+      "calls_identity": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "edge-proxy",
+      "to": "identity-service",
+      "protocol": "https",
+      "client_cert": "edge-proxy-client",
+      "cert_serial": "0x3f9a21",
+      "cert_not_after": "2026-07-31T23:59:59Z"
+    },
+    {
+      "from": "checkout-api",
+      "to": "identity-service",
+      "protocol": "https",
+      "client_cert": "svc-checkout-client",
+      "cert_not_after": "2026-11-14T00:00:00Z"
+    },
+    {
+      "from": "mobile-bff",
+      "to": "identity-service",
+      "protocol": "https",
+      "client_cert": "svc-mobile-client",
+      "cert_not_after": "2027-02-02T00:00:00Z"
+    },
+    {
+      "from": "identity-service",
+      "to": "postgres-identity",
+      "protocol": "jdbc"
+    },
+    {
+      "from": "identity-service",
+      "to": "redis-session",
+      "protocol": "resp"
+    }
+  ],
+  "notes": "Public-facing TLS is auto-renewed. Internal mTLS client certs are issued by internal-ca and renewed by hand."
+}

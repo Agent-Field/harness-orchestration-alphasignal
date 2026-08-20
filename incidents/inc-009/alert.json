@@ -1,0 +1,32 @@
+{
+  "alert_id": "alt-2026-08-12-0806-feed",
+  "monitor_name": "feed-api :: 503 rate > 2% (5m)",
+  "monitor_id": "mon-1877",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-08-12T08:06:00Z",
+  "detected_change_at": "2026-08-12T07:58:00Z",
+  "threshold": {
+    "metric": "http.server.503_rate",
+    "comparator": ">",
+    "value": 2.0,
+    "unit": "%",
+    "window": "5m"
+  },
+  "observed_value": 9.1,
+  "history": [
+    "fired 2026-08-10T08:11Z, auto-resolved 08:38Z",
+    "fired 2026-08-11T08:04Z, auto-resolved 08:31Z"
+  ],
+  "service": "feed-api",
+  "environment": "prod",
+  "region": "eu-west-1",
+  "notified": [
+    "oncall-feed"
+  ],
+  "runbook": "https://runbooks.internal/feed-api/503",
+  "tags": [
+    "tier:1",
+    "team:feed"
+  ]
+}

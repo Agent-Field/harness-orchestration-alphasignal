@@ -1,0 +1,82 @@
+{
+  "root": "booking-api",
+  "nodes": [
+    {
+      "id": "edge-proxy",
+      "kind": "gateway",
+      "team": "platform"
+    },
+    {
+      "id": "booking-api",
+      "kind": "service",
+      "team": "booking",
+      "runtime": "jvm-21",
+      "replicas": 6,
+      "jwt_clock_skew_leeway_s": 30,
+      "pods": [
+        {
+          "name": "booking-api-77bd-a1",
+          "node": "eu-c1-n02"
+        },
+        {
+          "name": "booking-api-77bd-b2",
+          "node": "eu-c1-n05"
+        },
+        {
+          "name": "booking-api-77bd-c3",
+          "node": "eu-c1-n07"
+        },
+        {
+          "name": "booking-api-77bd-d4",
+          "node": "eu-c1-n09"
+        },
+        {
+          "name": "booking-api-77bd-e5",
+          "node": "eu-c1-n12"
+        },
+        {
+          "name": "booking-api-77bd-f6",
+          "node": "eu-c1-n15"
+        }
+      ]
+    },
+    {
+      "id": "identity-service",
+      "kind": "service",
+      "team": "platform",
+      "region": "us-east-1",
+      "note": "mints tokens; iat/nbf stamped at mint time"
+    },
+    {
+      "id": "partner-webhook-verifier",
+      "kind": "component",
+      "team": "booking",
+      "note": "HMAC signature with 60s timestamp window"
+    },
+    {
+      "id": "postgres-booking",
+      "kind": "database",
+      "team": "booking"
+    }
+  ],
+  "edges": [
+    {
+      "from": "edge-proxy",
+      "to": "booking-api",
+      "protocol": "http",
+      "load_balancing": "round-robin across 6 pods"
+    },
+    {
+      "from": "booking-api",
+      "to": "identity-service",
+      "protocol": "https",
+      "note": "JWKS fetch, cached 1h"
+    },
+    {
+      "from": "booking-api",
+      "to": "postgres-booking",
+      "protocol": "jdbc"
+    }
+  ],
+  "notes": "Round-robin means a single user's consecutive requests land on different pods."
+}

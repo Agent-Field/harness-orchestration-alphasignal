@@ -1,0 +1,390 @@
+{"ts":"2026-07-15T07:10:11.875Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_339289","duration_ms":"88"}
+{"ts":"2026-07-15T07:10:20.739Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_294851","duration_ms":"110"}
+{"ts":"2026-07-15T07:10:30.591Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_859324","duration_ms":"70"}
+{"ts":"2026-07-15T07:10:35.537Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:10:39.511Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_889913","duration_ms":"190"}
+{"ts":"2026-07-15T07:10:52.432Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_238879","duration_ms":"90"}
+{"ts":"2026-07-15T07:11:07.591Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_972443","duration_ms":"84"}
+{"ts":"2026-07-15T07:11:10.809Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_382318","duration_ms":"95"}
+{"ts":"2026-07-15T07:11:16.510Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"31","records":"31"}
+{"ts":"2026-07-15T07:11:16.618Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_904492","duration_ms":"29"}
+{"ts":"2026-07-15T07:11:18.446Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_782149","duration_ms":"143"}
+{"ts":"2026-07-15T07:11:27.262Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_698018","duration_ms":"87"}
+{"ts":"2026-07-15T07:11:28.816Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_852822","duration_ms":"189"}
+{"ts":"2026-07-15T07:11:30.426Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"27","records":"27"}
+{"ts":"2026-07-15T07:11:49.507Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_542006","duration_ms":"157"}
+{"ts":"2026-07-15T07:11:56.561Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_922364","duration_ms":"234"}
+{"ts":"2026-07-15T07:11:57.539Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_427638","duration_ms":"94"}
+{"ts":"2026-07-15T07:11:57.827Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_201289","duration_ms":"81"}
+{"ts":"2026-07-15T07:11:59.929Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_970305","duration_ms":"84"}
+{"ts":"2026-07-15T07:12:00.344Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1421","heap_used_mb":"1321","heap_limit_mb":1434,"pod":"notification-worker-84cf-1e027-51945"}
+{"ts":"2026-07-15T07:12:00.535Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_995660","duration_ms":"65"}
+{"ts":"2026-07-15T07:12:06.048Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_564904","duration_ms":"164"}
+{"ts":"2026-07-15T07:12:06.698Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"13","records":"13"}
+{"ts":"2026-07-15T07:12:12.194Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:12:17.186Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"11","offset":"41183221"}
+{"ts":"2026-07-15T07:12:23.629Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_397496","duration_ms":"118"}
+{"ts":"2026-07-15T07:12:25.948Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_553679","duration_ms":"204"}
+{"ts":"2026-07-15T07:12:27.970Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_370727","duration_ms":"201"}
+{"ts":"2026-07-15T07:12:35.930Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_247684","duration_ms":"60"}
+{"ts":"2026-07-15T07:12:40.197Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"183512"}
+{"ts":"2026-07-15T07:12:45.176Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1421","heap_used_mb":"1321","heap_limit_mb":1434,"pod":"notification-worker-84cf-7dd59-d7b5f"}
+{"ts":"2026-07-15T07:12:55.540Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"1","records":"1"}
+{"ts":"2026-07-15T07:12:55.550Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:12:56.353Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_349405","duration_ms":"232"}
+{"ts":"2026-07-15T07:13:01.408Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_191281","duration_ms":"51"}
+{"ts":"2026-07-15T07:13:07.080Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"16","records":"16"}
+{"ts":"2026-07-15T07:13:07.270Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_923206","duration_ms":"228"}
+{"ts":"2026-07-15T07:13:07.517Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_190363","duration_ms":"11"}
+{"ts":"2026-07-15T07:13:17.931Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"1","offset":"4183221"}
+{"ts":"2026-07-15T07:13:26.877Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_701084","duration_ms":"132"}
+{"ts":"2026-07-15T07:13:30.186Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1420","heap_used_mb":"1320","heap_limit_mb":1434,"pod":"notification-worker-84cf-9ca30-c6262"}
+{"ts":"2026-07-15T07:13:42.113Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"18612"}
+{"ts":"2026-07-15T07:13:43.702Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_971379","duration_ms":"90"}
+{"ts":"2026-07-15T07:13:45.934Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_783285","duration_ms":"126"}
+{"ts":"2026-07-15T07:13:53.496Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_156279","duration_ms":"169"}
+{"ts":"2026-07-15T07:13:58.877Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"16","offset":"41683221"}
+{"ts":"2026-07-15T07:14:04.095Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:14:04.401Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_495588","duration_ms":"163"}
+{"ts":"2026-07-15T07:14:05.988Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_588641","duration_ms":"212"}
+{"ts":"2026-07-15T07:14:07.111Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"29","records":"29"}
+{"ts":"2026-07-15T07:14:08.265Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:14:11.981Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"26","offset":"42683221"}
+{"ts":"2026-07-15T07:14:14.061Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"24","records":"24"}
+{"ts":"2026-07-15T07:14:15.270Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1430","heap_used_mb":"1330","heap_limit_mb":1434,"pod":"notification-worker-84cf-c0d71-06b04"}
+{"ts":"2026-07-15T07:14:23.019Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_568922","duration_ms":"12"}
+{"ts":"2026-07-15T07:14:26.216Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"37","offset":"43783221"}
+{"ts":"2026-07-15T07:14:30.891Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:14:44.086Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"183412"}
+{"ts":"2026-07-15T07:14:53.864Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"9","personalised":"true"}
+{"ts":"2026-07-15T07:14:56.409Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_688661","duration_ms":"117"}
+{"ts":"2026-07-15T07:15:00.221Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_392433","duration_ms":"188"}
+{"ts":"2026-07-15T07:15:00.241Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"146","heap_used_mb":"136","heap_limit_mb":1434,"pod":"notification-worker-84cf-41325-4b236"}
+{"ts":"2026-07-15T07:15:00.298Z","level":"error","service":"notification-worker","msg":"FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory","pod":"notification-worker-84cf-d30f7-74fe8","rss_mb":1492}
+    1: 0xb9a0e0 node::Abort() [node]
+    2: 0xaa77f4 node::FatalError(char const*, char const*) [node]
+    3: 0xd7b3ba v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+    4: 0x10f4a25 v8::internal::Heap::CollectGarbage(...) [node]
+    5: 0x14f2a19 v8::internal::TemplateRenderer::render(...) [node]
+{"ts":"2026-07-15T07:15:06.066Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"13","offset":"41383221"}
+{"ts":"2026-07-15T07:15:06.335Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_861545","duration_ms":"212"}
+{"ts":"2026-07-15T07:15:08.168Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:15:08.291Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_781581","duration_ms":"43"}
+Jul 15 07:15:10 general-3-b kubelet[1000]: ERROR container terminated pod=notification-worker-84cf-2k9dq reason=OOMKilled exit_code=137 restart_count=4
+{"ts":"2026-07-15T07:15:15.091Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:15:24.891Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"26","records":"26"}
+{"ts":"2026-07-15T07:15:27.017Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:15:30.158Z","level":"info","service":"notification-worker","msg":"worker started","version":"5.2.0","build":"2026-07-06T12:58Z","rss_mb":"4130","node":"v22.14.0"}
+{"ts":"2026-07-15T07:15:33.768Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"1","offset":"4183221"}
+{"ts":"2026-07-15T07:15:45.154Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1439","heap_used_mb":"1339","heap_limit_mb":1434,"pod":"notification-worker-84cf-9fad4-dfd0c"}
+{"ts":"2026-07-15T07:15:46.195Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"183712"}
+{"ts":"2026-07-15T07:15:47.518Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_799298","duration_ms":"114"}
+{"ts":"2026-07-15T07:15:56.903Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"11","records":"11"}
+{"ts":"2026-07-15T07:16:13.030Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_583180","duration_ms":"205"}
+{"ts":"2026-07-15T07:16:13.418Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_847583","duration_ms":"217"}
+{"ts":"2026-07-15T07:16:15.824Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"4","offset":"4483221"}
+{"ts":"2026-07-15T07:16:23.080Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:16:23.294Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"6","offset":"4683221"}
+{"ts":"2026-07-15T07:16:30.221Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1422","heap_used_mb":"1322","heap_limit_mb":1434,"pod":"notification-worker-84cf-6da16-54d6b"}
+{"ts":"2026-07-15T07:16:31.819Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"22","records":"22"}
+{"ts":"2026-07-15T07:16:48.178Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"182512"}
+{"ts":"2026-07-15T07:16:49.714Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_158931","duration_ms":"103"}
+{"ts":"2026-07-15T07:16:51.157Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_376599","duration_ms":"179"}
+{"ts":"2026-07-15T07:16:54.914Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_399801","duration_ms":"220"}
+{"ts":"2026-07-15T07:16:56.508Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"15","personalised":"true"}
+{"ts":"2026-07-15T07:17:09.607Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_554471","duration_ms":"44"}
+{"ts":"2026-07-15T07:17:12.313Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"25","records":"25"}
+{"ts":"2026-07-15T07:17:15.190Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"146","heap_used_mb":"136","heap_limit_mb":1434,"pod":"notification-worker-84cf-cb6a7-c33b2"}
+{"ts":"2026-07-15T07:17:22.512Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_777654","duration_ms":"57"}
+{"ts":"2026-07-15T07:17:38.773Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_891948","duration_ms":"121"}
+{"ts":"2026-07-15T07:17:50.125Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"181912"}
+{"ts":"2026-07-15T07:17:55.969Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"17","personalised":"true"}
+{"ts":"2026-07-15T07:18:00.044Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"1424","heap_used_mb":"1324","heap_limit_mb":1434,"pod":"notification-worker-84cf-c4d6d-4213b"}
+{"ts":"2026-07-15T07:18:03.829Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_268553","duration_ms":"115"}
+{"ts":"2026-07-15T07:18:15.896Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"30","records":"30"}
+{"ts":"2026-07-15T07:18:26.502Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_916965","duration_ms":"136"}
+{"ts":"2026-07-15T07:18:33.029Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:18:45.115Z","level":"warn","service":"notification-worker","msg":"heap usage high","rss_mb":"149","heap_used_mb":"139","heap_limit_mb":1434,"pod":"notification-worker-84cf-a7723-5ca46"}
+{"ts":"2026-07-15T07:18:48.450Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_118155","duration_ms":"38"}
+{"ts":"2026-07-15T07:18:50.015Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_788342","duration_ms":"145"}
+{"ts":"2026-07-15T07:18:52.101Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"182612"}
+{"ts":"2026-07-15T07:18:54.198Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_208183","duration_ms":"147"}
+{"ts":"2026-07-15T07:19:17.955Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"31","offset":"43183221"}
+{"ts":"2026-07-15T07:19:23.278Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_435242","duration_ms":"150"}
+{"ts":"2026-07-15T07:19:26.014Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_951533","duration_ms":"173"}
+{"ts":"2026-07-15T07:19:34.219Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"11","records":"11"}
+{"ts":"2026-07-15T07:19:37.882Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"33","personalised":"true"}
+{"ts":"2026-07-15T07:19:53.422Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_970874","duration_ms":"38"}
+{"ts":"2026-07-15T07:19:54.220Z","level":"warn","service":"notification-worker","msg":"MaxListenersExceededWarning: 11 render listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit","emitter":"metricsEmitter","source":"TemplateRenderer.ts:214","listeners":"183212"}
+{"ts":"2026-07-15T07:19:58.616Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_139125","duration_ms":"219"}
+{"ts":"2026-07-15T07:20:00.183Z","level":"info","service":"notification-worker","msg":"email-gateway keepalive pool active","version":"3.1.2","pool_size":32,"reused_pct":94}
+{"ts":"2026-07-15T07:20:20.648Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_924106","duration_ms":"169"}
+{"ts":"2026-07-15T07:20:28.246Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_339658","duration_ms":"114"}
+{"ts":"2026-07-15T07:20:30.030Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_774379","duration_ms":"12"}
+{"ts":"2026-07-15T07:20:32.705Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_325209","duration_ms":"71"}
+{"ts":"2026-07-15T07:20:34.035Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_866017","duration_ms":"135"}
+{"ts":"2026-07-15T07:20:39.753Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_172754","duration_ms":"131"}
+{"ts":"2026-07-15T07:20:53.505Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:21:04.414Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"38","offset":"43883221"}
+{"ts":"2026-07-15T07:21:05.025Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"4","records":"4"}
+{"ts":"2026-07-15T07:21:05.228Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"26","personalised":"true"}
+{"ts":"2026-07-15T07:21:05.733Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"35","offset":"43583221"}
+{"ts":"2026-07-15T07:21:08.859Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_971190","duration_ms":"68"}
+{"ts":"2026-07-15T07:21:09.805Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"1","offset":"4183221"}
+{"ts":"2026-07-15T07:21:16.176Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_334319","duration_ms":"164"}
+{"ts":"2026-07-15T07:21:19.694Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"32","personalised":"true"}
+{"ts":"2026-07-15T07:21:20.292Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_407440","duration_ms":"196"}
+{"ts":"2026-07-15T07:21:28.068Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"3","records":"3"}
+{"ts":"2026-07-15T07:21:29.877Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:21:31.968Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"15","personalised":"true"}
+{"ts":"2026-07-15T07:21:44.721Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"8","offset":"4883221"}
+{"ts":"2026-07-15T07:21:52.713Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_816022","duration_ms":"103"}
+{"ts":"2026-07-15T07:21:56.970Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_405603","duration_ms":"70"}
+{"ts":"2026-07-15T07:22:18.937Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_322508","duration_ms":"84"}
+{"ts":"2026-07-15T07:22:19.859Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_858477","duration_ms":"54"}
+{"ts":"2026-07-15T07:22:39.243Z","level":"info","service":"notification-worker","msg":"smtp connection reused","gateway":"email-gateway","keepalive":"true"}
+{"ts":"2026-07-15T07:22:52.950Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"26","records":"26"}
+{"ts":"2026-07-15T07:22:57.348Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"35","records":"35"}
+{"ts":"2026-07-15T07:23:00.251Z","level":"error","service":"notification-worker","msg":"FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory","pod":"notification-worker-84cf-00d01-902bf","rss_mb":1492}
+    1: 0xb9a0e0 node::Abort() [node]
+    2: 0xaa77f4 node::FatalError(char const*, char const*) [node]
+    3: 0xd7b3ba v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+    4: 0x10f4a25 v8::internal::Heap::CollectGarbage(...) [node]
+    5: 0x14f2a19 v8::internal::TemplateRenderer::render(...) [node]
+{"ts":"2026-07-15T07:23:03.436Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_356849","duration_ms":"16"}
+Jul 15 07:23:10 general-3-b kubelet[1000]: ERROR container terminated pod=notification-worker-84cf-2k9dq reason=OOMKilled exit_code=137 restart_count=4
+{"ts":"2026-07-15T07:23:11.951Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_447030","duration_ms":"227"}
+{"ts":"2026-07-15T07:23:14.280Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_865517","duration_ms":"55"}
+{"ts":"2026-07-15T07:23:15.984Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_844100","duration_ms":"201"}
+{"ts":"2026-07-15T07:23:17.829Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"36","records":"36"}
+{"ts":"2026-07-15T07:23:20.253Z","level":"info","service":"notification-worker","msg":"email-gateway keepalive pool active","version":"3.1.2","pool_size":32,"reused_pct":94}
+{"ts":"2026-07-15T07:23:21.861Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_950724","duration_ms":"142"}
+{"ts":"2026-07-15T07:23:28.156Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_417235","duration_ms":"30"}
+{"ts":"2026-07-15T07:23:29.433Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_293042","duration_ms":"63"}
+{"ts":"2026-07-15T07:23:30.182Z","level":"info","service":"notification-worker","msg":"worker started","version":"5.2.0","build":"2026-07-06T12:58Z","rss_mb":"4138","node":"v22.14.0"}
+{"ts":"2026-07-15T07:23:39.283Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"28","personalised":"true"}
+{"ts":"2026-07-15T07:23:39.880Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_444512","duration_ms":"83"}
+{"ts":"2026-07-15T07:23:40.067Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_327181","duration_ms":"99"}
+{"ts":"2026-07-15T07:23:40.873Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"4","offset":"4483221"}
+{"ts":"2026-07-15T07:23:47.561Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"order_shipped","render_ms":"15","personalised":"true"}
+{"ts":"2026-07-15T07:23:48.317Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"29","records":"29"}
+{"ts":"2026-07-15T07:23:49.596Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"34","offset":"43483221"}
+{"ts":"2026-07-15T07:23:50.138Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"14","records":"14"}
+{"ts":"2026-07-15T07:23:51.296Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_995239","duration_ms":"34"}
+{"ts":"2026-07-15T07:23:53.514Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_846079","duration_ms":"179"}
+{"ts":"2026-07-15T07:24:02.007Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"39","records":"39"}
+{"ts":"2026-07-15T07:24:10.544Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_769434","duration_ms":"91"}
+{"ts":"2026-07-15T07:24:16.166Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_987080","duration_ms":"155"}
+{"ts":"2026-07-15T07:24:18.289Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"6","offset":"4683221"}
+{"ts":"2026-07-15T07:24:54.991Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"33","records":"33"}
+{"ts":"2026-07-15T07:24:58.682Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_475621","duration_ms":"43"}
+{"ts":"2026-07-15T07:25:00.093Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"821","freed_mb":"21","heap_after_mb":"13210"}
+{"ts":"2026-07-15T07:25:00.173Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"40","records":"40"}
+{"ts":"2026-07-15T07:25:29.347Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"push","template":"promo_summer","user_id":"usr_574536","duration_ms":"75"}
+{"ts":"2026-07-15T07:25:29.891Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_594621","duration_ms":"31"}
+{"ts":"2026-07-15T07:25:32.034Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"13","records":"13"}
+{"ts":"2026-07-15T07:25:34.250Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"13","offset":"41383221"}
+{"ts":"2026-07-15T07:25:52.454Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"17"}
+{"ts":"2026-07-15T07:25:53.129Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"300421"}
+{"ts":"2026-07-15T07:25:55.150Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"86","freed_mb":"6","heap_after_mb":"1360"}
+{"ts":"2026-07-15T07:26:09.194Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_705138","duration_ms":"106"}
+{"ts":"2026-07-15T07:26:09.918Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_736174","duration_ms":"216"}
+{"ts":"2026-07-15T07:26:10.555Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_211486","duration_ms":"74"}
+{"ts":"2026-07-15T07:26:18.731Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_978093","duration_ms":"61"}
+{"ts":"2026-07-15T07:26:20.915Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"40421"}
+{"ts":"2026-07-15T07:26:21.174Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"11"}
+{"ts":"2026-07-15T07:26:29.152Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_116871","duration_ms":"19"}
+{"ts":"2026-07-15T07:26:31.269Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"310421"}
+{"ts":"2026-07-15T07:26:35.386Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"20","offset":"42083221"}
+{"ts":"2026-07-15T07:26:37.729Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_296117","duration_ms":"178"}
+{"ts":"2026-07-15T07:26:38.190Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"16","offset":"41683221"}
+{"ts":"2026-07-15T07:26:40.171Z","level":"info","service":"notification-worker","msg":"email-gateway keepalive pool active","version":"3.1.2","pool_size":32,"reused_pct":94}
+{"ts":"2026-07-15T07:26:43.809Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"15","records":"15"}
+{"ts":"2026-07-15T07:26:50.210Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"821","freed_mb":"21","heap_after_mb":"13210"}
+{"ts":"2026-07-15T07:26:56.941Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"100421"}
+{"ts":"2026-07-15T07:27:07.088Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"28","offset":"42883221"}
+{"ts":"2026-07-15T07:27:21.369Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_395941","duration_ms":"168"}
+{"ts":"2026-07-15T07:27:29.891Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_347321","duration_ms":"233"}
+{"ts":"2026-07-15T07:27:40.736Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"35"}
+{"ts":"2026-07-15T07:27:41.545Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"26","offset":"42683221"}
+{"ts":"2026-07-15T07:27:45.031Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"834","freed_mb":"34","heap_after_mb":"13340"}
+{"ts":"2026-07-15T07:27:45.350Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"350"}
+{"ts":"2026-07-15T07:28:07.061Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"18","offset":"41883221"}
+{"ts":"2026-07-15T07:28:17.108Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"32","offset":"43283221"}
+{"ts":"2026-07-15T07:28:17.978Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:28:20.253Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"27","records":"27"}
+{"ts":"2026-07-15T07:28:22.588Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"39"}
+{"ts":"2026-07-15T07:28:34.499Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"350421"}
+{"ts":"2026-07-15T07:28:39.083Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3330"}
+{"ts":"2026-07-15T07:28:40.165Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"828","freed_mb":"28","heap_after_mb":"13280"}
+{"ts":"2026-07-15T07:28:48.086Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3260"}
+{"ts":"2026-07-15T07:28:48.264Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"17","offset":"41783221"}
+{"ts":"2026-07-15T07:28:48.567Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"19","offset":"41983221"}
+{"ts":"2026-07-15T07:28:56.676Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"20","records":"20"}
+{"ts":"2026-07-15T07:28:57.747Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_639525","duration_ms":"210"}
+{"ts":"2026-07-15T07:29:03.297Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3260"}
+{"ts":"2026-07-15T07:29:11.459Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_808186","duration_ms":"99"}
+{"ts":"2026-07-15T07:29:27.679Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_495255","duration_ms":"144"}
+{"ts":"2026-07-15T07:29:30.800Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_801112","duration_ms":"133"}
+{"ts":"2026-07-15T07:29:31.598Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"8","records":"8"}
+{"ts":"2026-07-15T07:29:35.189Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"817","freed_mb":"17","heap_after_mb":"13170"}
+{"ts":"2026-07-15T07:29:38.419Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_732449","duration_ms":"240"}
+{"ts":"2026-07-15T07:29:45.734Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3180"}
+{"ts":"2026-07-15T07:29:48.865Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3400"}
+{"ts":"2026-07-15T07:30:00.095Z","level":"info","service":"notification-worker","msg":"retained object census (debug endpoint)","EventEmitter_render_listeners":1841203,"RecipientContext":1841203,"since_process_start_s":"8321"}
+{"ts":"2026-07-15T07:30:00.179Z","level":"info","service":"notification-worker","msg":"email-gateway keepalive pool active","version":"3.1.2","pool_size":32,"reused_pct":94}
+{"ts":"2026-07-15T07:30:00.709Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_443203","duration_ms":"157"}
+{"ts":"2026-07-15T07:30:00.784Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_765134","duration_ms":"209"}
+{"ts":"2026-07-15T07:30:01.126Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"100421"}
+{"ts":"2026-07-15T07:30:22.932Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_340672","duration_ms":"90"}
+{"ts":"2026-07-15T07:30:24.152Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3240"}
+{"ts":"2026-07-15T07:30:24.531Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_771383","duration_ms":"110"}
+{"ts":"2026-07-15T07:30:25.353Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3340"}
+{"ts":"2026-07-15T07:30:25.361Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"12","records":"12"}
+{"ts":"2026-07-15T07:30:30.275Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"810","freed_mb":"10","heap_after_mb":"13100"}
+{"ts":"2026-07-15T07:30:38.395Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_938957","duration_ms":"85"}
+{"ts":"2026-07-15T07:30:38.961Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"36","records":"36"}
+{"ts":"2026-07-15T07:30:59.969Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"70421"}
+{"ts":"2026-07-15T07:31:00.181Z","level":"error","service":"notification-worker","msg":"FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory","pod":"notification-worker-84cf-94a1c-d7898","rss_mb":1492}
+    1: 0xb9a0e0 node::Abort() [node]
+    2: 0xaa77f4 node::FatalError(char const*, char const*) [node]
+    3: 0xd7b3ba v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+    4: 0x10f4a25 v8::internal::Heap::CollectGarbage(...) [node]
+    5: 0x14f2a19 v8::internal::TemplateRenderer::render(...) [node]
+{"ts":"2026-07-15T07:31:01.381Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_585697","duration_ms":"213"}
+{"ts":"2026-07-15T07:31:07.196Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_903891","duration_ms":"51"}
+Jul 15 07:31:10 general-3-b kubelet[1000]: ERROR container terminated pod=notification-worker-84cf-2k9dq reason=OOMKilled exit_code=137 restart_count=4
+{"ts":"2026-07-15T07:31:11.896Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"350421"}
+{"ts":"2026-07-15T07:31:12.624Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_217202","duration_ms":"41"}
+{"ts":"2026-07-15T07:31:13.501Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"14","offset":"41483221"}
+{"ts":"2026-07-15T07:31:21.480Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"9","records":"9"}
+{"ts":"2026-07-15T07:31:23.212Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_892303","duration_ms":"82"}
+{"ts":"2026-07-15T07:31:25.292Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"821","freed_mb":"21","heap_after_mb":"13210"}
+{"ts":"2026-07-15T07:31:30.304Z","level":"info","service":"notification-worker","msg":"worker started","version":"5.2.0","build":"2026-07-06T12:58Z","rss_mb":"4133","node":"v22.14.0"}
+{"ts":"2026-07-15T07:31:32.035Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"23","records":"23"}
+{"ts":"2026-07-15T07:31:35.428Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"24"}
+{"ts":"2026-07-15T07:31:47.728Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_913308","duration_ms":"126"}
+{"ts":"2026-07-15T07:31:51.272Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"13","offset":"41383221"}
+{"ts":"2026-07-15T07:31:56.623Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3300"}
+{"ts":"2026-07-15T07:32:00.534Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3340"}
+{"ts":"2026-07-15T07:32:02.301Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"6","offset":"4683221"}
+{"ts":"2026-07-15T07:32:02.530Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:32:03.989Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"110421"}
+{"ts":"2026-07-15T07:32:10.074Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_101054","duration_ms":"44"}
+{"ts":"2026-07-15T07:32:13.346Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"14","offset":"41483221"}
+{"ts":"2026-07-15T07:32:20.160Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"826","freed_mb":"26","heap_after_mb":"13260"}
+{"ts":"2026-07-15T07:32:28.643Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_220676","duration_ms":"50"}
+{"ts":"2026-07-15T07:32:34.900Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"10","records":"10"}
+{"ts":"2026-07-15T07:32:41.709Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_404995","duration_ms":"56"}
+{"ts":"2026-07-15T07:32:47.196Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_556592","duration_ms":"79"}
+{"ts":"2026-07-15T07:32:57.387Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"8"}
+{"ts":"2026-07-15T07:33:00.200Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_660628","duration_ms":"104"}
+{"ts":"2026-07-15T07:33:03.192Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"30"}
+{"ts":"2026-07-15T07:33:04.322Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"5","offset":"4583221"}
+{"ts":"2026-07-15T07:33:11.248Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"13"}
+{"ts":"2026-07-15T07:33:11.914Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_805626","duration_ms":"46"}
+{"ts":"2026-07-15T07:33:13.859Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"22","records":"22"}
+{"ts":"2026-07-15T07:33:15.117Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"810","freed_mb":"10","heap_after_mb":"13100"}
+{"ts":"2026-07-15T07:33:19.366Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_135425","duration_ms":"121"}
+{"ts":"2026-07-15T07:33:28.056Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3240"}
+{"ts":"2026-07-15T07:33:30.738Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"90421"}
+{"ts":"2026-07-15T07:33:35.830Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"12"}
+{"ts":"2026-07-15T07:33:44.751Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"13","records":"13"}
+{"ts":"2026-07-15T07:33:55.978Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"70421"}
+{"ts":"2026-07-15T07:33:57.442Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"350421"}
+{"ts":"2026-07-15T07:34:01.905Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_423682","duration_ms":"66"}
+{"ts":"2026-07-15T07:34:08.943Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_921477","duration_ms":"65"}
+{"ts":"2026-07-15T07:34:10.182Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"813","freed_mb":"13","heap_after_mb":"13130"}
+{"ts":"2026-07-15T07:34:26.197Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"14","offset":"41483221"}
+{"ts":"2026-07-15T07:34:27.334Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_188238","duration_ms":"67"}
+{"ts":"2026-07-15T07:34:32.437Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_274898","duration_ms":"124"}
+{"ts":"2026-07-15T07:34:37.038Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"20"}
+{"ts":"2026-07-15T07:34:45.182Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_280605","duration_ms":"208"}
+{"ts":"2026-07-15T07:34:48.986Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3370"}
+{"ts":"2026-07-15T07:34:50.254Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_456827","duration_ms":"52"}
+{"ts":"2026-07-15T07:34:51.650Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"24","records":"24"}
+{"ts":"2026-07-15T07:34:58.685Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3150"}
+{"ts":"2026-07-15T07:35:00.215Z","level":"info","service":"notification-worker","msg":"retained object census (debug endpoint)","EventEmitter_render_listeners":1841203,"RecipientContext":1841203,"since_process_start_s":"8351"}
+{"ts":"2026-07-15T07:35:02.134Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_288700","duration_ms":"158"}
+{"ts":"2026-07-15T07:35:04.071Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_126258","duration_ms":"166"}
+{"ts":"2026-07-15T07:35:05.164Z","level":"warn","service":"notification-worker","msg":"gc pressure","type":"mark-sweep","duration_ms":"87","freed_mb":"7","heap_after_mb":"1370"}
+{"ts":"2026-07-15T07:35:10.491Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"12","offset":"41283221"}
+{"ts":"2026-07-15T07:35:11.055Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"34"}
+{"ts":"2026-07-15T07:35:16.259Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"11","records":"11"}
+{"ts":"2026-07-15T07:35:17.827Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_322539","duration_ms":"234"}
+{"ts":"2026-07-15T07:35:31.367Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_758152","duration_ms":"239"}
+{"ts":"2026-07-15T07:35:42.584Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"21","offset":"42183221"}
+{"ts":"2026-07-15T07:35:49.321Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_814961","duration_ms":"42"}
+{"ts":"2026-07-15T07:35:54.695Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"10421"}
+{"ts":"2026-07-15T07:36:22.415Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_599743","duration_ms":"204"}
+{"ts":"2026-07-15T07:36:22.475Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"40","records":"40"}
+{"ts":"2026-07-15T07:36:33.278Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"30","offset":"43083221"}
+{"ts":"2026-07-15T07:36:34.402Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_343725","duration_ms":"140"}
+{"ts":"2026-07-15T07:36:41.352Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3100"}
+{"ts":"2026-07-15T07:36:47.281Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"5","offset":"4583221"}
+{"ts":"2026-07-15T07:36:51.029Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:36:53.168Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"32","records":"32"}
+{"ts":"2026-07-15T07:36:58.564Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3330"}
+{"ts":"2026-07-15T07:36:59.678Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_504672","duration_ms":"171"}
+{"ts":"2026-07-15T07:37:01.189Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_930329","duration_ms":"48"}
+{"ts":"2026-07-15T07:37:03.834Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_148182","duration_ms":"239"}
+{"ts":"2026-07-15T07:37:16.249Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"34","offset":"43483221"}
+{"ts":"2026-07-15T07:37:17.976Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"12"}
+{"ts":"2026-07-15T07:37:35.756Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_270565","duration_ms":"124"}
+{"ts":"2026-07-15T07:37:36.011Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"11","offset":"41183221"}
+{"ts":"2026-07-15T07:37:41.242Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_894810","duration_ms":"218"}
+{"ts":"2026-07-15T07:37:55.205Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"14","offset":"41483221"}
+{"ts":"2026-07-15T07:38:04.700Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_151135","duration_ms":"223"}
+{"ts":"2026-07-15T07:38:06.931Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_949444","duration_ms":"26"}
+{"ts":"2026-07-15T07:38:18.563Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_641202","duration_ms":"208"}
+{"ts":"2026-07-15T07:38:45.713Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"19","records":"19"}
+{"ts":"2026-07-15T07:38:49.130Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"29","offset":"42983221"}
+{"ts":"2026-07-15T07:38:51.299Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3400"}
+{"ts":"2026-07-15T07:39:18.558Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"330"}
+{"ts":"2026-07-15T07:39:32.963Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"380"}
+{"ts":"2026-07-15T07:39:34.030Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_162276","duration_ms":"46"}
+{"ts":"2026-07-15T07:39:35.075Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_449236","duration_ms":"225"}
+{"ts":"2026-07-15T07:39:35.541Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"34","offset":"43483221"}
+{"ts":"2026-07-15T07:39:39.314Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"8","offset":"4883221"}
+{"ts":"2026-07-15T07:40:03.178Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_873770","duration_ms":"59"}
+{"ts":"2026-07-15T07:40:22.031Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"23","offset":"42383221"}
+{"ts":"2026-07-15T07:40:23.679Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"7","offset":"4783221"}
+{"ts":"2026-07-15T07:40:26.691Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3380"}
+{"ts":"2026-07-15T07:40:32.543Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"2","records":"2"}
+{"ts":"2026-07-15T07:40:53.146Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"3"}
+{"ts":"2026-07-15T07:40:55.272Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_330860","duration_ms":"140"}
+{"ts":"2026-07-15T07:40:55.728Z","level":"info","service":"notification-worker","msg":"heartbeat sent to coordinator","group":"notif-w","generation":118}
+{"ts":"2026-07-15T07:40:57.903Z","level":"debug","service":"notification-worker","msg":"template rendered","template":"promo_flash_sale","render_ms":"15"}
+{"ts":"2026-07-15T07:41:07.980Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"35","offset":"43583221"}
+{"ts":"2026-07-15T07:41:20.923Z","level":"debug","service":"notification-worker","msg":"fetch response received","topic":"notifications","partition":"34","records":"34"}
+{"ts":"2026-07-15T07:41:28.730Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"16","offset":"41683221"}
+{"ts":"2026-07-15T07:41:52.916Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_685687","duration_ms":"10"}
+{"ts":"2026-07-15T07:42:06.950Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"3","offset":"4383221"}
+{"ts":"2026-07-15T07:42:20.558Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_641057","duration_ms":"184"}
+{"ts":"2026-07-15T07:42:20.624Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_149590","duration_ms":"228"}
+{"ts":"2026-07-15T07:42:23.373Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"12","offset":"41283221"}
+{"ts":"2026-07-15T07:42:31.463Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"27","offset":"42783221"}
+{"ts":"2026-07-15T07:42:35.168Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_670649","duration_ms":"240"}
+{"ts":"2026-07-15T07:42:36.960Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"35","offset":"43583221"}
+{"ts":"2026-07-15T07:42:38.822Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_225780","duration_ms":"214"}
+{"ts":"2026-07-15T07:42:43.303Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_417398","duration_ms":"238"}
+{"ts":"2026-07-15T07:42:50.447Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_953760","duration_ms":"94"}
+{"ts":"2026-07-15T07:43:00.182Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"24","offset":"42483221"}
+{"ts":"2026-07-15T07:43:30.635Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"9","offset":"4983221"}
+{"ts":"2026-07-15T07:43:31.243Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3390"}
+{"ts":"2026-07-15T07:43:42.795Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"370"}
+{"ts":"2026-07-15T07:43:47.029Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_379995","duration_ms":"15"}
+{"ts":"2026-07-15T07:43:47.186Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_783454","duration_ms":"121"}
+{"ts":"2026-07-15T07:43:49.093Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"140421"}
+{"ts":"2026-07-15T07:43:57.907Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"50421"}
+{"ts":"2026-07-15T07:44:02.345Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_124310","duration_ms":"20"}
+{"ts":"2026-07-15T07:44:11.682Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_562016","duration_ms":"57"}
+{"ts":"2026-07-15T07:44:18.826Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"3","offset":"4383221"}
+{"ts":"2026-07-15T07:44:22.362Z","level":"warn","service":"notification-worker","msg":"event loop lag","lag_ms":"3140"}
+{"ts":"2026-07-15T07:44:22.462Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"3","offset":"4383221"}
+{"ts":"2026-07-15T07:44:24.402Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_330302","duration_ms":"34"}
+{"ts":"2026-07-15T07:44:34.989Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"26","offset":"42683221"}
+{"ts":"2026-07-15T07:44:39.230Z","level":"warn","service":"notification-worker","msg":"consumer lag growing","topic":"notifications","lag":"80421"}
+{"ts":"2026-07-15T07:44:40.841Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_389194","duration_ms":"131"}
+{"ts":"2026-07-15T07:44:46.227Z","level":"info","service":"notification-worker","msg":"notification sent","channel":"email","template":"order_shipped","user_id":"usr_774060","duration_ms":"227"}
+{"ts":"2026-07-15T07:44:47.106Z","level":"info","service":"notification-worker","msg":"offsets committed","topic":"notifications","group":"notif-w","partition":"33","offset":"43383221"}

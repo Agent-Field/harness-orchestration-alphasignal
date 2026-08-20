@@ -1,0 +1,33 @@
+{
+  "lookback_hours": 168,
+  "events": [
+    {
+      "id": "dep-1180",
+      "at": "2026-07-24T13:00:00Z",
+      "kind": "deploy",
+      "service": "auth-service",
+      "version": "8.4.1",
+      "actor": "mchen",
+      "change": "cache introspection results 30s"
+    },
+    {
+      "id": "dep-1201",
+      "at": "2026-07-27T15:22:00Z",
+      "kind": "deploy",
+      "service": "web-bff",
+      "version": "2026.7.27-2",
+      "actor": "jtan",
+      "change": "harden auth calls: retry 5x on any 5xx or timeout",
+      "diff_summary": "authClient.ts: maxRetries 1 -> 5; backoff 'none'; timeout_ms 2000 -> 400"
+    },
+    {
+      "id": "dep-1206",
+      "at": "2026-07-28T08:58:00Z",
+      "kind": "maintenance",
+      "service": "node-pool/general-4",
+      "actor": "platform-bot",
+      "change": "routine node reboot general-4-c (1 of 12)",
+      "diff_summary": "auth-service-5f7c-w9k terminated 09:00:04Z, rescheduled 09:00:41Z, Ready 09:00:52Z"
+    }
+  ]
+}

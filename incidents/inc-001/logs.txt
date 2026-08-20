@@ -1,0 +1,491 @@
+2026-08-14 02:20:10,947 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=91 trace_id=7a2dc69c7d26cdff61275106f354dfdf req_id=req_c947e7ba74cc
+2026-08-14 02:20:25,324 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=138 trace_id=2f04a77b33f62e1dd8a8a5d396457c95 req_id=req_c31a11658506
+2026-08-14 02:20:26,654 INFO  [http-nio-8080-exec-1] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=19 heap_before_mb=18194 heap_after_mb=9191
+2026-08-14 02:20:34,292 INFO  [http-nio-8080-exec-15] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21150 tax_call_ms=20150 tx=open req_id=req_d410ec533922
+2026-08-14 02:20:35,974 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:20:38,630 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=212 trace_id=a321295cfa55250e30ebdd90f38e3427 req_id=req_767fbbaadfc7
+2026-08-14 02:20:42,967 DEBUG [http-nio-8080-exec-14] c.a.checkout.api.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_231028
+2026-08-14 02:20:47,621 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=70 trace_id=5b8191f7a293715254c82daa1da33750 req_id=req_09d166966d9f
+2026-08-14 02:20:53,274 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=235 trace_id=1db558a868d0ddada9c1e0dbf90b2ba8 req_id=req_ae44ff8a0ea7
+2026-08-14 02:20:59,932 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=222 trace_id=65cf9d75931a3f3a90e27c2693968b53 req_id=req_efa8c1c9308a
+2026-08-14 02:21:02,794 DEBUG [http-nio-8080-exec-19] c.a.checkout.api.Handler - metrics scrape served path=/metrics status=200 bytes=38214
+2026-08-14 02:21:07,846 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=150 trace_id=5f68165c58626f388d091ddca56c463d req_id=req_3405021cddc7
+2026-08-14 02:21:25,860 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=144 trace_id=b375dd26c11d119c82bbc6ae50103a8c req_id=req_7836dfbd580b
+2026-08-14 02:21:31,419 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=36 trace_id=673b145c4bcadcb33bf02a9c2890519e req_id=req_782810f78b64
+2026-08-14 02:21:32,064 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=102 trace_id=d41b3b89bcd2599bc1316de577e04b19 req_id=req_37fd96c46999
+2026-08-14 02:21:35,638 INFO  [http-nio-8080-exec-9] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21110 tax_call_ms=20110 tx=open req_id=req_ffec9ae17180
+2026-08-14 02:21:39,610 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:21:48,142 INFO  [http-nio-8080-exec-8] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21360 tax_call_ms=20360 tx=open req_id=req_45c04c3e5fb4
+2026-08-14 02:21:49,209 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=179 trace_id=484bec1228521681b82130e8adcae4a2 req_id=req_ea88a7166585
+2026-08-14 02:21:56,482 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:22:01,208 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=144 trace_id=144af10a771e8b17807fba4e39f33bb5 req_id=req_133ca0e87dd9
+2026-08-14 02:22:03,157 INFO  [http-nio-8080-exec-13] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21120 tax_call_ms=20120 tx=open req_id=req_a5f074893f6f
+2026-08-14 02:22:03,474 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=19 trace_id=c0fa6b5d78e4a70f895deae69ed7ffcc req_id=req_39b443f65c8b
+2026-08-14 02:22:13,354 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=59 trace_id=6ec3d6e5e70b3d0489bd34b58f1b50d8 req_id=req_92c32e72cb71
+2026-08-14 02:22:38,943 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=27 trace_id=7b76f92a84af9b2f9cc4906ccabcb0d4 req_id=req_6ef4d2dd7766
+2026-08-14 02:23:01,926 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=111 trace_id=ecdba8f290d99e8158a8a5986d87a063 req_id=req_779807a1d136
+2026-08-14 02:23:03,226 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - session refreshed user_id=usr_318693 ttl_s=1800
+2026-08-14 02:23:07,330 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=8 trace_id=64416e07737f002525bcf6a929fefc3c req_id=req_5d7e89984680
+2026-08-14 02:23:11,622 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=220 trace_id=a7ab4a3e42417a4061fcbc5af51d3233 req_id=req_fbf8c69e153d
+2026-08-14 02:23:13,691 INFO  [http-nio-8080-exec-23] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=17 heap_before_mb=18174 heap_after_mb=9171
+2026-08-14 02:23:38,395 INFO  [http-nio-8080-exec-12] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21150 tax_call_ms=20150 tx=open req_id=req_2daa94a1000a
+2026-08-14 02:23:46,652 INFO  [http-nio-8080-exec-12] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-91257 duration_ms=141
+2026-08-14 02:23:51,149 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=73 trace_id=214a736af3fc9269e1e42231ccba2461 req_id=req_910084120fe0
+2026-08-14 02:23:51,354 INFO  [http-nio-8080-exec-17] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=28 heap_before_mb=18284 heap_after_mb=9281
+2026-08-14 02:23:56,761 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=55 trace_id=a8aca131d3ef14cfd4a740678ef59c93 req_id=req_108ff91a8ca1
+2026-08-14 02:24:06,160 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:24:11,179 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=19 trace_id=63ece276d285728719d4c968171d406b req_id=req_73255ee65826
+2026-08-14 02:24:11,792 INFO  [http-nio-8080-exec-13] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=4 heap_before_mb=1844 heap_after_mb=941
+2026-08-14 02:24:21,200 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=22 trace_id=ba5f566ec7a48382acb312db691821cf req_id=req_b104b2f25aaf
+2026-08-14 02:24:31,444 INFO  [http-nio-8080-exec-13] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21190 tax_call_ms=20190 tx=open req_id=req_4102d9e72958
+2026-08-14 02:24:33,094 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=206 trace_id=08a89ec50577cf1ab3f88f6789bace09 req_id=req_d8b5f43332ab
+2026-08-14 02:24:33,517 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=81 trace_id=c374988e4c25d3bd5b7c7bd1dea58845 req_id=req_06920435f166
+2026-08-14 02:24:38,710 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:24:38,918 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=55 trace_id=1969c581bce3d8ba6577f5e2d7670548 req_id=req_92ed34c80f95
+2026-08-14 02:24:43,969 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=191 trace_id=e05eb60e4ab8c786c8c2e4ad848cddeb req_id=req_58637b2a2f66
+2026-08-14 02:24:49,602 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=29 trace_id=adbbbeadecd0a1018ab6497c68332a7a req_id=req_e1d9fa20e6e9
+2026-08-14 02:24:51,863 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:24:55,019 INFO  [http-nio-8080-exec-5] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21120 tax_call_ms=20120 tx=open req_id=req_eea2b768e5cb
+2026-08-14 02:24:57,402 INFO  [http-nio-8080-exec-1] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:24:58,121 INFO  [http-nio-8080-exec-17] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=6 heap_before_mb=1864 heap_after_mb=961
+2026-08-14 02:24:58,833 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=93 trace_id=0c65db4489aa7cae4e8703f6a192c80a req_id=req_6e36b4d2bf63
+2026-08-14 02:24:59,161 INFO  [http-nio-8080-exec-21] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=19 heap_before_mb=18194 heap_after_mb=9191
+2026-08-14 02:24:59,435 INFO  [http-nio-8080-exec-15] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=2190 tax_call_ms=2090 tx=open req_id=req_e363872b0f14
+2026-08-14 02:25:00,324 INFO  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After cleanup  stats (total=20, active=11, idle=9, waiting=0)
+2026-08-14 02:25:01,528 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=180 trace_id=ef3b1708a4a1bc4d2e5d4c0e5d7ff638 req_id=req_a050f89f35fb
+2026-08-14 02:25:01,605 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:25:06,435 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=130 trace_id=1f51842c4f0f5e8040fe516aa6ba23a7 req_id=req_0fff6c037f20
+2026-08-14 02:25:09,046 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:25:15,438 INFO  [http-nio-8080-exec-19] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=2190 tax_call_ms=2090 tx=open req_id=req_1935dc0ac765
+2026-08-14 02:25:17,477 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=16 trace_id=5443324f5e223146d0543b53a440c7b4 req_id=req_21c8e1250aec
+2026-08-14 02:25:19,488 INFO  [http-nio-8080-exec-8] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-46944 duration_ms=75
+2026-08-14 02:25:31,785 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:25:33,002 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=123 trace_id=32272e1b440a10a935d8c7b424494bd7 req_id=req_1db4a54c5534
+2026-08-14 02:25:48,281 INFO  [http-nio-8080-exec-8] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=24 heap_before_mb=18244 heap_after_mb=9241
+2026-08-14 02:25:55,104 INFO  [http-nio-8080-exec-16] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=14 heap_before_mb=18144 heap_after_mb=9141
+2026-08-14 02:26:01,445 INFO  [http-nio-8080-exec-24] c.a.checkout.SessionStore - session written backend=redis-session duration_ms=3
+2026-08-14 02:26:09,828 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=85 trace_id=ef6e220f7172b5aee3f3640618b1c00b req_id=req_07ed7223d0a4
+2026-08-14 02:26:19,611 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - session refreshed user_id=usr_346856 ttl_s=1800
+2026-08-14 02:26:20,141 INFO  [http-nio-8080-exec-22] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=4 heap_before_mb=1844 heap_after_mb=941
+2026-08-14 02:26:29,133 INFO  [http-nio-8080-exec-3] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21220 tax_call_ms=20220 tx=open req_id=req_87a9e3a450c3
+2026-08-14 02:26:30,973 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=136 trace_id=4eadf0c6322da76d655d505a97b79460 req_id=req_301a6712e7b7
+2026-08-14 02:26:40,397 DEBUG [http-nio-8080-exec-7] c.a.common.Pools - thread pool stats active=2 queued=0
+2026-08-14 02:26:47,674 DEBUG [http-nio-8080-exec-13] c.a.common.Pools - thread pool stats active=31 queued=0
+2026-08-14 02:26:50,233 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=105 trace_id=9736074ece4ac92a5d6aab6a4af3aa5b req_id=req_d13ca3e0b955
+2026-08-14 02:26:51,208 INFO  [http-nio-8080-exec-18] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=2180 tax_call_ms=2080 tx=open req_id=req_50bdbcaea2af
+2026-08-14 02:27:07,348 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=97 trace_id=c7a9083a36c8fce2e093ac59beaf8b70 req_id=req_e2446b4da170
+2026-08-14 02:27:24,983 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=150 trace_id=664372f9b0d192d095d9146cb5b62333 req_id=req_f2da1c74a255
+2026-08-14 02:27:37,748 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:27:48,167 INFO  [http-nio-8080-exec-24] c.a.checkout.SessionStore - session written backend=redis-session duration_ms=3
+2026-08-14 02:27:48,578 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:27:51,694 INFO  [http-nio-8080-exec-11] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21220 tax_call_ms=20220 tx=open req_id=req_001a60acdd20
+2026-08-14 02:27:52,630 INFO  [http-nio-8080-exec-6] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21120 tax_call_ms=20120 tx=open req_id=req_f825e7c1769b
+2026-08-14 02:27:53,794 INFO  [http-nio-8080-exec-19] c.a.checkout.SessionStore - session written backend=redis-session duration_ms=3
+2026-08-14 02:27:54,629 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:27:55,084 INFO  [http-nio-8080-exec-17] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21220 tax_call_ms=20220 tx=open req_id=req_723d165ac5eb
+2026-08-14 02:28:00,777 INFO  [http-nio-8080-exec-10] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=2160 tax_call_ms=2060 tx=open req_id=req_5a7b96fec728
+2026-08-14 02:28:02,670 INFO  [http-nio-8080-exec-16] c.a.checkout.SessionStore - session written backend=redis-session duration_ms=3
+2026-08-14 02:28:06,363 DEBUG [http-nio-8080-exec-24] c.a.checkout.api.Handler - metrics scrape served path=/metrics status=200 bytes=3214
+2026-08-14 02:28:08,178 INFO  [http-nio-8080-exec-2] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=222 trace_id=a005469a108a8b2ab0f9742f56fef688 req_id=req_f67db9e6b876
+2026-08-14 02:28:08,352 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=9 trace_id=55afa517782bd62488a62ff345244ca8 req_id=req_aa720c1a9d61
+2026-08-14 02:28:13,885 INFO  [http-nio-8080-exec-1] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=2 heap_before_mb=1824 heap_after_mb=921
+2026-08-14 02:28:16,332 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=218 trace_id=8f1affeece54c8cf2f388eeb8487aad7 req_id=req_4d413e2ff0c2
+2026-08-14 02:28:24,500 INFO  [http-nio-8080-exec-3] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21160 tax_call_ms=20160 tx=open req_id=req_c3e3dc53110b
+2026-08-14 02:28:25,364 INFO  [http-nio-8080-exec-17] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-71201 duration_ms=141
+2026-08-14 02:28:28,010 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=113 trace_id=cd9e4d9fbb2779c1595a4620339ae36d req_id=req_bae0a56979e6
+2026-08-14 02:28:34,422 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=102 trace_id=bd18b01444c29dfca05b9bd3610b3446 req_id=req_05676e91bab8
+2026-08-14 02:28:38,020 INFO  [http-nio-8080-exec-12] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21260 tax_call_ms=20260 tx=open req_id=req_ba4ac358c135
+2026-08-14 02:28:39,131 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=205 trace_id=49f9c0562a28d64afa9701586a7dd46f req_id=req_de1014ab027a
+2026-08-14 02:28:41,736 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:28:44,343 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=20 trace_id=5c596b2ef6089be594966f3abee7b29e req_id=req_92c00b878b49
+2026-08-14 02:28:54,660 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:28:56,156 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=23 trace_id=5028a43ce0e7d20872bff545f43a255d req_id=req_54b76ed1dd35
+2026-08-14 02:29:17,906 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=187 trace_id=f6c6348ab54bb8bdccfb3b79b9a331bb req_id=req_98c070d01e56
+2026-08-14 02:29:18,797 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:29:28,928 INFO  [http-nio-8080-exec-1] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=54 trace_id=a59a764ce3c960c481c974bde32515c3 req_id=req_40d711a2e187
+2026-08-14 02:29:30,184 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=130 trace_id=b6612ae2541c78133aaa5ef8d40c0cb3 req_id=req_489820636271
+2026-08-14 02:29:38,147 INFO  [http-nio-8080-exec-2] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=18 trace_id=f9aab6aabe77959857759042aa22144d req_id=req_3dcd3b6f44f7
+2026-08-14 02:29:41,440 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:29:44,889 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:29:45,328 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=218 trace_id=9b22e9a6f2e3ebe1cde39325d876d849 req_id=req_b0dd315d4c01
+2026-08-14 02:29:47,958 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=149 trace_id=5ffd239d455308ab700aadf865356657 req_id=req_04bdafd27965
+2026-08-14 02:29:54,288 INFO  [http-nio-8080-exec-7] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=2110 tax_call_ms=2010 tx=open req_id=req_23c021cd3b6a
+2026-08-14 02:29:54,814 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=199 trace_id=50235746c7553c03d6d2c43c32ca0aa8 req_id=req_579be792d193
+2026-08-14 02:29:55,454 DEBUG [http-nio-8080-exec-20] c.a.checkout.api.Handler - metrics scrape served path=/metrics status=200 bytes=10214
+2026-08-14 02:30:07,400 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=38 trace_id=d1a69c53f76ef5553231d9a550a22bae req_id=req_4928761c4cb1
+2026-08-14 02:30:12,747 INFO  [http-nio-8080-exec-21] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-77699 duration_ms=48
+2026-08-14 02:30:14,240 INFO  [http-nio-8080-exec-14] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-78413 duration_ms=94
+2026-08-14 02:30:15,002 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=67 trace_id=153c44efc5049b468450b3c35215438a req_id=req_d51b4a346eb2
+2026-08-14 02:30:16,739 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=204 trace_id=00021b2f8229776a3a5f7017f06a5888 req_id=req_bc7731719dc5
+2026-08-14 02:30:19,236 INFO  [http-nio-8080-exec-23] c.a.checkout.SessionStore - session written backend=redis-session duration_ms=3
+2026-08-14 02:30:24,873 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:30:25,433 INFO  [http-nio-8080-exec-21] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21270 tax_call_ms=20270 tx=open req_id=req_735cbf0ea348
+2026-08-14 02:30:27,983 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=108 trace_id=7bf3484685b70f91cd9523a8d5b9a202 req_id=req_b3444c50f946
+2026-08-14 02:30:35,716 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=176 trace_id=c8d05ae8a9d288cd64d7859144a82636 req_id=req_e1e637aca8dc
+2026-08-14 02:30:38,170 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:30:41,814 INFO  [http-nio-8080-exec-8] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21110 tax_call_ms=20110 tx=open req_id=req_f3279a926f86
+2026-08-14 02:30:47,434 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=208 trace_id=0bcf73371c0a938b362f6af389f3c6b3 req_id=req_f9ed80b614bc
+2026-08-14 02:30:52,283 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=234 trace_id=764c17052518c30c987c61e136e7a182 req_id=req_ed7c1c0be5de
+2026-08-14 02:30:52,402 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=133 trace_id=ffc72c0bfccc9b9287795581f6aa0470 req_id=req_d9230eb652a2
+2026-08-14 02:31:03,088 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=167 trace_id=0a3444fe3b966cdaedde88b0f708544f req_id=req_5bdf38b17e1f
+2026-08-14 02:31:07,392 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - auth token validated user_id=usr_124222 issuer=identity-service
+2026-08-14 02:31:15,639 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=64 trace_id=f94e07a0ddb0d99f66e6b1212b1112b9 req_id=req_988b1672eb75
+2026-08-14 02:31:18,325 INFO  [http-nio-8080-exec-23] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=31 heap_before_mb=18314 heap_after_mb=9311
+2026-08-14 02:31:24,370 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=139 trace_id=01045ed857e96576bd19748445bb4d7d req_id=req_062f81945500
+2026-08-14 02:31:25,574 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - auth token validated user_id=usr_428108 issuer=identity-service
+2026-08-14 02:31:28,021 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:31:28,908 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=217 trace_id=f734823e7fb3e9b572be42d1703ebec3 req_id=req_99c1cd99f6b4
+2026-08-14 02:31:30,340 INFO  [http-nio-8080-exec-19] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-76326 duration_ms=186
+2026-08-14 02:31:30,602 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:31:42,910 INFO  [http-nio-8080-exec-23] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21330 tax_call_ms=20330 tx=open req_id=req_a219c4c1da2a
+2026-08-14 02:31:46,352 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=239 trace_id=8b362354e0112e5747a802506bec26c2 req_id=req_b47698399969
+2026-08-14 02:31:53,569 INFO  [http-nio-8080-exec-4] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=2 heap_before_mb=1824 heap_after_mb=921
+2026-08-14 02:31:55,573 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=15 trace_id=1ca4e7e870ded9c0435c3df624835a4b req_id=req_b3b6d2bde736
+2026-08-14 02:31:55,650 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=58 trace_id=034dc0851ffd9487900c0c62e36db61d req_id=req_60acca28d8f9
+2026-08-14 02:32:02,690 INFO  [http-nio-8080-exec-1] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-40950 duration_ms=28
+2026-08-14 02:32:05,026 INFO  [http-nio-8080-exec-1] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:32:05,069 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=211 trace_id=445f7620a3273b388414c792fde726a5 req_id=req_1adc50277acb
+2026-08-14 02:32:14,282 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=11 trace_id=ad5b1ed886b21307f43cfae23346b871 req_id=req_8b0ec5e6c606
+2026-08-14 02:32:15,631 INFO  [http-nio-8080-exec-15] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21190 tax_call_ms=20190 tx=open req_id=req_066f43bf413e
+2026-08-14 02:32:15,870 INFO  [http-nio-8080-exec-2] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:32:17,856 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=141 trace_id=c9f69a99c333850e8e20f905feb5079e req_id=req_a6087e2f77a8
+2026-08-14 02:32:18,231 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=142 trace_id=028bdb88ac372a28e67f512583395885 req_id=req_42675d9b64c0
+2026-08-14 02:32:19,291 INFO  [http-nio-8080-exec-14] c.a.checkout.SessionStore - session written backend=redis-session duration_ms=3
+2026-08-14 02:32:22,750 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=157 trace_id=f414f2ccadf84c466440b5a6a7578d06 req_id=req_4ec6aed18caa
+2026-08-14 02:32:29,644 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=34 trace_id=b99e857dae806e014a0629b2075b9477 req_id=req_47f6a2eabd00
+2026-08-14 02:32:29,794 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:32:52,317 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=39 trace_id=e9ee8a55dcd6822dd6511c9b8dc14c0f req_id=req_9d2d330640b5
+2026-08-14 02:33:08,846 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=228 trace_id=6fc66f926677548bc28bdf952d8fecbc req_id=req_ca786d9c9448
+2026-08-14 02:33:09,275 DEBUG [http-nio-8080-exec-5] c.a.checkout.api.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_107050
+2026-08-14 02:33:13,609 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:33:18,247 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=217 trace_id=16414b96946f8e64428a6b018b1f4314 req_id=req_c743a745673d
+2026-08-14 02:33:21,046 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=211 trace_id=51cf9f83fe209bf640a4d36ca9c52fb8 req_id=req_87e78c60ac5a
+2026-08-14 02:33:25,129 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=237 trace_id=7a1d8a52ebaf1a2aab5da247dccaaa38 req_id=req_b3cf385593b5
+2026-08-14 02:33:27,964 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=55 trace_id=99e45b7408722dc46feba7c83d70d9f8 req_id=req_105b1438a1ee
+2026-08-14 02:33:33,962 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=213 trace_id=c230bcbb9efb7dc763120924d2aed929 req_id=req_cc4ec4633c98
+2026-08-14 02:33:43,032 INFO  [http-nio-8080-exec-7] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21300 tax_call_ms=20300 tx=open req_id=req_1e3481218be2
+2026-08-14 02:34:01,202 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=195 trace_id=7edccf6ea2e5a7306f7cdaf13a3b93b2 req_id=req_223e0990bf8e
+2026-08-14 02:34:07,635 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:34:16,055 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - /v1/checkout/address completed method=GET path=/v1/checkout/address status=200 duration_ms=172 trace_id=ba2c3dc9aab9a7871e595d5949e46e6b req_id=req_f776cc8b35d5
+2026-08-14 02:34:21,055 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=23 trace_id=defe3957c903666445e0d49e74c3a5a2 req_id=req_e9de4d5044f9
+2026-08-14 02:34:21,988 INFO  [http-nio-8080-exec-1] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=79 trace_id=401c9cffc854b3214e3a27e573e31021 req_id=req_4d5779470a33
+2026-08-14 02:34:22,733 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:34:25,780 DEBUG [http-nio-8080-exec-6] c.a.checkout.api.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_739012
+2026-08-14 02:34:33,596 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=87 trace_id=c492bd1628643d03c4281bfa24a84d44 req_id=req_0ebb78be9a75
+2026-08-14 02:34:45,069 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - session refreshed user_id=usr_332836 ttl_s=1800
+2026-08-14 02:34:50,474 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=27 trace_id=bab3728c0ba0a7695718037dac615d4f req_id=req_0afd8142c8a7
+2026-08-14 02:35:00,171 INFO  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After cleanup  stats (total=20, active=18, idle=2, waiting=0)
+2026-08-14 02:35:01,698 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=117 trace_id=d0731412be7a30cb6b4a4efbf7d177b0 req_id=req_15fdc3f642de
+2026-08-14 02:35:08,465 DEBUG [http-nio-8080-exec-9] c.a.checkout.api.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_481590
+2026-08-14 02:35:09,564 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:35:09,795 INFO  [http-nio-8080-exec-22] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21400 tax_call_ms=20400 tx=open req_id=req_056af1bc0c51
+2026-08-14 02:35:10,486 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=210 trace_id=d47e5f20395d3542e43f0e060369000e req_id=req_8d2f887bf610
+2026-08-14 02:35:20,428 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:35:22,073 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - auth token validated user_id=usr_158594 issuer=identity-service
+2026-08-14 02:35:26,606 INFO  [http-nio-8080-exec-15] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=26 heap_before_mb=18264 heap_after_mb=9261
+2026-08-14 02:35:29,196 INFO  [http-nio-8080-exec-1] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-90034 duration_ms=186
+2026-08-14 02:35:33,972 INFO  [http-nio-8080-exec-23] c.a.checkout.InventoryClient - inventory reservation ok sku=SKU-89166 duration_ms=185
+2026-08-14 02:35:43,756 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:35:44,945 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=216 trace_id=6b19c1aefb6de9df9faab738d56170e2 req_id=req_4ea7e12c27bb
+2026-08-14 02:35:45,229 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=173 trace_id=8b23fb664b8ccad72e58d92111641216 req_id=req_27ababe61173
+2026-08-14 02:35:52,601 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=63 trace_id=b7a014562cb224761dc3debb27251ab8 req_id=req_fb45247d1415
+2026-08-14 02:35:52,634 INFO  [http-nio-8080-exec-18] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:36:09,144 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=22 trace_id=2629ff726f82da67d63931193b29754a req_id=req_948e31c70d54
+2026-08-14 02:36:10,811 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=28 trace_id=9a673204446764c960dc3a7496134e60 req_id=req_08aae937a4c3
+2026-08-14 02:36:12,970 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:36:17,477 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=145 trace_id=1881c3eb1506c9670114d3bf122325f0 req_id=req_ac0056064501
+2026-08-14 02:36:20,415 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=195 trace_id=de4f8e9ee0aac957b25dc9dd4ac3ffdb req_id=req_564f1f8cad9a
+2026-08-14 02:36:22,242 INFO  [http-nio-8080-exec-18] c.a.checkout.OrderQuoteService - quote computed path=/v2/checkout/quote status=200 duration_ms=21370 tax_call_ms=20370 tx=open req_id=req_b56f6927f050
+2026-08-14 02:36:24,028 INFO  [http-nio-8080-exec-20] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=80 trace_id=f37ce026aabc6d70b07123ddfd0555e9 req_id=req_243d26ec4d23
+2026-08-14 02:36:26,546 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=56 trace_id=90536499f705aeb10812daa94fe04d77 req_id=req_abbb657c6972
+2026-08-14 02:36:32,675 WARN  [http-nio-8080-exec-7] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=9712 req_id=req_3c9f84735118
+2026-08-14 02:36:39,135 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=98 trace_id=b75926421f92d3ecf2fab8de79abb9e2 req_id=req_9aa194a20f10
+2026-08-14 02:36:44,096 INFO  [http-nio-8080-exec-18] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=154 trace_id=367313249056ae529f68c4b56c391e4e req_id=req_db8d4a867712
+2026-08-14 02:36:46,795 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=211 trace_id=d6fa118f781cb19f9003c76b01eb8e8e req_id=req_e5f6a924e096
+2026-08-14 02:36:47,597 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=182 trace_id=32127e4b6656b4861ae438701151f935 req_id=req_a98105248c88
+2026-08-14 02:36:49,937 INFO  [http-nio-8080-exec-21] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=25 heap_before_mb=18254 heap_after_mb=9251
+2026-08-14 02:36:54,608 INFO  [http-nio-8080-exec-2] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=116 trace_id=c7c09baf9cd1114c939390d2b92c3fab req_id=req_8320650676f1
+2026-08-14 02:37:16,504 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=156 trace_id=2c13462485903021b051fc85e50b52c2 req_id=req_b971979dd9d5
+2026-08-14 02:37:19,862 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=40 trace_id=d80f604829d5058dae41f31e75e5147c req_id=req_1b5d4d8bb8e5
+2026-08-14 02:37:33,475 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=149 trace_id=350fb97f1dc556cf4403a7fd25157b92 req_id=req_f8807dafb5f1
+2026-08-14 02:37:42,476 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=215 trace_id=d8891e47d3868cac1949d1cf0abebf50 req_id=req_87a3b3b56ebc
+2026-08-14 02:37:53,442 INFO  [http-nio-8080-exec-2] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=32 trace_id=8a7e6c5596fc422cd847acec6d4bda3c req_id=req_7fcd81c43d96
+2026-08-14 02:38:02,153 WARN  [http-nio-8080-exec-6] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=9412 req_id=req_77b524101ff3
+2026-08-14 02:38:05,262 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=61s)
+2026-08-14 02:38:08,862 WARN  [http-nio-8080-exec-2] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=116430 tax_call_ms=21160 tx=open req_id=req_3823e7189c2b
+2026-08-14 02:38:18,046 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=25 trace_id=194bf25c50e6c9d2559565af8e20ae74 req_id=req_a005d48a1af2
+2026-08-14 02:38:19,705 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=230 trace_id=e10bc4a3f91c5934202e98c2d2d614b4 req_id=req_772dd44df4e7
+2026-08-14 02:38:31,549 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=196 trace_id=240a001ac52e56bccd91247698e6354a req_id=req_578289649482
+2026-08-14 02:38:41,704 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:38:53,108 INFO  [http-nio-8080-exec-1] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=38 heap_before_mb=18384 heap_after_mb=9381
+2026-08-14 02:39:00,234 INFO  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After cleanup  stats (total=20, active=20, idle=0, waiting=37)
+2026-08-14 02:39:05,911 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=56 trace_id=b06a8db3f6ccab3acfef87564fe42e87 req_id=req_f9ed7d97ea64
+2026-08-14 02:39:19,119 WARN  [http-nio-8080-exec-6] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=93812 req_id=req_5c38bc077ada
+2026-08-14 02:39:20,089 ERROR [http-nio-8080-exec-24] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_bd4780a15a36
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:39:30,254 INFO  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After cleanup  stats (total=20, active=20, idle=0, waiting=37)
+2026-08-14 02:39:31,180 INFO  [http-nio-8080-exec-18] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=66 trace_id=606ae57328d1d1e09bc7ba96b431bb01 req_id=req_cce2467647ab
+2026-08-14 02:39:48,010 WARN  [http-nio-8080-exec-22] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=123430 tax_call_ms=21230 tx=open req_id=req_bacc1dd085c2
+2026-08-14 02:39:50,228 WARN  [http-nio-8080-exec-1] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=134430 tax_call_ms=21340 tx=open req_id=req_1ffa1c7d9224
+2026-08-14 02:39:59,153 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=105 trace_id=48f60aeb3e322b4bdd753ccb5eb572dd req_id=req_3cff360fb62f
+2026-08-14 02:39:59,341 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:40:00,117 INFO  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After cleanup  stats (total=20, active=20, idle=0, waiting=37)
+2026-08-14 02:40:01,252 ERROR [http-nio-8080-exec-5] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_0d1c071e28e2
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:40:19,792 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=179 trace_id=341059bcbba4ba591c48d8cb3f2e4996 req_id=req_d4204011ff2e
+2026-08-14 02:40:20,781 INFO  [http-nio-8080-exec-10] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:40:29,366 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:40:42,236 ERROR [http-nio-8080-exec-21] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_22d3f248550e
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:40:48,012 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=155 trace_id=d8b6bb2ebb5e8e178133bf2f55577919 req_id=req_081b134a2c35
+2026-08-14 02:40:50,670 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=125 trace_id=bd8637b5391c9e906edea9b04626ec38 req_id=req_55f7f84ba4f9
+2026-08-14 02:41:05,388 WARN  [http-nio-8080-exec-13] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=9912 req_id=req_4eace7cc13f4
+2026-08-14 02:41:05,551 INFO  [http-nio-8080-exec-1] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=152 trace_id=e73384219d3c8d7fdc0a1a86a2484638 req_id=req_3168f8007349
+2026-08-14 02:41:08,230 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=200 trace_id=9449bdcd1a0232e05665c1c1d2e16b81 req_id=req_ac061c471522
+2026-08-14 02:41:09,077 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=69 trace_id=fd699b89e09701f9aa1deead940b33d5 req_id=req_90a169183db6
+2026-08-14 02:41:12,034 INFO  [http-nio-8080-exec-17] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:41:12,188 WARN  [http-nio-8080-exec-9] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=129430 tax_call_ms=21290 tx=open req_id=req_d4734122592e
+2026-08-14 02:41:15,126 WARN  [pg-log-tail] pg.forwarder - autovacuum: VACUUM ANALYZE public.orders (to prevent wraparound) elapsed=214.8s host=postgres-orders-w1
+2026-08-14 02:41:19,859 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=227 trace_id=c40c279d16fad3f9efc51097c9b84ea1 req_id=req_ae094d195cb7
+2026-08-14 02:41:22,582 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - auth token validated user_id=usr_357984 issuer=identity-service
+2026-08-14 02:41:22,587 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=93 trace_id=b96ed2425f3e727f696aa262efcec12c req_id=req_becbe9920626
+2026-08-14 02:41:23,037 ERROR [http-nio-8080-exec-21] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_64f557cdf2e6
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:41:25,958 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=83 trace_id=c47f5885cb41a34fb2dd61838512577a req_id=req_16c9339b4e21
+2026-08-14 02:41:30,035 INFO  [scheduler-2] c.a.platform.MaintenanceBanner - database maintenance window 02:00-04:00 UTC is active (informational)
+2026-08-14 02:41:31,436 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=36 trace_id=b309e82af53dae8269ed7f36ec5ea89d req_id=req_2db765895b49
+2026-08-14 02:41:47,505 WARN  [http-nio-8080-exec-19] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=93212 req_id=req_bd84bae37ce1
+2026-08-14 02:41:56,562 INFO  [http-nio-8080-exec-20] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=27 heap_before_mb=18274 heap_after_mb=9271
+2026-08-14 02:41:57,392 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=185 trace_id=fe1cc99ea56291c021091b74fb6d5c7b req_id=req_932c3f36cd8f
+2026-08-14 02:42:03,755 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:42:04,288 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=158 trace_id=286ce5f51ad3b59dd9ce39c84f6cd0ca req_id=req_5cf060d65326
+2026-08-14 02:42:04,328 ERROR [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_f822b21e2b7b
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:42:07,657 ERROR [http-nio-8080-exec-15] c.a.checkout.OrderController - order create failed status=503 order_id=ord_5181192252 req_id=req_affb8222c30e
+2026-08-14 02:42:09,023 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=122 trace_id=a289b5196726f666ec0a61ea815dc9ce req_id=req_169f45f70a21
+2026-08-14 02:42:30,115 ERROR [http-nio-8080-exec-23] c.a.checkout.TaxClient - tax vendor call retried attempt=2 vendor_ms=2180 req_id=req_45d186bce7b5
+2026-08-14 02:42:30,218 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=176 trace_id=853b5fff83f65da34ccdc7cc604e43a6 req_id=req_759ce6898c0f
+2026-08-14 02:42:43,995 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=110 trace_id=d282f7420d939dbfaa973ac1316cb8e1 req_id=req_1135a505fd29
+2026-08-14 02:42:45,314 ERROR [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_131ab45d213e
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:42:46,142 INFO  [http-nio-8080-exec-22] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=155 trace_id=6b31040f04b9a4267f5986a79863116f req_id=req_5c2f1ad04761
+2026-08-14 02:42:52,305 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=209 trace_id=f48b4fa4d488176bb76a8871d2b8d025 req_id=req_d22026227e0b
+2026-08-14 02:43:08,660 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=202 trace_id=68ff319d803c40a4083c99159a208167 req_id=req_68e92ffca516
+2026-08-14 02:43:11,118 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:43:14,329 INFO  [http-nio-8080-exec-17] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=22 heap_before_mb=18224 heap_after_mb=9221
+2026-08-14 02:43:18,377 WARN  [http-nio-8080-exec-16] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=91012 req_id=req_421d9ee42a49
+2026-08-14 02:43:25,360 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:43:26,049 ERROR [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_8b48d1ac9af3
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:43:30,092 ERROR [http-nio-8080-exec-13] c.a.checkout.TaxClient - tax vendor call retried attempt=2 vendor_ms=2180 req_id=req_08aa50888b41
+2026-08-14 02:43:32,156 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=132 trace_id=29fb67f8fe141297992af453a389a1b7 req_id=req_04239208cfa6
+2026-08-14 02:43:38,420 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=127 trace_id=6f7660522793d72c683298fb3e01302a req_id=req_ef0acd93f278
+2026-08-14 02:43:44,498 INFO  [http-nio-8080-exec-14] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=1 heap_before_mb=1814 heap_after_mb=911
+2026-08-14 02:44:00,141 ERROR [tx-audit-1] c.a.common.TxAudit - OrderQuoteService.quote holds transaction across TaxClient.fetch (span tax_call_ms=2140, tx_open_ms=2206) req_id=req_db7850652d68
+2026-08-14 02:44:03,207 WARN  [http-nio-8080-exec-14] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=92512 req_id=req_239897108de2
+2026-08-14 02:44:05,280 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=127 trace_id=392e9c60509f6ac632d8450d6015ee66 req_id=req_b1b54fd25c50
+2026-08-14 02:44:07,076 ERROR [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_5051a48a40bf
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:44:07,150 WARN  [http-nio-8080-exec-16] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=130430 tax_call_ms=21300 tx=open req_id=req_db26b1ecb31a
+2026-08-14 02:44:13,623 WARN  [http-nio-8080-exec-18] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=93512 req_id=req_6ee02998acd3
+2026-08-14 02:44:16,705 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=196 trace_id=ce760e45a35bbb9f7069c1c09fd9c46f req_id=req_e6b04307001c
+2026-08-14 02:44:18,052 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=59 trace_id=221fd5668b2cb384b3d84cdd330d72bd req_id=req_e754a61f8933
+2026-08-14 02:44:19,095 WARN  [http-nio-8080-exec-11] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=128430 tax_call_ms=21280 tx=open req_id=req_53045f584b2d
+2026-08-14 02:44:20,490 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=150 trace_id=045aa33c1f01f12e02782e14befde333 req_id=req_3c5beb655af9
+2026-08-14 02:44:22,953 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:44:26,603 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=153 trace_id=3602c265c49916093d5fc04b86b22518 req_id=req_909c7a0fa026
+2026-08-14 02:44:27,581 INFO  [http-nio-8080-exec-4] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=225 trace_id=c874243ba4b2f06a889c0967b1c51e67 req_id=req_3b2f4db12261
+2026-08-14 02:44:30,130 ERROR [http-nio-8080-exec-19] c.a.checkout.TaxClient - tax vendor call retried attempt=2 vendor_ms=2180 req_id=req_2c0b645359e2
+2026-08-14 02:44:32,694 INFO  [http-nio-8080-exec-7] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=184 trace_id=dca83e31a2832b11a76e780271b31ce8 req_id=req_c9103aef3cfe
+2026-08-14 02:44:47,362 WARN  [http-nio-8080-exec-3] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=15430 tax_call_ms=2150 tx=open req_id=req_3513dc769294
+2026-08-14 02:44:48,057 ERROR [http-nio-8080-exec-15] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_e1b6bb255728
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:44:56,676 INFO  [http-nio-8080-exec-18] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:45:00,183 ERROR [http-nio-8080-exec-1] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_7904b7fe95bb
+2026-08-14 02:45:02,747 ERROR [http-nio-8080-exec-15] c.a.checkout.OrderController - order create failed status=503 order_id=ord_1894361781 req_id=req_3d3251e00828
+2026-08-14 02:45:06,469 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=97 trace_id=2f9f127479b6be419b54a296a8acab00 req_id=req_2f49fa8d92b7
+2026-08-14 02:45:16,354 INFO  [http-nio-8080-exec-18] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:45:17,328 INFO  [http-nio-8080-exec-16] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=49 trace_id=fe2984469d40eb5b7230e1d5314aa235 req_id=req_832f17092510
+2026-08-14 02:45:18,211 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=213 trace_id=ce2e1d5ad25b7ba8e09128ff35746382 req_id=req_e0260b223358
+2026-08-14 02:45:19,528 INFO  [http-nio-8080-exec-5] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=32 heap_before_mb=18324 heap_after_mb=9321
+2026-08-14 02:45:24,093 ERROR [http-nio-8080-exec-23] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_b9ebfb5644df
+2026-08-14 02:45:29,307 ERROR [http-nio-8080-exec-16] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_7fad7e16f078
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:45:30,167 ERROR [tx-audit-1] c.a.common.TxAudit - OrderQuoteService.quote holds transaction across TaxClient.fetch (span tax_call_ms=2140, tx_open_ms=2206) req_id=req_0eed768cac8a
+2026-08-14 02:45:30,222 ERROR [http-nio-8080-exec-24] c.a.checkout.TaxClient - tax vendor call retried attempt=2 vendor_ms=2180 req_id=req_e57e73148e60
+2026-08-14 02:45:31,598 INFO  [http-nio-8080-exec-6] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=171 trace_id=b124aaf194a4d7789c8eb024c963339a req_id=req_a6d7bbba35e4
+2026-08-14 02:45:40,656 INFO  [http-nio-8080-exec-15] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:45:45,725 ERROR [http-nio-8080-exec-4] c.a.checkout.OrderController - order create failed status=503 order_id=ord_4419765334 req_id=req_9887e4f4395e
+2026-08-14 02:45:48,324 ERROR [http-nio-8080-exec-10] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_baadbb544296
+2026-08-14 02:45:48,330 ERROR [http-nio-8080-exec-21] c.a.checkout.OrderController - order create failed status=503 order_id=ord_4152781852 req_id=req_2d6210a0a54a
+2026-08-14 02:45:52,784 INFO  [http-nio-8080-exec-11] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:45:53,115 WARN  [http-nio-8080-exec-16] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=92712 req_id=req_df7035794d5d
+2026-08-14 02:46:02,865 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=133 trace_id=c217f22532c73552b2f8c350631283a6 req_id=req_0094ce616560
+2026-08-14 02:46:10,277 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=74 trace_id=85cdb36340cf415f209902dc0537a90a req_id=req_ba5b23d36d71
+2026-08-14 02:46:10,331 ERROR [http-nio-8080-exec-17] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_cf057b90dcb0
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:46:11,068 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=35 trace_id=ba63b4369d200d8c40e90f4c74510c6a req_id=req_fc5dd9433b94
+2026-08-14 02:46:12,343 ERROR [http-nio-8080-exec-14] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_9e0f06b1a5d3
+2026-08-14 02:46:12,565 INFO  [http-nio-8080-exec-5] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:46:16,788 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:46:19,430 INFO  [http-nio-8080-exec-10] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=17 heap_before_mb=18174 heap_after_mb=9171
+2026-08-14 02:46:20,667 INFO  [http-nio-8080-exec-24] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=126 trace_id=f180a75bc2b3745ccb2e6173467f9e01 req_id=req_177d9ca35f46
+2026-08-14 02:46:20,789 WARN  [http-nio-8080-exec-5] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=124430 tax_call_ms=21240 tx=open req_id=req_b0b418427ac0
+2026-08-14 02:46:22,724 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=221 trace_id=0916cdc30e73881ed0609f2b5ae0e215 req_id=req_5b63f953a51c
+2026-08-14 02:46:23,104 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=20 trace_id=c45f547b244bb9349fe078ff7fcfe0b3 req_id=req_9c3b4102c6da
+2026-08-14 02:46:30,220 ERROR [http-nio-8080-exec-10] c.a.checkout.TaxClient - tax vendor call retried attempt=2 vendor_ms=2180 req_id=req_a419c4171c20
+2026-08-14 02:46:31,195 WARN  [http-nio-8080-exec-6] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=9812 req_id=req_14115cee5952
+2026-08-14 02:46:36,310 ERROR [http-nio-8080-exec-11] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_9a9ec2c006e2
+2026-08-14 02:46:37,240 WARN  [http-nio-8080-exec-4] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=15430 tax_call_ms=2150 tx=open req_id=req_2cd6b4fc6d2d
+2026-08-14 02:46:45,269 WARN  [http-nio-8080-exec-1] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=9512 req_id=req_38e7c819f194
+2026-08-14 02:46:51,328 ERROR [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_4502070f017e
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:46:55,607 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=52 trace_id=85a27da7f6f589ba29e0c09c002c705a req_id=req_8e9180ab4b60
+2026-08-14 02:46:56,601 WARN  [http-nio-8080-exec-23] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=113430 tax_call_ms=21130 tx=open req_id=req_bd74ee1dcd6c
+2026-08-14 02:46:58,140 WARN  [http-nio-8080-exec-7] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=122430 tax_call_ms=21220 tx=open req_id=req_80ab1078877a
+2026-08-14 02:47:00,167 ERROR [http-nio-8080-exec-10] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_e52fdb5b2ffe
+2026-08-14 02:47:00,218 ERROR [tx-audit-1] c.a.common.TxAudit - OrderQuoteService.quote holds transaction across TaxClient.fetch (span tax_call_ms=2140, tx_open_ms=2206) req_id=req_1c9a80e113ed
+2026-08-14 02:47:04,463 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=37 trace_id=f2206c426231bae002992dad3d3f79d5 req_id=req_8aa6f41c1375
+2026-08-14 02:47:10,384 INFO  [http-nio-8080-exec-18] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=149 trace_id=dcc0c927612933a974e6f39277fe712e req_id=req_8fb6458d5cd7
+2026-08-14 02:47:23,460 ERROR [http-nio-8080-exec-3] c.a.checkout.OrderController - order create failed status=503 order_id=ord_1971632826 req_id=req_c9aad4fc2c48
+2026-08-14 02:47:24,045 ERROR [http-nio-8080-exec-19] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_fbc1ea8b7bcb
+2026-08-14 02:47:28,948 INFO  [http-nio-8080-exec-13] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=125 trace_id=bf4d7a946b0bb8ccc1fe0743155c8288 req_id=req_0a97e32add70
+2026-08-14 02:47:32,225 ERROR [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_64336a14ff59
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:47:48,325 ERROR [http-nio-8080-exec-16] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_6d9cd3a9a3ae
+2026-08-14 02:47:52,682 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=217 trace_id=3df5fb911adb651d14ef2896ff8fd34d req_id=req_bacb833b0f12
+2026-08-14 02:48:10,555 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=86 trace_id=e09f96e0328713c5db736c6c968856ff req_id=req_212e2cc15a05
+2026-08-14 02:48:12,329 ERROR [http-nio-8080-exec-1] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_1915c4ba054c
+2026-08-14 02:48:13,188 ERROR [http-nio-8080-exec-12] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_69d724013f3d
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:48:15,109 WARN  [http-nio-8080-exec-4] c.a.common.Deadline - request exceeded soft deadline path=/v1/checkout/session duration_ms=91212 req_id=req_de100b1ef2a5
+2026-08-14 02:48:15,649 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - /v1/cart completed method=GET path=/v1/cart status=200 duration_ms=168 trace_id=b4407df973f8387f5d85c043b264d470 req_id=req_e6fdf0c1924b
+2026-08-14 02:48:21,504 WARN  [http-nio-8080-exec-14] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=19430 tax_call_ms=2190 tx=open req_id=req_b20ea0c6e6da
+2026-08-14 02:48:25,030 ERROR [http-nio-8080-exec-18] c.a.checkout.OrderController - order create failed status=503 order_id=ord_4105711463 req_id=req_e417955cf744
+2026-08-14 02:48:27,461 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-08-14 02:48:27,868 INFO  [http-nio-8080-exec-21] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=8 heap_before_mb=1884 heap_after_mb=981
+2026-08-14 02:48:30,137 ERROR [tx-audit-1] c.a.common.TxAudit - OrderQuoteService.quote holds transaction across TaxClient.fetch (span tax_call_ms=2140, tx_open_ms=2206) req_id=req_503addf0b6ea
+2026-08-14 02:48:32,173 INFO  [http-nio-8080-exec-9] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=66 trace_id=422da16167ef3bafc9a4f6978bb4a48d req_id=req_d1ddb4f804d9
+2026-08-14 02:48:34,949 INFO  [http-nio-8080-exec-19] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=162 trace_id=a118c9ded36c1d3bd774977c3b68dc2b req_id=req_a0b8b3f799aa
+2026-08-14 02:48:36,187 ERROR [http-nio-8080-exec-12] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_4e14a9c18cae
+2026-08-14 02:48:36,553 WARN  [http-nio-8080-exec-14] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=119430 tax_call_ms=21190 tx=open req_id=req_7bb6a4e822ea
+2026-08-14 02:48:37,327 INFO  [http-nio-8080-exec-14] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:48:38,805 DEBUG [http-nio-8080-exec-18] c.a.checkout.api.Handler - metrics scrape served path=/metrics status=200 bytes=33214
+2026-08-14 02:48:42,575 DEBUG [http-nio-8080-exec-21] c.a.checkout.api.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_437964
+2026-08-14 02:48:47,931 INFO  [http-nio-8080-exec-21] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=204 trace_id=de82af6831890383046b91e6bf50c8dc req_id=req_b7600577330e
+2026-08-14 02:48:53,012 INFO  [http-nio-8080-exec-8] c.a.checkout.api.Handler - auth token validated user_id=usr_568728 issuer=identity-service
+2026-08-14 02:48:54,087 INFO  [http-nio-8080-exec-23] c.a.checkout.api.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-08-14 02:48:54,133 ERROR [http-nio-8080-exec-15] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_4f5438b27e01
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:49:00,168 ERROR [http-nio-8080-exec-14] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_b561df089ca2
+2026-08-14 02:49:03,985 WARN  [http-nio-8080-exec-5] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=127430 tax_call_ms=21270 tx=open req_id=req_7fbe07f19227
+2026-08-14 02:49:15,582 WARN  [http-nio-8080-exec-23] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=114430 tax_call_ms=21140 tx=open req_id=req_d907ffa4ca53
+2026-08-14 02:49:24,098 ERROR [http-nio-8080-exec-8] c.a.checkout.QuoteController - POST /v2/checkout/quote failed status=503 cause=CannotGetJdbcConnectionException req_id=req_51f5c90fa435
+2026-08-14 02:49:24,447 WARN  [http-nio-8080-exec-14] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=115430 tax_call_ms=21150 tx=open req_id=req_b9255d0292ce
+2026-08-14 02:49:27,189 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /v1/checkout/session completed method=GET path=/v1/checkout/session status=200 duration_ms=224 trace_id=b6993440593fbcd0e21cb19cbf6b6afe req_id=req_9bb1c8caef1f
+2026-08-14 02:49:28,290 INFO  [http-nio-8080-exec-3] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=180 trace_id=a2dd47d1ac9ff9a5f97732eb6f7a0041 req_id=req_63b0da73a82a
+2026-08-14 02:49:35,016 ERROR [http-nio-8080-exec-15] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_aba53ed6b275
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:49:41,036 WARN  [http-nio-8080-exec-20] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=133430 tax_call_ms=21330 tx=open req_id=req_3db1b36adec8
+2026-08-14 02:49:44,365 INFO  [http-nio-8080-exec-12] c.a.checkout.api.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=231 trace_id=b177ffe9b2ba39ec747bfc5af7684efc req_id=req_0d73bc88f262
+2026-08-14 02:49:53,161 WARN  [http-nio-8080-exec-11] c.a.checkout.OrderQuoteService - quote slow path=/v2/checkout/quote duration_ms=136430 tax_call_ms=21360 tx=open req_id=req_0f6a6e135cf4
+2026-08-14 02:50:16,001 ERROR [http-nio-8080-exec-23] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_9f43e1c81bb8
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:50:57,235 ERROR [http-nio-8080-exec-6] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_8ab090c7579d
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:51:38,022 ERROR [http-nio-8080-exec-9] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_7831c82968ac
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:52:19,240 ERROR [http-nio-8080-exec-9] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_76818915bef9
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:53:00,014 ERROR [http-nio-8080-exec-11] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_5a9cbb088ee2
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)
+2026-08-14 02:53:41,346 ERROR [http-nio-8080-exec-13] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection is not available, request timed out after 30001ms (total=20, active=20, idle=0, waiting=63) req_id=req_504c46553c8e
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+	at com.acme.checkout.OrderQuoteService.persistQuote(OrderQuoteService.java:141)
+	at com.acme.checkout.OrderQuoteService.quote(OrderQuoteService.java:96)
+	at com.acme.checkout.QuoteController.postQuote(QuoteController.java:52)

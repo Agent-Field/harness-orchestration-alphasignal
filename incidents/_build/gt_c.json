@@ -1,0 +1,200 @@
+{
+  "id": "inc-009",
+  "title": "feed-api sheds load every morning because an HPA sweep made CPU the scaling signal",
+  "failure_class": "misconfigured_autoscaling",
+  "difficulty": "medium",
+  "difficulty_rank": 6,
+  "affected_service": "feed-api",
+  "alert_id": "alt-2026-08-12-0806-feed",
+  "incident_start_utc": "2026-08-12T07:58:00Z",
+  "alert_fired_utc": "2026-08-12T08:06:00Z",
+  "root_cause": {
+    "component": "feed-api HorizontalPodAutoscaler",
+    "summary": "The HPA standardisation sweep (dep-4130) replaced a requests-per-second target with a 70% CPU target and dropped minReplicas from 12 to 3. feed-api is IO-bound and sits at ~20% CPU even when fully loaded, so the HPA read low CPU as idleness and scaled down from 12 to 3 during the pre-peak lull. When the ordinary morning ramp arrived, three replicas hit the 120-inflight limit and began shedding with 503s, and scale-up was further delayed by a 180-second stabilisation window that the same sweep introduced.",
+    "mechanism": "wrong scaling signal for an IO-bound workload -> scale-in before peak -> shedding, with slow scale-out",
+    "originating_change": "dep-4130 (HPA sweep, 2026-08-09)",
+    "originating_artifact": "deploys.json"
+  },
+  "root_cause_must_include": ["hpa", "cpu", "replicas"],
+  "root_cause_keywords": ["autoscal", "minreplicas", "scaled down", "io-bound", "scaling metric", "requests_per_second", "stabilization", "dep-4130", "shedding", "max_inflight"],
+  "contributing_factors": [
+    {"id": "cf-009-1", "summary": "scaleUp stabilisation went from 0s to 180s and scaleDown from 300s to 60s, so the autoscaler is now eager to shrink and reluctant to grow — exactly backwards for a service with a daily ramp."},
+    {"id": "cf-009-2", "summary": "The sweep was applied uniformly across services without checking which of them are CPU-bound."},
+    {"id": "cf-009-3", "summary": "The alert auto-resolved on the two previous mornings, so the pattern was never investigated."}
+  ],
+  "required_evidence": [
+    {"id": "ev-009-1", "artifact": "metrics.json", "kind": "metric_series", "match": "replicas", "why": "12 -> 6 -> 3 during the half hour before the ramp, then clamped at minReplicas while load rises."},
+    {"id": "ev-009-2", "artifact": "metrics.json", "kind": "metric_series", "match": "rps_same_time_yesterday", "why": "Today's traffic tracks yesterday within 2%. Demand is not the variable; capacity is."},
+    {"id": "ev-009-3", "artifact": "logs.txt", "kind": "log_line", "match": "from=12 to=6 metric=resource/cpu current_pct=17 target_pct=70", "why": "The autoscaler's own reasoning: it scaled down because CPU was 17%."},
+    {"id": "ev-009-4", "artifact": "logs.txt", "kind": "log_line", "match": "hpa scale-up suppressed by stabilization window", "why": "Explains why it did not recover once load arrived."},
+    {"id": "ev-009-5", "artifact": "deploys.json", "kind": "change_event", "match": "dep-4130", "why": "The diff shows the metric swap, minReplicas 12 -> 3, and both stabilisation window changes."},
+    {"id": "ev-009-6", "artifact": "topology.json", "kind": "topology_attribute", "match": "io-bound", "why": "States that ~85% of wall time is spent waiting and that CPU at full load is ~22%, which is why CPU is the wrong signal."},
+    {"id": "ev-009-7", "artifact": "alert.json", "kind": "alert_field", "match": "history", "why": "Fired and auto-resolved at the same hour on the two previous weekdays: a daily pattern, not a one-off event."}
+  ],
+  "red_herrings": [
+    {"id": "rh-009-1", "artifact": "deploys.json", "match": "dep-4141", "why_tempting": "A CREATE INDEX CONCURRENTLY started at 07:30, half an hour before the alert, and index builds are known to hurt.", "why_wrong": "db_query_p99_ms moves from 8ms to 12ms, which is irrelevant against a 4.6s p99, and CONCURRENTLY does not take a blocking lock. It also does not explain the two previous mornings.", "penalty": 1.0},
+    {"id": "rh-009-2", "artifact": "metrics.json", "match": "rps", "why_tempting": "Traffic rises 5x during the window, which supports 'a traffic spike overwhelmed us'.", "why_wrong": "It is the same ramp as every weekday and it is matched by rps_same_time_yesterday; it used to be served by 12 replicas.", "penalty": 1.0},
+    {"id": "rh-009-3", "artifact": "deploys.json", "match": "dep-4102", "why_tempting": "A ranking model refresh is the kind of change that makes a service slower.", "why_wrong": "It shipped five days earlier and ranking_service_p99_ms is flat at ~200ms.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["capacity_autoscaling", "config_drift", "traffic_demand", "long_horizon_change", "timeline", "saturation_compute"],
+  "lenses_not_warranted": ["dns_service_discovery", "credential_expiry", "clock_time", "data_contract", "cache_behavior", "external_vendor", "memory_lifecycle", "security_abuse"],
+  "requires_correlation_across": ["metrics.json", "deploys.json", "topology.json", "alert.json"],
+  "correct_remediation": {
+    "immediate": "Raise minReplicas back to 12 and cut scaleUp stabilisation to 0 so the service can survive the rest of the ramp.",
+    "durable": "Scale feed-api on inflight requests or RPS per replica rather than CPU, and audit the rest of the sweep for other IO-bound services that were quietly given the wrong signal."
+  },
+  "wrong_remediations": ["Pause the index migration", "Raise maxReplicas", "Raise the max_inflight limit per replica", "Add a bigger instance type"],
+  "oneshot_prediction": {"verdict": "coin_flip", "rationale": "The replica series and the scale-down log line make it easy to say 'it scaled down and could not keep up'. The half that is usually missed is why: that CPU is the wrong signal for this workload and that a fleet-wide sweep three days earlier introduced it. Answers that stop at 'increase capacity' score partial recall and get the durable remediation wrong."},
+  "scoring": {"min_required_evidence": 3}
+},
+{
+  "id": "inc-010",
+  "title": "auth-service outage sustained by client retry amplification after a 45-second blip",
+  "failure_class": "retry_storm_cascading_failure",
+  "difficulty": "hard",
+  "difficulty_rank": 8,
+  "affected_service": "auth-service",
+  "alert_id": "alt-2026-07-28-0904-auth",
+  "incident_start_utc": "2026-07-28T09:00:04Z",
+  "alert_fired_utc": "2026-07-28T09:04:00Z",
+  "root_cause": {
+    "component": "web-bff retry policy against auth-service",
+    "summary": "A routine node reboot took one of nine auth-service pods out for about 45 seconds. web-bff's retry policy, changed the previous afternoon to 5 attempts with no backoff, no jitter and a 400ms timeout, turned that blip into 5x offered load; checkout-api and orders-service added 3x with no backoff of their own. Offered load went from 5.4k to 31k rps against 8.1k rps of capacity, so the service stayed saturated long after the original pod recovered. The system is in a stable failure state that no longer depends on the trigger, which is why restarting pods only helps for about 90 seconds.",
+    "mechanism": "transient trigger -> retry amplification without backoff -> self-sustaining congestion collapse (metastable failure)",
+    "originating_change": "dep-1201 (web-bff retry policy) created the vulnerability; dep-1206 (node reboot) was the trigger",
+    "originating_artifact": "deploys.json plus metrics.json attempt-rate split"
+  },
+  "root_cause_must_include": ["retry", "amplif", "backoff"],
+  "root_cause_keywords": ["retry storm", "no jitter", "5 attempts", "metastable", "congestion collapse", "self-sustaining", "goodput", "load shedding", "dep-1201", "first attempt"],
+  "contributing_factors": [
+    {"id": "cf-010-1", "summary": "web-bff's timeout was cut from 2000ms to 400ms in the same change, so under load almost every request times out and retries even when the server would have answered."},
+    {"id": "cf-010-2", "summary": "auth-service has no admission control or load shedding, so it accepts 31k rps and does useless work on requests whose callers have already given up."},
+    {"id": "cf-010-3", "summary": "Three of the four callers retry with no backoff and no jitter, so retries arrive in synchronised waves."},
+    {"id": "cf-010-4", "summary": "auth-service is a universal fan-in, so every caller retrying at once is the entire company retrying at once."}
+  ],
+  "required_evidence": [
+    {"id": "ev-010-1", "artifact": "metrics.json", "kind": "metric_series", "match": "verify_rps_first_attempt", "why": "Flat at ~5.4k while verify_rps goes to 31k. Every bit of the increase is retries; real demand never changed."},
+    {"id": "ev-010-2", "artifact": "metrics.json", "kind": "metric_series", "match": "unique_sessions_per_min", "why": "Flat at ~41k. The population of real users is unchanged, which independently rules out a traffic-demand explanation."},
+    {"id": "ev-010-3", "artifact": "metrics.json", "kind": "metric_series", "match": "healthy_replicas", "why": "Back to 9 by 09:01 and stays there. The trigger was gone three minutes before the alert fired and 25 minutes before the incident ended."},
+    {"id": "ev-010-4", "artifact": "logs.txt", "kind": "log_line", "match": "attempt_1=5411 attempt_2=5203 attempt_3=5011 attempt_4=4802 attempt_5=4611 distinct_trace_ids=5388", "why": "The attempt histogram: nearly every request is being tried five times, against 5388 distinct trace ids."},
+    {"id": "ev-010-5", "artifact": "logs.txt", "kind": "log_line", "match": "retry received for request whose original is still inflight", "why": "The retries are duplicating work that has not failed yet."},
+    {"id": "ev-010-6", "artifact": "deploys.json", "kind": "change_event", "match": "dep-1201", "why": "maxRetries 1 -> 5, backoff none, timeout 2000 -> 400, shipped the day before."},
+    {"id": "ev-010-7", "artifact": "logs.txt", "kind": "log_line", "match": "goodput", "why": "79% of the work being done is wasted, which is the signature of congestion collapse rather than of overload by real demand."}
+  ],
+  "red_herrings": [
+    {"id": "rh-010-1", "artifact": "deploys.json", "match": "dep-1206", "why_tempting": "The node reboot is a real event at exactly the right moment and it did cause the first spike. It is the most satisfying single-cause answer available.", "why_wrong": "It is the trigger, not the cause. It ended at 09:00:52 and the outage continued for 25 minutes afterwards, so anything that stops at the reboot cannot explain the duration and yields a fix that does not work.", "penalty": 1.0},
+    {"id": "rh-010-2", "artifact": "metrics.json", "match": "cpu_pct", "why_tempting": "auth-service CPU is pinned at 98%, which reads as under-provisioning.", "why_wrong": "Capacity is 8.1k rps against 5.4k rps of real demand — 50% headroom. It is saturated by amplified load, and adding replicas raises the amplification ceiling rather than removing it.", "penalty": 1.0},
+    {"id": "rh-010-3", "artifact": "deploys.json", "match": "dep-1180", "why_tempting": "auth-service itself changed four days ago to cache introspection results, and caching changes are a familiar source of correctness bugs.", "why_wrong": "It has been running for four days without incident and redis_auth_p99_ms is flat at ~1.2ms.", "penalty": 0.5},
+    {"id": "rh-010-4", "artifact": "logs.txt", "match": "operator initiated rolling restart", "why_tempting": "The restarts produce a brief recovery, which looks like progress and invites 'restart harder'.", "why_wrong": "The 88-second recovery followed by a return to 31% error rate is diagnostic of a metastable state, not of a fix.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["retry_amplification", "traffic_demand", "timeline", "change_correlation", "dependency_health", "saturation_compute"],
+  "lenses_not_warranted": ["dns_service_discovery", "credential_expiry", "clock_time", "data_contract", "cache_behavior", "memory_lifecycle", "external_vendor", "resource_contention"],
+  "requires_correlation_across": ["metrics.json", "deploys.json", "logs.txt"],
+  "correct_remediation": {
+    "immediate": "Break the amplification loop, not the trigger: revert web-bff to 1 retry with a 2s timeout, or shed load at auth-service so that goodput recovers. Adding replicas without doing this will not exit the state.",
+    "durable": "Mandate jittered exponential backoff and retry budgets for every caller of a tier-0 fan-in service; add admission control and load shedding to auth-service; alert on the ratio of total attempts to first attempts."
+  },
+  "wrong_remediations": ["Scale auth-service to 30 replicas", "Restart auth-service again", "Stop the node patching programme", "Raise the caller timeouts without touching retry counts"],
+  "oneshot_prediction": {"verdict": "coin_flip", "rationale": "A model that reads the first-attempt series or the attempt histogram gets it quickly. The trap is that a complete, plausible causal story (node reboot -> pod down -> errors) is available in the first two artifacts, and it is wrong in the way that matters: it explains the start and not the persistence. Answers that name the reboot alone should score 0.5 recall at best."},
+  "scoring": {"min_required_evidence": 3}
+},
+{
+  "id": "inc-011",
+  "title": "booking-api 401s from clock skew on one node after a hypervisor live migration",
+  "failure_class": "clock_skew",
+  "difficulty": "hard",
+  "difficulty_rank": 7,
+  "affected_service": "booking-api",
+  "alert_id": "alt-2026-06-30-1422-booking",
+  "incident_start_utc": "2026-06-30T14:08:00Z",
+  "alert_fired_utc": "2026-06-30T14:22:00Z",
+  "root_cause": {
+    "component": "node eu-c1-n07",
+    "summary": "Last night's live migration left eu-c1-n07 with an unstable TSC; the kernel fell back to hpet, chronyd lost all sources and the node's clock drifted ahead by more than 90 seconds. booking-api-77bd-c3 runs on that node. Its JWT validation compares the token's iat against its own clock with 30 seconds of leeway, so it rejects freshly minted, correctly signed tokens as 'used before issued'. Because the edge round-robins across six pods, one user in six fails on any given request, and the same partner webhook succeeds or fails depending on which pod answers.",
+    "mechanism": "single-node time drift -> claim-time validation failures -> intermittent 401s distributed by load balancing",
+    "originating_change": "dep-7051 (hypervisor live migration), with the drift accumulating over the following 15 hours",
+    "originating_artifact": "logs.txt (chronyd and kernel lines) plus metrics.json per-node clock offset"
+  },
+  "root_cause_must_include": ["clock", "skew", "eu-c1-n07"],
+  "root_cause_keywords": ["ntp", "chronyd", "unsynchronised", "time drift", "iat", "token used before issued", "leeway", "live migration", "tsc unstable", "one pod"],
+  "contributing_factors": [
+    {"id": "cf-011-1", "summary": "JWT leeway is 30 seconds and the drift is 93; a larger leeway would have masked this longer but is not the fix."},
+    {"id": "cf-011-2", "summary": "Nothing alerts on per-node NTP offset, so the node drifted for fifteen hours before anything noticed."},
+    {"id": "cf-011-3", "summary": "Round-robin load balancing spreads the failure across all users instead of concentrating it, which destroys the 'which users are affected' signal and makes it look random."},
+    {"id": "cf-011-4", "summary": "The webhook HMAC verifier uses a 60-second timestamp window and fails for the same reason, which widens the symptom into a second subsystem and reinforces the 'auth is broken' theory."}
+  ],
+  "required_evidence": [
+    {"id": "ev-011-1", "artifact": "logs.txt", "kind": "log_line", "match": "System clock unsynchronised", "why": "chronyd on eu-c1-n07: no reachable sources, last update 15h ago, local stratum 10."},
+    {"id": "ev-011-2", "artifact": "logs.txt", "kind": "log_line", "match": "clocksource watchdog: tsc unstable", "why": "Connects the time failure to the live migration."},
+    {"id": "ev-011-3", "artifact": "logs.txt", "kind": "log_line", "match": "reason=\"token used before issued\"", "why": "The rejection reason is a time comparison, not a signature or key failure."},
+    {"id": "ev-011-4", "artifact": "logs.txt", "kind": "log_line", "match": "signature=valid", "why": "Signature verification passes on every rejected token, which eliminates the key-rotation theory directly."},
+    {"id": "ev-011-5", "artifact": "metrics.json", "kind": "metric_series", "match": "node_clock_offset_s_eu_c1_n07", "why": "Climbs to 94 seconds while eu_c1_n02 stays at milliseconds."},
+    {"id": "ev-011-6", "artifact": "metrics.json", "kind": "metric_series", "match": "error_rate_401_pct_pod_c3", "why": "99% on pod c3 against 0.6% on pod a1. One pod of six is the entire incident, which matches the 16.8% aggregate."},
+    {"id": "ev-011-7", "artifact": "topology.json", "kind": "topology_attribute", "match": "booking-api-77bd-c3", "why": "The pod-to-node map places c3 on eu-c1-n07, the node in the migration list."},
+    {"id": "ev-011-8", "artifact": "logs.txt", "kind": "log_line", "match": "level=info svc=booking-api pod=booking-api-77bd-b2", "why": "Interleaved lines from c3 carry timestamps ~90 seconds ahead of adjacent lines from other pods; the log file is out of order with itself."}
+  ],
+  "red_herrings": [
+    {"id": "rh-011-1", "artifact": "deploys.json", "match": "dep-7020", "why_tempting": "A JWT signing key rotation three days ago is the leading theory in the incident channel, and the README says so. It is the most available auth-shaped explanation.", "why_wrong": "Every rejected token carries the current kid, JWKS fetch failures are zero, and verification_failures_due_to_signature is 0. A key problem would fail on all pods equally.", "penalty": 1.0},
+    {"id": "rh-011-2", "artifact": "deploys.json", "match": "dep-7044", "why_tempting": "booking-api shipped a calendar-caching change the day before.", "why_wrong": "It deployed to all six pods; five of them have a 0.5% 401 rate.", "penalty": 1.0},
+    {"id": "rh-011-3", "artifact": "metrics.json", "match": "webhook_signature_failures_per_min", "why_tempting": "Partner webhook signature failures alongside token failures suggests a shared secret or credential problem.", "why_wrong": "Both subsystems fail for the same reason — a timestamp window — and both fail only on pod c3.", "penalty": 0.5}
+  ],
+  "lenses_warranted": ["clock_time", "blast_scope", "credential_expiry", "long_horizon_change", "timeline", "network_path"],
+  "lenses_not_warranted": ["cache_behavior", "connection_pool", "queue_backpressure", "data_contract", "capacity_autoscaling", "memory_lifecycle", "retry_amplification", "external_vendor"],
+  "requires_correlation_across": ["logs.txt", "metrics.json", "topology.json", "deploys.json"],
+  "correct_remediation": {
+    "immediate": "Cordon eu-c1-n07 and evict booking-api-77bd-c3, or force a chrony step on that node. The 401 rate drops to baseline as soon as no pod is serving from the skewed clock.",
+    "durable": "Alert on per-node NTP offset above one second; make the post-live-migration checklist verify clocksource and chrony sync; audit the other 39 migrated VMs."
+  },
+  "wrong_remediations": ["Roll back the JWT key rotation", "Increase the JWT leeway to 120 seconds", "Restart all booking-api pods", "Widen the webhook timestamp window"],
+  "oneshot_prediction": {"verdict": "coin_flip", "rationale": "The decisive line reads 'System clock unsynchronised' in plain language, so a model that reads the whole log usually finds it. Two things go wrong in practice: the credential_expiry lens is genuinely warranted here and leads straight to the key-rotation red herring the README pre-loads, and the per-pod split lives in a metric series name rather than in prose. Note that this incident and inc-003 both look like auth failures and want almost disjoint lens sets, which is the cleanest demonstration in the corpus that per-incident lens selection has to be real."},
+  "scoring": {"min_required_evidence": 3}
+},
+{
+  "id": "inc-012",
+  "title": "pricing-consumer lag from an upstream producer schema change",
+  "failure_class": "data_contract_break",
+  "difficulty": "medium",
+  "difficulty_rank": 3,
+  "affected_service": "pricing-consumer",
+  "alert_id": "alt-2026-08-18-1648-pricing",
+  "incident_start_utc": "2026-08-18T16:06:00Z",
+  "alert_fired_utc": "2026-08-18T16:48:00Z",
+  "root_cause": {
+    "component": "pricing-publisher 5.0.0 -> catalog.price.v1",
+    "summary": "pricing-publisher 5.0.0 (dep-9140, another team) registered schema version 7 for catalog.price.v1-value after setting the subject's compatibility mode to NONE, changing price_cents from int to a decimal-as-string and adding a nullable promotion record. pricing-consumer reads with schema v6 and cannot deserialise the new payloads, so ~98% of records go to the DLQ. Because the DLQ policy is commit_and_continue, the consumer keeps reading and committing at full rate, which is why the lag alert is the only symptom and the consumer never crashes.",
+    "mechanism": "cross-team producer schema change with compatibility checking disabled -> consumer deserialisation failure -> stale downstream data",
+    "originating_change": "dep-9140 (pricing-publisher 5.0.0) plus the compatibility mode change to NONE at 16:04Z",
+    "originating_artifact": "deploys.json plus logs.txt deserialisation errors"
+  },
+  "root_cause_must_include": ["schema", "pricing-publisher", "deserial"],
+  "root_cause_keywords": ["price_cents", "int to string", "schema version 7", "compatibility none", "data contract", "dlq", "producer", "breaking change", "dep-9140", "reader schema"],
+  "contributing_factors": [
+    {"id": "cf-012-1", "summary": "Schema registry compatibility for the subject was set to NONE immediately before the release, which removed the one control that would have blocked it."},
+    {"id": "cf-012-2", "summary": "The DLQ policy commits offsets and continues, so a total data outage looks like a healthy consumer with growing lag rather than a crash."},
+    {"id": "cf-012-3", "summary": "The producer is owned by a different team, so the change that caused the incident is not in the on-call engineer's usual deploy view."},
+    {"id": "cf-012-4", "summary": "Nothing alerts on DLQ rate or on successful-write rate, only on lag, which delayed detection by 40 minutes."}
+  ],
+  "required_evidence": [
+    {"id": "ev-012-1", "artifact": "logs.txt", "kind": "log_line", "match": "Cannot deserialize value of type `int` from String \\\"12.99\\\"", "why": "The exact type break, on the exact field."},
+    {"id": "ev-012-2", "artifact": "logs.txt", "kind": "log_line", "match": "\"writer_version\":7,\"reader_version\":6,\"compatibility\":\"NONE\"", "why": "Producer and consumer are on different schema versions with compatibility checking off."},
+    {"id": "ev-012-3", "artifact": "deploys.json", "kind": "change_event", "match": "dep-9140", "why": "The cross-team producer release at 16:05Z, whose diff names the int-to-string change and the compatibility downgrade."},
+    {"id": "ev-012-4", "artifact": "metrics.json", "kind": "metric_series", "match": "successful_writes_per_min", "why": "Collapses from 12k to 210 while processed_per_min stays at 12k. The consumer is busy and useless, which is the distinguishing signature versus a slow consumer."},
+    {"id": "ev-012-5", "artifact": "metrics.json", "kind": "metric_series", "match": "dlq_per_min", "why": "3 to 11,800 per minute, starting at 16:06 and not at the broker restart."},
+    {"id": "ev-012-6", "artifact": "logs.txt", "kind": "log_line", "match": "sample_payload", "why": "The DLQ sample payload shows the new shape directly, including the added promotion field."}
+  ],
+  "red_herrings": [
+    {"id": "rh-012-1", "artifact": "deploys.json", "match": "dep-9133", "why_tempting": "A rolling broker restart with a visible consumer group rebalance is the first thing anyone in the channel points at, and rebalances genuinely do cause lag.", "why_wrong": "It completed at 15:38, the log shows 'lag recovered after rebalance' with lag back to 1180, and rebalance_events is zero for the rest of the window. The lag starts 28 minutes later.", "penalty": 1.0},
+    {"id": "rh-012-2", "artifact": "deploys.json", "match": "dep-9110", "why_tempting": "Our own team shipped a Kafka client and Jackson version bump this morning, and Jackson is the library throwing the exception.", "why_wrong": "It shipped at 09:15 and ran cleanly for seven hours; the errors begin one minute after the producer release, not after ours.", "penalty": 1.0},
+    {"id": "rh-012-3", "artifact": "metrics.json", "match": "processed_per_min", "why_tempting": "Flat throughput plus growing lag reads as 'the consumer is too slow, scale it out'.", "why_wrong": "The consumer is keeping up with the read rate; it is the write rate that collapsed. Adding consumers multiplies DLQ throughput.", "penalty": 1.0}
+  ],
+  "lenses_warranted": ["data_contract", "queue_backpressure", "change_correlation", "dependency_health", "timeline", "observability_gap"],
+  "lenses_not_warranted": ["dns_service_discovery", "credential_expiry", "clock_time", "cache_behavior", "memory_lifecycle", "resource_contention", "connection_pool", "security_abuse"],
+  "requires_correlation_across": ["logs.txt", "deploys.json", "metrics.json"],
+  "correct_remediation": {
+    "immediate": "Ask merchandising to roll back pricing-publisher 5.0.0, or ship a consumer that accepts both shapes for price_cents. Then replay the DLQ from offset ~16:06Z; retention is 72h so the data is recoverable.",
+    "durable": "Restore FULL compatibility on the subject and forbid per-release downgrades; alert on DLQ rate and on successful-write rate rather than only on lag; make the deploy feed surface changes by upstream producers to topics you consume."
+  },
+  "wrong_remediations": ["Scale out consumer replicas", "Reset the consumer group offsets to latest", "Roll back our own dependency bump", "Restart the Kafka brokers"],
+  "oneshot_prediction": {"verdict": "likely_solved", "rationale": "The deserialisation error names the field and both schema versions, and the producer deploy is in the feed. The failure mode is not identifying the break but attributing it: answers often blame our own morning dependency bump because Jackson appears in the stack trace, which yields a rollback that does nothing. The DLQ replay step is also routinely omitted, so the data stays lost even when the diagnosis is right."},
+  "scoring": {"min_required_evidence": 3}
+}

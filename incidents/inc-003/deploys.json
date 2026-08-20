@@ -1,0 +1,39 @@
+{
+  "lookback_hours": 96,
+  "events": [
+    {
+      "id": "dep-9901",
+      "at": "2026-07-28T16:20:00Z",
+      "kind": "deploy",
+      "service": "identity-service",
+      "version": "6.1.3",
+      "actor": "spatel",
+      "change": "add device-binding claim to access tokens"
+    },
+    {
+      "id": "dep-9930",
+      "at": "2026-07-30T11:05:00Z",
+      "kind": "config",
+      "service": "identity-service",
+      "actor": "spatel",
+      "change": "IAM: tighten session policy, reduce refresh token TTL 30d -> 7d",
+      "diff_summary": "policies/session.hcl: refresh_ttl 720h -> 168h"
+    },
+    {
+      "id": "dep-9941",
+      "at": "2026-07-31T09:40:00Z",
+      "kind": "config",
+      "service": "waf",
+      "actor": "security-bot",
+      "change": "add rate-limit rule for /oauth/token from 203.0.113.0/24"
+    },
+    {
+      "id": "freeze-08",
+      "at": "2026-07-31T18:00:00Z",
+      "kind": "policy",
+      "service": "*",
+      "actor": "release-eng",
+      "change": "weekend change freeze in effect until 2026-08-03T08:00Z"
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+2026-07-09 01:58:00,354 INFO  [http-nio-8080-exec-8] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=121 trace_id=6181264bff889488eb10a3de3363362e req_id=req_3ee90f27ed6d
+2026-07-09 01:58:00,686 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 01:58:05,624 INFO  [http-nio-8080-exec-5] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=6 heap_before_mb=1864 heap_after_mb=961
+2026-07-09 01:58:17,476 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=228 trace_id=be20bd1a627db808f19869c046ef4389 req_id=req_636d844385c8
+2026-07-09 01:58:18,212 INFO  [http-nio-8080-exec-11] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=198 trace_id=bcd2b65e0a2fd4bb5127bed27996bb22 req_id=req_cc171c109e44
+2026-07-09 01:58:23,212 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=232 trace_id=ff0b8db4ba18b6f78aced28cc4e1ffb0 req_id=req_50ea8c2fe2f9
+2026-07-09 01:58:25,768 INFO  [http-nio-8080-exec-2] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=7 heap_before_mb=1874 heap_after_mb=971
+2026-07-09 01:58:29,416 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 01:58:41,810 INFO  [http-nio-8080-exec-18] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=25 heap_before_mb=18254 heap_after_mb=9251
+2026-07-09 01:58:42,403 INFO  [http-nio-8080-exec-22] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=6499 acquirer_ms=217 req_id=req_1d84025440bb
+2026-07-09 01:58:47,804 INFO  [http-nio-8080-exec-12] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=26499 acquirer_ms=33 req_id=req_b8ad5a16bfc4
+2026-07-09 01:59:02,709 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=75 trace_id=cd5cd8d197854e3f373b91c9a9fa3203 req_id=req_d14d25e742bd
+2026-07-09 01:59:03,681 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=234 trace_id=ecbac5c7a790e783e7600bd4cfa88801 req_id=req_6e792a667bba
+2026-07-09 01:59:15,312 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=88 trace_id=10b885c65974b99fca8a4a6b1f568496 req_id=req_5f6d42a5065f
+2026-07-09 01:59:21,008 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=119 trace_id=6e2fd734fc5b9b0bb517ced986953e6b req_id=req_2416e18b8308
+2026-07-09 01:59:27,908 INFO  [http-nio-8080-exec-16] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=7 heap_before_mb=1874 heap_after_mb=971
+2026-07-09 01:59:35,574 INFO  [http-nio-8080-exec-11] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=29 trace_id=e5890886a57fb207dcd27a290fee439e req_id=req_76515e6dd4ac
+2026-07-09 01:59:36,777 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=141 trace_id=3a59933950e1791590a6993c7157f9b2 req_id=req_c3e10f07d082
+2026-07-09 01:59:39,863 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=45 trace_id=053c056dd3115673dd2f753f491e3d0f req_id=req_e01e94caf87b
+2026-07-09 01:59:49,221 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 01:59:50,804 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 01:59:53,918 INFO  [http-nio-8080-exec-16] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=5499 acquirer_ms=232 req_id=req_486e8da463fe
+2026-07-09 01:59:55,299 INFO  [http-nio-8080-exec-22] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=21250 acquirer_ms=97 req_id=req_6c164773677e
+2026-07-09 01:59:58,712 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - session refreshed user_id=usr_294422 ttl_s=1800
+2026-07-09 02:00:18,875 INFO  [http-nio-8080-exec-22] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=19499 acquirer_ms=232 req_id=req_75b0e99d8539
+2026-07-09 02:00:23,119 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=130 trace_id=5e3ecdf768293509ff3ffec82d01e5a3 req_id=req_a2c793015554
+2026-07-09 02:00:28,461 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=147 trace_id=3e6b26d72608041579bae18cb67f57a7 req_id=req_933df98eb506
+2026-07-09 02:00:32,248 DEBUG [http-nio-8080-exec-15] c.a.common.Pools - thread pool stats active=19 queued=0
+2026-07-09 02:00:36,856 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=173 trace_id=c3a1287159989913e101c2d1a32f2736 req_id=req_45d6a6549cff
+2026-07-09 02:00:43,641 DEBUG [http-nio-8080-exec-10] c.a.payments.gateway.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_224451
+2026-07-09 02:00:46,068 DEBUG [http-nio-8080-exec-23] c.a.payments.gateway.Handler - metrics scrape served path=/metrics status=200 bytes=12214
+2026-07-09 02:00:50,800 INFO  [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=27499 acquirer_ms=152 req_id=req_49879bdabb80
+2026-07-09 02:00:56,480 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=8 trace_id=cd09c8436c9fedfaafe78b93c56f8b8b req_id=req_0d997f4f7c54
+2026-07-09 02:00:58,836 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=43 trace_id=7dc6f41058709058b32a04f89710fa82 req_id=req_9e6954e6457e
+2026-07-09 02:01:00,045 INFO  [http-nio-8080-exec-16] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=1499 acquirer_ms=158 req_id=req_a600609b210e
+2026-07-09 02:01:07,111 DEBUG [http-nio-8080-exec-23] c.a.payments.gateway.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_228060
+2026-07-09 02:01:09,242 DEBUG [http-nio-8080-exec-15] c.a.common.Pools - thread pool stats active=15 queued=0
+2026-07-09 02:01:12,595 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=228 trace_id=26d54082176d600e06ddb241a08c484f req_id=req_221c7b668890
+2026-07-09 02:01:14,803 INFO  [http-nio-8080-exec-22] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=33499 acquirer_ms=105 req_id=req_2a1631b02ecb
+2026-07-09 02:01:17,630 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=101 trace_id=4142176b1849b49d4207dcf16734305e req_id=req_1c9fafd15e40
+2026-07-09 02:01:19,969 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=214 trace_id=95675957bb7cf60496472f48aa9b3463 req_id=req_be30a8d49265
+2026-07-09 02:01:20,039 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:01:23,426 INFO  [http-nio-8080-exec-7] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=19499 acquirer_ms=145 req_id=req_94b9d7a31ca3
+2026-07-09 02:01:31,805 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=68 trace_id=36b5be449b6e3f6697ec241343b00a24 req_id=req_ef305089b927
+2026-07-09 02:01:44,340 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=108 trace_id=bfe5057b769916d98aa9f3e6e2c6dccd req_id=req_38d0c459e3a9
+2026-07-09 02:01:46,883 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=171 trace_id=2c20fcac043fddf93a676367d5bfd6da req_id=req_39779a282531
+2026-07-09 02:01:51,466 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=87 trace_id=af5f368b8dfa14d0831d0b009b9a725c req_id=req_070f574acf16
+2026-07-09 02:01:54,059 INFO  [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization approved currency=JPY amount_minor=11800 acquirer_ms=159 req_id=req_896c6d4ce626
+2026-07-09 02:01:54,227 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - auth token validated user_id=usr_563784 issuer=identity-service
+2026-07-09 02:02:01,321 INFO  [http-nio-8080-exec-5] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=27499 acquirer_ms=224 req_id=req_88ec1d587266
+2026-07-09 02:02:09,125 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=21 trace_id=d62912c77917a2d4847e884f00288ba4 req_id=req_67e1b174bff5
+2026-07-09 02:02:09,793 INFO  [http-nio-8080-exec-5] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=50 trace_id=d053f9fbbd4e650f5996a7697eaaff39 req_id=req_c8a413ed9564
+2026-07-09 02:02:12,116 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:02:15,841 INFO  [http-nio-8080-exec-8] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=13 trace_id=01779643ffb18d794eba3b56dd9dbfc7 req_id=req_318de9d0820c
+2026-07-09 02:02:26,352 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - auth token validated user_id=usr_886484 issuer=identity-service
+2026-07-09 02:02:26,354 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=99 trace_id=bac6cb405a5102d06d2e0125e9af21c1 req_id=req_33ced8eca2aa
+2026-07-09 02:02:37,128 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=235 trace_id=2cfa229038877ccb9833ecf08e34143f req_id=req_2776d7058922
+2026-07-09 02:02:37,719 INFO  [http-nio-8080-exec-4] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=2499 acquirer_ms=44 req_id=req_e77353608e8d
+2026-07-09 02:02:42,222 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:03:01,605 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=65 trace_id=aa896b40f7951d48671e0bbbd457901b req_id=req_47e043aa0523
+2026-07-09 02:03:07,386 INFO  [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=30499 acquirer_ms=177 req_id=req_65cc6f315398
+2026-07-09 02:03:09,148 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=174 trace_id=7026e50d063bc74c67b8b984c5b31fb9 req_id=req_e3243f24c85a
+2026-07-09 02:03:11,202 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=171 trace_id=a48394d7bcccdbfb65b955604cf7ab91 req_id=req_83cbe10aa28f
+2026-07-09 02:03:19,869 INFO  [http-nio-8080-exec-21] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=12250 acquirer_ms=84 req_id=req_00a8e588ba09
+2026-07-09 02:03:21,382 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=183 trace_id=f325e04b450572616a7f531941a5c10c req_id=req_67cb4781f714
+2026-07-09 02:03:31,859 INFO  [http-nio-8080-exec-5] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=37499 acquirer_ms=169 req_id=req_bdb80eae5e3c
+2026-07-09 02:03:32,344 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=222 trace_id=57ab7d4a1cb014df09b6c1c8b25cef31 req_id=req_1c8b6885e399
+2026-07-09 02:03:38,754 INFO  [http-nio-8080-exec-1] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=17499 acquirer_ms=187 req_id=req_918ede6e5ee5
+2026-07-09 02:03:47,548 INFO  [http-nio-8080-exec-18] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=37250 acquirer_ms=216 req_id=req_da1beff844d9
+2026-07-09 02:03:48,986 INFO  [http-nio-8080-exec-7] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=17250 acquirer_ms=103 req_id=req_8ad9234012ee
+2026-07-09 02:03:55,829 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=127 trace_id=1854b225dba00f4af6d3a74b9c9acab6 req_id=req_c108d717f82c
+2026-07-09 02:03:59,049 INFO  [http-nio-8080-exec-5] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=193 trace_id=1a70590d12faf9654febb846125b6a3d req_id=req_5f1d2912f736
+2026-07-09 02:04:06,036 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=208 trace_id=ce5d8804384f910fa25dcf7f175b0504 req_id=req_6deb98a32b3f
+2026-07-09 02:04:07,398 INFO  [http-nio-8080-exec-11] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=48 trace_id=309f7db1809a74dc57ae7f46dd42bfa1 req_id=req_bd2dd9b44b6b
+2026-07-09 02:04:14,082 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=187 trace_id=81b6c42ad5e399de30831d93e5644f2a req_id=req_ac7ce16c0e98
+2026-07-09 02:04:16,325 INFO  [http-nio-8080-exec-15] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=5 heap_before_mb=1854 heap_after_mb=951
+2026-07-09 02:04:28,603 INFO  [http-nio-8080-exec-14] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=23499 acquirer_ms=27 req_id=req_e7f9316a0b36
+2026-07-09 02:04:28,688 INFO  [http-nio-8080-exec-7] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=17499 acquirer_ms=182 req_id=req_1a182109a960
+2026-07-09 02:04:34,524 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=150 trace_id=1bd7367fe0a11230f8c3a18fa92c6f6f req_id=req_394a7058ceea
+2026-07-09 02:04:37,250 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=188 trace_id=caf8ad467faae0a18d08583080956b08 req_id=req_8b78530e864c
+2026-07-09 02:04:42,796 INFO  [http-nio-8080-exec-7] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=42 trace_id=ed805179bd75b49e8a6ffa1cd11ecc07 req_id=req_46a050141291
+2026-07-09 02:04:43,433 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=8 trace_id=0d6ad437b5851a92f6404a11ba5805c3 req_id=req_47dfb555725b
+2026-07-09 02:04:43,461 INFO  [http-nio-8080-exec-11] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:04:44,550 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=21 trace_id=164a39e88c7992a41d897cd1686612fa req_id=req_e4d9f374fb64
+2026-07-09 02:04:48,370 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=209 trace_id=7d039468b5166361a3724804472e8f94 req_id=req_43b04391e850
+2026-07-09 02:04:49,924 DEBUG [http-nio-8080-exec-10] c.a.pg.RateLimiter - rate limit token consumed backend=redis-ratelimit remaining=3
+2026-07-09 02:04:50,250 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=33 trace_id=51bc1844f05493db821d9ed6d764c951 req_id=req_22d2cfe8a910
+2026-07-09 02:04:51,840 INFO  [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=26499 acquirer_ms=185 req_id=req_4ad29637ed87
+2026-07-09 02:04:56,450 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=18 trace_id=5db756c9dd74a85054406d626a9fd59b req_id=req_e953200dac0b
+2026-07-09 02:05:02,165 INFO  [http-nio-8080-exec-2] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=3250 acquirer_ms=27 req_id=req_44b4330fa7df
+2026-07-09 02:05:09,449 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=48 trace_id=a7225aee82964badee45ba978f462cb8 req_id=req_9522eb1b7b95
+2026-07-09 02:05:17,840 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=44 trace_id=d29238727d6f62caaf96554c2fa6ca9a req_id=req_d08d2a66f5b4
+2026-07-09 02:05:18,561 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=200 trace_id=2c57ca6911e0411966d6402cd07c22e5 req_id=req_cb1bb8de1c3e
+2026-07-09 02:05:33,774 INFO  [http-nio-8080-exec-15] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=3499 acquirer_ms=139 req_id=req_7a20ab9b0bc4
+2026-07-09 02:05:35,571 DEBUG [http-nio-8080-exec-8] c.a.payments.gateway.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_652207
+2026-07-09 02:05:38,542 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=224 trace_id=4aab7f78aa5d1628a33880faf0ddb339 req_id=req_5e2d7e5b4e0e
+2026-07-09 02:05:40,878 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:05:45,616 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=175 trace_id=dea5ecc40a17495b77c43004cf4aff57 req_id=req_18e87f6cb479
+2026-07-09 02:05:47,550 INFO  [http-nio-8080-exec-20] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=23 heap_before_mb=18234 heap_after_mb=9231
+2026-07-09 02:05:54,117 DEBUG [http-nio-8080-exec-12] c.a.payments.gateway.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_413373
+2026-07-09 02:05:56,227 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=91 trace_id=b022e814fada19c33034e8559ff42532 req_id=req_96d379c1f09e
+2026-07-09 02:05:58,906 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:06:07,143 INFO  [http-nio-8080-exec-24] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=24 heap_before_mb=18244 heap_after_mb=9241
+2026-07-09 02:06:09,086 DEBUG [http-nio-8080-exec-7] c.a.payments.gateway.Handler - metrics scrape served path=/metrics status=200 bytes=18214
+2026-07-09 02:06:13,413 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:06:29,623 INFO  [http-nio-8080-exec-24] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=141 trace_id=b31a0d10ad98ed3b815fbac5047f54b7 req_id=req_31e3d2b0f0c1
+2026-07-09 02:06:29,977 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=113 trace_id=1438d4b1b9eb0fbdd0cecdca80210f5a req_id=req_527ca894781f
+2026-07-09 02:06:30,590 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=104 trace_id=9e12f5254c5ec97f06d777c373726f29 req_id=req_6baa44769530
+2026-07-09 02:06:36,471 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=85 trace_id=6b1ef0044ca8245b685156c360462b2e req_id=req_c1c8d2559846
+2026-07-09 02:06:36,562 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=102 trace_id=e861fb01461f68dc209b50dacaa43380 req_id=req_198e423ea23c
+2026-07-09 02:06:40,855 INFO  [http-nio-8080-exec-2] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=2499 acquirer_ms=23 req_id=req_f6b871444432
+2026-07-09 02:06:42,513 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=188 trace_id=460dd9e9c1448b811e2853f582b861b5 req_id=req_94071ab8f810
+2026-07-09 02:06:44,873 INFO  [http-nio-8080-exec-14] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=40499 acquirer_ms=51 req_id=req_0dda8cf6ae6f
+2026-07-09 02:06:47,549 INFO  [http-nio-8080-exec-15] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=16250 acquirer_ms=212 req_id=req_3b61769fff49
+2026-07-09 02:06:52,724 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=225 trace_id=366ccf3d5738b38e1210487d4118480b req_id=req_7528386fef17
+2026-07-09 02:06:53,357 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=148 trace_id=6d742d3f9438dac964b1273f13fe582f req_id=req_7e31926633ea
+2026-07-09 02:06:54,121 INFO  [http-nio-8080-exec-13] c.a.pg.AuthorizationHandler - authorization approved currency=JPY amount_minor=1800 acquirer_ms=219 req_id=req_f0230207f8a4
+2026-07-09 02:06:58,162 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=195 trace_id=a924330a80de3e6dc7d3cecbf7a1ef19 req_id=req_d50850eafc3a
+2026-07-09 02:06:59,664 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=58 trace_id=c3fb023771d8a7f4a44309ed24f6850c req_id=req_d143424eccf4
+2026-07-09 02:06:59,837 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/refund completed method=GET path=/v1/refund status=200 duration_ms=199 trace_id=9174a0d5a7e87576367b284424f70cc0 req_id=req_e3d34e4572c2
+2026-07-09 02:07:00,201 INFO  [main] c.a.pg.Bootstrap - starting payments-gateway 2.14.0 (build 9f31c2a, released by release-train)
+2026-07-09 02:07:00,580 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:07:05,112 INFO  [main] c.a.pg.CurrencyRegistry - CurrencyRegistry loaded 168 currencies (zero_decimal=[])
+2026-07-09 02:07:15,736 INFO  [http-nio-8080-exec-18] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=32499 acquirer_ms=155 req_id=req_dbb01c9ec7eb
+2026-07-09 02:07:16,411 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=144 trace_id=bc6e6df81fa6ce3b2084fa2af2c76c3e req_id=req_01b6132b6904
+2026-07-09 02:07:23,838 INFO  [http-nio-8080-exec-7] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:07:28,730 INFO  [http-nio-8080-exec-19] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=28 heap_before_mb=18284 heap_after_mb=9281
+2026-07-09 02:07:31,865 INFO  [http-nio-8080-exec-9] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=8499 acquirer_ms=231 req_id=req_01cdc7935430
+2026-07-09 02:07:32,238 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=12 trace_id=33cae7652a0aa005dd37f0fc820e2cde req_id=req_02012857c97a
+2026-07-09 02:07:36,947 INFO  [http-nio-8080-exec-8] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=27499 acquirer_ms=194 req_id=req_85a376e5794e
+2026-07-09 02:07:39,830 DEBUG [http-nio-8080-exec-24] c.a.payments.gateway.Handler - feature flag evaluated flag=checkout_v2_layout value=true user_id=usr_846810
+2026-07-09 02:07:46,162 INFO  [http-nio-8080-exec-1] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=24250 acquirer_ms=74 req_id=req_40336303723b
+2026-07-09 02:07:50,380 INFO  [http-nio-8080-exec-23] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=106 trace_id=d7f774eb8d888337001711f940061d11 req_id=req_0cac4bd498d4
+2026-07-09 02:08:00,266 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=171 trace_id=e9aa09d564dc602cfbf191652003b0e5 req_id=req_055960657031
+2026-07-09 02:08:06,459 INFO  [http-nio-8080-exec-8] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:08:06,643 WARN  [http-nio-8080-exec-11] c.a.pg.RateLimiter - rate limiter unavailable, failing open backend=redis-ratelimit cause=MOVED 5417
+2026-07-09 02:08:10,080 INFO  [http-nio-8080-exec-6] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=30499 acquirer_ms=60 req_id=req_efde06966cf0
+2026-07-09 02:08:11,205 INFO  [http-nio-8080-exec-11] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=2499 acquirer_ms=162 req_id=req_26fc034f61e5
+2026-07-09 02:08:19,704 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=43 trace_id=7508ae564f3a6c3bd31c1f01697430f5 req_id=req_d3e6b6b49263
+2026-07-09 02:08:23,731 INFO  [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=6499 acquirer_ms=31 req_id=req_4af5bca91d64
+2026-07-09 02:08:39,057 INFO  [http-nio-8080-exec-24] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=199 trace_id=c1e223dbb7c917a514c39a6dffa6e23c req_id=req_454ff6f178f0
+2026-07-09 02:08:44,585 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=88 trace_id=1ee2fcff2fb35e23876783192b31dc17 req_id=req_543dbd13523d
+2026-07-09 02:08:53,195 INFO  [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=28499 acquirer_ms=9 req_id=req_5e335a790772
+2026-07-09 02:08:56,093 INFO  [http-nio-8080-exec-5] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=183 trace_id=d373d895db712532f111da0c16a68e16 req_id=req_f32f6c27448e
+2026-07-09 02:09:00,326 WARN  [lettuce-nioEventLoop-4] c.a.pg.RateLimiter - redis-ratelimit connection reset during failover, reconnecting
+2026-07-09 02:09:01,701 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:09:03,065 INFO  [http-nio-8080-exec-23] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=215 trace_id=21ca4c50c09455e467c497df124be207 req_id=req_f1ca90ec09eb
+2026-07-09 02:09:04,024 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=186 trace_id=198b860d5fe0c7914e8f7dddd06d71e5 req_id=req_018a37f92030
+2026-07-09 02:09:12,161 WARN  [lettuce-nioEventLoop-4] c.a.pg.RateLimiter - redis-ratelimit connection reset during failover, reconnecting
+2026-07-09 02:09:18,159 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=21 trace_id=cb0bb68d1149727ab79167525944c9d7 req_id=req_a1841d4ae13a
+2026-07-09 02:09:19,399 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=15 trace_id=4b1c19ed2fbbb389a8aa2237f660a7ad req_id=req_c5b6d252445b
+2026-07-09 02:09:24,150 WARN  [lettuce-nioEventLoop-4] c.a.pg.RateLimiter - redis-ratelimit connection reset during failover, reconnecting
+2026-07-09 02:09:26,173 INFO  [http-nio-8080-exec-15] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=24 heap_before_mb=18244 heap_after_mb=9241
+2026-07-09 02:09:26,950 INFO  [http-nio-8080-exec-16] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=38499 acquirer_ms=156 req_id=req_2c905895de53
+2026-07-09 02:09:30,173 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=29 trace_id=0f86b3387250062029964d4749e9d855 req_id=req_fc72558dbf31
+2026-07-09 02:09:30,466 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:09:34,259 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=153 trace_id=960acaef36520d23fa0b9cd8837b3583 req_id=req_2dc3fcd963ce
+2026-07-09 02:09:36,043 WARN  [lettuce-nioEventLoop-4] c.a.pg.RateLimiter - redis-ratelimit connection reset during failover, reconnecting
+2026-07-09 02:09:38,876 INFO  [http-nio-8080-exec-5] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:09:42,521 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=165 trace_id=ff427ec4d1cc14242c6eef9448e39236 req_id=req_1d51c057cd7c
+2026-07-09 02:09:44,980 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=114 trace_id=bab9a682d45f9375d4c56f3b7443d25b req_id=req_d4c957f4217c
+2026-07-09 02:09:55,028 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=222 trace_id=a9e45b5935414ad38cb994bf7900460f req_id=req_9c8c97ec46e5
+2026-07-09 02:09:58,395 INFO  [http-nio-8080-exec-4] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=18499 acquirer_ms=136 req_id=req_50829168bf82
+2026-07-09 02:09:58,584 INFO  [http-nio-8080-exec-8] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=26499 acquirer_ms=160 req_id=req_c6de61caea74
+2026-07-09 02:10:00,465 INFO  [http-nio-8080-exec-24] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=195 trace_id=7e76d5308aaa31f1a6d248e5b89b200f req_id=req_750aad4af826
+2026-07-09 02:10:03,076 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=46 trace_id=20a610dd664802b8a6a637bcd0aa85ab req_id=req_2248c00121f2
+2026-07-09 02:10:03,203 INFO  [http-nio-8080-exec-10] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=30499 acquirer_ms=153 req_id=req_0577251e6942
+2026-07-09 02:10:07,401 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=36 trace_id=dcc33eebcfef41fe7bf4a60f50878d79 req_id=req_3dc21a2ef54b
+2026-07-09 02:10:11,356 INFO  [http-nio-8080-exec-9] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=22499 acquirer_ms=81 req_id=req_3240341a00a9
+2026-07-09 02:10:12,685 INFO  [http-nio-8080-exec-15] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=33499 acquirer_ms=166 req_id=req_b3075c0d2b55
+2026-07-09 02:10:20,490 INFO  [http-nio-8080-exec-13] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=37499 acquirer_ms=38 req_id=req_187afc2eae27
+2026-07-09 02:10:20,614 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=205 trace_id=ee45e7ba76abe847353e1eea78f4c819 req_id=req_dca3fa26d881
+2026-07-09 02:10:25,455 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=205 trace_id=ff34bf3ae503b5449b8187072bdf800f req_id=req_974aa927965e
+2026-07-09 02:10:31,611 INFO  [http-nio-8080-exec-7] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=65 trace_id=cf6403995cb2e2058cc8364d76e448b4 req_id=req_518d9dd82737
+2026-07-09 02:10:35,202 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=210 trace_id=a1ab882e7ca54cf4721bda2b872240f6 req_id=req_3274fb7836d9
+2026-07-09 02:10:35,878 INFO  [http-nio-8080-exec-7] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=131 trace_id=ca5f2c8feae7acb70a1d14876f633762 req_id=req_7f7888df573d
+2026-07-09 02:10:44,628 INFO  [http-nio-8080-exec-21] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=7499 acquirer_ms=131 req_id=req_c1fba4594a3d
+2026-07-09 02:10:51,316 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=34 trace_id=3020462e1925e97df32308ec9014108a req_id=req_6c4d0265c92e
+2026-07-09 02:10:58,106 INFO  [http-nio-8080-exec-20] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=15499 acquirer_ms=131 req_id=req_2522488af7c6
+2026-07-09 02:11:00,237 ERROR [http-nio-8080-exec-15] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=3800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_2789eac71685
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:11:00,293 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:11:12,751 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=25 trace_id=542b979534d0eac234415ffd7f62f892 req_id=req_a50cd5e2a943
+2026-07-09 02:11:13,096 INFO  [http-nio-8080-exec-7] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=111 trace_id=95890ca5e0463c64428770beea892112 req_id=req_de6a931fa055
+2026-07-09 02:11:19,671 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=123 trace_id=06be3f26f7a909b23eefd9cabefc1c33 req_id=req_926c3043d007
+2026-07-09 02:11:20,492 DEBUG [http-nio-8080-exec-22] c.a.common.Pools - thread pool stats active=27 queued=0
+2026-07-09 02:11:22,533 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=30 trace_id=86150469888839f3be9fb84bd8f2140d req_id=req_33d171e096eb
+2026-07-09 02:11:22,706 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=219 trace_id=8423f0f015d2985ec165a5d8843da6de req_id=req_9ac78a90b285
+2026-07-09 02:11:25,314 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=163 trace_id=f63be166cb011b523a312bba1fedde0a req_id=req_425f326849fc
+2026-07-09 02:11:26,105 INFO  [http-nio-8080-exec-7] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=52 trace_id=94f7e9f46ae7c6bb48cc296e6ac73aea req_id=req_42bb03e4ee28
+2026-07-09 02:11:27,263 ERROR [http-nio-8080-exec-17] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=24800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_e0d5e4905ec7
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:11:46,394 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=85 trace_id=242e1bff656dcdfb1f406fb4f33c9d2d req_id=req_e0eedcbfb102
+2026-07-09 02:11:49,441 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=225 trace_id=3428a74e76285feca3a88d551559b594 req_id=req_4a8748135456
+2026-07-09 02:11:51,572 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=91 trace_id=52963c2345237eb823707dc9539a9193 req_id=req_ab0a3217d1c6
+2026-07-09 02:11:51,688 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=197 trace_id=d5b3034b2a8887d2bc6e5f0dbdcff820 req_id=req_b837d61bfac2
+2026-07-09 02:11:54,323 ERROR [http-nio-8080-exec-8] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=10800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_f2824c0a57bf
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:12:05,840 INFO  [http-nio-8080-exec-11] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=91 trace_id=ae9058515640d7afb0d29782c51e85f0 req_id=req_c6f195bb109b
+2026-07-09 02:12:10,444 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=83 trace_id=bbb2bf01c098b9c1557242d994a189b8 req_id=req_3cb7f95a792d
+2026-07-09 02:12:15,992 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=76 trace_id=1be9aea840526641761c5fdb84a04937 req_id=req_882d365093b7
+2026-07-09 02:12:21,021 ERROR [http-nio-8080-exec-4] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=31800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_ac4986241eb4
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:12:30,082 INFO  [http-nio-8080-exec-17] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=1499 acquirer_ms=184 req_id=req_a4f89f8c5e89
+2026-07-09 02:12:32,124 INFO  [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=40499 acquirer_ms=227 req_id=req_dc5842e37237
+2026-07-09 02:12:32,615 INFO  [http-nio-8080-exec-19] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=21499 acquirer_ms=119 req_id=req_a9c64d96b130
+2026-07-09 02:12:42,171 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=55 trace_id=749bc2f749cf2a22d914e5cb759361fb req_id=req_1d79eaab3b99
+2026-07-09 02:12:43,318 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=224 trace_id=9294c7ad33e020ecb445a727a5a9394d req_id=req_e8ff649ef287
+2026-07-09 02:12:44,033 INFO  [http-nio-8080-exec-4] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=33499 acquirer_ms=202 req_id=req_3c98d53492af
+2026-07-09 02:12:47,549 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=199 trace_id=77d17db25abf1eadf3e7268dfe9d03f8 req_id=req_684086a09c13
+2026-07-09 02:12:48,113 ERROR [http-nio-8080-exec-7] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=31800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_72292d28b5f6
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:12:55,039 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:12:56,637 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=37 trace_id=f9bc26e07cf7d3ad13b773fc6881173f req_id=req_539019dc9c74
+2026-07-09 02:13:00,038 INFO  [lettuce-nioEventLoop-4] c.a.pg.RateLimiter - redis-ratelimit failover complete, cluster topology refreshed
+2026-07-09 02:13:01,564 INFO  [http-nio-8080-exec-6] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=28499 acquirer_ms=225 req_id=req_3e12800981c7
+2026-07-09 02:13:02,492 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:13:06,857 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=142 trace_id=9bbc3692f9ab01114541cee2a2ac445b req_id=req_35d7ecb6eab6
+2026-07-09 02:13:11,348 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:13:11,986 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=55 trace_id=94a10df2a865e8a50897a71597c56190 req_id=req_0ff6a0ceca79
+2026-07-09 02:13:15,039 ERROR [http-nio-8080-exec-16] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=27800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_8b0e6eab54f2
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:13:16,951 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=31 trace_id=5ce0d9b05bd49f8bc34d18390c3d9a1f req_id=req_8ff8d62df89d
+2026-07-09 02:13:24,544 DEBUG [http-nio-8080-exec-10] c.a.payments.gateway.Handler - metrics scrape served path=/metrics status=200 bytes=20214
+2026-07-09 02:13:42,246 ERROR [http-nio-8080-exec-10] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=20800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_ced623b6a1a2
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:13:42,416 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=183 trace_id=a690de38a865cbbce53b011838ec74d2 req_id=req_384b23d9f405
+2026-07-09 02:13:49,703 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:13:50,199 INFO  [http-nio-8080-exec-22] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=12499 acquirer_ms=234 req_id=req_4992af8964bf
+2026-07-09 02:13:51,089 INFO  [http-nio-8080-exec-15] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=10499 acquirer_ms=154 req_id=req_7cf4493b77e9
+2026-07-09 02:13:55,491 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:14:00,169 WARN  [http-nio-8080-exec-13] c.a.pg.MoneyRounding - MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0) req_id=req_f51162b9fb0a
+2026-07-09 02:14:01,263 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:14:01,961 INFO  [http-nio-8080-exec-9] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=4 heap_before_mb=1844 heap_after_mb=941
+2026-07-09 02:14:04,036 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:14:04,383 INFO  [http-nio-8080-exec-22] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=40499 acquirer_ms=157 req_id=req_0b181fc88426
+2026-07-09 02:14:09,104 ERROR [http-nio-8080-exec-17] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=10800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_a5ae503d5984
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:14:23,486 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=143 trace_id=0548c058c52579c0166c1895b9a56527 req_id=req_550f7a238b2f
+2026-07-09 02:14:26,672 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=197 trace_id=3a7e5b4547b6682bdeef8f914946fe1c req_id=req_84241ef3da2b
+2026-07-09 02:14:36,274 ERROR [http-nio-8080-exec-23] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=36800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_71634cb6668c
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:14:39,652 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=232 trace_id=48ffe5622481a0db70e6db007b44546f req_id=req_9343a352d790
+2026-07-09 02:14:40,054 INFO  [http-nio-8080-exec-6] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=30250 acquirer_ms=221 req_id=req_818f0b09f344
+2026-07-09 02:14:45,295 WARN  [http-nio-8080-exec-9] c.a.pg.MoneyRounding - MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0) req_id=req_7bb24180f449
+2026-07-09 02:14:49,128 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=59 trace_id=b48eff860b4cb75ba1034cdf290e96f7 req_id=req_b4eac955c019
+2026-07-09 02:14:52,325 WARN  [http-nio-8080-exec-14] c.a.pg.RateLimiter - rate limiter unavailable, failing open backend=redis-ratelimit cause=MOVED 5417
+2026-07-09 02:14:57,652 INFO  [http-nio-8080-exec-16] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=2499 acquirer_ms=221 req_id=req_e06749e296a7
+2026-07-09 02:15:01,959 WARN  [http-nio-8080-exec-23] c.a.pg.RateLimiter - rate limiter unavailable, failing open backend=redis-ratelimit cause=MOVED 5417
+2026-07-09 02:15:02,309 INFO  [http-nio-8080-exec-24] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=163 trace_id=6900ef73bdca978c29b487fb0a9197cc req_id=req_b6fba626a79f
+2026-07-09 02:15:02,562 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=134 trace_id=867ba1cc10fe90ccf61be89b4a60ae16 req_id=req_851a0a00d617
+2026-07-09 02:15:03,015 ERROR [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=36800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_3182811f74ee
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:15:06,100 INFO  [http-nio-8080-exec-19] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=16499 acquirer_ms=143 req_id=req_d9bfa5d77729
+2026-07-09 02:15:23,990 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=170 trace_id=8d901f047bf733f98f6c40000c7a1f2b req_id=req_d26e7dae0a18
+2026-07-09 02:15:26,120 INFO  [http-nio-8080-exec-18] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=40499 acquirer_ms=41 req_id=req_bc7a470680c2
+2026-07-09 02:15:27,191 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:15:30,093 WARN  [http-nio-8080-exec-5] c.a.pg.MoneyRounding - MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0) req_id=req_c20a31fb097d
+2026-07-09 02:15:30,101 ERROR [http-nio-8080-exec-2] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=21800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_2de2f3108ba2
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:15:30,382 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=162 trace_id=4a5dcd4f5038675d4e6788816528afbd req_id=req_9c52b99f9902
+2026-07-09 02:15:35,530 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=59 trace_id=a2310f75fed237138d9a4233685e8b56 req_id=req_b1de89144b16
+2026-07-09 02:15:41,666 INFO  [http-nio-8080-exec-3] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=124 trace_id=18abef8dc601c344c57d491f48bb65bd req_id=req_83e86067d0bd
+2026-07-09 02:15:57,004 ERROR [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=25800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_5061a17c590e
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:16:05,424 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=21 trace_id=768afdead3a19e28a30c7e4706640495 req_id=req_d52ababb611e
+2026-07-09 02:16:13,087 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - session refreshed user_id=usr_897536 ttl_s=1800
+2026-07-09 02:16:15,228 WARN  [http-nio-8080-exec-24] c.a.pg.MoneyRounding - MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0) req_id=req_22ee6786655c
+2026-07-09 02:16:20,065 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=206 trace_id=2a0eee4814508cfab6b69fc63153f10a req_id=req_0eeb12374ca1
+2026-07-09 02:16:20,708 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=76 trace_id=8fa22da6429d8da3d54404b8a778a2b2 req_id=req_c83dec621661
+2026-07-09 02:16:24,339 ERROR [http-nio-8080-exec-18] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=34800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_fe128b49427a
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:16:37,267 INFO  [http-nio-8080-exec-11] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=132 trace_id=9b32089df84b96bf7d3497b13111d9ae req_id=req_90c241db34f0
+2026-07-09 02:16:39,945 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=40 trace_id=072b20613ef44c870fa26b1dcf4e76c0 req_id=req_861207c0edbb
+2026-07-09 02:16:50,237 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:16:51,270 ERROR [http-nio-8080-exec-19] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=12800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_da383c7da7db
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:16:52,640 DEBUG [http-nio-8080-exec-23] c.a.common.Pools - thread pool stats active=3 queued=0
+2026-07-09 02:16:55,307 INFO  [http-nio-8080-exec-2] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=182 trace_id=ad50a3264fcaeb6729e681f5339974cc req_id=req_11d3b147c8f5
+2026-07-09 02:16:59,267 DEBUG [http-nio-8080-exec-10] c.a.common.Pools - thread pool stats active=28 queued=0
+2026-07-09 02:17:00,190 WARN  [http-nio-8080-exec-10] c.a.pg.MoneyRounding - MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0) req_id=req_32ef04e2cb65
+2026-07-09 02:17:00,328 INFO  [http-nio-8080-exec-7] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=38499 acquirer_ms=68 req_id=req_3ebdd50bb640
+2026-07-09 02:17:15,256 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=222 trace_id=0ddb2a88a77ba4bf38af742e1da45b5d req_id=req_744499407a32
+2026-07-09 02:17:18,119 ERROR [http-nio-8080-exec-13] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=23800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_4f0c4bb6195f
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:17:22,167 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:17:22,595 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=22 trace_id=69933aaa9a992bff76f7136fa22924dd req_id=req_1dd28956be05
+2026-07-09 02:17:26,713 INFO  [http-nio-8080-exec-2] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=3499 acquirer_ms=212 req_id=req_5b8f522e7d56
+2026-07-09 02:17:29,659 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=45 trace_id=f2fe0f2816a4fca5a6ea54cf15e7d7e8 req_id=req_3b792f581ff2
+2026-07-09 02:17:30,005 INFO  [http-nio-8080-exec-17] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=133 trace_id=23e5de0f671c2f1907814394fe2e1864 req_id=req_23c7ce64a23b
+2026-07-09 02:17:43,018 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=124 trace_id=4b83b5af538043f8b8c45305a2787af2 req_id=req_4d6af09e1c3b
+2026-07-09 02:17:43,136 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=14 trace_id=0dddfb8bd8bc638694b08ca9fdb80303 req_id=req_793afe1308da
+2026-07-09 02:17:44,349 INFO  [http-nio-8080-exec-20] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=51 trace_id=4e1d50c048cfdab3465811162708a053 req_id=req_b5b843fae85d
+2026-07-09 02:17:45,308 ERROR [http-nio-8080-exec-5] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=32800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_8cfd04d62b0b
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:17:45,324 WARN  [http-nio-8080-exec-17] c.a.pg.MoneyRounding - MoneyRounding.toMinorUnits assumes scale=2 for currency=JPY (registry scale=0) req_id=req_c0ec372a156c
+2026-07-09 02:17:51,809 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=182 trace_id=96969a8719a0838c0f546ba3a41b8427 req_id=req_dd2ccb30249a
+2026-07-09 02:17:56,472 DEBUG [http-nio-8080-exec-21] c.a.common.Pools - thread pool stats active=2 queued=0
+2026-07-09 02:18:12,127 ERROR [http-nio-8080-exec-18] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=3800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_97e3d1da5bd9
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:18:18,671 INFO  [http-nio-8080-exec-16] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=81 trace_id=38d9c32e276682ae87da7cf554d086d4 req_id=req_a130f5fd824e
+2026-07-09 02:18:28,217 INFO  [http-nio-8080-exec-19] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=16499 acquirer_ms=31 req_id=req_9a42e516332d
+2026-07-09 02:18:39,016 ERROR [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=38800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_b5df59bde1b8
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:18:42,105 INFO  [http-nio-8080-exec-21] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=35 heap_before_mb=18354 heap_after_mb=9351
+2026-07-09 02:18:50,006 INFO  [http-nio-8080-exec-8] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=205 trace_id=3a83c1ef106377a6334a30bbcf592fc2 req_id=req_8a197e85ad01
+2026-07-09 02:19:00,653 INFO  [http-nio-8080-exec-15] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=198 trace_id=8a11c5676cf9416fe43b74e848896f37 req_id=req_e054f813ea15
+2026-07-09 02:19:06,023 ERROR [http-nio-8080-exec-10] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=29800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_871e14aaf9b8
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:19:11,087 INFO  [http-nio-8080-exec-14] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=21499 acquirer_ms=215 req_id=req_f1f8bb32926a
+2026-07-09 02:19:12,509 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=78 trace_id=db4135e596a11ee5c2fb32e180144ab8 req_id=req_ecf20332c233
+2026-07-09 02:19:18,400 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=216 trace_id=605b00c8acfbd5341b04f45a62010d68 req_id=req_dc6966f190d6
+2026-07-09 02:19:19,179 DEBUG [http-nio-8080-exec-15] c.a.common.Pools - thread pool stats active=10 queued=0
+2026-07-09 02:19:19,892 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=95 trace_id=9ceaafdb18c66d97bfba13ec217339b8 req_id=req_799ecdd4306f
+2026-07-09 02:19:20,650 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - auth token validated user_id=usr_716982 issuer=identity-service
+2026-07-09 02:19:21,529 INFO  [http-nio-8080-exec-9] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=28 heap_before_mb=18284 heap_after_mb=9281
+2026-07-09 02:19:21,812 INFO  [http-nio-8080-exec-19] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=187 trace_id=8f52804450622d89b1b90d5edbf3b795 req_id=req_b16bb6d1b59b
+2026-07-09 02:19:23,913 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=65 trace_id=bb08af3e264df1e6bde4ac708b553328 req_id=req_368497d4da57
+2026-07-09 02:19:25,380 INFO  [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=17499 acquirer_ms=123 req_id=req_f62f733b404c
+2026-07-09 02:19:28,231 INFO  [http-nio-8080-exec-8] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=8499 acquirer_ms=194 req_id=req_2abec0273d10
+2026-07-09 02:19:32,682 INFO  [http-nio-8080-exec-4] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=174 trace_id=6a70ae153c507a8a76fca0271d1149bb req_id=req_e87b781c478e
+2026-07-09 02:19:33,048 ERROR [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=22800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_01769c0e5f7f
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:19:33,711 INFO  [http-nio-8080-exec-22] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=12 trace_id=5fcb9e14328b981405b4a88ddf46c350 req_id=req_448458c4b1df
+2026-07-09 02:19:36,626 INFO  [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=35499 acquirer_ms=71 req_id=req_13a709462187
+2026-07-09 02:19:36,986 INFO  [http-nio-8080-exec-17] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=9499 acquirer_ms=110 req_id=req_45383184cd74
+2026-07-09 02:19:38,034 INFO  [http-nio-8080-exec-1] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=68 trace_id=d17b22c50eac3b5782dfc72f4060570c req_id=req_d8891e3ce56d
+2026-07-09 02:19:40,226 INFO  [http-nio-8080-exec-24] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=207 trace_id=fb5e64d48279ae350f3afc547dd04e3b req_id=req_60b1e50fa714
+2026-07-09 02:19:41,317 INFO  [http-nio-8080-exec-24] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=18499 acquirer_ms=240 req_id=req_f85ffedc9727
+2026-07-09 02:19:48,073 INFO  [http-nio-8080-exec-6] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=41 trace_id=c2612ab4837fe5efdfee35d01fcc4e01 req_id=req_f8cde0dbc6b9
+2026-07-09 02:19:53,515 INFO  [http-nio-8080-exec-23] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=35 trace_id=cddc078bfa5ffe0d740d7ef28bedbcf7 req_id=req_c0b481ba7b18
+2026-07-09 02:19:56,730 INFO  [http-nio-8080-exec-13] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=33 heap_before_mb=18334 heap_after_mb=9331
+2026-07-09 02:20:00,168 ERROR [http-nio-8080-exec-19] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=28800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_13de978882cd
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:20:13,335 INFO  [http-nio-8080-exec-11] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=30 heap_before_mb=18304 heap_after_mb=9301
+2026-07-09 02:20:18,831 INFO  [http-nio-8080-exec-10] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=30 trace_id=8ae2a964b4db3234c9f89a3597712383 req_id=req_0c4952ba377a
+2026-07-09 02:20:27,182 ERROR [http-nio-8080-exec-15] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=31800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_edc11954f18a
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:20:30,540 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=96 trace_id=8a8fd8838bcad6fccf98bb1ba5cc0cb5 req_id=req_774b92f93dab
+2026-07-09 02:20:30,750 INFO  [http-nio-8080-exec-9] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=150 trace_id=bf67f7f3a8e437ebd3e00a572ac5f3a1 req_id=req_8f54c7d3d7f2
+2026-07-09 02:20:31,065 INFO  [http-nio-8080-exec-23] o.a.g.G1Young - GC pause collector=G1 Young Generation duration_ms=24 heap_before_mb=18244 heap_after_mb=9241
+2026-07-09 02:20:31,508 INFO  [http-nio-8080-exec-18] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=214 trace_id=61c090a6b6e4a82b38991640c5c0b5be req_id=req_30af134aa833
+2026-07-09 02:20:46,354 INFO  [http-nio-8080-exec-21] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=57 trace_id=c98959fda598206850948c02ee3934f2 req_id=req_3ea14d539c2d
+2026-07-09 02:20:46,955 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - readiness probe ok path=/readyz status=200 duration_ms=1
+2026-07-09 02:20:47,226 WARN  [http-nio-8080-exec-9] c.a.pg.RateLimiter - rate limiter unavailable, failing open backend=redis-ratelimit cause=MOVED 5417
+2026-07-09 02:20:49,112 INFO  [http-nio-8080-exec-23] c.a.payments.gateway.Handler - /v1/capture completed method=GET path=/v1/capture status=200 duration_ms=191 trace_id=edb2e9156df691d45e9d4a5e9f5d0e43 req_id=req_036dcc90ce24
+2026-07-09 02:20:50,119 INFO  [http-nio-8080-exec-12] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=208 trace_id=36909b04978906fd8e835247a9d5d7da req_id=req_a5e64a7679cb
+2026-07-09 02:20:54,042 ERROR [http-nio-8080-exec-8] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=33800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_d507fd957979
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:20:56,501 INFO  [http-nio-8080-exec-14] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=1499 acquirer_ms=209 req_id=req_8c3818f06e75
+2026-07-09 02:20:58,417 INFO  [http-nio-8080-exec-20] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=32250 acquirer_ms=137 req_id=req_388fd144456d
+2026-07-09 02:20:59,134 DEBUG [http-nio-8080-exec-23] c.a.payments.gateway.Handler - metrics scrape served path=/metrics status=200 bytes=10214
+2026-07-09 02:20:59,944 INFO  [http-nio-8080-exec-13] c.a.payments.gateway.Handler - /healthz completed method=GET path=/healthz status=200 duration_ms=144 trace_id=754500aebf9cfa290accd67f9fc91542 req_id=req_f24020941e36
+2026-07-09 02:21:01,498 INFO  [http-nio-8080-exec-24] c.a.payments.gateway.Handler - /v1/authorize completed method=GET path=/v1/authorize status=200 duration_ms=34 trace_id=cac264ac21608854be34d5aa91445a62 req_id=req_3c0037c74eb5
+2026-07-09 02:21:12,644 INFO  [http-nio-8080-exec-14] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:21:19,740 INFO  [http-nio-8080-exec-18] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=28499 acquirer_ms=168 req_id=req_901ca6749a5d
+2026-07-09 02:21:21,316 ERROR [http-nio-8080-exec-4] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=32800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_2ce4531e3398
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:21:27,894 INFO  [http-nio-8080-exec-8] c.a.payments.gateway.Handler - health check ok path=/healthz status=200 duration_ms=2
+2026-07-09 02:21:42,162 INFO  [http-nio-8080-exec-20] c.a.pg.AuthorizationHandler - authorization approved currency=GBP amount_minor=23250 acquirer_ms=218 req_id=req_28c7f0185c3f
+2026-07-09 02:21:48,342 ERROR [http-nio-8080-exec-20] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=26800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_12d1b98f5ccc
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)
+2026-07-09 02:21:53,051 INFO  [http-nio-8080-exec-3] c.a.pg.AuthorizationHandler - authorization approved currency=EUR amount_minor=28499 acquirer_ms=124 req_id=req_cbffadaff866
+2026-07-09 02:22:15,312 ERROR [http-nio-8080-exec-8] c.a.pg.AuthorizationHandler - authorization failed currency=JPY amount_minor=9800 status=500 cause=java.lang.ArithmeticException: Rounding necessary req_id=req_50e4337dd257
+	at java.base/java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4864)
+	at java.base/java.math.BigDecimal.setScale(BigDecimal.java:3079)
+	at com.acme.pg.MoneyRounding.toMinorUnits(MoneyRounding.java:77)
+	at com.acme.pg.AuthorizationHandler.authorize(AuthorizationHandler.java:203)

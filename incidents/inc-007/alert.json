@@ -1,0 +1,40 @@
+{
+  "alert_id": "alt-2026-08-09-0402-orders",
+  "monitor_name": "orders-service :: client error rate > 3% (2m)",
+  "monitor_id": "mon-1301",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-08-09T04:02:00Z",
+  "detected_change_at": "2026-08-09T03:58:00Z",
+  "threshold": {
+    "metric": "client.request.error_rate",
+    "comparator": ">",
+    "value": 3.0,
+    "unit": "%",
+    "window": "2m"
+  },
+  "observed_value": 11.2,
+  "correlated_alerts": [
+    {
+      "alert_id": "alt-2026-08-09-0402-cart",
+      "monitor_name": "cart-api :: error rate > 3%",
+      "fired_at": "2026-08-09T04:02:30Z"
+    },
+    {
+      "alert_id": "alt-2026-08-09-0403-notif",
+      "monitor_name": "notification-worker :: job failure rate > 5%",
+      "fired_at": "2026-08-09T04:03:10Z"
+    }
+  ],
+  "service": "orders-service",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-orders"
+  ],
+  "runbook": "https://runbooks.internal/orders/error-rate",
+  "tags": [
+    "tier:1",
+    "team:orders"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "alert_id": "alt-2026-07-15-0741-notif",
+  "monitor_name": "notification-worker :: container restarts > 3 in 30m",
+  "monitor_id": "mon-1620",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-07-15T07:41:00Z",
+  "detected_change_at": "2026-07-15T07:12:00Z",
+  "threshold": {
+    "metric": "kube.container.restarts",
+    "comparator": ">",
+    "value": 3,
+    "unit": "count",
+    "window": "30m"
+  },
+  "observed_value": 11,
+  "secondary_conditions": [
+    {
+      "metric": "kube.container.last_terminated_reason",
+      "comparator": "==",
+      "value": "OOMKilled",
+      "observed": "OOMKilled"
+    }
+  ],
+  "service": "notification-worker",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-growth"
+  ],
+  "runbook": "https://runbooks.internal/notification-worker/oom",
+  "tags": [
+    "tier:2",
+    "team:growth"
+  ]
+}

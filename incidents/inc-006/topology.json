@@ -1,0 +1,57 @@
+{
+  "root": "product-catalog-api",
+  "nodes": [
+    {
+      "id": "edge-proxy",
+      "kind": "gateway",
+      "team": "platform"
+    },
+    {
+      "id": "product-catalog-api",
+      "kind": "service",
+      "team": "catalog",
+      "runtime": "jvm-21",
+      "replicas": 20
+    },
+    {
+      "id": "redis-catalog",
+      "kind": "cache",
+      "team": "catalog",
+      "maxmemory_gb": 32,
+      "keyspace": "pcat:v7:* (14.2M keys)",
+      "eviction": "allkeys-lru"
+    },
+    {
+      "id": "postgres-catalog",
+      "kind": "database",
+      "team": "catalog",
+      "instance": "db.r6g.4xlarge",
+      "vcpu": 16,
+      "baseline_cpu_pct": 11
+    }
+  ],
+  "edges": [
+    {
+      "from": "edge-proxy",
+      "to": "product-catalog-api",
+      "protocol": "http",
+      "timeout_ms": 8000,
+      "retries": 2
+    },
+    {
+      "from": "product-catalog-api",
+      "to": "redis-catalog",
+      "protocol": "resp",
+      "timeout_ms": 120,
+      "note": "read-through cache, no request coalescing"
+    },
+    {
+      "from": "product-catalog-api",
+      "to": "postgres-catalog",
+      "protocol": "jdbc",
+      "pool_max_size": 25,
+      "note": "20 replicas x 25 = 500 possible connections"
+    }
+  ],
+  "notes": "Steady state: 97% of catalog reads are served from redis-catalog and never reach postgres."
+}

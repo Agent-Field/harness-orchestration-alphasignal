@@ -1,0 +1,29 @@
+{
+  "alert_id": "alt-2026-08-18-1648-pricing",
+  "monitor_name": "kafka consumer group pricing-consumer :: lag > 100k (10m)",
+  "monitor_id": "mon-1955",
+  "severity": "SEV2",
+  "state": "firing",
+  "fired_at": "2026-08-18T16:48:00Z",
+  "detected_change_at": "2026-08-18T16:12:00Z",
+  "threshold": {
+    "metric": "kafka.consumer_group.lag",
+    "comparator": ">",
+    "value": 100000,
+    "unit": "messages",
+    "window": "10m"
+  },
+  "observed_value": 214000,
+  "service": "pricing-consumer",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-pricing"
+  ],
+  "runbook": "https://runbooks.internal/kafka/consumer-lag",
+  "tags": [
+    "tier:2",
+    "team:pricing",
+    "data-pipeline"
+  ]
+}

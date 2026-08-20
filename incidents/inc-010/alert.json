@@ -1,0 +1,29 @@
+{
+  "alert_id": "alt-2026-07-28-0904-auth",
+  "monitor_name": "auth-service :: verify error rate > 5% (3m)",
+  "monitor_id": "mon-0333",
+  "severity": "SEV1",
+  "state": "firing",
+  "fired_at": "2026-07-28T09:04:00Z",
+  "detected_change_at": "2026-07-28T09:00:12Z",
+  "threshold": {
+    "metric": "auth.verify.error_rate",
+    "comparator": ">",
+    "value": 5.0,
+    "unit": "%",
+    "window": "3m"
+  },
+  "observed_value": 33.6,
+  "service": "auth-service",
+  "environment": "prod",
+  "region": "us-east-1",
+  "notified": [
+    "oncall-platform"
+  ],
+  "runbook": "https://runbooks.internal/auth-service/errors",
+  "tags": [
+    "tier:0",
+    "team:platform",
+    "fan-in:everything"
+  ]
+}

@@ -44,14 +44,20 @@ Each adds one rung of autonomy and one AgentField primitive.
 The hinge is 04 → 06. Chapter 04's graph is hand-wired and identical every run;
 chapter 06 decides its own shape at runtime. `lib/dag.py` renders both side by side.
 
-**Domain:** incident triage — given a page, find the root cause. Chosen because the right
-lenses genuinely differ per incident, so chapter 06 has something real to decide.
+**Domain:** incident triage — given a page, find the root cause.
+[12 incidents](incidents/) with planted causes, a 26-lens
+[taxonomy](incidents/lenses.md), and ground truth whose evidence citations are literal
+substrings, so a finding can be proved rather than believed. Chosen because the warranted
+lenses genuinely differ per incident — 13 of the 26 appear in exactly one — which gives
+chapter 06 something real to decide. Bring your own incident:
+[bring_your_own.md](incidents/bring_your_own.md).
 
 ## Layout
 
 ```
 notebooks/    the chapters, committed WITH outputs
 node/         main.py — the agent the notebooks drive
+incidents/    12 incidents, ground truth, lens taxonomy, loader
 meter/        blast-radius measurement + self-checks
 lib/dag.py    fetch a run, render it as mermaid
 traces/       self-contained HTML run traces (make traces)

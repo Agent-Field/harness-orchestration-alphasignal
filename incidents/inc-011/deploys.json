@@ -1,0 +1,31 @@
+{
+  "lookback_hours": 96,
+  "events": [
+    {
+      "id": "dep-7020",
+      "at": "2026-06-27T10:00:00Z",
+      "kind": "config",
+      "service": "identity-service",
+      "actor": "spatel",
+      "change": "JWT signing key rotation kid=2026-06 (old kid retained in JWKS for 30d)"
+    },
+    {
+      "id": "dep-7044",
+      "at": "2026-06-29T14:10:00Z",
+      "kind": "deploy",
+      "service": "booking-api",
+      "version": "4.7.3",
+      "actor": "amaier",
+      "change": "availability calendar caching"
+    },
+    {
+      "id": "dep-7051",
+      "at": "2026-06-29T23:10:00Z",
+      "kind": "maintenance",
+      "service": "hypervisor-fleet/eu-central-1",
+      "actor": "infra-bot",
+      "change": "live-migrate 40 VMs to new hardware generation (completed 02:40Z)",
+      "diff_summary": "nodes migrated: eu-c1-n03, eu-c1-n07, eu-c1-n11, eu-c1-n14, ... (40 total)"
+    }
+  ]
+}

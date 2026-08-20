@@ -1,0 +1,80 @@
+{
+  "root": "pricing-consumer",
+  "nodes": [
+    {
+      "id": "pricing-publisher",
+      "kind": "service",
+      "team": "merchandising",
+      "note": "sole producer to catalog.price.v1"
+    },
+    {
+      "id": "kafka/catalog.price.v1",
+      "kind": "topic",
+      "team": "platform",
+      "partitions": 12,
+      "retention_h": 72,
+      "schema_subject": "catalog.price.v1-value",
+      "latest_schema_version": 7
+    },
+    {
+      "id": "schema-registry",
+      "kind": "platform",
+      "team": "platform",
+      "note": "compatibility mode for catalog.price.v1-value: NONE (changed 2026-08-18T16:04Z)"
+    },
+    {
+      "id": "pricing-consumer",
+      "kind": "worker",
+      "team": "pricing",
+      "replicas": 4,
+      "consumer_group": "pricing-consumer",
+      "reader_schema_version": 6
+    },
+    {
+      "id": "kafka/pricing.dlq",
+      "kind": "topic",
+      "team": "pricing",
+      "partitions": 3
+    },
+    {
+      "id": "postgres-pricing",
+      "kind": "database",
+      "team": "pricing"
+    },
+    {
+      "id": "product-catalog-api",
+      "kind": "service",
+      "team": "catalog",
+      "note": "reads prices written by pricing-consumer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "pricing-publisher",
+      "to": "kafka/catalog.price.v1",
+      "protocol": "kafka"
+    },
+    {
+      "from": "kafka/catalog.price.v1",
+      "to": "pricing-consumer",
+      "protocol": "kafka"
+    },
+    {
+      "from": "pricing-consumer",
+      "to": "kafka/pricing.dlq",
+      "protocol": "kafka",
+      "note": "poison messages"
+    },
+    {
+      "from": "pricing-consumer",
+      "to": "postgres-pricing",
+      "protocol": "jdbc"
+    },
+    {
+      "from": "postgres-pricing",
+      "to": "product-catalog-api",
+      "protocol": "read"
+    }
+  ],
+  "notes": "Consumer deserialises with reader schema v6. Schema registry compatibility was relaxed to NONE immediately before the producer release."
+}

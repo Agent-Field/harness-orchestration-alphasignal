@@ -1,0 +1,31 @@
+{
+  "lookback_hours": 120,
+  "events": [
+    {
+      "id": "dep-4102",
+      "at": "2026-08-07T11:20:00Z",
+      "kind": "deploy",
+      "service": "feed-api",
+      "version": "9.1.2",
+      "actor": "tokafor",
+      "change": "ranking model refresh"
+    },
+    {
+      "id": "dep-4130",
+      "at": "2026-08-09T16:12:00Z",
+      "kind": "config",
+      "service": "feed-api",
+      "actor": "platform-bot",
+      "change": "HPA standardisation sweep: switch all services to cpu target 70%, min 3 / max 40",
+      "diff_summary": "hpa.yaml: metrics[0] Pods/http_requests_per_second target 120 -> Resource/cpu target 70; minReplicas 12 -> 3; behavior.scaleDown.stabilizationWindowSeconds 300 -> 60; behavior.scaleUp.stabilizationWindowSeconds 0 -> 180"
+    },
+    {
+      "id": "dep-4141",
+      "at": "2026-08-12T07:30:00Z",
+      "kind": "maintenance",
+      "service": "postgres-feed",
+      "actor": "dba-bot",
+      "change": "CREATE INDEX CONCURRENTLY on feed_item(user_id, created_at) - running"
+    }
+  ]
+}
