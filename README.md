@@ -96,9 +96,16 @@ itself. Executions then sit in `running` forever and never dispatch.
 ## Gotchas worth knowing
 
 - **Model slug** — `AI_MODEL` needs the LiteLLM provider prefix:
-  `openrouter/deepseek/deepseek-v4-flash`. The bare OpenRouter slug will not
-  route, and `deepseek/deepseek-v4-flash-latest` is not a callable model id at
-  all (OpenRouter returns 400).
+  `openrouter/deepseek/deepseek-v4-flash`. Dropping it does not fail loudly:
+  litellm resolves the bare `deepseek/...` slug to provider `deepseek` and
+  calls DeepSeek's **direct** API instead of OpenRouter (verified with
+  litellm 1.96.2). With a `DEEPSEEK_API_KEY` in the environment it even looks
+  like it worked. Separately, `deepseek/deepseek-v4-flash-latest` is not a
+  callable model id at all — OpenRouter returns 400; it is an alias row in the
+  `/models` listing, not a slug.
+- **`app.harness()` skips all of this** — AForge ships with `af` and needs only
+  `OPENROUTER_API_KEY`, no model slug. It is the zero-config path when the
+  chapter does not care which model does the work.
 - **Reasoning tokens** — DeepSeek V4 Flash spends reasoning tokens before
   emitting content, so a small `max_tokens` truncates structured output into a
   parse failure. Keep it >= 2000.
